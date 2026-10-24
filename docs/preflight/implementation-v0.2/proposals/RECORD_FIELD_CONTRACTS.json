@@ -1,0 +1,381 @@
+{
+  "status": "DESIGN_PROPOSAL; M01 completes nested schemas and semantic validators",
+  "records": {
+    "SourceAsset": {
+      "required": [
+        "containerSha256",
+        "byteLength",
+        "MIME",
+        "sourceRightsRef",
+        "streams",
+        "decoderIdentity",
+        "originalName"
+      ]
+    },
+    "FrameObservation": {
+      "required": [
+        "frameRef",
+        "blobRefs",
+        "transforms",
+        "sourceViewMetadata"
+      ]
+    },
+    "PersonIdentity": {
+      "required": [
+        "sourceContextId",
+        "label",
+        "associationRevisionRefs",
+        "status"
+      ]
+    },
+    "ComponentIdentity": {
+      "required": [
+        "personEntityId",
+        "semanticClass",
+        "regionCodes",
+        "associationRefs"
+      ]
+    },
+    "RawProviderObservation": {
+      "required": [
+        "providerRunRef",
+        "frameRefs",
+        "rawTopologyOrLabels",
+        "rawBlobRefs",
+        "confidenceDefinition",
+        "warnings"
+      ]
+    },
+    "EvidenceMapping": {
+      "required": [
+        "rawObservationRefs",
+        "mappingVersion",
+        "skeletonId",
+        "skeletonVersion",
+        "landmarkMap",
+        "sideViewAssumptions",
+        "residuals"
+      ]
+    },
+    "ComponentTrack": {
+      "required": [
+        "componentEntityId",
+        "personEntityId",
+        "observationRefs",
+        "visibilityIntervals",
+        "providerAssociationRefs",
+        "corrections",
+        "ownershipHypotheses"
+      ]
+    },
+    "SpatialEvidence": {
+      "required": [
+        "width",
+        "height",
+        "referenceObservationRef",
+        "coverageBlob",
+        "originBlob",
+        "contributorIndexBlob",
+        "contributorTableRef",
+        "uncertaintyBlob"
+      ]
+    },
+    "CanonicalSurface": {
+      "required": [
+        "componentId",
+        "viewProfileRef",
+        "calibrationRef",
+        "coordinateDomain",
+        "rgbaBlob",
+        "spatialEvidenceRef",
+        "registrationRefs",
+        "conflictMaskRef"
+      ]
+    },
+    "Registration": {
+      "required": [
+        "fromSpace",
+        "toSpace",
+        "transformType",
+        "anchors",
+        "weights",
+        "residuals",
+        "excludedRegions"
+      ]
+    },
+    "AnatomicalBinding": {
+      "required": [
+        "skeletonRef",
+        "jointBoneIds",
+        "localBindTransforms",
+        "regionCodes"
+      ]
+    },
+    "ArtworkPivot": {
+      "required": [
+        "surfaceOrPartRef",
+        "localXY",
+        "coordinateDomain",
+        "rationale",
+        "sourceRefs"
+      ]
+    },
+    "AttachmentSocket": {
+      "required": [
+        "hostPartRef",
+        "name",
+        "local3x3",
+        "semanticRole",
+        "compatibleAttachmentTypes"
+      ]
+    },
+    "Mesh": {
+      "required": [
+        "restXYBlob",
+        "uvBlob",
+        "triangleIndexBlob",
+        "constrainedRings",
+        "islandIds",
+        "seamEdges",
+        "topologyRevision",
+        "skinWeights"
+      ]
+    },
+    "LayeredAssetPackage": {
+      "required": [
+        "hostFamilyProfileRef",
+        "kind",
+        "subparts",
+        "viewVariants",
+        "orderGraphs",
+        "overlapZones",
+        "seamConstraints",
+        "envelopes",
+        "sourceRefs",
+        "testRefs",
+        "poserProfileRef"
+      ]
+    },
+    "HeadIdentity": {
+      "required": [
+        "headSurfaceRef",
+        "structuralLayers",
+        "structuralAnchors",
+        "neckSocketRef",
+        "headSpace",
+        "viewVariants"
+      ]
+    },
+    "FaceKit": {
+      "required": [
+        "registrationProfileRef",
+        "compatibleHeadProfiles",
+        "slots",
+        "maskSemantics",
+        "sourceInventoryRef"
+      ]
+    },
+    "FamilyProfile": {
+      "required": [
+        "proposedFamilyId",
+        "skeletonRef",
+        "calibrationProcedure",
+        "tolerances",
+        "bindPose",
+        "requiredViews",
+        "moduleRequirements"
+      ]
+    },
+    "CharacterPackage": {
+      "required": [
+        "familyProfileRef",
+        "bodyRef",
+        "headRef",
+        "faceKitRef",
+        "hairRefs",
+        "garmentRefs",
+        "accessoryRefs",
+        "compositionOrder",
+        "envelopes",
+        "rightsRefs",
+        "testRefs"
+      ]
+    },
+    "AnchorBinding": {
+      "required": [
+        "characterPackageRef",
+        "sourcePersonRef",
+        "sourceFrameRefs",
+        "projectionRefs",
+        "applicableViews",
+        "acceptanceRefs",
+        "exclusions"
+      ]
+    },
+    "RolePerformance": {
+      "required": [
+        "role",
+        "timeDomain",
+        "poseTrackRef",
+        "rootTrack",
+        "facingTrack",
+        "facePerformanceRef",
+        "componentStateTracks"
+      ]
+    },
+    "PairedActionTemplate": {
+      "required": [
+        "roleARef",
+        "roleBRef",
+        "relationshipChannels",
+        "familyRequirements",
+        "propRefs",
+        "envelopeRefs",
+        "testRefs"
+      ]
+    },
+    "RelationshipChannel": {
+      "required": [
+        "kind",
+        "intervals",
+        "localAnchors",
+        "values",
+        "uncertainty",
+        "tolerances",
+        "evidenceRefs"
+      ]
+    },
+    "ReviewEvent": {
+      "required": [
+        "targetRevisionRefs",
+        "scope",
+        "decision",
+        "actor",
+        "evidenceRefs",
+        "testRefs",
+        "previousEventRef"
+      ]
+    },
+    "CompatibilityTestRun": {
+      "required": [
+        "testSpecRevision",
+        "appCommit",
+        "inputRevisionRefs",
+        "dependencyLockHash",
+        "metrics",
+        "visualEvidenceRefs",
+        "reviewer",
+        "status"
+      ]
+    },
+    "JobRecord": {
+      "required": [
+        "requestHash",
+        "jobId",
+        "state",
+        "eventSequence",
+        "resultManifestRef",
+        "baseRevisionRefs"
+      ]
+    },
+    "MigrationRecord": {
+      "required": [
+        "sourceManifestHash",
+        "adapterVersion",
+        "mapping",
+        "outputManifestHash",
+        "warnings",
+        "rollbackRef"
+      ]
+    },
+    "CalibrationRecord": {
+      "required": [
+        "personOrBodyRef",
+        "familyProfileRef",
+        "scaleMeasurements",
+        "proportionMeasurements",
+        "bindPoseRef",
+        "viewProfiles",
+        "sourceRefs",
+        "uncertainty",
+        "reviewerRefs"
+      ]
+    },
+    "BodyPackage": {
+      "required": [
+        "skeletonRef",
+        "calibrationRef",
+        "bodySurfaceRefs",
+        "anatomyBindingRefs",
+        "bindPoseRef",
+        "viewProfiles",
+        "jointConstraints",
+        "rightsRefs",
+        "testRefs",
+        "poserProfileRef",
+        "artworkRigMappingRefs"
+      ]
+    },
+    "DerivationProcess": {
+      "required": [
+        "kind",
+        "implementationIdentity",
+        "configuration",
+        "inputRefs",
+        "outputRefs",
+        "actorId",
+        "modelIdentity",
+        "warnings"
+      ]
+    },
+    "RightsRecord": {
+      "required": [
+        "artifactHash",
+        "holder",
+        "grantEvidenceRefs",
+        "allowedUses",
+        "redistributionTerms",
+        "attribution",
+        "restrictions",
+        "disposition",
+        "reviewer"
+      ]
+    },
+    "ContributorTable": {
+      "required": [
+        "referenceObservationRef",
+        "coordinateDomain",
+        "sets"
+      ]
+    },
+    "PoserProfile": {
+      "required": [
+        "strategy",
+        "canonicalSkeletonRef",
+        "internalControlSchema",
+        "partHierarchy",
+        "bindingRules",
+        "deformationPolicy",
+        "drawOrderPolicy",
+        "moduleInterfaces",
+        "resourceProfile",
+        "comparisonTestRefs",
+        "selectionDecisionRef"
+      ]
+    },
+    "ArtworkRigMapping": {
+      "required": [
+        "sourceRigHash",
+        "sourceArtworkHashes",
+        "sourceRegionMappings",
+        "derivedPartRefs",
+        "transformRefs",
+        "anatomicalBindingRefs",
+        "artworkPivotRefs",
+        "attachmentSocketRefs",
+        "unsupportedFields",
+        "coverageLossReportRef"
+      ]
+    }
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "package": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2.zip",
+  "bytes": 17845033,
+  "sha256": "8fdf4619a3ce7b5ac7560e77724c480bd29d376b1646ba57ba71d49010d16326",
+  "crc": "PASS",
+  "entry_count": 20,
+  "file_count": 20,
+  "uncompressed_bytes": 19159038,
+  "entries": [
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/CODEX_GATE2B_REVISED_INSTRUCTIONS.md",
+      "bytes": 11419,
+      "compressed_bytes": 4701,
+      "crc32": "25afb99c"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/INPUT_MANIFEST.json",
+      "bytes": 4149,
+      "compressed_bytes": 1720,
+      "crc32": "0a2fdbfb"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/MISSING_V0_4_13_LAYER_ASSETS.md",
+      "bytes": 1172,
+      "compressed_bytes": 554,
+      "crc32": "a52e0f61"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/README.md",
+      "bytes": 2101,
+      "compressed_bytes": 1101,
+      "crc32": "995b506c"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/SCOPE_REVISION.md",
+      "bytes": 1799,
+      "compressed_bytes": 896,
+      "crc32": "8d6abef2"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/SHA256SUMS.txt",
+      "bytes": 2083,
+      "compressed_bytes": 1153,
+      "crc32": "c345fbf5"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/face_reference/BRIFERN_FACE_REFERENCE_SUMMARY.md",
+      "bytes": 1407,
+      "compressed_bytes": 798,
+      "crc32": "a4217eba"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/face_reference/brifernface_reference.pxz",
+      "bytes": 12558178,
+      "compressed_bytes": 11554316,
+      "crc32": "f85344d0"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/face_reference/brifernface_thumbnail.webp",
+      "bytes": 6988,
+      "compressed_bytes": 6695,
+      "crc32": "99319f8b"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/mannequin/v0.4.13/doll_rig_v0_4_13.json",
+      "bytes": 729905,
+      "compressed_bytes": 536199,
+      "crc32": "4d86c72a"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/mannequin/v0.4.13/reference_art/Minimal Gray Female Mannequin Rear View.png",
+      "bytes": 1288287,
+      "compressed_bytes": 1275984,
+      "crc32": "2206c446"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/mannequin/v0.4.13/reference_art/Neutral Female Mannequin Reference Render.png",
+      "bytes": 1263327,
+      "compressed_bytes": 1250966,
+      "crc32": "e9d78984"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/mannequin_bend_backward_contact_sheet.jpg",
+      "bytes": 83181,
+      "compressed_bytes": 69050,
+      "crc32": "8e596af6"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/mannequin_bend_forward_contact_sheet.jpg",
+      "bytes": 68891,
+      "compressed_bytes": 53632,
+      "crc32": "62e92d0c"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/single_person_contact_sheet.jpg",
+      "bytes": 73079,
+      "compressed_bytes": 58758,
+      "crc32": "cefd55ae"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/two_person_contact_sheet.jpg",
+      "bytes": 102509,
+      "compressed_bytes": 85528,
+      "crc32": "2875e3ee"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_mannequin_bend_backward_triptych.mp4",
+      "bytes": 1145976,
+      "compressed_bytes": 1141246,
+      "crc32": "85f3b249"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_mannequin_bend_forward_triptych.mp4",
+      "bytes": 196070,
+      "compressed_bytes": 191265,
+      "crc32": "92106740"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_single_person_red_dress_green_bg.mp4",
+      "bytes": 1344694,
+      "compressed_bytes": 1337078,
+      "crc32": "627d2eb8"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_two_person_overlap_green_bg.mp4",
+      "bytes": 273823,
+      "compressed_bytes": 268043,
+      "crc32": "caa06ba0"
+    }
+  ],
+  "files": [
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/CODEX_GATE2B_REVISED_INSTRUCTIONS.md",
+      "bytes": 11419,
+      "sha256": "702bdf3181496c39b4fcbc9e3087d985cd39f92d9ed3d2b4db8dc254e186d390"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/INPUT_MANIFEST.json",
+      "bytes": 4149,
+      "sha256": "a508e31c8df6ef5af2567e44874a6230f6d40f324eec48ac93afe3a86e7a2d5b"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/MISSING_V0_4_13_LAYER_ASSETS.md",
+      "bytes": 1172,
+      "sha256": "5523199d75a85954f2d4c74d6fb81679c5fb8dfef50eeaeadec145d279d56d30"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/README.md",
+      "bytes": 2101,
+      "sha256": "fb4f5cae538fe9ac5f92b37a3bfc6a1cac9a768beab888d5e70ff28754336e28"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/SCOPE_REVISION.md",
+      "bytes": 1799,
+      "sha256": "4f8a5c73df2fcfba8b29d4b976fd149a24a6036c86618401734d44a9314a66c3"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/SHA256SUMS.txt",
+      "bytes": 2083,
+      "sha256": "f86c823207d2b41d5c0cd5c4632df826edd61a144e03b780e0e4abbb903bc222"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/face_reference/brifernface_reference.pxz",
+      "bytes": 12558178,
+      "sha256": "526d2948f4b3907ff0567475f9dd6e722705fedaf4861d5d716ceb7833abc0be"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/face_reference/brifernface_thumbnail.webp",
+      "bytes": 6988,
+      "sha256": "13a6c6668d5dfaa6642506e72821d7e1b28a6ee8aeae68af8ce03cbeb3833303"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/face_reference/BRIFERN_FACE_REFERENCE_SUMMARY.md",
+      "bytes": 1407,
+      "sha256": "12740281d649c5e9f74921d86d039d21222fc16c25ac6e2b6d13273707bfa5b7"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/mannequin_bend_backward_contact_sheet.jpg",
+      "bytes": 83181,
+      "sha256": "a75c3162acc99eaac93feeddceb6644c3dfc3abc2f8f256948b994c84646b4d4"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/mannequin_bend_forward_contact_sheet.jpg",
+      "bytes": 68891,
+      "sha256": "d065e0bd21cf7bfa92315a47c7a4c9b29679828d3a5172cad4e39bcc89268ee5"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/single_person_contact_sheet.jpg",
+      "bytes": 73079,
+      "sha256": "0f6d80e645aa0d7fef9daa1abb5113e4426936785b490481c83b585294704d27"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/review/two_person_contact_sheet.jpg",
+      "bytes": 102509,
+      "sha256": "6abcf02b1d761c18d886a8ed57b50fa9bbdd46c31975d3e6e0128c0ce02f7d73"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_mannequin_bend_backward_triptych.mp4",
+      "bytes": 1145976,
+      "sha256": "ca8a0b15d0dc7078edb7064049cd97ba44dc827ed0ce89e5814c843f3e358e18"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_mannequin_bend_forward_triptych.mp4",
+      "bytes": 196070,
+      "sha256": "c17410cacbd5062b4754dbeb17a4fa7baa8c1d0256a7f30c3e927fec13717829"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_single_person_red_dress_green_bg.mp4",
+      "bytes": 1344694,
+      "sha256": "6544c270c33f85deff2425f710ae3ba7f34cc35b891a2cf5b886ff3ac2ef02a0"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/videos/controlled_two_person_overlap_green_bg.mp4",
+      "bytes": 273823,
+      "sha256": "9f8dbaa0cb4787b3843fcd4c48d98b21cb3984820ee91ad2c0861b621fe86fa0"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/mannequin/v0.4.13/doll_rig_v0_4_13.json",
+      "bytes": 729905,
+      "sha256": "488f9ce9f415ee57c43fc120030533b3e9f32be31f4f3a0b6aae36c62463a7cd"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/mannequin/v0.4.13/reference_art/Minimal Gray Female Mannequin Rear View.png",
+      "bytes": 1288287,
+      "sha256": "9e92d9ce24d764f2d20214aaac7220e6b46721c645bdf7519b4a2f17bae386dc"
+    },
+    {
+      "path": "Corpus_Pane_Gate2B_Controlled_Asset_Authoring_Pack_v2/mannequin/v0.4.13/reference_art/Neutral Female Mannequin Reference Render.png",
+      "bytes": 1263327,
+      "sha256": "18a75ae83bcfd853db27a1a143fb86739f646712a20ae5e6644fb23ff0766593"
+    }
+  ]
+}

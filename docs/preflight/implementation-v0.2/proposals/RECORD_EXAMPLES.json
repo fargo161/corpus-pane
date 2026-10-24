@@ -1,0 +1,19 @@
+[
+  {
+    "schemaVersion": "1.0.0",
+    "type": "PersonIdentity",
+    "entityId": "00000000-0000-4000-8000-000000000001",
+    "revisionId": "00000000-0000-4000-8000-000000000002",
+    "parentRevisionIds": [],
+    "createdAt": "2026-10-24T00:00:00Z",
+    "actorId": "preflight-example-only",
+    "payload": {
+      "sourceContextId": "00000000-0000-4000-8000-000000000004",
+      "label": "fixture A",
+      "associationRevisionRefs": [],
+      "status": "UNREVIEWED"
+    },
+    "derivedFrom": [],
+    "extensions": {}
+  }
+]

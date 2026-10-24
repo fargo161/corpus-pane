@@ -1,0 +1,7 @@
+# Owner-authorized interim merge policy
+
+GitHub returned403 requiring a plan supporting server-side protection on this private repository. Repository remains PRIVATE. Owner explicitly replied: Authorize interim Steward-enforced independent review/check gates. This is the current controlling decision, not an assertion that GitHub branch/ruleset protection exists.
+
+Only the dedicated GitHub Steward may execute qualifying merges. Each substantive candidate must have exact-commit Builder handoff → actual independent Architecture Auditor → actual Independent Tester → Licensing/Dependency review where relevant → Director scope/contract confirmation → Steward verification. Changed candidate/input/lock invalidates affected signoffs. No unresolved BLOCKER merge. MAJOR deferral still returns to owner unless explicitly approved; this approval addresses the current protection-capability limitation only. No fake separate GitHub-user approvals.
+
+Steward records PR/head/base/merge identities and report hashes, publishes check statuses where supported and verifies remote privacy/history. Baseline/release tags are never rewritten. Builder/Director may not merge main. No force pushes, automatic acceptance promotions, public source-art publication or final release authorization follows from this interim policy. If server protection later becomes available, enable it and record exact observed state.

@@ -1,0 +1,114 @@
+[
+  {
+    "id": "SAM3_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/facebookresearch/sam3/main/LICENSE",
+    "resolved_url": "https://raw.githubusercontent.com/facebookresearch/sam3/main/LICENSE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 7353,
+    "sha256": "4dea99bfaa016e21bc860d73f344236bd1e5c4977d1a9a8fd32f822b500ae1be"
+  },
+  {
+    "id": "SAM3_README",
+    "requested_url": "https://raw.githubusercontent.com/facebookresearch/sam3/main/README.md",
+    "resolved_url": "https://raw.githubusercontent.com/facebookresearch/sam3/main/README.md",
+    "retrieved_date": "2026-10-24",
+    "bytes": 21417,
+    "sha256": "da3dd047d18ef9a4b33557bf6f8187cf166218dc8aef40f2e18a67cc5249a502"
+  },
+  {
+    "id": "Sapiens1_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/facebookresearch/sapiens/main/LICENSE",
+    "resolved_url": "https://raw.githubusercontent.com/facebookresearch/sapiens/main/LICENSE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 19921,
+    "sha256": "327a71fc6dde573ec05f9b931c63da6561c9622258bb8636fe5d353ec92c1dd8"
+  },
+  {
+    "id": "Sapiens2_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/facebookresearch/sapiens2/main/LICENSE.md",
+    "resolved_url": "https://raw.githubusercontent.com/facebookresearch/sapiens2/main/LICENSE.md",
+    "retrieved_date": "2026-10-24",
+    "bytes": 9931,
+    "sha256": "1c77a629ee16972ddb9844378038b20321143a6faf0cac26c2c04dc9b61c5288"
+  },
+  {
+    "id": "Spine_RUNTIME_LICENSE",
+    "requested_url": "https://esotericsoftware.com/spine-runtimes-license",
+    "resolved_url": "https://esotericsoftware.com/spine-runtimes-license",
+    "retrieved_date": "2026-10-24",
+    "bytes": 8416,
+    "sha256": "4538f4ed18dc84380921e2293c0d9dfda7cb06fa2dc6d118e5641b6cea582693"
+  },
+  {
+    "id": "MMPose_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/open-mmlab/mmpose/main/LICENSE",
+    "resolved_url": "https://raw.githubusercontent.com/open-mmlab/mmpose/main/LICENSE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 11400,
+    "sha256": "aa2c6f3408169b96e5547c875deb481c91502514c1885fa0acb4b596c8909cb9"
+  },
+  {
+    "id": "GroundingDINO_MODEL_CARD",
+    "requested_url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/raw/main/README.md",
+    "resolved_url": "https://huggingface.co/IDEA-Research/grounding-dino-tiny/raw/main/README.md",
+    "retrieved_date": "2026-10-24",
+    "bytes": 2580,
+    "sha256": "cf46f74c7b6850f1d5cbe406028324d8798148726016d46a69a365b4a2d3e89f"
+  },
+  {
+    "id": "SeeThrough_BODY_PARSER_CARD",
+    "requested_url": "https://huggingface.co/24yearsold/l2d_sam_iter2/raw/main/README.md",
+    "resolved_url": "https://huggingface.co/24yearsold/l2d_sam_iter2/raw/main/README.md",
+    "retrieved_date": "2026-10-24",
+    "bytes": 1691,
+    "sha256": "50a32a759bd261ce297820767caede4fa07447450a5eaca044b66f7132f5b0c1"
+  },
+  {
+    "id": "SeeThrough_BODY_PARSER_NOTICE",
+    "requested_url": "https://huggingface.co/24yearsold/l2d_sam_iter2/raw/main/NOTICE",
+    "resolved_url": "https://huggingface.co/24yearsold/l2d_sam_iter2/raw/main/NOTICE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 1672,
+    "sha256": "c2e51848bc8f4eaa3a55f433664bc92d9aee8655458fcea69d482219f2e135ed"
+  },
+  {
+    "id": "LayerDiff_MODEL_METADATA",
+    "requested_url": "https://huggingface.co/api/models/layerdifforg/seethroughv0.0.2_layerdiff3d",
+    "resolved_url": "https://huggingface.co/api/models/layerdifforg/seethroughv0.0.2_layerdiff3d",
+    "retrieved_date": "2026-10-24",
+    "bytes": 2497,
+    "sha256": "03c03ed66a833e6ea0de1368106af3785f4f38a7a1ffaee0939caf487aaebfa9"
+  },
+  {
+    "id": "Marigold_MODEL_METADATA",
+    "requested_url": "https://huggingface.co/api/models/layerdifforg/seethroughv0.0.1_marigold",
+    "resolved_url": "https://huggingface.co/api/models/layerdifforg/seethroughv0.0.1_marigold",
+    "retrieved_date": "2026-10-24",
+    "bytes": 2080,
+    "sha256": "0a430e87831eb6d64437c9b7f1941a79da0f38a75f54728cfd59c07d8b347a0e"
+  },
+  {
+    "id": "RVM_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/PeterL1n/RobustVideoMatting/master/LICENSE",
+    "resolved_url": "https://raw.githubusercontent.com/PeterL1n/RobustVideoMatting/master/LICENSE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 35148,
+    "sha256": "8b1ba204bb69a0ade2bfcf65ef294a920f6bb361b317dba43c7ef29d96332b9b"
+  },
+  {
+    "id": "ORT_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.28.0/LICENSE",
+    "resolved_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/v1.28.0/LICENSE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 1073,
+    "sha256": "2f07c72751aed99790b8a4869cf2311df85a860b22ded05fa22803587a48922c"
+  },
+  {
+    "id": "ag_psd_LICENSE",
+    "requested_url": "https://raw.githubusercontent.com/Agamnentzar/ag-psd/master/LICENSE",
+    "resolved_url": "https://raw.githubusercontent.com/Agamnentzar/ag-psd/master/LICENSE",
+    "retrieved_date": "2026-10-24",
+    "bytes": 1205,
+    "sha256": "035430250509b801de02201d2f9bc9388a1220198f9276d38f4059df882e585c"
+  }
+]

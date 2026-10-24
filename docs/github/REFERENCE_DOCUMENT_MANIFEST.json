@@ -1,0 +1,260 @@
+{
+  "kind": "immutable-reference-copies-not-executable-instructions",
+  "files": [
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/ACCEPTANCE_MATRIX.md",
+      "destination": "docs/preflight/implementation-v0.2/ACCEPTANCE_MATRIX.md",
+      "sha256": "2b71fd86090bdb75c09f623fbbf3c792cf7fddd585d13d2ba4a1ea1e56d5d409"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/AGENT_EXECUTION_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/AGENT_EXECUTION_PLAN.md",
+      "sha256": "1f911efae6fb0153019e984ed346d651b9415519d4398dd295699269690efd30"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/ARTWORK_RECOVERY_ADDENDUM.md",
+      "destination": "docs/preflight/implementation-v0.2/ARTWORK_RECOVERY_ADDENDUM.md",
+      "sha256": "ca8b482d08eecebb1a91add557926d0224e8678a171d600ab9f367f2a598e165"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/BLOCKER_AND_INPUT_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/BLOCKER_AND_INPUT_PLAN.md",
+      "sha256": "590ef4784760c327d5f87849bcb5b1d1f44f1f90ff9b2a639cde0c6c4b3cff13"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/DEPENDENCY_LOCK_PROPOSAL.md",
+      "destination": "docs/preflight/implementation-v0.2/DEPENDENCY_LOCK_PROPOSAL.md",
+      "sha256": "967ca3d735d5420b522bd0329e36bd503d74cb9816100eba91c52df26cc9701a"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/FACE_HEAD_IMPLEMENTATION_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/FACE_HEAD_IMPLEMENTATION_PLAN.md",
+      "sha256": "d0e4bc0c0a6b3f812abc4e49899828bf417127c02606bf12df62c3d2b263a959"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/FINAL_TARGET_ARCHITECTURE.md",
+      "destination": "docs/preflight/implementation-v0.2/FINAL_TARGET_ARCHITECTURE.md",
+      "sha256": "2c1fcd55bebb8c8758dc632bc93f9f34d0cc5ab6c395f50b512e95d749bf871e"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/GITHUB_EXECUTION_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/GITHUB_EXECUTION_PLAN.md",
+      "sha256": "78bd26e35caf826f3f20af82c85142d25d279a8d81215fe7da7d6df193a6f5b1"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/IMPLEMENTATION_GO_NO_GO.md",
+      "destination": "docs/preflight/implementation-v0.2/IMPLEMENTATION_GO_NO_GO.md",
+      "sha256": "b86a57e550a8cd6d643b9252db94b321080a038e003191d676f6888fdf8e266c"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/IMPLEMENTATION_MILESTONES.md",
+      "destination": "docs/preflight/implementation-v0.2/IMPLEMENTATION_MILESTONES.md",
+      "sha256": "4b730cab3c6f5c5fe56c9dc55b5f3ebddd0c6ea935ac0d0a77d51870d9dc77a0"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/IMPLEMENTATION_PREFLIGHT_REPORT.md",
+      "destination": "docs/preflight/implementation-v0.2/IMPLEMENTATION_PREFLIGHT_REPORT.md",
+      "sha256": "e9f217d59803eb52d6b2e0350b9b3a1c58c95698909d0ed354ce500a67f06527"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/LOCAL_WORKER_PROTOCOL.md",
+      "destination": "docs/preflight/implementation-v0.2/LOCAL_WORKER_PROTOCOL.md",
+      "sha256": "d53acc474e27530f7abb42fc2ea856ecfb427d222d70a1da900cb05c27571c19"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/MIGRATION_AND_ROLLBACK_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/MIGRATION_AND_ROLLBACK_PLAN.md",
+      "sha256": "5aad118fdb9c3e308603ef757892b1e20cd2419920e96af4a4f14681b3ad71f5"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/OWNER_CORRECTION_AND_CHANGELOG.md",
+      "destination": "docs/preflight/implementation-v0.2/OWNER_CORRECTION_AND_CHANGELOG.md",
+      "sha256": "542b1134282af5b5b5de4e78b07ef193d35cc06e771714be40f96717c53b9de4"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/PAIRED_ACTION_IMPLEMENTATION_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/PAIRED_ACTION_IMPLEMENTATION_PLAN.md",
+      "sha256": "87d4a09100cbccef91358d8c412e8d36c5f08e67492ba7b96eb4d4f5eaba5eb6"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/POSER_ARCHITECTURE_SELECTION.md",
+      "destination": "docs/preflight/implementation-v0.2/POSER_ARCHITECTURE_SELECTION.md",
+      "sha256": "97928da7aa7f39268ab7c28ef64f5d54d15e63a2c5eb879dc0a3f0b403f46cf9"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/POSER_IMPLEMENTATION_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/POSER_IMPLEMENTATION_PLAN.md",
+      "sha256": "82b8028667a554bfbf898faff4d3a31876f92de57b80a8b816365eb887545198"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/PROPOSED_REPOSITORY_TREE.md",
+      "destination": "docs/preflight/implementation-v0.2/PROPOSED_REPOSITORY_TREE.md",
+      "sha256": "0ea47dd36ddf0b1bb9322fd98b0d582c87f0978561ed642ea328f6e07e763377"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/READINESS_TABLE.md",
+      "destination": "docs/preflight/implementation-v0.2/READINESS_TABLE.md",
+      "sha256": "190d3937ab1ff032f090b889b3d573ef5340e168b1a6f9ffdfe49d3479aac2ce"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/README.md",
+      "destination": "docs/preflight/implementation-v0.2/README.md",
+      "sha256": "6e9d9296c8be1a9ca4b3e5156787818a62923bcac70b0577419e27bc635c2685"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/RESOURCE_BUDGET.md",
+      "destination": "docs/preflight/implementation-v0.2/RESOURCE_BUDGET.md",
+      "sha256": "4eeb656cae98cf15e15f9f5d4fa928af878b261b80d966d07ac87b8063dc15d6"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/SCHEMA_EXTENSION_PLAN.md",
+      "destination": "docs/preflight/implementation-v0.2/SCHEMA_EXTENSION_PLAN.md",
+      "sha256": "0b3a0d017e99337c97f7f46242fa1fcedd0580c50b670fc79db008666ff864a0"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/BASELINE_FREEZE.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/BASELINE_FREEZE.json",
+      "sha256": "3947f05416d0ee15fbb9cbc94c48f8a3fccf9a7317d5b00369e4ede05190b533"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/CONTROLLED_SOURCE_INPUT_MANIFEST.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/CONTROLLED_SOURCE_INPUT_MANIFEST.json",
+      "sha256": "c8f9a742bcda84b6385242e9dcace1ec014b1cfad805be37ea3035765eee8da2"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/GATE2C_FREEZE.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/GATE2C_FREEZE.json",
+      "sha256": "9842c01f6e10703f8c2a3679db3369150eb1b26439c35cf822df5c985b6cf503"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/GATE2C_LICENSE_SOURCE_MANIFEST.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/GATE2C_LICENSE_SOURCE_MANIFEST.json",
+      "sha256": "671a8b929c4a5aab33d72d0279ba08b42dc2317921db8699a87a55666d3b2b7a"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/GATE2C_MODEL_MANIFEST.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/GATE2C_MODEL_MANIFEST.json",
+      "sha256": "361173274e1349964d3f47b13419694dab13c52e5778e80e5055e32ab2d9a1c6"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/GATE2C_RESOURCE_RECORDS.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/GATE2C_RESOURCE_RECORDS.json",
+      "sha256": "279584251b7b4f9adddf2501ef4ee3e837fee486109bcedaf57144c8a3d429f7"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/GATE2C_SOURCE_MANIFEST.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/GATE2C_SOURCE_MANIFEST.json",
+      "sha256": "56f64320a2e7c0601eff9cf7c09b47cd82b3a108ba2efb04d3bc08a4a1d7bf51"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/NPM_REGISTRY_METADATA.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/NPM_REGISTRY_METADATA.json",
+      "sha256": "7568ce3bdd8803b09da53ddb4ec31dd7ab42eb0f14b5f6ee7de401cce044a4ad"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/NPM_TOOL_METADATA.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/NPM_TOOL_METADATA.json",
+      "sha256": "136e23455a80eb47251b37c6e6eb414f1ba4c353f4e0f0fb3ba784392cb4f47f"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/OWNER_SUPPLIED_ASSET_VERIFICATION.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/OWNER_SUPPLIED_ASSET_VERIFICATION.json",
+      "sha256": "bac5552192c5b5f11fb74e05998f344867711cfd5984ad2669205024379e86bb"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/OWNER_SUPPLIED_CANONICAL_16_LAYER_ASSET_MAP.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/OWNER_SUPPLIED_CANONICAL_16_LAYER_ASSET_MAP.json",
+      "sha256": "3355b2617290000dd4f8492a091a3379a57920121075bd8a9dedb35694dd9b43"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/PACKAGE_VERIFICATION.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/PACKAGE_VERIFICATION.json",
+      "sha256": "3e81cfe4a1af9d6b3827377a1c5f9786f00aad4081b795c940ac75568cd04cee"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/PYTHON_REGISTRY_METADATA.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/PYTHON_REGISTRY_METADATA.json",
+      "sha256": "2d8a9638138e886f96f456b8f122ca829b279618a42c87e24978bd06df40f8d9"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/RECOVERED_ARTWORK_VERIFICATION.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/RECOVERED_ARTWORK_VERIFICATION.json",
+      "sha256": "c08f97612b1c67aca809a319691c163f67365dfc2947b71f82b6bae10f7b2f18"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/RUNTIME_UPSTREAM_METADATA.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/RUNTIME_UPSTREAM_METADATA.json",
+      "sha256": "350c75a88526048048f0aa22f4f44389fe46809907ea72f9f1e36c4072f521b2"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/SUPERSEDED_PREFLIGHT_V0_1_FREEZE.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/SUPERSEDED_PREFLIGHT_V0_1_FREEZE.json",
+      "sha256": "fc761fef3411266bba18ce82f3200d26e2df0bc02f489d700a853375d95a21c6"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/evidence/SUPERSEDED_PREFLIGHT_V0_1_PACKAGE_VERIFICATION.json",
+      "destination": "docs/preflight/implementation-v0.2/evidence/SUPERSEDED_PREFLIGHT_V0_1_PACKAGE_VERIFICATION.json",
+      "sha256": "fe7dc9add588f785eb604200df10a4b7d7cefcdbed3e9eb5f6193b9477eaf352"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/proposals/CORE_RECORD_SCHEMAS.json",
+      "destination": "docs/preflight/implementation-v0.2/proposals/CORE_RECORD_SCHEMAS.json",
+      "sha256": "789d33409457fbfb0c81bad8084df8996e8150c124de3d06225c2dbd87ac4c87"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/proposals/DEPENDENCY_LOCK_PROPOSAL.json",
+      "destination": "docs/preflight/implementation-v0.2/proposals/DEPENDENCY_LOCK_PROPOSAL.json",
+      "sha256": "b8e9a799611baa74d0ce24edb2f94e193fa01cb4802e21ef135dfe570930e69a"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/proposals/POSER_ARCHITECTURE_SELECTION_PROTOCOL.json",
+      "destination": "docs/preflight/implementation-v0.2/proposals/POSER_ARCHITECTURE_SELECTION_PROTOCOL.json",
+      "sha256": "3cc21eba4497e582442ae498420bf269b2de0dcc1a2df0ea0acaef3be1eec185"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/proposals/PROTOCOL_TEST_CASES.json",
+      "destination": "docs/preflight/implementation-v0.2/proposals/PROTOCOL_TEST_CASES.json",
+      "sha256": "10893a2ba94df379365414087f29dbec72535108d929ac1cf5b39bcb4c7b44b3"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/proposals/RECORD_EXAMPLES.json",
+      "destination": "docs/preflight/implementation-v0.2/proposals/RECORD_EXAMPLES.json",
+      "sha256": "f500a27d9297cd7529f7f7f54ce492bc7e82d804511dc1de4009ce27cdb5d96b"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Implementation_Preflight_v0_2/proposals/RECORD_FIELD_CONTRACTS.json",
+      "destination": "docs/preflight/implementation-v0.2/proposals/RECORD_FIELD_CONTRACTS.json",
+      "sha256": "3fe53d4b6214763c0d3361ff83ee4de0930eec325a65ae3c4c8941790eb94dfd"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Gate2C_v0_3/README.md",
+      "destination": "docs/research/gate2c/README.md",
+      "sha256": "b6ec3126f8e70755226a2efd219d82f308d3aaae90c0f596a69ffacb4fb411b0"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Gate2C_v0_3/TECHNOLOGY_HARVEST_SYNTHESIS.md",
+      "destination": "docs/research/gate2c/TECHNOLOGY_HARVEST_SYNTHESIS.md",
+      "sha256": "75ef382bdf9020a55a82fe917ae9338278eea8ff282a48e9ffa7d470d8c6ee56"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Gate2C_v0_3/RESEARCH_AND_LICENSE_LEDGER.md",
+      "destination": "docs/research/gate2c/RESEARCH_AND_LICENSE_LEDGER.md",
+      "sha256": "31a510d3d600b64fca87c3d4718aca74720296a426b4b13c4f6868ffc952bc73"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Gate2C_v0_3/RESOURCE_REUSE_MATRIX.md",
+      "destination": "docs/research/gate2c/RESOURCE_REUSE_MATRIX.md",
+      "sha256": "12fb387d69aa774b8b4093a0dfc1eeb7ec539de53e84aec79699d48623bab5f9"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Gate2C_v0_3/PROPOSED_PRODUCTION_STACK.md",
+      "destination": "docs/research/gate2c/PROPOSED_PRODUCTION_STACK.md",
+      "sha256": "f5cde799486bb3ffa87f08a57cabd7fb9b06e0c5ae9fc266136d039659aad36e"
+    },
+    {
+      "source": "outputs/Corpus_Pane_Gate2C_v0_3/UNRESOLVED_INPUTS.md",
+      "destination": "docs/research/gate2c/UNRESOLVED_INPUTS.md",
+      "sha256": "aba15d3ec7e3928c944a53e076fbc4a2b098f68cdae8c84541b342c7c701b6d0"
+    }
+  ]
+}

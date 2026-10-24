@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-10-24T07:11:14.885074+00:00",
+  "budget": {
+    "aggregate_token_planning_cap": 1000000,
+    "agent_hour_cap": 120,
+    "substantive_tool_call_cap": 1600,
+    "closure_reserve_percent": 40,
+    "active_agent_cap": 4,
+    "gpu_job_cap": 1
+  },
+  "actual": {
+    "tokens": "platform exact counter unavailable; no invented exact consumption",
+    "phase": "M00 baseline and M01 staging",
+    "heavy_gpu_jobs_started": 0,
+    "new_model_downloads": 0
+  },
+  "closure_reserve_status": "PROTECTED; no speculative model experiments",
+  "next_checkpoint": "M00 independent baseline proof; M01 exact candidate"
+}

@@ -1,0 +1,118 @@
+{
+  "status": "NOT_RUN_PLAN_ONLY",
+  "milestone": "M02P",
+  "authority": "latest direct owner correction; no implementation approval yet",
+  "candidate_ids": [
+    "A_RETAIN_ADAPT",
+    "B_NATIVE_2D",
+    "C_HYBRID"
+  ],
+  "winner": null,
+  "production_topology_fixed": false,
+  "canonical_skeleton_version": "1.2.0",
+  "mandatory_2d": true,
+  "criteria": [
+    {
+      "id": "garment_layering_overlap",
+      "weight_percent": 15,
+      "measured_score": null
+    },
+    {
+      "id": "seam_stability",
+      "weight_percent": 15,
+      "measured_score": null
+    },
+    {
+      "id": "module_swaps",
+      "weight_percent": 12,
+      "measured_score": null
+    },
+    {
+      "id": "pose_range",
+      "weight_percent": 10,
+      "measured_score": null
+    },
+    {
+      "id": "deformation_quality",
+      "weight_percent": 10,
+      "measured_score": null
+    },
+    {
+      "id": "authoring_editability",
+      "weight_percent": 10,
+      "measured_score": null
+    },
+    {
+      "id": "animation_compatibility",
+      "weight_percent": 8,
+      "measured_score": null
+    },
+    {
+      "id": "simplicity_maintainability",
+      "weight_percent": 7,
+      "measured_score": null
+    },
+    {
+      "id": "performance",
+      "weight_percent": 5,
+      "measured_score": null
+    },
+    {
+      "id": "canonicalized_asset_intake",
+      "weight_percent": 5,
+      "measured_score": null
+    },
+    {
+      "id": "artwork_preservation_migration",
+      "weight_percent": 3,
+      "measured_score": null
+    }
+  ],
+  "budget": {
+    "tokens": 60000,
+    "agent_hours": 7.2,
+    "tool_calls": 96,
+    "total_implementation_envelope_increased": false,
+    "protected_closure_percent": 40
+  },
+  "quality_targets": {
+    "required_arm_poses": 25,
+    "normalized_body_height": 1024,
+    "max_seam_alignment_px": 2,
+    "accepted_inversions": 0,
+    "browser_p95_frame_ms": 33.3,
+    "browser_process_memory_mib": 2048,
+    "performance_repetitions": 3,
+    "minimum_playback_frames_per_run": 1000
+  },
+  "future_artifacts": [
+    "POSER_CANDIDATE_MANIFEST.json",
+    "POSER_COMPARISON_METRICS.json",
+    "POSER_COMPARISON_METRICS.md",
+    "POSER_ARCHITECTURE_DECISION.md",
+    "independent_test_audit_license_reports",
+    "source_derivative_mapping_and_loss_report"
+  ],
+  "candidate_results": [
+    {
+      "id": "A_RETAIN_ADAPT",
+      "status": "NOT_RUN",
+      "score": null,
+      "hard_gate_results": null
+    },
+    {
+      "id": "B_NATIVE_2D",
+      "status": "NOT_RUN",
+      "score": null,
+      "hard_gate_results": null
+    },
+    {
+      "id": "C_HYBRID",
+      "status": "NOT_RUN",
+      "score": null,
+      "hard_gate_results": null
+    }
+  ],
+  "selection": "Only candidates meeting hard gates and complete comparable measurement; within5points use documented simplicity/maintenance/dependency judgment; no legacy bonus",
+  "later_gate": "M09 actual M04/M05 canonicalized assets and reference-art migration revalidation; may reopen provisional choice"
+}
