@@ -75,8 +75,8 @@ test('claimed owner is not trusted authority, trusted exact-revision review beco
   await store.commit({ records: f.records, blobs: f.blobs, headUpdates: new Map(f.records.map(r => [r.entityId, r.revisionId])), expectedHeads: new Map(f.records.map(r => [r.entityId, null])) });
   const event = make('ReviewEvent', { targetRevisionRefs: [f.surface.revisionId], scope: 'ASSET', decision: 'ACCEPTED', actor: { actorId: 'local-owner', claimedRole: 'OWNER', issuer: 'local-ui' }, evidenceRefs: [], testRefs: [], previousEventRef: null }, { actorId: 'local-owner' });
   await assert.rejects(store.commit({ records: [event] }), e => e.code === 'REVIEW_AUTHORITY');
-  assert.throws(() => authority.issue({ actorId: 'local-owner', scope: 'ASSET', decision: 'ACCEPTED', userInitiated: false }));
-  const token = authority.issue({ actorId: 'local-owner', scope: 'ASSET', decision: 'ACCEPTED', userInitiated: true });
+  assert.throws(() => authority.issue({ record: event, userInitiated: false }));
+  const token = authority.issue({ record: event, userInitiated: true });
   await store.commit({ records: [event], reviewCommands: new Map([[event.revisionId, token]]) }); assert.equal(store.isApplicableAcceptance(event), true);
   const { store: imported } = await importBundle((await exportBundle(store)).bytes); assert.equal(imported.isApplicableAcceptance(event), false); assert.deepEqual(imported.getRecord(event.revisionId), event);
   const changed = reviseRecord(f.surface, { ...f.surface.payload }, { actorId: 'local-author' });

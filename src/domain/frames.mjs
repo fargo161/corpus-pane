@@ -4,7 +4,7 @@ export function compareTime(a, b) {
   const right = BigInt(b.ptsTicks) * BigInt(b.timeBaseNum) * BigInt(a.timeBaseDen);
   return left < right ? -1 : left > right ? 1 : 0;
 }
-export function frameKey(f) { return [f.sourceSha256, f.streamIndex, f.decodeIndex, f.ptsTicks, f.timeBaseNum, f.timeBaseDen, f.pixelSha256, f.decoderIdentity.name, f.decoderIdentity.version, f.decoderIdentity.codeSha256, f.decoderIdentity.configSha256].join(':'); }
+export function frameKey(f) { return JSON.stringify({ sourceSha256: f.sourceSha256, streamIndex: f.streamIndex, decodeIndex: f.decodeIndex, ptsTicks: f.ptsTicks, timeBaseNum: f.timeBaseNum, timeBaseDen: f.timeBaseDen, pixelSha256: f.pixelSha256, width: f.width, height: f.height, decoderIdentity: { name: f.decoderIdentity.name, version: f.decoderIdentity.version, codeSha256: f.decoderIdentity.codeSha256, configSha256: f.decoderIdentity.configSha256 } }); }
 export function compareFrames(a, b) {
   if (a.sourceSha256 !== b.sourceSha256 || a.streamIndex !== b.streamIndex) throw new ContractError('FRAME_DOMAIN', 'Cannot order frames across sources or streams');
   return compareTime(a, b) || a.decodeIndex - b.decodeIndex;

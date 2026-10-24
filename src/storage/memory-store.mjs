@@ -2,8 +2,9 @@ import { DATABASE_NAME, FORMAT, SCHEMA_VERSION } from '../domain/contracts.mjs';
 import { parseJSON, stringifyJSON, sha256, equalBytes, bytesOf, safePath, ContractError, LIMITS } from '../domain/safety.mjs';
 import { validateRecord } from '../domain/schema-validator.mjs';
 import { validateGraph, assertPlane } from '../domain/semantics.mjs';
-import { validateSpatialPlanes, validateMeshPlanes } from '../domain/spatial.mjs';
+import { validateSpatialPlanes, validateMeshPlanes, readPlane } from '../domain/spatial.mjs';
 import { ReviewAuthority, reviewIsFresh } from '../domain/review.mjs';
+import { inspectLegacySnapshot } from '../legacy/snapshot.mjs';
 
 export class AuthoringStore {
   #records = new Map(); #blobs = new Map(); #heads = new Map(); #generation = 0;
@@ -23,6 +24,9 @@ export class AuthoringStore {
   getLegacy() { return this.#legacy?.slice() ?? null; }
   getAllRecords() { return [...this.#records.keys()].map(id => this.getRecord(id)); }
   isApplicableAcceptance(event) {
+    const stored = this.getRecord(typeof event === 'string' ? event : event?.revisionId);
+    if (!stored || stored.type !== 'ReviewEvent' || (typeof event !== 'string' && JSON.stringify(event) !== JSON.stringify(stored))) return false;
+    event = stored;
     const records = new Map(this.getAllRecords().map(r => [r.revisionId, r]));
     if (!this.#trustedReviews.has(event.revisionId) || event.payload.decision !== 'ACCEPTED' || !reviewIsFresh(event, this.#heads, records)) return false;
     return !this.getAllRecords().some(r => r.type === 'ReviewEvent' && r.payload.previousEventRef === event.revisionId && r.payload.decision === 'REVOKED' && this.#trustedReviews.has(r.revisionId));
@@ -58,15 +62,16 @@ export class AuthoringStore {
     const byId = new Map(all.map(r => [r.revisionId, r]));
     const entities = new Map();
     for (const r of all) { const info = entities.get(r.entityId) ?? { type: r.type, roots: 0 }; if (info.type !== r.type) throw new ContractError('ENTITY_TYPE', 'Entity identity cannot change record type'); if (!r.parentRevisionIds.length && ++info.roots > 1) throw new ContractError('ENTITY_COLLISION', 'Independent roots collide; explicitly fork logical identity'); entities.set(r.entityId, info); }
-    const applicable = event => stagedTrust.has(event.revisionId) && event.payload.decision === 'ACCEPTED' && reviewIsFresh(event, stagedHeads, byId) && !all.some(r => r.type === 'ReviewEvent' && r.payload.previousEventRef === event.revisionId && r.payload.decision === 'REVOKED' && stagedTrust.has(r.revisionId));
-    validateGraph(all, { heads: stagedHeads, isApplicableAcceptance: applicable, historicalRevisionIds: historical });
+    const applicableReview = event => stagedTrust.has(event.revisionId) && ['REVIEWED', 'ACCEPTED'].includes(event.payload.decision) && reviewIsFresh(event, stagedHeads, byId) && !all.some(r => r.type === 'ReviewEvent' && r.payload.previousEventRef === event.revisionId && r.payload.decision === 'REVOKED' && stagedTrust.has(r.revisionId));
+    const applicable = event => event.payload.decision === 'ACCEPTED' && applicableReview(event);
+    validateGraph(all, { heads: stagedHeads, isApplicableAcceptance: applicable, isApplicableReview: applicableReview, historicalRevisionIds: historical });
     const checkHash = (hash, size) => {
       const data = stagedBlobs.get(hash);
       if (!data || (size !== undefined && data.byteLength !== size)) throw new ContractError('BLOB_MISSING', `Missing/mismatched referenced blob ${hash}`);
     };
     async function visitPlanes(value) {
       if (!value || typeof value !== 'object') return;
-      if (Object.hasOwn(value, 'sha256') && Object.hasOwn(value, 'dtype') && Object.hasOwn(value, 'encoding')) { assertPlane(value); checkHash(value.sha256, value.byteLength); }
+      if (Object.hasOwn(value, 'sha256') && Object.hasOwn(value, 'dtype') && Object.hasOwn(value, 'encoding')) { assertPlane(value); checkHash(value.sha256, value.byteLength); if (value.encoding === 'RAW') await readPlane(value, stagedBlobs); }
       else for (const child of Object.values(value)) await visitPlanes(child);
     }
     for (const r of all) {
@@ -80,11 +85,18 @@ export class AuthoringStore {
     }
     const stagedLegacy = legacy === undefined ? this.#legacy : bytesOf(legacy).slice();
     if (this.#legacy && stagedLegacy && !equalBytes(this.#legacy, stagedLegacy)) throw new ContractError('LEGACY_IMMUTABLE', 'Original legacy snapshot cannot be replaced');
+    if (legacy !== undefined) await inspectLegacySnapshot(stagedLegacy);
     for (const [destination, inputs] of [[stagedOpaque, opaqueFiles], [stagedNotices, notices]]) for (const { path, bytes } of inputs) {
       safePath(path);
       const data = bytesOf(bytes).slice(), prior = destination.get(path);
       if (prior && !equalBytes(prior, data)) throw new ContractError('OPAQUE_COLLISION', 'Opaque optional file identity collision');
       destination.set(path, data);
+    }
+    const occupiedPaths = new Set(['manifest.json', ...[...stagedRecords.keys()].map(id => `records/${id}.json`), ...[...stagedBlobs.keys()].map(hash => `blobs/sha256/${hash}`), ...(stagedLegacy ? ['legacy/original.corpus.zip'] : [])]);
+    for (const files of [stagedOpaque, stagedNotices]) for (const path of files.keys()) {
+      const key = path.normalize('NFC').toLowerCase();
+      if (occupiedPaths.has(key) || /^legacy\/|^blobs\//i.test(path)) throw new ContractError('RESERVED_FILE_PATH', 'Opaque/notice path collides with reserved authoring content');
+      occupiedPaths.add(key);
     }
     if (failBeforeCommit) throw new ContractError('INJECTED_CRASH', 'Simulated crash before atomic head advance');
     if (baseGeneration !== this.#generation) throw new ContractError('STALE_GENERATION', 'Concurrent transaction committed first');
