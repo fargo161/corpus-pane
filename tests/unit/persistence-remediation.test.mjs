@@ -61,11 +61,11 @@ test('exact bound review can retry after atomic failure; legitimate owner same-s
   const { fixture: f } = await populatedStore(), authority = new ReviewAuthority([{ actorId: 'owner', role: 'OWNER', scopes: ['FAMILY'] }]), store = new AuthoringStore({ authority });
   await store.commit({ records: f.records, blobs: f.blobs, headUpdates: new Map(f.records.map(r => [r.entityId, r.revisionId])), expectedHeads: new Map(f.records.map(r => [r.entityId, null])) });
   const event = make('ReviewEvent', { targetRevisionRefs: [f.family.revisionId], scope: 'FAMILY', decision: 'ACCEPTED', actor: { actorId: 'owner', claimedRole: 'OWNER', issuer: 'local' }, evidenceRefs: [], testRefs: [], previousEventRef: null }, { actorId: 'owner' });
-  const token = authority.issue({ record: event, userInitiated: true });
+  const token = authority.issue({ store, record: event, userInitiated: true });
   await assert.rejects(store.commit({ records: [event], reviewCommands: new Map([[event.revisionId, token]]), failBeforeCommit: true }), e => e.code === 'INJECTED_CRASH'); assert.equal(store.isApplicableAcceptance(event), false);
   await store.commit({ records: [event], reviewCommands: new Map([[event.revisionId, token]]) }); assert.equal(store.isApplicableAcceptance(event), true);
   const revoked = make('ReviewEvent', { ...event.payload, decision: 'REVOKED', previousEventRef: event.revisionId }, { actorId: 'owner' });
-  await store.commit({ records: [revoked], reviewCommands: new Map([[revoked.revisionId, authority.issue({ record: revoked, userInitiated: true })]]) }); assert.equal(store.isApplicableAcceptance(event), false);
+  await store.commit({ records: [revoked], reviewCommands: new Map([[revoked.revisionId, authority.issue({ store, record: revoked, userInitiated: true })]]) }); assert.equal(store.isApplicableAcceptance(event), false);
 });
 test('unchanged real13-clip baseline backup with normal ZIP directory entries attaches and survives portable reopen', async () => {
   const bytes = new Uint8Array(await readFile(new URL('../../baseline/02.2.5/starter/Arm_Shoulder_Torso_Acceptance_Reliability_02_2_5.corpus.zip', import.meta.url)));

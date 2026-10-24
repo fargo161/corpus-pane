@@ -96,7 +96,7 @@ export const RECORD_SCHEMAS = Object.freeze(Object.fromEntries(RECORD_TYPES.map(
   $schema: 'https://json-schema.org/draft/2020-12/schema',
   $id: `https://corpus-pane.invalid/schemas/authoring/1.0.0/${type}.schema.json`,
   title: `Corpus Pane ${type} revision`,
-  ...obj({ schemaVersion: { const: SCHEMA_VERSION }, type: { const: type }, entityId: uuid, revisionId: uuid, parentRevisionIds: refs, createdAt: { type: 'string', format: 'date-time', pattern: '^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{1,3})?Z$' }, actorId: str(256), payload: payloads[type], derivedFrom: refs, extensions: jsonMap }),
+  ...obj({ schemaVersion: { const: SCHEMA_VERSION }, type: { const: type }, entityId: uuid, revisionId: uuid, parentRevisionIds: refs, createdAt: { type: 'string', format: 'date-time', pattern: '^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{1,3})?Z$' }, actorId: str(256), payload: payloads[type], derivedFrom: refs, entityRevisionBindings: opt(unique(obj({ entityId: uuid, revisionId: uuid }), 0, 10000)), extensions: jsonMap }),
   $defs: DEFINITIONS
 }])));
 

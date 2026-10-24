@@ -13,7 +13,7 @@ async function authorityFixture() {
   const store = new AuthoringStore({ authority });
   await store.commit({ records: f.records, blobs: f.blobs, headUpdates: original.heads, expectedHeads: new Map([...original.heads.keys()].map(id => [id, null])) });
   const event = make('ReviewEvent', { targetRevisionRefs: [f.family.revisionId], scope: 'FAMILY', decision: 'ACCEPTED', actor: { actorId: 'owner-local', claimedRole: 'OWNER', issuer: 'local-ui' }, evidenceRefs: [], testRefs: [], previousEventRef: null }, { actorId: 'owner-local' });
-  const token = authority.issue({ record: event, userInitiated: true });
+  const token = authority.issue({ store, record: event, userInitiated: true });
   await store.commit({ records: [event], reviewCommands: new Map([[event.revisionId, token]]) });
   return { store, f, authority, event, token };
 }
@@ -22,7 +22,7 @@ test('AUD-M01-001: exact event capability cannot be replayed for a second target
   const secondFamily = make('FamilyProfile', f.family.payload); await store.commit({ records: [secondFamily] });
   const second = make('ReviewEvent', { ...event.payload, targetRevisionRefs: [secondFamily.revisionId] }, { actorId: 'owner-local' });
   await assert.rejects(store.commit({ records: [second], reviewCommands: new Map([[second.revisionId, token]]) }), e => e.code === 'REVIEW_AUTHORITY');
-  const bound = authority.issue({ record: second, userInitiated: true }); second.payload.targetRevisionRefs = [f.family.revisionId];
+  const bound = authority.issue({ store, record: second, userInitiated: true }); second.payload.targetRevisionRefs = [f.family.revisionId];
   await assert.rejects(store.commit({ records: [second], reviewCommands: new Map([[second.revisionId, bound]]) }), e => e.code === 'REVIEW_AUTHORITY');
   assert.equal(store.isApplicableAcceptance(event), true);
   assert.throws(() => authority.issue({ actorId: 'owner-local', scope: 'FAMILY', decision: 'ACCEPTED', userInitiated: true }), e => e.code === 'REVIEW_TARGET_REQUIRED');
@@ -35,14 +35,14 @@ test('AUD-M01-001: forged event object cannot borrow a trusted revision or chang
 test('AUD-M01-001: lower-authority cross-scope and cross-target revocations cannot invalidate owner family acceptance', async () => {
   const { store, f, authority, event } = await authorityFixture();
   const revoke = make('ReviewEvent', { targetRevisionRefs: [f.f0.revisionId], scope: 'PIXEL_EVIDENCE', decision: 'REVOKED', actor: { actorId: 'pixel-reviewer', claimedRole: 'REVIEWER', issuer: 'local-ui' }, evidenceRefs: [], testRefs: [], previousEventRef: event.revisionId }, { actorId: 'pixel-reviewer' });
-  const token = authority.issue({ record: revoke, userInitiated: true });
+  const token = authority.issue({ store, record: revoke, userInitiated: true });
   await assert.rejects(store.commit({ records: [revoke], reviewCommands: new Map([[revoke.revisionId, token]]) }), e => e.code === 'REVIEW_CHAIN_SCOPE');
   assert.equal(store.isApplicableAcceptance(event), true);
 });
 test('T11: even an owner FAMILY capability cannot accept a PersonIdentity as family evidence', async () => {
   const { store, f, authority } = await authorityFixture(), before = store.generation;
   const wrong = make('ReviewEvent', { targetRevisionRefs: [f.person.revisionId], scope: 'FAMILY', decision: 'ACCEPTED', actor: { actorId: 'owner-local', claimedRole: 'OWNER', issuer: 'local-ui' }, evidenceRefs: [], testRefs: [], previousEventRef: null }, { actorId: 'owner-local' });
-  const token = authority.issue({ record: wrong, userInitiated: true });
+  const token = authority.issue({ store, record: wrong, userInitiated: true });
   await assert.rejects(store.commit({ records: [wrong], reviewCommands: new Map([[wrong.revisionId, token]]) }), e => e.code === 'REFERENCE_TYPE'); assert.equal(store.generation, before); assert.equal(store.isApplicableAcceptance(wrong), false);
 });
 test('AUD-M01-003: invalid claimed legacy snapshot fails before any revision/head/generation becomes visible', async () => {

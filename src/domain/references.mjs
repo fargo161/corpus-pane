@@ -47,6 +47,29 @@ export const REFERENCE_DESCRIPTORS = {
   ArtworkRigMapping: { 'sourceRegionMappings.*.destinationPartId': I, 'sourceRegionMappings.*.registrationRef': R('Registration'), 'derivedPartRefs.*': R('CanonicalSurface', 'LayeredAssetPackage'), 'transformRefs.*': R('Registration'), 'anatomicalBindingRefs.*': anatomy, 'artworkPivotRefs.*': R('ArtworkPivot'), 'attachmentSocketRefs.*': R('AttachmentSocket'), coverageLossReportRef: tests },
   MotionTrack: { sourcePersonRef: R('PersonIdentity'), calibrationRef: R('CalibrationRecord'), 'samples.*.frameObservationRef': R('FrameObservation'), 'samples.*.joints.*.rawEvidenceRefs.*': R('RawProviderObservation', 'FrameObservation', 'EvidenceMapping'), 'samples.*.facing.evidenceRefs.*': R() }
 };
+export const ENVELOPE_ID_DESCRIPTORS = Object.freeze({ entityId: I, revisionId: I, 'parentRevisionIds.*': R(...ALL), 'derivedFrom.*': R(...ALL), 'entityRevisionBindings.*.entityId': { kind: 'BINDING_ENTITY' }, 'entityRevisionBindings.*.revisionId': { kind: 'BINDING_REVISION' } });
+export function buildEntityResolver(records, heads) {
+  const revisions = new Map(records.map(r => [r.revisionId, r])), entities = new Map(), bound = new Map();
+  for (const record of records) { if (!entities.has(record.entityId)) entities.set(record.entityId, []); entities.get(record.entityId).push(record); }
+  for (const [entityId, revisionId] of heads) if (!revisions.has(revisionId) || revisions.get(revisionId).entityId !== entityId) throw new ContractError('HEAD_ENTITY', 'Selected entity head does not match the exact revision');
+  for (const record of records) {
+    const bindings = new Map();
+    for (const binding of record.entityRevisionBindings ?? []) {
+      const target = revisions.get(binding.revisionId);
+      if (!target || target.entityId !== binding.entityId || bindings.has(binding.entityId)) throw new ContractError('ENTITY_BINDING', 'Entity revision binding is missing, mismatched or ambiguous');
+      bindings.set(binding.entityId, binding.revisionId);
+    }
+    bound.set(record.revisionId, bindings);
+  }
+  return (id, types, at, contextRecord) => {
+    const candidates = entities.get(id) ?? [];
+    const exact = bound.get(contextRecord?.revisionId)?.get(id) ?? heads.get(id);
+    const target = exact ? revisions.get(exact) : candidates.length === 1 ? candidates[0] : null;
+    if (!exact && candidates.length > 1) throw new ContractError('AMBIGUOUS_ENTITY_HEAD', `Entity ${at} has multiple revisions; select an explicit head or exact contextual binding`);
+    if (!target || target.entityId !== id || !types.includes(target.type)) throw new ContractError('REFERENCE_TYPE', `Missing/wrong typed entity ${at}: ${id}`);
+    return target;
+  };
+}
 function valuesAt(value, path) {
   if (!path.length) return value === null || value === undefined ? [] : [value];
   const [key, ...rest] = path;
@@ -54,16 +77,16 @@ function valuesAt(value, path) {
   return valuesAt(value?.[key], rest);
 }
 export function validateReferences(records, heads) {
-  const revisions = new Map(records.map(r => [r.revisionId, r])), entities = new Map();
-  for (const r of records) if (!entities.has(r.entityId) || heads.get(r.entityId) === r.revisionId) entities.set(r.entityId, r);
-  const resolve = (id, descriptor, at) => {
-    const target = descriptor.kind === 'ENTITY' ? entities.get(id) : revisions.get(id);
+  const revisions = new Map(records.map(r => [r.revisionId, r])), entity = buildEntityResolver(records, heads);
+  const resolve = (id, descriptor, at, context) => {
+    if (descriptor.kind === 'ENTITY') return entity(id, descriptor.types, at, context);
+    const target = revisions.get(id);
     if (!target || !descriptor.types.includes(target.type)) throw new ContractError('REFERENCE_TYPE', `Missing/wrong typed ${descriptor.kind} reference ${at}: ${id}`);
   };
   for (const record of records) {
     for (const id of record.parentRevisionIds) resolve(id, R(record.type), `${record.type}.parentRevisionIds`);
     for (const id of record.derivedFrom) resolve(id, R(), `${record.type}.derivedFrom`);
-    for (const [path, descriptor] of Object.entries(REFERENCE_DESCRIPTORS[record.type])) if (descriptor.kind !== 'INTERNAL') for (const id of valuesAt(record.payload, path.split('.'))) resolve(id, descriptor, `${record.type}.${path}`);
+    for (const [path, descriptor] of Object.entries(REFERENCE_DESCRIPTORS[record.type])) if (descriptor.kind !== 'INTERNAL') for (const id of valuesAt(record.payload, path.split('.'))) resolve(id, descriptor, `${record.type}.${path}`, record);
   }
 }
 // Exhaustive classification of every schema UUID position. A future UUID-valued
@@ -85,6 +108,12 @@ export function assertReferenceDescriptorCoverage() {
     const declared = new Set(Object.keys(REFERENCE_DESCRIPTORS[type]));
     for (const path of normalized) if (!declared.has(path)) throw new ContractError('REFERENCE_DESCRIPTOR_MISSING', `${type}.${path}`);
     for (const path of declared) if (!normalized.has(path)) throw new ContractError('REFERENCE_DESCRIPTOR_STALE', `${type}.${path}`);
+    const envelope = new Set();
+    const before = new Set(found);
+    for (const key of ['entityId', 'revisionId', 'parentRevisionIds', 'derivedFrom', 'entityRevisionBindings']) walk(root.properties[key], `@envelope.${key}`);
+    for (const path of found) if (!before.has(path) && path.startsWith('@envelope.')) envelope.add(path.slice('@envelope.'.length));
+    for (const path of envelope) if (!Object.hasOwn(ENVELOPE_ID_DESCRIPTORS, path)) throw new ContractError('REFERENCE_DESCRIPTOR_MISSING', `${type} envelope ${path}`);
+    for (const path of Object.keys(ENVELOPE_ID_DESCRIPTORS)) if (!envelope.has(path)) throw new ContractError('REFERENCE_DESCRIPTOR_STALE', `${type} envelope ${path}`);
   }
   return true;
 }

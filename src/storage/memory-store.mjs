@@ -55,7 +55,7 @@ export class AuthoringStore {
       if (prior && !equalBytes(prior.bytes, bytes)) throw new ContractError('REVISION_COLLISION', 'Revision ID reused for different exact bytes');
       stagedRecords.set(record.revisionId, { bytes, sha256: await sha256(bytes) });
       if (mode === 'IMPORT') historical.add(record.revisionId);
-      if (!prior && mode === 'LOCAL' && record.type === 'ReviewEvent' && record.payload.decision !== 'PROPOSED') stagedTrust.set(record.revisionId, this.authority.verify(reviewCommands.get(record.revisionId), record));
+      if (!prior && mode === 'LOCAL' && record.type === 'ReviewEvent' && record.payload.decision !== 'PROPOSED') stagedTrust.set(record.revisionId, this.authority.verify(reviewCommands.get(record.revisionId), record, this));
     }
     if (stagedRecords.size > LIMITS.recordCount) throw new ContractError('RECORD_LIMIT', 'Record count exceeded');
     const all = [...stagedRecords.values()].map(e => parseJSON(e.bytes));
@@ -95,7 +95,7 @@ export class AuthoringStore {
     const occupiedPaths = new Set(['manifest.json', ...[...stagedRecords.keys()].map(id => `records/${id}.json`), ...[...stagedBlobs.keys()].map(hash => `blobs/sha256/${hash}`), ...(stagedLegacy ? ['legacy/original.corpus.zip'] : [])]);
     for (const files of [stagedOpaque, stagedNotices]) for (const path of files.keys()) {
       const key = path.normalize('NFC').toLowerCase();
-      if (occupiedPaths.has(key) || /^legacy\/|^blobs\//i.test(path)) throw new ContractError('RESERVED_FILE_PATH', 'Opaque/notice path collides with reserved authoring content');
+      if ([...occupiedPaths].some(existing => existing === key || existing.startsWith(`${key}/`) || key.startsWith(`${existing}/`)) || /^(?:legacy|blobs)(?:\/|$)/i.test(path) || /^(?:records|notices)$/i.test(path)) throw new ContractError('RESERVED_FILE_PATH', 'Opaque/notice path collides with a reserved file or file/directory prefix');
       occupiedPaths.add(key);
     }
     if (failBeforeCommit) throw new ContractError('INJECTED_CRASH', 'Simulated crash before atomic head advance');

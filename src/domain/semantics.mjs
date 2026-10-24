@@ -1,7 +1,7 @@
 import { ContractError, LIMITS } from './safety.mjs';
 import { validateRecord } from './schema-validator.mjs';
 import { assertInterval, compareFrames } from './frames.mjs';
-import { validateReferences, assertReferenceDescriptorCoverage } from './references.mjs';
+import { validateReferences, assertReferenceDescriptorCoverage, buildEntityResolver } from './references.mjs';
 
 export function assertAcyclic(edges, label = 'graph') {
   const adjacency = new Map();
@@ -39,9 +39,9 @@ export function assertPlane(plane, { width, height, channels, dtype, rawOnly = f
 export function validateGraph(records, { heads = new Map(), isApplicableAcceptance = () => false, isApplicableReview = () => false, historicalRevisionIds = new Set() } = {}) {
   const byRevision = new Map(records.map(record => [record.revisionId, record]));
   if (byRevision.size !== records.length) throw new ContractError('REVISION_COLLISION', 'Duplicate revision ID');
-  const byEntity = new Map();
-  for (const record of records) { validateRecord(record); if (!byEntity.has(record.entityId)) byEntity.set(record.entityId, []); byEntity.get(record.entityId).push(record); }
+  for (const record of records) validateRecord(record);
   assertReferenceDescriptorCoverage(); validateReferences(records, heads);
+  const resolveEntity = buildEntityResolver(records, heads); let currentRecord = null;
   const need = (id, types, at) => {
     const record = byRevision.get(id);
     if (!record || (types && !types.includes(record.type))) throw new ContractError('REFERENCE_TYPE', `Missing or wrong reference ${at}: ${id}; expected ${types?.join('|') ?? 'record'}`);
@@ -49,10 +49,7 @@ export function validateGraph(records, { heads = new Map(), isApplicableAcceptan
   };
   const many = (ids, types, at) => ids.forEach(id => need(id, types, at));
   const entity = (id, types, at) => {
-    const candidates = byEntity.get(id) ?? [];
-    const selected = heads.has(id) ? byRevision.get(heads.get(id)) : candidates.at(-1);
-    if (!selected || !types.includes(selected.type)) throw new ContractError('ENTITY_REFERENCE', `Missing or wrong entity ${at}: ${id}`);
-    return selected;
+    return resolveEntity(id, types, at, currentRecord);
   };
   const frameCheck = f => {
     const source = records.find(record => record.type === 'SourceAsset' && record.payload.containerSha256 === f.sourceSha256);
@@ -62,6 +59,7 @@ export function validateGraph(records, { heads = new Map(), isApplicableAcceptan
   };
   const graphEdges = [], componentEdges = [], socketEdges = [];
   for (const r of records) {
+    currentRecord = r;
     const p = r.payload;
     for (const parent of r.parentRevisionIds) { const prior = need(parent, [r.type], 'parentRevisionIds'); if (prior.entityId !== r.entityId) throw new ContractError('REVISION_ENTITY', 'A revision cannot change logical entity'); graphEdges.push([r.revisionId, parent]); }
     for (const source of r.derivedFrom) { need(source, null, 'derivedFrom'); graphEdges.push([r.revisionId, source]); }
@@ -106,6 +104,7 @@ export function validateGraph(records, { heads = new Map(), isApplicableAcceptan
             if (c.state === 'INFERRED') {
               if (!c.processRef) throw new ContractError('INFERRED_PROCESS', 'Inferred material needs a named process');
               need(c.processRef, ['DerivationProcess'], 'inference process');
+              graphEdges.push([r.revisionId, c.processRef]);
               if (c.observationRef) need(c.observationRef, ['FrameObservation'], 'inference input');
             } else {
               if (!c.visible || !c.observationRef || !c.visibilityEvidenceRef || !c.sourceXY || c.processRef) throw new ContractError('VISIBLE_SOURCE', 'Observed/recovered texture requires explicit visible source, XY and evidence');
@@ -123,11 +122,12 @@ export function validateGraph(records, { heads = new Map(), isApplicableAcceptan
         }
         break;
       }
-      case 'DerivationProcess': many(p.inputRefs, null, 'process inputs'); many(p.outputRefs, null, 'process outputs'); if (p.kind === 'MANUAL_INVENTION' && p.modelIdentity !== null) throw new ContractError('MANUAL_MODEL', 'Manual invention has no model'); break;
+      case 'DerivationProcess': many(p.inputRefs, null, 'process inputs'); many(p.outputRefs, null, 'process outputs'); for (const input of p.inputRefs) graphEdges.push([r.revisionId, input]); for (const output of p.outputRefs) graphEdges.push([output, r.revisionId]); if (p.kind === 'MANUAL_INVENTION' && p.modelIdentity !== null) throw new ContractError('MANUAL_MODEL', 'Manual invention has no model'); break;
       case 'CanonicalSurface': {
         entity(p.componentId, ['ComponentIdentity'], 'surface component'); need(p.viewProfileRef, ['CalibrationRecord', 'FamilyProfile', 'BodyPackage'], 'view profile'); const calibration = need(p.calibrationRef, ['CalibrationRecord'], 'surface calibration');
         if (!calibration.payload.viewProfiles.some(v => v.id === p.coordinateDomain.viewId)) throw new ContractError('SURFACE_VIEW', 'Canonical surface view is not declared in its calibration');
         const spatial = need(p.spatialEvidenceRef, ['SpatialEvidence'], 'surface evidence'); const width = p.coordinateDomain.width, height = p.coordinateDomain.height;
+        graphEdges.push([r.revisionId, spatial.revisionId], [spatial.revisionId, spatial.payload.contributorTableRef]);
         if (spatial.payload.width !== width || spatial.payload.height !== height) throw new ContractError('SURFACE_DOMAIN', 'Texture/evidence dimensions differ');
         const contributors = need(spatial.payload.contributorTableRef, ['ContributorTable'], 'surface contributor table');
         if (!sameDomain(p.coordinateDomain, contributors.payload.coordinateDomain)) throw new ContractError('SURFACE_DOMAIN', 'Canonical surface and contributor table coordinate domain/view differ');

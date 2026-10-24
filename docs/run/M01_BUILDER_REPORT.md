@@ -44,4 +44,17 @@ New Builder regressions reproduce replay/forgery/revocation and wrong-family-tar
 | AUD-M01-007 | Every raw coordinate/weight/deformation plane reads finite samples before adoption | audit-regressions: NaN/+Infinity/−Infinity warp rejection before generation advance |
 | M01-T01 / M01-T06 | Structural FrameRef key; safe directory/data-descriptor ZIP import | persistence-remediation: decoder delimiter/null/dimension distinctions and actual archived baseline roundtrip |
 
-The capability API intentionally changed: issue the complete already-created ReviewEvent using `authority.issue({record:event,userInitiated:true})`, then commit with that token. A changed API without a legitimate positive first acceptance would not establish remediation; the positive/retry/revoke tests therefore remain required. No independent finding is marked closed by Builder.
+The capability API intentionally changed. The **current final-cycle API** is `authority.issue({record:event,store:receivingStore,userInitiated:true})`; the target must already exist in that actual store. Then commit with that token. A changed API without a legitimate first acceptance does not establish remediation; positive/idempotent/retry/revoke paths remain required. No independent finding is marked closed by Builder.
+
+## Final owner-checkpoint repair cycle
+
+Independent review of1e2e34a confirmed three additional logical defects: shared-authority token reuse across stores with different target bytes under copied UUIDs; process/current-output causal cycles; and ownership resolution depending on serialization order when multiple entity revisions lacked a selected head. A file/ancestor namespace collision was also found. This candidate fixes only those M01 defects before the requested stop.
+
+| Final targeted case | Change | Builder evidence in final-checkpoint-remediation.test.mjs |
+|---|---|---|
+| F01 cross-store target substitution / future-target intent | Concrete receiver identity, immutable existing target bytes and selected target-head context bound at issue; actual receiver checked at commit | Different-byte copied UUID store rejects; unresolved target rejects at issue; legitimate same-store acceptance/idempotence and historical import boundary pass; prior failed-commit retry/revoke tests retained |
+| F02 causal self-derivation | Process→input/output→process causal edges plus surface/spatial/inferred lineage, independently of serialization order | Current output used as input rejects atomically; legitimate output backlink and prior-surface revision derivation roundtrip |
+| F03 ambiguous logical-entity revision | No order fallback; explicit head or typed optional record-level entityRevisionBindings | Both unselected record orderings reject identically; explicit head resolves; historical old/new ownership with exact bindings survives both orderings and byte-exact reopen; missing/mismatched/duplicate bindings reject |
+| F04 file/directory ancestor collision | Complete proposed namespace checks exact, case/NFC and prefix collisions before advance | Reserved-file children and directory shadows reject at generation0; valid nested opaque bytes remain portable |
+
+The35 record types and universal skeleton1.2.0 remain intact; regenerated schemas add the optional explicit association field without modifying original legacy bytes. The remaining work in this cycle is exact-head independent verification and a qualified Steward handoff/push. M02/M02P/later work remains stopped and preserved under the owner's checkpoint; no later milestone completion is claimed.
