@@ -1,0 +1,36 @@
+{
+  "suite": "Corpus Pane 02.2.4 surgical repair and combined ranking",
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "neighboring-view strong shape may outrank poor exact-view shape",
+      "pass": true
+    },
+    {
+      "name": "clearly opposite reviewed view retains strong penalty",
+      "pass": true
+    },
+    {
+      "name": "real MC03 frame 24 uses corrected shoulder-elbow-wrist-fist order",
+      "pass": true
+    },
+    {
+      "name": "real MC01 frame 30 records hidden elbow and visible distal forearm/hand",
+      "pass": true
+    },
+    {
+      "name": "real corrected comparison reclassifies MC01 as visibility/occlusion difference",
+      "pass": true
+    },
+    {
+      "name": "real 13-clip search lets a better neighboring-view horizontal arm outrank worse exact-view arms",
+      "pass": true
+    },
+    {
+      "name": "application version advances without changing shared skeleton",
+      "pass": true
+    }
+  ]
+}

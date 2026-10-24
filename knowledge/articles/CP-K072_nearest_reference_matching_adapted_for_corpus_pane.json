@@ -1,0 +1,60 @@
+{
+  "id": "CP-K072",
+  "title": "Nearest-reference matching adapted for Corpus Pane",
+  "version": 1,
+  "knowledgeType": "external_reference",
+  "authority": "external_reference",
+  "plainLanguage": "Google’s pose-classification example shows a simple idea: normalize poses, compare landmark relationships, and find the closest stored examples. Corpus Pane can use that idea while keeping view and anatomical side explicit.",
+  "purpose": "Strengthen reference retrieval without requiring a large new machine-learning system.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K072.R1",
+      "strength": "SHOULD",
+      "statement": "Normalize scale and translation before comparing pose features.",
+      "sourceRefs": [
+        "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+      ]
+    },
+    {
+      "id": "K072.R2",
+      "strength": "SHOULD",
+      "statement": "Compare multiple geometric relationships rather than raw pixel positions alone."
+    },
+    {
+      "id": "K072.R3",
+      "strength": "MUST",
+      "statement": "Do not silently mirror candidates; Corpus Pane’s anatomical side convention must be preserved."
+    },
+    {
+      "id": "K072.R4",
+      "strength": "MUST",
+      "statement": "Camera/view differences remain part of the comparison context because 2D joint angles change with perspective.",
+      "sourceRefs": [
+        "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "motivates",
+      "article": "CP-K050"
+    },
+    {
+      "type": "motivates",
+      "article": "CP-K051"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.GOOGLE_POSE_CLASSIFY",
+    "SRC.EXT.GOOGLE_SAMPLE_LICENSE"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Corpus Pane 0.2.2.4 adapts nearest-reference matching with requested-region coverage, strict checked reference evidence, rough-query-only expansion, a combined pose-shape plus graded-view score, and explicit visibility-disagreement penalties. Neighboring views may outrank a worse same-view shape; clearly opposing views receive a strong penalty. Explicit hidden states remain useful knowledge but are not equivalent to visible geometry.",
+    "futureWork": "Use the arm–shoulder–torso pilot to evaluate ranking quality against real poser-oriented decisions before adding more scoring dimensions."
+  }
+}

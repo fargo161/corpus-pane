@@ -1,0 +1,89 @@
+{
+  "application": "Corpus Pane",
+  "version": "0.2.2.5",
+  "checkpoint": "02.2.5",
+  "date": "2026-10-24",
+  "status": "Acceptance reliability and landmark-semantics repair candidate; owner release acceptance pending",
+  "purpose": "Synchronize source pixels with overlays during frame changes, formalize arm landmark placement semantics, and repair the two acceptance-list arm references before owner shortlisting and the poser pilot.",
+  "entryPoint": "index.html",
+  "optionalLocalLauncher": "START_WINDOWS.bat",
+  "workspaceFormat": {
+    "id": "sprite-foundry/corpus-verifier",
+    "version": 1
+  },
+  "trackFormat": {
+    "id": "adventure-studio/unified-prep",
+    "version": 4
+  },
+  "sharedSkeleton": {
+    "id": "adventure-studio/universal-skeleton",
+    "version": "1.2.0"
+  },
+  "knowledgePackage": {
+    "id": "sprite-foundry/corpus-pane-knowledge",
+    "version": "1.0.5",
+    "articles": 38,
+    "runtime": "app/knowledge.js",
+    "canonical": "knowledge/MASTER_INDEX.json"
+  },
+  "scope": [
+    "frame-image/overlay synchronization during async seeks",
+    "explicit shoulder/elbow/wrist/hand landmark semantics",
+    "MC10 p02 frame 37 overhead left-arm correction",
+    "MC10 p03 frame 16 wrist/hand out-of-frame correction",
+    "backward-compatible workspace/package formats and universal skeleton 1.2.0"
+  ],
+  "includedContinuationBackup": "starter/Arm_Shoulder_Torso_Acceptance_Reliability_02_2_5.corpus.zip",
+  "testSummary": {
+    "directData": {
+      "passed": 103,
+      "total": 103
+    },
+    "acceptanceReliabilityBrowser": {
+      "passed": 6,
+      "total": 6
+    },
+    "repairBrowser": "PASS",
+    "searchApprovalBrowser": "PASS",
+    "searchSemanticsBrowser": "PASS",
+    "viewPriorityCompositeBrowser": "PASS",
+    "gradedViewVisibilityBrowser": {
+      "passed": 8,
+      "total": 8
+    },
+    "starterBackupCompatibility": "PASS",
+    "knowledgePackage": {
+      "passed": 330,
+      "total": 330
+    },
+    "knowledgeSchemas": {
+      "passed": 54,
+      "total": 54
+    },
+    "releaseAudit": {
+      "passed": 65,
+      "total": 65
+    }
+  },
+  "unverified": [
+    "ordinary local file browser launch on the user machine",
+    "successful native IndexedDB persistence/reload on the user machine",
+    "anatomical correctness of unreviewed automatic drafts",
+    "poser-piece compatibility; this pass repairs evidence and retrieval but does not perform the arm\u2013shoulder\u2013torso assembly pilot"
+  ],
+  "unchanged": [
+    "universal skeleton topology 1.2.0",
+    "offline detector engine modules",
+    "canonical still gray mannequin",
+    "Doll Rigger",
+    "original source mannequin media"
+  ],
+  "docs": [
+    "START_HERE.md",
+    "docs/ACCEPTANCE_RELIABILITY_02_2_5_REPORT.md",
+    "docs/LANDMARK_SEMANTICS.json",
+    "docs/TEST_REPORT.md",
+    "docs/DATA_CONTRACT.md",
+    "knowledge/MASTER_INDEX.json"
+  ]
+}

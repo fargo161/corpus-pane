@@ -1,0 +1,54 @@
+{
+  "id": "CP-K030",
+  "title": "Anatomical joint, artwork pivot, and attachment socket are not the same thing",
+  "version": 1,
+  "knowledgeType": "assembly",
+  "authority": "synthesized_rule",
+  "plainLanguage": "The shoulder is an anatomical point. The painted arm may extend past that point so it can tuck under the torso. The place the program uses to attach the arm can reference the shoulder without being the edge of the image.",
+  "purpose": "Prevent clean-looking artwork mechanics from corrupting the anatomical skeleton, and vice versa.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K030.R1",
+      "strength": "MUST",
+      "statement": "Store anatomical joint identity separately from artwork bounds, pivot location, and host socket."
+    },
+    {
+      "id": "K030.R2",
+      "strength": "MUST",
+      "statement": "Do not redefine a joint because a painted seam needs overlap."
+    },
+    {
+      "id": "K030.R3",
+      "strength": "SHOULD",
+      "statement": "Allow artwork-specific overlap/inset data around the anatomical connection."
+    },
+    {
+      "id": "K030.R4",
+      "strength": "MUST",
+      "statement": "A correct anatomical match does not automatically prove a clean visual seam."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K031"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K032"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DOLL_RIG_0_4_13",
+    "SRC.EXT.SPINE_JSON"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "The doll rig already separates pivots/anchors/layers from Corpus Pane skeleton points, but there is no formal cross-system compatibility test.",
+    "futureWork": "Adopt proposed bridge and poser-part schemas."
+  }
+}

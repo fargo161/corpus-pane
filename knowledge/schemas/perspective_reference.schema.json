@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-perspective-reference-v1.json",
+  "title": "Perspective Reference Record",
+  "type": "object",
+  "required": [
+    "id",
+    "source",
+    "bodyFamily",
+    "region",
+    "view",
+    "points",
+    "visibility",
+    "evidence",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "bodyFamily": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "view": {
+      "$ref": "view_state.schema.json"
+    },
+    "points": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "x",
+          "y"
+        ],
+        "properties": {
+          "x": {
+            "type": "number"
+          },
+          "y": {
+            "type": "number"
+          },
+          "measurement": {
+            "enum": [
+              "detected",
+              "derived",
+              "manual",
+              "generated_reference"
+            ]
+          }
+        }
+      }
+    },
+    "visibility": {
+      "type": "object",
+      "additionalProperties": {
+        "enum": [
+          "visible",
+          "occluded",
+          "out_of_frame",
+          "unknown"
+        ]
+      }
+    },
+    "projection": {
+      "type": "object",
+      "properties": {
+        "state": {
+          "enum": [
+            "planar_like",
+            "foreshortened",
+            "edge_on",
+            "cross_body",
+            "folded_overlap",
+            "silhouette_ambiguous",
+            "hidden",
+            "unknown"
+          ]
+        },
+        "depthDirectionHint": {
+          "enum": [
+            "toward_camera",
+            "away_from_camera",
+            "same_plane_or_unknown",
+            "unknown"
+          ]
+        },
+        "sourceOfDepthHint": {
+          "type": "string"
+        }
+      }
+    },
+    "scale": {
+      "type": "object"
+    },
+    "evidence": {
+      "type": "object"
+    },
+    "relationships": {
+      "type": "array"
+    },
+    "provenance": {
+      "type": "object"
+    }
+  }
+}

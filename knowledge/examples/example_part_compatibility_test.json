@@ -1,0 +1,30 @@
+{
+  "format": "sprite-foundry/corpus-pane-example",
+  "version": 1,
+  "exampleType": "part_compatibility_test",
+  "record": {
+    "id": "example.compat.arm.001",
+    "partId": "example-left-upper-arm-3q",
+    "hostId": "example-torso-3q",
+    "view": {
+      "body": "FRONT_THREE_QUARTER"
+    },
+    "testPose": {
+      "configurationId": "example-config"
+    },
+    "outcome": "compatible_small_adjustment",
+    "checks": {
+      "jointAlignment": "pass",
+      "seamCoverage": "pass after small overlap adjustment",
+      "layerOrder": "pass",
+      "silhouette": "pass",
+      "articulationRange": "micro-adjustment only",
+      "identityPreservation": "pass"
+    },
+    "review": {
+      "reviewer": "example",
+      "status": "illustrative"
+    },
+    "notes": "Synthetic example; not an approved project asset."
+  }
+}

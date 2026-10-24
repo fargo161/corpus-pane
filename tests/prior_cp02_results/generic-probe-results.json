@@ -1,0 +1,47 @@
+{
+  "pass": true,
+  "source": "Video Project 78 (1)(1).mp4",
+  "frameIndex": 0,
+  "samplingFps": 2,
+  "samplingCount": 30,
+  "tested": "single-frame full body+face proposal after full-source motion analysis",
+  "result": {
+    "proposalCount": 1,
+    "nose": {
+      "x": 567.8496,
+      "y": 151.177,
+      "confidence": 0.8093,
+      "visibility": "visible",
+      "source": "face-supported-nose",
+      "passId": "pass-mvk0bww5-haheuhcpzof",
+      "support": {
+        "onSilhouette": true
+      }
+    },
+    "face": {
+      "visible": 5,
+      "uncertain": 0,
+      "hidden": 0,
+      "missing": 0,
+      "offSilhouette": 0,
+      "largeJumps": 0,
+      "state": "observed"
+    },
+    "body": {
+      "visible": 13,
+      "uncertain": 0,
+      "hidden": 0,
+      "missing": 0,
+      "offSilhouette": 0,
+      "largeJumps": 0,
+      "state": "observed"
+    }
+  },
+  "seconds": 13.187272548675537,
+  "pageErrors": [],
+  "requests": [
+    "blob:null/08519714-d5ce-4910-abc7-89db96740e03",
+    "blob:null/08519714-d5ce-4910-abc7-89db96740e03",
+    "blob:null/08519714-d5ce-4910-abc7-89db96740e03"
+  ]
+}

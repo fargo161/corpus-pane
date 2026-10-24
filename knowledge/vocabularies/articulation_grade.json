@@ -1,0 +1,25 @@
+{
+  "id": "VOC.ARTICULATION_GRADE",
+  "values": [
+    {
+      "id": "held_pose",
+      "meaning": "No meaningful rotation intended; configuration is a static donor."
+    },
+    {
+      "id": "micro_adjustment",
+      "meaning": "Small local adjustment around the authored pose."
+    },
+    {
+      "id": "bounded_joint",
+      "meaning": "A tested limited rotation/translation range at one joint."
+    },
+    {
+      "id": "bounded_chain",
+      "meaning": "A tested limited range across multiple connected joints."
+    },
+    {
+      "id": "continuous_rig",
+      "meaning": "A broader rigged deformation system; not the default Corpus Pane goal."
+    }
+  ]
+}

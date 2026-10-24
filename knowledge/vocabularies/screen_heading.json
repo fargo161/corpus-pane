@@ -1,0 +1,11 @@
+{
+  "id": "VOC.SCREEN_HEADING",
+  "values": [
+    "toward",
+    "image_left",
+    "image_right",
+    "away",
+    "mixed",
+    "unknown"
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "suite": "Chromium isolated-document integration",
+  "environment": {
+    "browser": "144.0.7559.96",
+    "navigation": "Managed browser blocks file and HTTP navigation; local code injected into about:blank. Policy was not changed.",
+    "persistence": "Workflow used explicit memory storage harness. Native IndexedDB success/reload and ordinary file/HTTP launch are NOT verified. Native storage-denied fallback was tested."
+  },
+  "total": 48,
+  "passed": 48,
+  "results": [
+    {
+      "name": "Starter button loads two real clips with prepared automatic drafts",
+      "pass": true
+    },
+    {
+      "name": "Inherited 35-clip corpus index is retained, not all media rebundled",
+      "pass": true
+    },
+    {
+      "name": "Shipped starter contains no human verification",
+      "pass": true
+    },
+    {
+      "name": "Background removal produces transparency in both panes",
+      "pass": true,
+      "detail": [
+        0.8680930930930931,
+        0.8683495995995996
+      ]
+    },
+    {
+      "name": "Raw source pixels remain opaque and separate from clean output",
+      "pass": true
+    },
+    {
+      "name": "Dragging a joint creates an exact manual pin",
+      "pass": true
+    },
+    {
+      "name": "Drag accounts for viewport scale",
+      "pass": true
+    },
+    {
+      "name": "Undo removes the new pin",
+      "pass": true
+    },
+    {
+      "name": "Redo restores the pin",
+      "pass": true
+    },
+    {
+      "name": "Hidden group applies only to specified frames",
+      "pass": true
+    },
+    {
+      "name": "Face focus enlarges viewport and displays navigation minimap",
+      "pass": true
+    },
+    {
+      "name": "Minimap moves the zoomed viewport",
+      "pass": true
+    },
+    {
+      "name": "Face oval dimensions and angle are independently editable",
+      "pass": true
+    },
+    {
+      "name": "Local face tracking reference is distinct from corpus verification",
+      "pass": true
+    },
+    {
+      "name": "Cleanup brush creates a non-destructive scoped stroke",
+      "pass": true
+    },
+    {
+      "name": "Brush undo restores the prior cleanup",
+      "pass": true
+    },
+    {
+      "name": "UI verification marks and protects only current selected group",
+      "pass": true
+    },
+    {
+      "name": "Reviewed configuration is saved with provenance",
+      "pass": true
+    },
+    {
+      "name": "Split body/head perspective survives in the active entry",
+      "pass": true
+    },
+    {
+      "name": "Regional foreshortening is stored separately from joint coordinates",
+      "pass": true
+    },
+    {
+      "name": "Reusable reference includes knowledge context and pose signature",
+      "pass": true
+    },
+    {
+      "name": "Knowledge tab opens with contextual articles",
+      "pass": true
+    },
+    {
+      "name": "Built-in knowledge package is visible and searchable",
+      "pass": true
+    },
+    {
+      "name": "Classification records both linked frames without approving other clip",
+      "pass": true
+    },
+    {
+      "name": "Refine creates a pending proposal before application",
+      "pass": true
+    },
+    {
+      "name": "Real scoped refinement retains the manually verified arm exactly",
+      "pass": true
+    },
+    {
+      "name": "Applied proposal remains unverified outside the approved scope",
+      "pass": true
+    },
+    {
+      "name": "Candidate pose search returns navigable matches",
+      "pass": true
+    },
+    {
+      "name": "Third real video imports through UI without replacing previous work",
+      "pass": true
+    },
+    {
+      "name": "Known corpus upload retains its documented timing and identity",
+      "pass": true
+    },
+    {
+      "name": "A non-mannequin character video uses the same generic intake",
+      "pass": true
+    },
+    {
+      "name": "Autosave interface receives full cumulative state",
+      "pass": true
+    },
+    {
+      "name": "Source-inclusive ZIP round trip retains entire corpus exactly",
+      "pass": true
+    },
+    {
+      "name": "ZIP contains all four original source payloads",
+      "pass": true
+    },
+    {
+      "name": "Export separates source bytes, per-clip records, tracks and decisions",
+      "pass": true
+    },
+    {
+      "name": "Corrupted record fails portable checksum verification",
+      "pass": true
+    },
+    {
+      "name": "Required JSON file without manifest checksum is rejected",
+      "pass": true
+    },
+    {
+      "name": "Fresh application imports backup and restores four clips",
+      "pass": true
+    },
+    {
+      "name": "Fresh import retains corrections, references, decisions and source availability",
+      "pass": true
+    },
+    {
+      "name": "Reimporting identical video reattaches without duplicating clip or discarding pins",
+      "pass": true
+    },
+    {
+      "name": "Original corpus ZIP attaches 35 clips cumulatively plus generic character",
+      "pass": true
+    },
+    {
+      "name": "Full-corpus attachment retains earlier human test correction",
+      "pass": true
+    },
+    {
+      "name": "1366px desktop layout stays within viewport",
+      "pass": true
+    },
+    {
+      "name": "Both sidebars toggle away for larger viewports",
+      "pass": true
+    },
+    {
+      "name": "When native browser storage is unavailable, source remains usable in-session",
+      "pass": true
+    },
+    {
+      "name": "Native storage failure displays explicit backup warning",
+      "pass": true
+    },
+    {
+      "name": "No external HTTP requests occur in isolated local-code tests",
+      "pass": true,
+      "detail": [
+        "blob:null/ee798071-d68c-4f51-a2b7-c8ba13f57cec",
+        "blob:null/841e4e0e-29b4-49d2-8f37-88926e7b0785",
+        "blob:null/c1364bee-5f25-417f-b499-e2f5515e6044",
+        "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+        "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+        "blob:null/9ac95741-dfcd-4b98-80e8-fa1641279271",
+        "blob:null/0798daf2-2710-4cdc-92f5-941c087b9561",
+        "blob:null/1f6ef94b-8ee8-4782-80fa-8d9380d58c63"
+      ]
+    },
+    {
+      "name": "No uncaught page exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "pageErrors": [],
+  "consoleWarnings": [
+    {
+      "type": "warning",
+      "text": "Initialization of backend webgl failed"
+    },
+    {
+      "type": "warning",
+      "text": "Error: WebGL is not supported on this device\n    at new QA (<anonymous>:1244:661)\n    at Object.factory (<anonymous>:1244:17625)\n    at Mx.initializeBackend (<anonymous>:14:8798)\n    at Mx.setBackend (<anonymous>:14:8267)\n    at Object.dO (<anonymous"
+    }
+  ],
+  "requests": [
+    "blob:null/ee798071-d68c-4f51-a2b7-c8ba13f57cec",
+    "blob:null/841e4e0e-29b4-49d2-8f37-88926e7b0785",
+    "blob:null/c1364bee-5f25-417f-b499-e2f5515e6044",
+    "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+    "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+    "blob:null/9ac95741-dfcd-4b98-80e8-fa1641279271",
+    "blob:null/0798daf2-2710-4cdc-92f5-941c087b9561",
+    "blob:null/1f6ef94b-8ee8-4782-80fa-8d9380d58c63",
+    "blob:null/ddf70da2-e809-44af-a254-70f88de7905a",
+    "blob:null/0cc263a5-8e7a-4fd9-ab48-3811492cfad2",
+    "blob:null/a051573b-ca75-44ab-ba01-fd3e0e70529b"
+  ]
+}

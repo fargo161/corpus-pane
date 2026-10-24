@@ -1,0 +1,173 @@
+{
+  "suite": "pure data contracts",
+  "synthetic": true,
+  "total": 41,
+  "passed": 41,
+  "failed": 0,
+  "results": [
+    {
+      "name": "One shared skeleton; group boundary IDs are reused",
+      "pass": true
+    },
+    {
+      "name": "Fresh clip is unverified and original metadata retained",
+      "pass": true
+    },
+    {
+      "name": "Invalid group is not silently expanded to whole body",
+      "pass": true
+    },
+    {
+      "name": "Automatic uncertainty is not interpreted as hidden",
+      "pass": true
+    },
+    {
+      "name": "Explicit hidden state can exist without a fabricated location",
+      "pass": true
+    },
+    {
+      "name": "Manual pin survives an attempted tracking replacement",
+      "pass": true
+    },
+    {
+      "name": "Scoped pass leaves unrelated automatic points unchanged",
+      "pass": true
+    },
+    {
+      "name": "Hidden manual interval is protected from detector proposals",
+      "pass": true
+    },
+    {
+      "name": "One pin does not blindly shift neighboring detections",
+      "pass": true
+    },
+    {
+      "name": "Two pins interpolate between endpoints, not error offsets",
+      "pass": true
+    },
+    {
+      "name": "An occluded interval blocks two-pin interpolation",
+      "pass": true
+    },
+    {
+      "name": "Repeated image phases do not produce artificial intermediate motion",
+      "pass": true
+    },
+    {
+      "name": "Verification requires explicit visible or hidden evidence",
+      "pass": true
+    },
+    {
+      "name": "Verification is limited to the selected group and frames",
+      "pass": true
+    },
+    {
+      "name": "Verified coordinates resist refinement",
+      "pass": true
+    },
+    {
+      "name": "Manual change invalidates the affected verification",
+      "pass": true
+    },
+    {
+      "name": "Editing another group does not invalidate independent arm verification",
+      "pass": true
+    },
+    {
+      "name": "Reopening verification preserves existing manual corrections",
+      "pass": true
+    },
+    {
+      "name": "A reusable reference requires checked view and size guides",
+      "pass": true
+    },
+    {
+      "name": "Changing reviewed view invalidates a saved configuration",
+      "pass": true
+    },
+    {
+      "name": "Changing fixed calibration invalidates a saved configuration",
+      "pass": true
+    },
+    {
+      "name": "Body-family change invalidates cross-character reference eligibility",
+      "pass": true
+    },
+    {
+      "name": "Classification does not verify either source",
+      "pass": true
+    },
+    {
+      "name": "Hidden coordinates are excluded from numeric comparisons",
+      "pass": true
+    },
+    {
+      "name": "Uniformly scaled translated source compares identically",
+      "pass": true
+    },
+    {
+      "name": "Confirmed view mismatch is surfaced, not automatically rejected anatomy",
+      "pass": true
+    },
+    {
+      "name": "Saved verified reference retrieval excludes stale configurations",
+      "pass": true
+    },
+    {
+      "name": "Original source metadata and unknown extension fields survive JSON",
+      "pass": true
+    },
+    {
+      "name": "Exact duplicate corpus import is deduplicated",
+      "pass": true
+    },
+    {
+      "name": "Reordered JSON object keys do not create false imported revisions",
+      "pass": true
+    },
+    {
+      "name": "Verified single-point configuration remains a valid portable record",
+      "pass": true
+    },
+    {
+      "name": "Conflicting imported revision is forked, never overwrites corrections",
+      "pass": true
+    },
+    {
+      "name": "Conflict import remaps configuration references to the imported revision",
+      "pass": true
+    },
+    {
+      "name": "Malformed and unsupported corpus versions are rejected",
+      "pass": true
+    },
+    {
+      "name": "Changed skeleton topology cannot masquerade as same version",
+      "pass": true
+    },
+    {
+      "name": "Unsafe imported object keys are rejected",
+      "pass": true
+    },
+    {
+      "name": "Out-of-range and reversed scope is rejected",
+      "pass": true
+    },
+    {
+      "name": "Face oval has independent width height and rotation",
+      "pass": true
+    },
+    {
+      "name": "Starting facial layout is not claimed as a visible detection",
+      "pass": true
+    },
+    {
+      "name": "Changing oval invalidates face verification but not a verified arm",
+      "pass": true
+    },
+    {
+      "name": "Review flags are suggestions and do not approve coordinates",
+      "pass": true
+    }
+  ]
+}

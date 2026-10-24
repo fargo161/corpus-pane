@@ -1,0 +1,50 @@
+{
+  "id": "CP-K053",
+  "title": "The Corpus Pane learning loop",
+  "version": 1,
+  "knowledgeType": "matching",
+  "authority": "project_decision",
+  "plainLanguage": "The program gets stronger because every reviewed video leaves behind reusable examples, corrections, visibility decisions, and explanations of differences. The next video can search that history before starting from scratch.",
+  "purpose": "Define what “learning” means for this project without claiming automatic neural retraining.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K053.R1",
+      "strength": "MUST",
+      "statement": "Learning means accumulating structured, queryable, reviewed evidence unless a later pass explicitly adds model retraining."
+    },
+    {
+      "id": "K053.R2",
+      "strength": "SHOULD",
+      "statement": "For each new source: ingest → clean → draft track → retrieve references → correct → classify differences → verify bounded scopes → save reusable configurations."
+    },
+    {
+      "id": "K053.R3",
+      "strength": "SHOULD",
+      "statement": "Measure improvement by reduced correction effort, better reference retrieval, fewer repeated mistakes, and clearer gap detection—not by library size alone."
+    },
+    {
+      "id": "K053.R4",
+      "strength": "MUST",
+      "statement": "Unverified guesses must never be promoted into the trusted reference pool merely because they are old."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K081"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.LIBRARY_PASS_01"
+  ],
+  "implementation": {
+    "status": "mixed",
+    "currentSupport": "The evidence accumulation and reference search portions already exist.",
+    "futureWork": "Add explicit per-video “benefit from prior knowledge” metrics and gap summaries."
+  }
+}

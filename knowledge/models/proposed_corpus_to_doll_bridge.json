@@ -1,0 +1,169 @@
+{
+  "format": "sprite-foundry/corpus-to-doll-bridge-profile",
+  "version": 1,
+  "status": "proposed_mapping_for_future_testing",
+  "createdAt": "2026-10-22T22:41:00Z",
+  "sourceSkeleton": "models/universal_skeleton_v1_2_0.json",
+  "targetRig": "models/doll_rig_bridge_snapshot.json",
+  "principle": "Skeleton joints name anatomy; rig anchors/pivots name artwork mechanics. Mapping them does not make them identical objects.",
+  "mappings": [
+    {
+      "joint": "shoulder.left",
+      "targetLayer": "SHARED_L_UPPER_ARM",
+      "targetAnchor": "shoulder",
+      "hostSocket": "ACTIVE_TORSO",
+      "hostAnchor": "l_shoulder",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "elbow.left",
+      "targetLayers": [
+        "SHARED_L_UPPER_ARM",
+        "SHARED_L_FOREARM"
+      ],
+      "targetAnchor": "elbow",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "wrist.left",
+      "targetLayers": [
+        "SHARED_L_FOREARM",
+        "SHARED_L_HAND"
+      ],
+      "targetAnchor": "wrist",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "shoulder.right",
+      "targetLayer": "SHARED_R_UPPER_ARM",
+      "targetAnchor": "shoulder",
+      "hostSocket": "ACTIVE_TORSO",
+      "hostAnchor": "r_shoulder",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "elbow.right",
+      "targetLayers": [
+        "SHARED_R_UPPER_ARM",
+        "SHARED_R_FOREARM"
+      ],
+      "targetAnchor": "elbow",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "wrist.right",
+      "targetLayers": [
+        "SHARED_R_FOREARM",
+        "SHARED_R_HAND"
+      ],
+      "targetAnchor": "wrist",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "hip.left",
+      "targetLayer": "SHARED_L_THIGH",
+      "targetAnchor": "hip",
+      "hostSocket": "ACTIVE_PELVIS",
+      "status": "candidate_needs_explicit_pelvis_anchor_test"
+    },
+    {
+      "joint": "knee.left",
+      "targetLayers": [
+        "SHARED_L_THIGH",
+        "SHARED_L_LOWER_LEG"
+      ],
+      "targetAnchor": "knee",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "ankle.left",
+      "targetLayers": [
+        "SHARED_L_LOWER_LEG",
+        "SHARED_L_FOOT"
+      ],
+      "targetAnchor": "ankle",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "toe.left",
+      "targetLayer": "SHARED_L_FOOT",
+      "targetAnchor": "toe",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "hip.right",
+      "targetLayer": "SHARED_R_THIGH",
+      "targetAnchor": "hip",
+      "hostSocket": "ACTIVE_PELVIS",
+      "status": "candidate_needs_explicit_pelvis_anchor_test"
+    },
+    {
+      "joint": "knee.right",
+      "targetLayers": [
+        "SHARED_R_THIGH",
+        "SHARED_R_LOWER_LEG"
+      ],
+      "targetAnchor": "knee",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "ankle.right",
+      "targetLayers": [
+        "SHARED_R_LOWER_LEG",
+        "SHARED_R_FOOT"
+      ],
+      "targetAnchor": "ankle",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "toe.right",
+      "targetLayer": "SHARED_R_FOOT",
+      "targetAnchor": "toe",
+      "status": "direct_candidate"
+    },
+    {
+      "joint": "neck",
+      "targetLayers": [
+        "THREEQ_TORSO",
+        "THREEQ_NECK"
+      ],
+      "targetAnchors": [
+        "neck_socket",
+        "neck_base",
+        "neck_top"
+      ],
+      "status": "multi_anchor_mapping_needs_test"
+    },
+    {
+      "joint": "head",
+      "targetLayer": "THREEQ_HEAD",
+      "targetAnchors": [
+        "head_base",
+        "look"
+      ],
+      "status": "control_mapping_needs_test"
+    },
+    {
+      "joint": "pelvis",
+      "targetLayers": [
+        "THREEQ_HIP_PELVIS",
+        "THREEQ_TORSO"
+      ],
+      "targetAnchors": [
+        "attach",
+        "pelvis_socket"
+      ],
+      "status": "structural_mapping_needs_test"
+    },
+    {
+      "joint": "chest",
+      "targetLayer": "THREEQ_TORSO",
+      "status": "no_direct_anchor_currently; derived/control-center candidate"
+    }
+  ],
+  "mustNotAssume": [
+    "A matching joint coordinate proves artwork seam compatibility.",
+    "A mirrored layer is a validated opposite-side view.",
+    "A Corpus Pane 2D pose proves a hidden 3D joint position."
+  ]
+}

@@ -1,0 +1,285 @@
+{
+  "suite": "Corpus Pane 02.2.2 release audit",
+  "total": 41,
+  "passed": 41,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "release_version",
+      "pass": true,
+      "detail": "0.2.2.2"
+    },
+    {
+      "name": "release_checkpoint",
+      "pass": true,
+      "detail": "02.2.2"
+    },
+    {
+      "name": "knowledge_version",
+      "pass": true,
+      "detail": "1.0.3"
+    },
+    {
+      "name": "skeleton_version",
+      "pass": true
+    },
+    {
+      "name": "engine_unchanged_from_02_2_1",
+      "pass": true
+    },
+    {
+      "name": "starter_unchanged_from_02_2_1",
+      "pass": true
+    },
+    {
+      "name": "universal_skeleton_unchanged",
+      "pass": true
+    },
+    {
+      "name": "required:index.html",
+      "pass": true
+    },
+    {
+      "name": "required:app/corpus.js",
+      "pass": true
+    },
+    {
+      "name": "required:app/workspace.js",
+      "pass": true
+    },
+    {
+      "name": "required:app/knowledge.js",
+      "pass": true
+    },
+    {
+      "name": "required:START_HERE.md",
+      "pass": true
+    },
+    {
+      "name": "required:docs/VIEW_PRIORITY_COMPOSITE_REVIEW_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required:docs/TEST_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required:tests/view_priority_composite_review.test.cjs",
+      "pass": true
+    },
+    {
+      "name": "required:tests/view_priority_composite_browser.py",
+      "pass": true
+    },
+    {
+      "name": "syntax:app/corpus.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/workspace.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/knowledge.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/storage.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_json_parse",
+      "pass": true,
+      "detail": {
+        "count": 116,
+        "bad": []
+      }
+    },
+    {
+      "name": "results:tests/core-results.json",
+      "pass": true,
+      "detail": {
+        "total": 41,
+        "passed": 41,
+        "failed": 0
+      }
+    },
+    {
+      "name": "results:tests/knowledge-core-results.json",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 8,
+        "failed": null
+      }
+    },
+    {
+      "name": "results:tests/repair-results.json",
+      "pass": true,
+      "detail": {
+        "total": 14,
+        "passed": 14,
+        "failed": 0
+      }
+    },
+    {
+      "name": "results:tests/library-search-approval-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0
+      }
+    },
+    {
+      "name": "results:tests/search-semantics-cleanup-results.json",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0
+      }
+    },
+    {
+      "name": "results:tests/view-priority-composite-review-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7,
+        "failed": 0
+      }
+    },
+    {
+      "name": "browser:tests/repair-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.1 browser repair checks",
+        "pass": true,
+        "referenceStayedCurrent": true,
+        "authorityVisible": true,
+        "specificKnowledge": true,
+        "canonicalClassification": true,
+        "headMigrationVisible": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/search-approval-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2 browser search/approval checks",
+        "pass": true,
+        "ownerAcceptanceVisible": true,
+        "comparisonProvenanceVisible": true,
+        "roughQueryVisible": true,
+        "knowledgeStatusCurrent": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/search-semantics-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.2 browser search semantics/approval cleanup",
+        "pass": true,
+        "regionCoverageVisible": true,
+        "roughSearchTextConsistent": true,
+        "singlePointAdvice": true,
+        "exactSupportAcceptance": true,
+        "dedupeAfterRecheck": true,
+        "knowledgeCurrent": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/seed-backup-compat-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Starter Pass 01 compatibility and migration",
+        "pass": true,
+        "backup": "starter/Corpus_Library_Starter_Pass_01.corpus.zip",
+        "firstImport": {
+          "clips": 5,
+          "refs": 18,
+          "comparisons": 6,
+          "reviews": 20,
+          "allKnowledge": true,
+          "ext": {
+            "id": "sprite-foundry/corpus-pane-knowledge",
+            "version": "1.0.3",
+            "role": "built-in reference; never verification"
+          },
+          "kneeHead": {
+            "family": "FRONT_THREE_QUARTER",
+            "heading": "image_left",
+            "status": "reviewed",
+            "notes": "Migrated from Starter Pass head-direction observation: front_three_quarter \u00b7 left \u00b7 assistant visually reviewed, approximate"
+          },
+          "balanceHead": {
+            "family": "FRONT",
+            "heading": "toward",
+            "status": "reviewed",
+            "notes": "Migrated from Starter Pass head-direction observation: front \u00b7 near_center \u00b7 assistant visually reviewed, approximate"
+          },
+          "assistantRefs": 18,
+          "importedRevisionLabels": 0
+        },
+        "duplicateReimport": "covered by tests/repair.test.cjs using the exact unpacked backup records",
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/view-priority-composite-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.2 browser view priority/composite authority",
+        "pass": true,
+        "compatibleViewFirst": true,
+        "hiddenCountsAsKnownCoverage": true,
+        "compositeSupportVisible": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "knowledge_validation",
+      "pass": true
+    },
+    {
+      "name": "knowledge_schema_validation",
+      "pass": true
+    },
+    {
+      "name": "code_hidden_known",
+      "pass": true
+    },
+    {
+      "name": "code_view_priority",
+      "pass": true
+    },
+    {
+      "name": "code_composite_authority",
+      "pass": true
+    },
+    {
+      "name": "ui_composite_support",
+      "pass": true
+    },
+    {
+      "name": "index_current",
+      "pass": true
+    },
+    {
+      "name": "no_python_cache_files",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "checksum_manifest_format",
+      "pass": true
+    }
+  ]
+}

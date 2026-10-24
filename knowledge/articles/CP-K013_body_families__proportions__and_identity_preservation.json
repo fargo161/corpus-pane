@@ -1,0 +1,52 @@
+{
+  "id": "CP-K013",
+  "title": "Body families, proportions, and identity preservation",
+  "version": 1,
+  "knowledgeType": "core",
+  "authority": "synthesized_rule",
+  "plainLanguage": "The same skeleton can describe characters with different proportions. A character should not be stretched to fit another character just because their joint names match.",
+  "purpose": "Support endless compatible characters while preserving each character family’s recognizable proportions.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K013.R1",
+      "strength": "MUST",
+      "statement": "Store body-family identity separately from skeleton version."
+    },
+    {
+      "id": "K013.R2",
+      "strength": "MUST",
+      "statement": "Cross-character matching may compare normalized pose shape, but applying motion or parts must preserve target proportions unless an explicit authored transform says otherwise.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K013.R3",
+      "strength": "SHOULD",
+      "statement": "A part compatibility claim is valid only for body families or proportion ranges that were actually tested."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K032"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K080"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.EXT.MPFB_POSES"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Corpus Pane records a compatible bodyType/body-family label.",
+    "futureWork": "Define tested body-family ranges for poser parts and retargeting."
+  }
+}

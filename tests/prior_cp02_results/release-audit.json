@@ -1,0 +1,963 @@
+{
+  "suite": "Corpus Pane Checkpoint 02 release audit",
+  "passed": 110,
+  "total": 110,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "unchanged:engine/FACE-API-LICENSE.txt",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/HUMAN-MODELS-LICENSE.txt",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/bodykit.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/fa-models.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/face-api.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/facekit.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/keyer.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/media.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/movenet-model.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/pixels.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/reliability.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/sfcore.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/sha256.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/tracking.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:engine/universal.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:starter/pair.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged:starter/catalog.js",
+      "pass": true
+    },
+    {
+      "name": "knowledge:CHANGELOG.md",
+      "pass": true
+    },
+    {
+      "name": "knowledge:MANIFEST.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:MASTER_INDEX.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:PACKAGE_REPORT.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:README.md",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K000_mission__authority__and_knowledge_boundaries.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K010_one_universal_skeleton__many_projected_appearances.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K011_coordinate_space__scale__and_normalization.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K012_shared_boundary_joints_and_region_hierarchy.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K013_body_families__proportions__and_identity_preservation.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K020_split_body__torso__head__and_regional_viewing_direction.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K021_view_families_are_categories__not_exact_camera_solutions.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K022_foreshortening_and_projected_limb_length.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K023_occlusion__outside_frame__and_unknown_are_different.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K024_depth_hints__overlap_order__and_draw_order.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K025_controlled_perspective_reference_packs.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K030_anatomical_joint__artwork_pivot__and_attachment_socket_are_not_t.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K031_pivots__anchors__sockets__and_hosts.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K032_part_compatibility_is_a_tested_relationship__not_a_label.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K033_articulation_envelopes_around_authored_poses.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K034_seam_coverage__overlap__and_silhouette_quality.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K035_mirroring_and_handedness_must_stay_explicit.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K040_five_slot_face_plus_shared_nose.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K041_face_oval_and_face_perspective.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K050_pose_signatures_for_comparison__not_replacement.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K051_reference_retrieval_should_narrow_the_search__not_make_the_decis.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K052_comparison_classifications_are_knowledge_about_differences.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K053_the_corpus_pane_learning_loop.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K054_motion_source_ingestion_and_movement_gaps.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K060_four_evidence_layers_stay_independent.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K061_manual_corrections__pins__and_automatic_refinement.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K062_verification__staleness__and_owner_acceptance.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K063_schema_evolution_without_breaking_the_corpus.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K064_provenance__licensing__and_safe_external_knowledge.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K070_makehuman___mpfb_as_a_controlled_perspective_reference_generator.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K071_spine_patterns_for_modular_2d_assembly.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K072_nearest_reference_matching_adapted_for_corpus_pane.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K073_optional_depth_like_evidence_stays_non_authoritative.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K074_movenet_is_detector_evidence__not_the_skeleton_definition.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K075_cmu_motion_capture_as_a_later_movement_gap_source.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K080_bridge_from_corpus_pane_knowledge_to_the_eventual_2d_poser.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K081_acceptance_tests_for_a_knowledge_driven_corpus_pane.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:articles/CP-K082_recommended_first_knowledge_pilot__arm_shoulder_torso.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:examples/example_foreshortened_arm_reference.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:examples/example_head_torso_split_view.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:examples/example_part_compatibility_test.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:models/corpus_pane_existing_data_contract.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:models/current_seed_library_snapshot.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:models/doll_rig_bridge_snapshot.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:models/proposed_corpus_to_doll_bridge.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:models/universal_skeleton_v1_2_0.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/knowledge_article.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/master_index.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/part_compatibility_test.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/perspective_reference.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/pose_signature.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/poser_part.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/source_record.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:schemas/view_state.schema.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:sources/SOURCE_REGISTER.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:tests/schema_validation_results.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:tests/validate_package.py",
+      "pass": true
+    },
+    {
+      "name": "knowledge:tests/validation_results.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/VOCABULARY_INDEX.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/articulation_grade.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/authority.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/comparison_classification.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/compatibility_outcome.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/depth_direction_hint.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/evidence_state.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/projection_state.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/relation_types.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/screen_heading.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/view_family.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/visibility.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge:vocabularies/workflow_stage.json",
+      "pass": true
+    },
+    {
+      "name": "seed-backup-exact",
+      "pass": true
+    },
+    {
+      "name": "html:app/knowledge.js",
+      "pass": true
+    },
+    {
+      "name": "html:id=\"bodyViewFamily\"",
+      "pass": true
+    },
+    {
+      "name": "html:id=\"headViewFamily\"",
+      "pass": true
+    },
+    {
+      "name": "html:id=\"projectionState\"",
+      "pass": true
+    },
+    {
+      "name": "html:id=\"tab-knowledge\"",
+      "pass": true
+    },
+    {
+      "name": "script-order",
+      "pass": true
+    },
+    {
+      "name": "knowledge-article-count",
+      "pass": true,
+      "detail": 38
+    },
+    {
+      "name": "release-version",
+      "pass": true
+    },
+    {
+      "name": "skeleton-stable",
+      "pass": true
+    },
+    {
+      "name": "workspace-format-stable",
+      "pass": true
+    },
+    {
+      "name": "tests:tests/core-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "pure data contracts",
+        "synthetic": true,
+        "total": 41,
+        "passed": 41,
+        "failed": 0,
+        "results": [
+          {
+            "name": "One shared skeleton; group boundary IDs are reused",
+            "pass": true
+          },
+          {
+            "name": "Fresh clip is unverified and original metadata retained",
+            "pass": true
+          },
+          {
+            "name": "Invalid group is not silently expanded to whole body",
+            "pass": true
+          },
+          {
+            "name": "Automatic uncertainty is not interpreted as hidden",
+            "pass": true
+          },
+          {
+            "name": "Explicit hidden state can exist without a fabricated location",
+            "pass": true
+          },
+          {
+            "name": "Manual pin survives an attempted tracking replacement",
+            "pass": true
+          },
+          {
+            "name": "Scoped pass leaves unrelated automatic points unchanged",
+            "pass": true
+          },
+          {
+            "name": "Hidden manual interval is protected from detector proposals",
+            "pass": true
+          },
+          {
+            "name": "One pin does not blindly shift neighboring detections",
+            "pass": true
+          },
+          {
+            "name": "Two pins interpolate between endpoints, not error offsets",
+            "pass": true
+          },
+          {
+            "name": "An occluded interval blocks two-pin interpolation",
+            "pass": true
+          },
+          {
+            "name": "Repeated image phases do not produce artificial intermediate motion",
+            "pass": true
+          },
+          {
+            "name": "Verification requires explicit visible or hidden evidence",
+            "pass": true
+          },
+          {
+            "name": "Verification is limited to the selected group and frames",
+            "pass": true
+          },
+          {
+            "name": "Verified coordinates resist refinement",
+            "pass": true
+          },
+          {
+            "name": "Manual change invalidates the affected verification",
+            "pass": true
+          },
+          {
+            "name": "Editing another group does not invalidate independent arm verification",
+            "pass": true
+          },
+          {
+            "name": "Reopening verification preserves existing manual corrections",
+            "pass": true
+          },
+          {
+            "name": "A reusable reference requires checked view and size guides",
+            "pass": true
+          },
+          {
+            "name": "Changing reviewed view invalidates a saved configuration",
+            "pass": true
+          },
+          {
+            "name": "Changing fixed calibration invalidates a saved configuration",
+            "pass": true
+          },
+          {
+            "name": "Body-family change invalidates cross-character reference eligibility",
+            "pass": true
+          },
+          {
+            "name": "Classification does not verify either source",
+            "pass": true
+          },
+          {
+            "name": "Hidden coordinates are excluded from numeric comparisons",
+            "pass": true
+          },
+          {
+            "name": "Uniformly scaled translated source compares identically",
+            "pass": true
+          },
+          {
+            "name": "Confirmed view mismatch is surfaced, not automatically rejected anatomy",
+            "pass": true
+          },
+          {
+            "name": "Saved verified reference retrieval excludes stale configurations",
+            "pass": true
+          },
+          {
+            "name": "Original source metadata and unknown extension fields survive JSON",
+            "pass": true
+          },
+          {
+            "name": "Exact duplicate corpus import is deduplicated",
+            "pass": true
+          },
+          {
+            "name": "Reordered JSON object keys do not create false imported revisions",
+            "pass": true
+          },
+          {
+            "name": "Verified single-point configuration remains a valid portable record",
+            "pass": true
+          },
+          {
+            "name": "Conflicting imported revision is forked, never overwrites corrections",
+            "pass": true
+          },
+          {
+            "name": "Conflict import remaps configuration references to the imported revision",
+            "pass": true
+          },
+          {
+            "name": "Malformed and unsupported corpus versions are rejected",
+            "pass": true
+          },
+          {
+            "name": "Changed skeleton topology cannot masquerade as same version",
+            "pass": true
+          },
+          {
+            "name": "Unsafe imported object keys are rejected",
+            "pass": true
+          },
+          {
+            "name": "Out-of-range and reversed scope is rejected",
+            "pass": true
+          },
+          {
+            "name": "Face oval has independent width height and rotation",
+            "pass": true
+          },
+          {
+            "name": "Starting facial layout is not claimed as a visible detection",
+            "pass": true
+          },
+          {
+            "name": "Changing oval invalidates face verification but not a verified arm",
+            "pass": true
+          },
+          {
+            "name": "Review flags are suggestions and do not approve coordinates",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "tests:tests/knowledge-core-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane knowledge core",
+        "passed": 8,
+        "total": 8
+      }
+    },
+    {
+      "name": "tests:tests/browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Chromium isolated-document integration",
+        "environment": {
+          "browser": "144.0.7559.96",
+          "navigation": "Managed browser blocks file and HTTP navigation; local code injected into about:blank. Policy was not changed.",
+          "persistence": "Workflow used explicit memory storage harness. Native IndexedDB success/reload and ordinary file/HTTP launch are NOT verified. Native storage-denied fallback was tested."
+        },
+        "total": 48,
+        "passed": 48,
+        "results": [
+          {
+            "name": "Starter button loads two real clips with prepared automatic drafts",
+            "pass": true
+          },
+          {
+            "name": "Inherited 35-clip corpus index is retained, not all media rebundled",
+            "pass": true
+          },
+          {
+            "name": "Shipped starter contains no human verification",
+            "pass": true
+          },
+          {
+            "name": "Background removal produces transparency in both panes",
+            "pass": true,
+            "detail": [
+              0.8680930930930931,
+              0.8683495995995996
+            ]
+          },
+          {
+            "name": "Raw source pixels remain opaque and separate from clean output",
+            "pass": true
+          },
+          {
+            "name": "Dragging a joint creates an exact manual pin",
+            "pass": true
+          },
+          {
+            "name": "Drag accounts for viewport scale",
+            "pass": true
+          },
+          {
+            "name": "Undo removes the new pin",
+            "pass": true
+          },
+          {
+            "name": "Redo restores the pin",
+            "pass": true
+          },
+          {
+            "name": "Hidden group applies only to specified frames",
+            "pass": true
+          },
+          {
+            "name": "Face focus enlarges viewport and displays navigation minimap",
+            "pass": true
+          },
+          {
+            "name": "Minimap moves the zoomed viewport",
+            "pass": true
+          },
+          {
+            "name": "Face oval dimensions and angle are independently editable",
+            "pass": true
+          },
+          {
+            "name": "Local face tracking reference is distinct from corpus verification",
+            "pass": true
+          },
+          {
+            "name": "Cleanup brush creates a non-destructive scoped stroke",
+            "pass": true
+          },
+          {
+            "name": "Brush undo restores the prior cleanup",
+            "pass": true
+          },
+          {
+            "name": "UI verification marks and protects only current selected group",
+            "pass": true
+          },
+          {
+            "name": "Reviewed configuration is saved with provenance",
+            "pass": true
+          },
+          {
+            "name": "Split body/head perspective survives in the active entry",
+            "pass": true
+          },
+          {
+            "name": "Regional foreshortening is stored separately from joint coordinates",
+            "pass": true
+          },
+          {
+            "name": "Reusable reference includes knowledge context and pose signature",
+            "pass": true
+          },
+          {
+            "name": "Knowledge tab opens with contextual articles",
+            "pass": true
+          },
+          {
+            "name": "Built-in knowledge package is visible and searchable",
+            "pass": true
+          },
+          {
+            "name": "Classification records both linked frames without approving other clip",
+            "pass": true
+          },
+          {
+            "name": "Refine creates a pending proposal before application",
+            "pass": true
+          },
+          {
+            "name": "Real scoped refinement retains the manually verified arm exactly",
+            "pass": true
+          },
+          {
+            "name": "Applied proposal remains unverified outside the approved scope",
+            "pass": true
+          },
+          {
+            "name": "Candidate pose search returns navigable matches",
+            "pass": true
+          },
+          {
+            "name": "Third real video imports through UI without replacing previous work",
+            "pass": true
+          },
+          {
+            "name": "Known corpus upload retains its documented timing and identity",
+            "pass": true
+          },
+          {
+            "name": "A non-mannequin character video uses the same generic intake",
+            "pass": true
+          },
+          {
+            "name": "Autosave interface receives full cumulative state",
+            "pass": true
+          },
+          {
+            "name": "Source-inclusive ZIP round trip retains entire corpus exactly",
+            "pass": true
+          },
+          {
+            "name": "ZIP contains all four original source payloads",
+            "pass": true
+          },
+          {
+            "name": "Export separates source bytes, per-clip records, tracks and decisions",
+            "pass": true
+          },
+          {
+            "name": "Corrupted record fails portable checksum verification",
+            "pass": true
+          },
+          {
+            "name": "Required JSON file without manifest checksum is rejected",
+            "pass": true
+          },
+          {
+            "name": "Fresh application imports backup and restores four clips",
+            "pass": true
+          },
+          {
+            "name": "Fresh import retains corrections, references, decisions and source availability",
+            "pass": true
+          },
+          {
+            "name": "Reimporting identical video reattaches without duplicating clip or discarding pins",
+            "pass": true
+          },
+          {
+            "name": "Original corpus ZIP attaches 35 clips cumulatively plus generic character",
+            "pass": true
+          },
+          {
+            "name": "Full-corpus attachment retains earlier human test correction",
+            "pass": true
+          },
+          {
+            "name": "1366px desktop layout stays within viewport",
+            "pass": true
+          },
+          {
+            "name": "Both sidebars toggle away for larger viewports",
+            "pass": true
+          },
+          {
+            "name": "When native browser storage is unavailable, source remains usable in-session",
+            "pass": true
+          },
+          {
+            "name": "Native storage failure displays explicit backup warning",
+            "pass": true
+          },
+          {
+            "name": "No external HTTP requests occur in isolated local-code tests",
+            "pass": true,
+            "detail": [
+              "blob:null/ee798071-d68c-4f51-a2b7-c8ba13f57cec",
+              "blob:null/841e4e0e-29b4-49d2-8f37-88926e7b0785",
+              "blob:null/c1364bee-5f25-417f-b499-e2f5515e6044",
+              "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+              "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+              "blob:null/9ac95741-dfcd-4b98-80e8-fa1641279271",
+              "blob:null/0798daf2-2710-4cdc-92f5-941c087b9561",
+              "blob:null/1f6ef94b-8ee8-4782-80fa-8d9380d58c63"
+            ]
+          },
+          {
+            "name": "No uncaught page exceptions",
+            "pass": true,
+            "detail": []
+          }
+        ],
+        "pageErrors": [],
+        "consoleWarnings": [
+          {
+            "type": "warning",
+            "text": "Initialization of backend webgl failed"
+          },
+          {
+            "type": "warning",
+            "text": "Error: WebGL is not supported on this device\n    at new QA (<anonymous>:1244:661)\n    at Object.factory (<anonymous>:1244:17625)\n    at Mx.initializeBackend (<anonymous>:14:8798)\n    at Mx.setBackend (<anonymous>:14:8267)\n    at Object.dO (<anonymous"
+          }
+        ],
+        "requests": [
+          "blob:null/ee798071-d68c-4f51-a2b7-c8ba13f57cec",
+          "blob:null/841e4e0e-29b4-49d2-8f37-88926e7b0785",
+          "blob:null/c1364bee-5f25-417f-b499-e2f5515e6044",
+          "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+          "blob:null/9411b2ee-1556-4bef-90c7-e40f3971c78c",
+          "blob:null/9ac95741-dfcd-4b98-80e8-fa1641279271",
+          "blob:null/0798daf2-2710-4cdc-92f5-941c087b9561",
+          "blob:null/1f6ef94b-8ee8-4782-80fa-8d9380d58c63",
+          "blob:null/ddf70da2-e809-44af-a254-70f88de7905a",
+          "blob:null/0cc263a5-8e7a-4fd9-ab48-3811492cfad2",
+          "blob:null/a051573b-ca75-44ab-ba01-fd3e0e70529b"
+        ]
+      }
+    },
+    {
+      "name": "tests:tests/extra-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "additional browser controls / portable media exports",
+        "environment": "same isolated-document Chromium harness as browser-results.json; no browser-policy changes",
+        "total": 13,
+        "passed": 13,
+        "results": [
+          {
+            "name": "Both playback advances and pauses",
+            "pass": true
+          },
+          {
+            "name": "Linked progress maps to corresponding relative sample index",
+            "pass": true
+          },
+          {
+            "name": "Tracking cancel is acknowledged",
+            "pass": true,
+            "detail": "Tracking canceled. Existing observations and corrections were not replaced."
+          },
+          {
+            "name": "Canceled refinement does not alter existing tracking, pins or pending state",
+            "pass": true
+          },
+          {
+            "name": "Playback pauses at a flagged frame in the selected group",
+            "pass": true
+          },
+          {
+            "name": "Optional large-difference review pauses without declaring incompatibility",
+            "pass": true
+          },
+          {
+            "name": "Actual PNG download retains transparent pixels and source dimensions",
+            "pass": true
+          },
+          {
+            "name": "Cleaned sequence export has original sample identities and editable track",
+            "pass": true
+          },
+          {
+            "name": "Reimporting unchanged portable backup does not fork clips because of JSON key order",
+            "pass": true
+          },
+          {
+            "name": "Records-only import explicitly identifies missing source rather than discarding track",
+            "pass": true
+          },
+          {
+            "name": "Matching original video reconnects a records-only track",
+            "pass": true
+          },
+          {
+            "name": "Machine-readable corpus schema validates real workflow records",
+            "pass": true
+          },
+          {
+            "name": "Extra UI tests produce no uncaught exceptions",
+            "pass": true,
+            "detail": []
+          }
+        ],
+        "pageErrors": [],
+        "consoleWarnings": [
+          {
+            "type": "warning",
+            "text": "Initialization of backend webgl failed"
+          },
+          {
+            "type": "warning",
+            "text": "Error: WebGL is not supported on this device\n    at new QA (<anonymous>:1244:661)\n    at Object.factory (<anonymous>:1244:17625)\n    at Mx.initializeBackend (<anonymous>:14:8798)\n    at Mx.setBackend (<anonymous>:14:8267)\n    at Object.dO (<anonymous"
+          }
+        ]
+      }
+    },
+    {
+      "name": "tests:knowledge-ui",
+      "pass": true,
+      "detail": {
+        "knowledge_tab_open": true,
+        "recommended_articles": 6,
+        "article_count": 38,
+        "version": "1.0.0",
+        "page_errors": []
+      }
+    },
+    {
+      "name": "tests:seed-compat",
+      "pass": true,
+      "detail": {
+        "clips": 5,
+        "refs": 18,
+        "comparisons": 6,
+        "reviews": 20,
+        "allKnowledge": true,
+        "ext": {
+          "id": "sprite-foundry/corpus-pane-knowledge",
+          "version": "1.0.0",
+          "role": "built-in reference; never verification"
+        },
+        "errors": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": "CP-K063",
+  "title": "Schema evolution without breaking the corpus",
+  "version": 1,
+  "knowledgeType": "evidence",
+  "authority": "project_decision",
+  "plainLanguage": "The skeleton will probably gain more perspective and assembly information, but old work should remain understandable and usable.",
+  "purpose": "Let the Corpus Pane grow for years without turning each redesign into a reset.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K063.R1",
+      "strength": "MUST",
+      "statement": "Version schemas and keep explicit adapters/migrations; never silently reinterpret an old field."
+    },
+    {
+      "id": "K063.R2",
+      "strength": "MUST",
+      "statement": "Prefer namespaced extensions for new perspective/assembly metadata before changing core joint identity."
+    },
+    {
+      "id": "K063.R3",
+      "strength": "MUST",
+      "statement": "Unknown fields survive import/export.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K063.R4",
+      "strength": "SHOULD",
+      "statement": "Any skeleton-version change should include a migration report showing which references remain eligible, stale, or incompatible."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.SKELETON_1_2_0"
+  ],
+  "implementation": {
+    "status": "mixed",
+    "currentSupport": "Corpus Pane already retains unknown extension fields and version identities.",
+    "futureWork": "Use this package as the first structured namespace for perspective and poser knowledge."
+  }
+}

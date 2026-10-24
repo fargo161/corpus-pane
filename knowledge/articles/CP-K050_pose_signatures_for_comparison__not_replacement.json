@@ -1,0 +1,47 @@
+{
+  "id": "CP-K050",
+  "title": "Pose signatures for comparison, not replacement",
+  "version": 1,
+  "knowledgeType": "matching",
+  "authority": "synthesized_rule",
+  "plainLanguage": "A pose signature is a compact description of a selected body region after normalizing scale and position. It helps find similar examples; it does not paste one body onto another.",
+  "purpose": "Make the growing library actively useful when a new video is uploaded.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K050.R1",
+      "strength": "SHOULD",
+      "statement": "Build signatures from the selected region’s visible reviewed or draft points, normalized by an explicit scale and root."
+    },
+    {
+      "id": "K050.R2",
+      "strength": "SHOULD",
+      "statement": "Use a combination of normalized vectors, pairwise distances, joint angles, and projected-length ratios rather than one number."
+    },
+    {
+      "id": "K050.R3",
+      "strength": "MUST",
+      "statement": "Visibility mask and view information are part of the signature context; missing/hidden points are not silently filled."
+    },
+    {
+      "id": "K050.R4",
+      "strength": "MUST",
+      "statement": "Mirrored matching is explicit and opt-in, never silent."
+    }
+  ],
+  "recordGuidance": {
+    "schema": "schemas/pose_signature.schema.json"
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.EXT.GOOGLE_POSE_CLASSIFY",
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Corpus Pane 0.2.2.4 builds view-aware regional pose signatures, distinguishes visible geometry from known hidden anatomy, reports requested-region coverage, and records hidden-versus-visible disagreements explicitly. Search ranks by a combined pose-shape and graded-view score instead of making exact view the first gate.",
+    "futureWork": "Continue measuring retrieval quality as the reviewed mannequin library grows; do not turn signature similarity into automatic replacement."
+  }
+}

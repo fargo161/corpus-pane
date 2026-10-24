@@ -1,0 +1,72 @@
+{
+  "id": "CP-K011",
+  "title": "Coordinate space, scale, and normalization",
+  "version": 1,
+  "knowledgeType": "core",
+  "authority": "existing_contract",
+  "plainLanguage": "Every tracked point starts as a location in the source picture. To compare different videos fairly, the Corpus Pane needs a fixed scale reference, but it must not stretch each frame to force a match.",
+  "purpose": "Keep raw evidence intact while enabling meaningful cross-source comparisons.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K011.R1",
+      "strength": "MUST",
+      "statement": "Retain source-pixel coordinates with source top-left origin, X right, Y down.",
+      "sourceRefs": [
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K011.R2",
+      "strength": "MUST",
+      "statement": "Keep original coordinates alongside any normalized comparison features. Normalization is a comparison aid, not a rewrite of the source.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K011.R3",
+      "strength": "SHOULD",
+      "statement": "Use checked standing display height for whole-body cross-source scale when available; use torso or region scale only for bounded matching when whole-body scale is unavailable.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT",
+        "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+      ]
+    },
+    {
+      "id": "K011.R4",
+      "strength": "MUST",
+      "statement": "Never interpret shorter projected limb length as shorter biological anatomy without perspective evidence."
+    }
+  ],
+  "recordGuidance": {
+    "recommendedFields": [
+      "sourcePixels",
+      "normalizedCoordinates",
+      "scaleBasis",
+      "scaleReviewStatus"
+    ]
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K050"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K022"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+  ],
+  "implementation": {
+    "status": "mixed",
+    "currentSupport": "Fixed calibration and normalized configuration search already exist.",
+    "futureWork": "Add explicit normalization method to generated pose signatures."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "CP-K075",
+  "title": "CMU motion capture as a later movement-gap source",
+  "version": 1,
+  "knowledgeType": "external_reference",
+  "authority": "external_reference",
+  "plainLanguage": "CMU’s motion library can supply movement examples we do not yet have, but it should come later—after our perspective and attachment rules are strong enough to translate motion safely.",
+  "purpose": "Keep a high-value future movement source on the roadmap without flooding the current corpus.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K075.R1",
+      "strength": "SHOULD",
+      "statement": "Use only selected movement gaps, not a bulk import."
+    },
+    {
+      "id": "K075.R2",
+      "strength": "MUST",
+      "statement": "Retarget into the universal skeleton/body-family context and review the result."
+    },
+    {
+      "id": "K075.R3",
+      "strength": "MUST",
+      "statement": "Do not resell the CMU data directly or in converted form.",
+      "sourceRefs": [
+        "SRC.EXT.CMU_MOCAP"
+      ]
+    },
+    {
+      "id": "K075.R4",
+      "strength": "MUST",
+      "statement": "Preserve source motion identity and original terms in every derived reference."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "implements",
+      "article": "CP-K054"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.CMU_MOCAP"
+  ],
+  "implementation": {
+    "status": "research_only",
+    "currentSupport": "No CMU data is included.",
+    "futureWork": "Revisit when a concrete missing movement is identified."
+  }
+}

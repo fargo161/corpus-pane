@@ -1,0 +1,55 @@
+{
+  "id": "CP-K023",
+  "title": "Occlusion, outside-frame, and unknown are different",
+  "version": 1,
+  "knowledgeType": "perspective",
+  "authority": "existing_contract",
+  "plainLanguage": "If an elbow is behind the torso, that is different from the elbow being outside the picture or the program simply not knowing where it is.",
+  "purpose": "Avoid invented joints and make hidden-part knowledge useful for later layer ordering and artwork decisions.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K023.R1",
+      "strength": "MUST",
+      "statement": "Use visible, occluded, out_of_frame, and unknown as distinct states.",
+      "sourceRefs": [
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K023.R2",
+      "strength": "MUST",
+      "statement": "A hidden part may be verified as hidden without inventing its coordinate.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K023.R3",
+      "strength": "MUST",
+      "statement": "Low detector confidence or transparency does not prove occlusion.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K023.R4",
+      "strength": "SHOULD",
+      "statement": "Repeated occlusion patterns should become searchable reference evidence for perspective and layer-order decisions."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.LIBRARY_PASS_01"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Visibility states and hidden-without-coordinate verification exist. Corpus Pane 0.2.2.4 counts explicit hidden/out-of-frame anatomy as known regional coverage, excludes it from projected geometry, and treats hidden-versus-visible as a real retrieval mismatch rather than a perfect match.",
+    "futureWork": "Use reviewed occlusion relationships to inform assembly layer-order tests."
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "id": "CP-K021",
+  "title": "View families are categories, not exact camera solutions",
+  "version": 1,
+  "knowledgeType": "perspective",
+  "authority": "synthesized_rule",
+  "plainLanguage": "Front, three-quarter, profile, rear three-quarter, and back are useful buckets. They are not exact camera angles, and two poses in the same bucket can still look very different.",
+  "purpose": "Use simple view families without pretending they solve full 3D geometry.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K021.R1",
+      "strength": "MUST",
+      "statement": "Treat view family as reviewed categorical evidence, not a solved camera rotation."
+    },
+    {
+      "id": "K021.R2",
+      "strength": "SHOULD",
+      "statement": "Store finer notes or reference relationships when two cases share a family but differ substantially."
+    },
+    {
+      "id": "K021.R3",
+      "strength": "MUST",
+      "statement": "Do not infer unseen surfaces solely from a coarse view label."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K025"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Corpus Pane 0.2.2.4 uses an ordered five-step view family for retrieval: FRONT → FRONT_THREE_QUARTER → PROFILE → BACK_THREE_QUARTER → BACK. View distance contributes a graded penalty inside the combined ranking score rather than acting as a hard first sort: a much better neighboring-view shape may outrank a worse same-view shape, while clearly opposing reviewed views are strongly penalized.",
+    "futureWork": "Use split body/head labels and region projection state for finer discrimination."
+  }
+}

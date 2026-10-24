@@ -1,0 +1,342 @@
+{
+  "suite": "Corpus Pane 02.2.3 release audit",
+  "total": 40,
+  "passed": 40,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "release_version",
+      "pass": true,
+      "detail": "0.2.2.3"
+    },
+    {
+      "name": "checkpoint",
+      "pass": true
+    },
+    {
+      "name": "knowledge",
+      "pass": true
+    },
+    {
+      "name": "skeleton",
+      "pass": true
+    },
+    {
+      "name": "engine_unchanged",
+      "pass": true
+    },
+    {
+      "name": "starter_unchanged",
+      "pass": true
+    },
+    {
+      "name": "skeleton_file_unchanged",
+      "pass": true
+    },
+    {
+      "name": "required:index.html",
+      "pass": true
+    },
+    {
+      "name": "required:app/corpus.js",
+      "pass": true
+    },
+    {
+      "name": "required:app/workspace.js",
+      "pass": true
+    },
+    {
+      "name": "required:app/knowledge.js",
+      "pass": true
+    },
+    {
+      "name": "required:docs/ARM_TORSO_CORRECTION_GAP_FILL_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required:docs/TEST_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required:tests/graded_view_visibility.test.cjs",
+      "pass": true
+    },
+    {
+      "name": "required:tests/graded_view_visibility_browser.py",
+      "pass": true
+    },
+    {
+      "name": "syntax:app/corpus.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/workspace.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/knowledge.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/storage.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_json_parse",
+      "pass": true,
+      "detail": {
+        "count": 119,
+        "bad": []
+      }
+    },
+    {
+      "name": "results:tests/core-results.json",
+      "pass": true,
+      "detail": {
+        "total": 41,
+        "passed": 41
+      }
+    },
+    {
+      "name": "results:tests/knowledge-core-results.json",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 8
+      }
+    },
+    {
+      "name": "results:tests/repair-results.json",
+      "pass": true,
+      "detail": {
+        "total": 14,
+        "passed": 14
+      }
+    },
+    {
+      "name": "results:tests/library-search-approval-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7
+      }
+    },
+    {
+      "name": "results:tests/search-semantics-cleanup-results.json",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 8
+      }
+    },
+    {
+      "name": "results:tests/view-priority-composite-review-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7
+      }
+    },
+    {
+      "name": "results:tests/graded-view-visibility-results.json",
+      "pass": true,
+      "detail": {
+        "total": 6,
+        "passed": 6
+      }
+    },
+    {
+      "name": "browser:tests/repair-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.1 browser repair checks",
+        "pass": true,
+        "referenceStayedCurrent": true,
+        "authorityVisible": true,
+        "specificKnowledge": true,
+        "canonicalClassification": true,
+        "headMigrationVisible": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/search-approval-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2 browser search/approval checks",
+        "pass": true,
+        "ownerAcceptanceVisible": true,
+        "comparisonProvenanceVisible": true,
+        "roughQueryVisible": true,
+        "knowledgeStatusCurrent": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/search-semantics-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.2 browser search semantics/approval cleanup",
+        "pass": true,
+        "regionCoverageVisible": true,
+        "roughSearchTextConsistent": true,
+        "singlePointAdvice": true,
+        "exactSupportAcceptance": true,
+        "dedupeAfterRecheck": true,
+        "knowledgeCurrent": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/seed-backup-compat-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Starter Pass 01 compatibility and migration",
+        "pass": true,
+        "backup": "starter/Corpus_Library_Starter_Pass_01.corpus.zip",
+        "firstImport": {
+          "clips": 5,
+          "refs": 18,
+          "comparisons": 6,
+          "reviews": 20,
+          "allKnowledge": true,
+          "ext": {
+            "id": "sprite-foundry/corpus-pane-knowledge",
+            "version": "1.0.4",
+            "role": "built-in reference; never verification"
+          },
+          "kneeHead": {
+            "family": "FRONT_THREE_QUARTER",
+            "heading": "image_left",
+            "status": "reviewed",
+            "notes": "Migrated from Starter Pass head-direction observation: front_three_quarter \u00b7 left \u00b7 assistant visually reviewed, approximate"
+          },
+          "balanceHead": {
+            "family": "FRONT",
+            "heading": "toward",
+            "status": "reviewed",
+            "notes": "Migrated from Starter Pass head-direction observation: front \u00b7 near_center \u00b7 assistant visually reviewed, approximate"
+          },
+          "assistantRefs": 18,
+          "importedRevisionLabels": 0
+        },
+        "duplicateReimport": "covered by tests/repair.test.cjs using the exact unpacked backup records",
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/view-priority-composite-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.2 browser view priority/composite authority",
+        "pass": true,
+        "gradedViewVisible": true,
+        "hiddenCountsAsKnownCoverage": true,
+        "hiddenVisibleMismatchVisible": true,
+        "compositeSupportVisible": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/graded-view-visibility-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.3 graded view / visibility browser",
+        "total": 5,
+        "passed": 5,
+        "failed": 0,
+        "pass": true,
+        "checks": [
+          {
+            "name": "live_hidden_visible_disagreement_text",
+            "pass": true,
+            "detail": "not enough clearly visible tracked points to compare this group. similar-pose search cannot rank this frame yet: need either two shared visible points beyond the normalization anchor or one complete shared bone. reviewed perspective is one neighboring view step away; search ranking treats farther views as progressively less relevant. reviewed heading differs. visibility differs for elbow \u00b7 left, wrist \u00b7 left, hand \u00b7 left; hidden and visible are not treated as the same pose evidence. regional pro"
+          },
+          {
+            "name": "search_results_have_graded_view_distance",
+            "pass": true,
+            "detail": [
+              {
+                "viewDistance": 0,
+                "visibilityMismatchCount": 0,
+                "label": "3Q bent arm beside head \u2014 corrected right arm",
+                "queryEvidence": "strict"
+              },
+              {
+                "viewDistance": 0,
+                "visibilityMismatchCount": 0,
+                "label": "Turning low sway \u2014 right arm",
+                "queryEvidence": "strict"
+              },
+              {
+                "viewDistance": 0,
+                "visibilityMismatchCount": 0,
+                "label": "3Q overhead reach \u2014 right arm",
+                "queryEvidence": "strict"
+              },
+              {
+                "viewDistance": 1,
+                "visibilityMismatchCount": 0,
+                "label": "Balance \u2014 right arm bent upward",
+                "queryEvidence": "strict"
+              },
+              {
+                "viewDistance": 1,
+                "visibilityMismatchCount": 0,
+                "label": "Balance \u2014 right forearm open outward",
+                "queryEvidence": "strict"
+              }
+            ]
+          },
+          {
+            "name": "search_ui_explains_reviewed_view_distance",
+            "pass": true,
+            "detail": "3q bent arm beside head \u2014 corrected right arm\n\nmc05_bendbackwards_p02_center \u00b7 frame 73\nfull region match\n14.5% pose signature \u00b7 assistant-reviewed \u00b7 owner acceptance pending\nsame reviewed view \u00b7 different projection \u00b7 folded / overlapping\n\nshow in other pane\nturning low sway \u2014 right arm\n\nmc11_turn-hop-arms_p03_right \u00b7 frame 30\nfull region match\n22.6% pose signature \u00b7 assistant-reviewed \u00b7 owner acceptance pending\nsame reviewed view \u00b7 different projection \u00b7 planar / ordinary\n\nshow in other pane\n3q overhead reach \u2014 right arm\n\nmc10_arms_p02_center \u00b7 frame 37\nfull region match\n26.4% pose signature \u00b7 assistant-reviewed \u00b7 owner acceptance pending\nsame reviewed view \u00b7 different projection \u00b7 planar / ordinary\n\nshow in other pane\nbalance \u2014 right arm bent upward\n\nmc09_turn-footstand_p01_left \u00b7 frame"
+          },
+          {
+            "name": "new_depth_reference_available",
+            "pass": true
+          },
+          {
+            "name": "no_page_errors",
+            "pass": true,
+            "detail": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "knowledge_validation",
+      "pass": true
+    },
+    {
+      "name": "schema_validation",
+      "pass": true
+    },
+    {
+      "name": "graded_view_code",
+      "pass": true
+    },
+    {
+      "name": "visibility_mismatch_code",
+      "pass": true
+    },
+    {
+      "name": "ui_graded_view",
+      "pass": true
+    },
+    {
+      "name": "index_current",
+      "pass": true
+    },
+    {
+      "name": "no_python_cache",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

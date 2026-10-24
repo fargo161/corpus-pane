@@ -1,0 +1,39 @@
+{
+  "format": "sprite-foundry/corpus-pane-landmark-semantics",
+  "version": 1,
+  "scope": "arm-v1",
+  "status": "implemented for acceptance review; owner acceptance of individual corpus references remains separate",
+  "principle": "Anatomical landmarks describe body joints consistently across images. They are not artwork bounds, painted seams, future pivots, or sockets.",
+  "landmarks": {
+    "shoulder.left": {
+      "sameAs": "shoulder.right",
+      "rule": "Center of anatomical shoulder rotation where upper arm pivots against torso; inside contour, not outer skin edge."
+    },
+    "shoulder.right": {
+      "rule": "Center of anatomical shoulder rotation where upper arm pivots against torso; inside contour, not outer skin edge."
+    },
+    "elbow.left": {
+      "sameAs": "elbow.right",
+      "rule": "Center of elbow hinge between upper arm and forearm; not the most protruding elbow silhouette."
+    },
+    "elbow.right": {
+      "rule": "Center of elbow hinge between upper arm and forearm; not the most protruding elbow silhouette."
+    },
+    "wrist.left": {
+      "sameAs": "wrist.right",
+      "rule": "Center of wrist joint at narrow transition between forearm and hand; not palm, knuckles, fist tip, or fingertips."
+    },
+    "wrist.right": {
+      "rule": "Center of wrist joint at narrow transition between forearm and hand; not palm, knuckles, fist tip, or fingertips."
+    },
+    "hand.left": {
+      "sameAs": "hand.right",
+      "rule": "Center of palm/metacarpal mass immediately distal to wrist; not fingertip or outside tip of fist."
+    },
+    "hand.right": {
+      "rule": "Center of palm/metacarpal mass immediately distal to wrist; not fingertip or outside tip of fist."
+    }
+  },
+  "occlusion": "If a landmark is hidden or outside the image, record visibility state instead of inventing a coordinate.",
+  "poserBoundary": "Artwork pivot and attachment socket are separate future records; they may reference an anatomical landmark without sharing its exact pixel location."
+}

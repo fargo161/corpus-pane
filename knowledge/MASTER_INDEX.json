@@ -1,0 +1,530 @@
+{
+  "format": "sprite-foundry/corpus-pane-knowledge-index",
+  "version": 1,
+  "package": {
+    "id": "sprite-foundry/corpus-pane-knowledge",
+    "name": "Corpus Pane Knowledge Schema",
+    "version": "1.0.5",
+    "createdAt": "2026-10-22T22:41:00Z",
+    "purpose": "A curated, machine-readable knowledge foundation for building perspective-aware, evidence-driven, eventually poseable 2D humanoid characters from the Corpus Pane.",
+    "guidingPrinciple": "One universal anatomical skeleton; many characters, views, drawings, and reviewed configurations. Outside knowledge accelerates the process but never silently replaces project evidence.",
+    "nonGoals": [
+      "Not a new tracker model.",
+      "Not a 3D runtime.",
+      "Not a replacement for the gray mannequin.",
+      "Not a bulk third-party dataset.",
+      "Not automatic proof that two painted pieces are interchangeable."
+    ],
+    "compatibility": {
+      "currentCorpusPane": "Checkpoint 02.2.4 / app 0.2.2.4",
+      "sharedSkeleton": "adventure-studio/universal-skeleton 1.2.0",
+      "canonicalStillRigSource": "doll_rig_v0_4_13(1).json"
+    },
+    "authorityOrder": [
+      "owner_verified_project_decision",
+      "existing_project_contract",
+      "assistant_review_pending_owner_acceptance",
+      "synthesized_rule",
+      "external_reference",
+      "hypothesis"
+    ]
+  },
+  "categories": [
+    {
+      "id": "core",
+      "title": "Core anatomy and identity",
+      "articles": [
+        "CP-K000",
+        "CP-K010",
+        "CP-K011",
+        "CP-K012",
+        "CP-K013"
+      ]
+    },
+    {
+      "id": "perspective",
+      "title": "Perspective and viewpoint",
+      "articles": [
+        "CP-K020",
+        "CP-K021",
+        "CP-K022",
+        "CP-K023",
+        "CP-K024",
+        "CP-K025"
+      ]
+    },
+    {
+      "id": "assembly",
+      "title": "2D parts, attachments, and articulation",
+      "articles": [
+        "CP-K030",
+        "CP-K031",
+        "CP-K032",
+        "CP-K033",
+        "CP-K034",
+        "CP-K035"
+      ]
+    },
+    {
+      "id": "face",
+      "title": "Face system",
+      "articles": [
+        "CP-K040",
+        "CP-K041"
+      ]
+    },
+    {
+      "id": "matching",
+      "title": "Comparison and accumulated knowledge",
+      "articles": [
+        "CP-K050",
+        "CP-K051",
+        "CP-K052",
+        "CP-K053",
+        "CP-K054"
+      ]
+    },
+    {
+      "id": "evidence",
+      "title": "Evidence, verification, and evolution",
+      "articles": [
+        "CP-K060",
+        "CP-K061",
+        "CP-K062",
+        "CP-K063",
+        "CP-K064"
+      ]
+    },
+    {
+      "id": "external_reference",
+      "title": "Selected outside knowledge",
+      "articles": [
+        "CP-K070",
+        "CP-K071",
+        "CP-K072",
+        "CP-K073",
+        "CP-K074",
+        "CP-K075"
+      ]
+    },
+    {
+      "id": "roadmap",
+      "title": "Path to the eventual poser",
+      "articles": [
+        "CP-K080",
+        "CP-K081",
+        "CP-K082"
+      ]
+    }
+  ],
+  "readingPaths": {
+    "novice": [
+      "CP-K000",
+      "CP-K010",
+      "CP-K020",
+      "CP-K022",
+      "CP-K030",
+      "CP-K032",
+      "CP-K053",
+      "CP-K080",
+      "CP-K082"
+    ],
+    "corpus_engine": [
+      "CP-K010",
+      "CP-K011",
+      "CP-K012",
+      "CP-K020",
+      "CP-K022",
+      "CP-K023",
+      "CP-K050",
+      "CP-K051",
+      "CP-K052",
+      "CP-K061",
+      "CP-K062",
+      "CP-K063"
+    ],
+    "poser_builder": [
+      "CP-K030",
+      "CP-K031",
+      "CP-K032",
+      "CP-K033",
+      "CP-K034",
+      "CP-K035",
+      "CP-K080",
+      "CP-K081"
+    ],
+    "external_reference_pilot": [
+      "CP-K025",
+      "CP-K064",
+      "CP-K070",
+      "CP-K072",
+      "CP-K073",
+      "CP-K074",
+      "CP-K082"
+    ]
+  },
+  "articles": [
+    {
+      "id": "CP-K000",
+      "title": "Mission, authority, and knowledge boundaries",
+      "category": "core",
+      "authority": "project_decision",
+      "file": "articles/CP-K000_mission__authority__and_knowledge_boundaries.json",
+      "implementationStatus": "mixed"
+    },
+    {
+      "id": "CP-K010",
+      "title": "One universal skeleton, many projected appearances",
+      "category": "core",
+      "authority": "existing_contract",
+      "file": "articles/CP-K010_one_universal_skeleton__many_projected_appearances.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K011",
+      "title": "Coordinate space, scale, and normalization",
+      "category": "core",
+      "authority": "existing_contract",
+      "file": "articles/CP-K011_coordinate_space__scale__and_normalization.json",
+      "implementationStatus": "mixed"
+    },
+    {
+      "id": "CP-K012",
+      "title": "Shared boundary joints and region hierarchy",
+      "category": "core",
+      "authority": "existing_contract",
+      "file": "articles/CP-K012_shared_boundary_joints_and_region_hierarchy.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K013",
+      "title": "Body families, proportions, and identity preservation",
+      "category": "core",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K013_body_families__proportions__and_identity_preservation.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K020",
+      "title": "Split body, torso, head, and regional viewing direction",
+      "category": "perspective",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K020_split_body__torso__head__and_regional_viewing_direction.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K021",
+      "title": "View families are categories, not exact camera solutions",
+      "category": "perspective",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K021_view_families_are_categories__not_exact_camera_solutions.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K022",
+      "title": "Foreshortening and projected limb length",
+      "category": "perspective",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K022_foreshortening_and_projected_limb_length.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K023",
+      "title": "Occlusion, outside-frame, and unknown are different",
+      "category": "perspective",
+      "authority": "existing_contract",
+      "file": "articles/CP-K023_occlusion__outside_frame__and_unknown_are_different.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K024",
+      "title": "Depth hints, overlap order, and draw order",
+      "category": "perspective",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K024_depth_hints__overlap_order__and_draw_order.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K025",
+      "title": "Controlled perspective-reference packs",
+      "category": "perspective",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K025_controlled_perspective_reference_packs.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K030",
+      "title": "Anatomical joint, artwork pivot, and attachment socket are not the same thing",
+      "category": "assembly",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K030_anatomical_joint__artwork_pivot__and_attachment_socket_are_not_t.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K031",
+      "title": "Pivots, anchors, sockets, and hosts",
+      "category": "assembly",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K031_pivots__anchors__sockets__and_hosts.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K032",
+      "title": "Part compatibility is a tested relationship, not a label",
+      "category": "assembly",
+      "authority": "project_decision",
+      "file": "articles/CP-K032_part_compatibility_is_a_tested_relationship__not_a_label.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K033",
+      "title": "Articulation envelopes around authored poses",
+      "category": "assembly",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K033_articulation_envelopes_around_authored_poses.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K034",
+      "title": "Seam coverage, overlap, and silhouette quality",
+      "category": "assembly",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K034_seam_coverage__overlap__and_silhouette_quality.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K035",
+      "title": "Mirroring and handedness must stay explicit",
+      "category": "assembly",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K035_mirroring_and_handedness_must_stay_explicit.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K040",
+      "title": "Five-slot face plus shared nose",
+      "category": "face",
+      "authority": "existing_contract",
+      "file": "articles/CP-K040_five_slot_face_plus_shared_nose.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K041",
+      "title": "Face oval and face perspective",
+      "category": "face",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K041_face_oval_and_face_perspective.json",
+      "implementationStatus": "mixed"
+    },
+    {
+      "id": "CP-K050",
+      "title": "Pose signatures for comparison, not replacement",
+      "category": "matching",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K050_pose_signatures_for_comparison__not_replacement.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K051",
+      "title": "Reference retrieval should narrow the search, not make the decision",
+      "category": "matching",
+      "authority": "project_decision",
+      "file": "articles/CP-K051_reference_retrieval_should_narrow_the_search__not_make_the_decis.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K052",
+      "title": "Comparison classifications are knowledge about differences",
+      "category": "matching",
+      "authority": "existing_contract",
+      "file": "articles/CP-K052_comparison_classifications_are_knowledge_about_differences.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K053",
+      "title": "The Corpus Pane learning loop",
+      "category": "matching",
+      "authority": "project_decision",
+      "file": "articles/CP-K053_the_corpus_pane_learning_loop.json",
+      "implementationStatus": "mixed"
+    },
+    {
+      "id": "CP-K054",
+      "title": "Motion-source ingestion and movement gaps",
+      "category": "matching",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K054_motion_source_ingestion_and_movement_gaps.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K060",
+      "title": "Four evidence layers stay independent",
+      "category": "evidence",
+      "authority": "existing_contract",
+      "file": "articles/CP-K060_four_evidence_layers_stay_independent.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K061",
+      "title": "Manual corrections, pins, and automatic refinement",
+      "category": "evidence",
+      "authority": "existing_contract",
+      "file": "articles/CP-K061_manual_corrections__pins__and_automatic_refinement.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K062",
+      "title": "Verification, staleness, and owner acceptance",
+      "category": "evidence",
+      "authority": "existing_contract",
+      "file": "articles/CP-K062_verification__staleness__and_owner_acceptance.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K063",
+      "title": "Schema evolution without breaking the corpus",
+      "category": "evidence",
+      "authority": "project_decision",
+      "file": "articles/CP-K063_schema_evolution_without_breaking_the_corpus.json",
+      "implementationStatus": "mixed"
+    },
+    {
+      "id": "CP-K064",
+      "title": "Provenance, licensing, and safe external knowledge",
+      "category": "evidence",
+      "authority": "synthesized_rule",
+      "file": "articles/CP-K064_provenance__licensing__and_safe_external_knowledge.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K070",
+      "title": "MakeHuman / MPFB as a controlled perspective-reference generator",
+      "category": "external_reference",
+      "authority": "external_reference",
+      "file": "articles/CP-K070_makehuman___mpfb_as_a_controlled_perspective_reference_generator.json",
+      "implementationStatus": "research_only"
+    },
+    {
+      "id": "CP-K071",
+      "title": "Spine patterns for modular 2D assembly",
+      "category": "external_reference",
+      "authority": "external_reference",
+      "file": "articles/CP-K071_spine_patterns_for_modular_2d_assembly.json",
+      "implementationStatus": "research_only"
+    },
+    {
+      "id": "CP-K072",
+      "title": "Nearest-reference matching adapted for Corpus Pane",
+      "category": "external_reference",
+      "authority": "external_reference",
+      "file": "articles/CP-K072_nearest_reference_matching_adapted_for_corpus_pane.json",
+      "implementationStatus": "existing"
+    },
+    {
+      "id": "CP-K073",
+      "title": "Optional depth-like evidence stays non-authoritative",
+      "category": "external_reference",
+      "authority": "external_reference",
+      "file": "articles/CP-K073_optional_depth_like_evidence_stays_non_authoritative.json",
+      "implementationStatus": "research_only"
+    },
+    {
+      "id": "CP-K074",
+      "title": "MoveNet is detector evidence, not the skeleton definition",
+      "category": "external_reference",
+      "authority": "external_reference",
+      "file": "articles/CP-K074_movenet_is_detector_evidence__not_the_skeleton_definition.json",
+      "implementationStatus": "mixed"
+    },
+    {
+      "id": "CP-K075",
+      "title": "CMU motion capture as a later movement-gap source",
+      "category": "external_reference",
+      "authority": "external_reference",
+      "file": "articles/CP-K075_cmu_motion_capture_as_a_later_movement_gap_source.json",
+      "implementationStatus": "research_only"
+    },
+    {
+      "id": "CP-K080",
+      "title": "Bridge from Corpus Pane knowledge to the eventual 2D poser",
+      "category": "roadmap",
+      "authority": "project_decision",
+      "file": "articles/CP-K080_bridge_from_corpus_pane_knowledge_to_the_eventual_2d_poser.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K081",
+      "title": "Acceptance tests for a knowledge-driven Corpus Pane",
+      "category": "roadmap",
+      "authority": "project_decision",
+      "file": "articles/CP-K081_acceptance_tests_for_a_knowledge_driven_corpus_pane.json",
+      "implementationStatus": "proposed"
+    },
+    {
+      "id": "CP-K082",
+      "title": "Recommended first knowledge pilot: arm–shoulder–torso",
+      "category": "roadmap",
+      "authority": "project_decision",
+      "file": "articles/CP-K082_recommended_first_knowledge_pilot__arm_shoulder_torso.json",
+      "implementationStatus": "proposed"
+    }
+  ],
+  "sourceRegister": "sources/SOURCE_REGISTER.json",
+  "vocabularyIndex": "vocabularies/VOCABULARY_INDEX.json",
+  "schemas": [
+    "schemas/knowledge_article.schema.json",
+    "schemas/master_index.schema.json",
+    "schemas/view_state.schema.json",
+    "schemas/perspective_reference.schema.json",
+    "schemas/pose_signature.schema.json",
+    "schemas/poser_part.schema.json",
+    "schemas/part_compatibility_test.schema.json",
+    "schemas/source_record.schema.json"
+  ],
+  "models": [
+    "models/universal_skeleton_v1_2_0.json",
+    "models/corpus_pane_existing_data_contract.json",
+    "models/doll_rig_bridge_snapshot.json",
+    "models/proposed_corpus_to_doll_bridge.json",
+    "models/current_seed_library_snapshot.json"
+  ],
+  "examples": [
+    "examples/example_head_torso_split_view.json",
+    "examples/example_foreshortened_arm_reference.json",
+    "examples/example_part_compatibility_test.json"
+  ],
+  "adoptionOrder": [
+    {
+      "stage": 1,
+      "name": "Metadata-only adoption",
+      "action": "Use view split, projection state, source/provenance and article IDs without changing trackers."
+    },
+    {
+      "stage": 2,
+      "name": "Reference retrieval upgrade",
+      "action": "Add pose signatures and view-aware ranking; no automatic coordinate transfer."
+    },
+    {
+      "stage": 3,
+      "name": "Controlled perspective pilot",
+      "action": "Generate a small external arm–shoulder–torso reference pack and A/B test it on unseen mannequin video."
+    },
+    {
+      "stage": 4,
+      "name": "Poser bridge pilot",
+      "action": "Map one or two reviewed configurations into the still mannequin and run part compatibility/articulation tests."
+    },
+    {
+      "stage": 5,
+      "name": "Expand by demonstrated gaps",
+      "action": "Add legs, head/neck, torso/pelvis and selected external motion only when tests show value."
+    }
+  ],
+  "updatePolicy": {
+    "articleIdsStable": true,
+    "noSilentSemanticChanges": true,
+    "unknownFieldsPreserved": true,
+    "newKnowledgeRule": "Add or version articles and schemas; do not rewrite source evidence or owner-approved decisions to fit new theory.",
+    "skeletonChangeRule": "A suspected limitation must be investigated and migrated explicitly; perspective metadata should be extended before changing universal joint identity."
+  }
+}

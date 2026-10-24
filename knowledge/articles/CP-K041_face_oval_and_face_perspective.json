@@ -1,0 +1,54 @@
+{
+  "id": "CP-K041",
+  "title": "Face oval and face perspective",
+  "version": 1,
+  "knowledgeType": "face",
+  "authority": "synthesized_rule",
+  "plainLanguage": "The face oval describes the projected head/face area in the image. Its width, height, and rotation should change with the view without changing the person’s identity.",
+  "purpose": "Support consistent face fitting across front, three-quarter, tilted, and partially hidden heads.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K041.R1",
+      "strength": "MUST",
+      "statement": "Store face oval geometry separately from face-slot coordinates so either can be corrected without silently rewriting the other."
+    },
+    {
+      "id": "K041.R2",
+      "strength": "SHOULD",
+      "statement": "Compare face examples only after considering head view, oval aspect/rotation, and visibility."
+    },
+    {
+      "id": "K041.R3",
+      "strength": "MUST",
+      "statement": "If the face is hidden, verify hidden state rather than inventing the five slots."
+    },
+    {
+      "id": "K041.R4",
+      "strength": "SHOULD",
+      "statement": "Use controlled head-view references to distinguish true feature movement from perspective movement."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K020"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K051"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.LIBRARY_PASS_01"
+  ],
+  "implementation": {
+    "status": "mixed",
+    "currentSupport": "Face oval and five-slot editing already exist.",
+    "futureWork": "Make similarity matching explicitly head-view aware."
+  }
+}

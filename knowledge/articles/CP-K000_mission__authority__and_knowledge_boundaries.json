@@ -1,0 +1,63 @@
+{
+  "id": "CP-K000",
+  "title": "Mission, authority, and knowledge boundaries",
+  "version": 1,
+  "knowledgeType": "core",
+  "authority": "project_decision",
+  "plainLanguage": "The Corpus Pane is a growing evidence system for learning how one shared 2D humanoid structure appears across many characters, poses, and viewpoints. It should get more useful as checked examples accumulate, without pretending that an automatic guess is a fact.",
+  "purpose": "Keep the entire knowledge system aimed at future reusable 2D character construction while protecting source evidence and uncertainty.",
+  "appliesTo": {
+    "workflows": [
+      "all"
+    ]
+  },
+  "rules": [
+    {
+      "id": "K000.R1",
+      "strength": "MUST",
+      "statement": "The gray mannequin and future character families remain project-specific visual targets; outside references may inform them but never silently replace their proportions or art style.",
+      "reason": "External bodies are useful teaching aids, not the project authority.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT",
+        "SRC.CP.DOLL_RIG_0_4_13"
+      ]
+    },
+    {
+      "id": "K000.R2",
+      "strength": "MUST",
+      "statement": "Automatic detection, manual correction, verification, part compatibility, and owner acceptance remain separate states.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT",
+        "SRC.CP.LIBRARY_PASS_01"
+      ]
+    },
+    {
+      "id": "K000.R3",
+      "strength": "MUST",
+      "statement": "The knowledge package may propose fields and algorithms, but proposed knowledge must not be represented as already implemented in the Corpus Pane.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K000.R4",
+      "strength": "SHOULD",
+      "statement": "Prefer a small number of structured, high-value references over importing a large unsorted dataset.",
+      "reason": "The goal is to accelerate mannequin-specific learning, not maximize storage."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DOLL_RIG_0_4_13"
+  ],
+  "implementation": {
+    "status": "mixed",
+    "currentSupport": "Corpus Pane already separates automatic estimates, manual edits, scoped review and reusable configurations.",
+    "futureWork": "Apply the same separation to perspective references and eventual poser-part compatibility."
+  }
+}

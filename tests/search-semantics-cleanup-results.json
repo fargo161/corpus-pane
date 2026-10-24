@@ -1,0 +1,40 @@
+{
+  "suite": "Corpus Pane 02.2.2 search semantics and approval cleanup",
+  "total": 8,
+  "passed": 8,
+  "failed": 0,
+  "results": [
+    {
+      "name": "whole-arm strict upper-arm evidence is labeled partial rather than complete-region",
+      "pass": true
+    },
+    {
+      "name": "rough whole-arm evidence with more regional coverage is preferred over a strict partial subregion",
+      "pass": true
+    },
+    {
+      "name": "whole-leg search reports partial coverage when only thigh and shin are available",
+      "pass": true
+    },
+    {
+      "name": "incomplete face search reports control coverage rather than pretending the face is complete",
+      "pass": true
+    },
+    {
+      "name": "owner re-check of an assistant-reviewed reference promotes the existing record instead of making a duplicate",
+      "pass": true
+    },
+    {
+      "name": "accepting a saved reference records exact-scope support while broader assistant review remains separately attributed",
+      "pass": true
+    },
+    {
+      "name": "single control remains insufficient evidence even when that point lines up perfectly",
+      "pass": true
+    },
+    {
+      "name": "foreshortening article reflects implemented projection recording and retrieval",
+      "pass": true
+    }
+  ]
+}

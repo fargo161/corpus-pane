@@ -1,0 +1,14 @@
+{
+  "id": "VOC.COMPARISON_CLASSIFICATION",
+  "values": [
+    "same_configuration",
+    "tracking_error",
+    "different_view_or_foreshortening",
+    "new_pose",
+    "needs_new_artwork",
+    "hidden_or_outside",
+    "source_or_cleanup_artifact",
+    "possible_schema_limitation",
+    "uncertain"
+  ]
+}

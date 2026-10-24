@@ -1,0 +1,61 @@
+{
+  "id": "CP-K064",
+  "title": "Provenance, licensing, and safe external knowledge",
+  "version": 1,
+  "knowledgeType": "evidence",
+  "authority": "synthesized_rule",
+  "plainLanguage": "Knowing where a reference came from matters as much as knowing what it says. The Corpus Pane should be able to use outside knowledge without losing track of permissions or confusing it with our own verified mannequin evidence.",
+  "purpose": "Keep the growing system legally and technically clean.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K064.R1",
+      "strength": "MUST",
+      "statement": "Every external reference record must carry source URL/locator, retrieved version/date when available, license/usage notes, and ingest policy."
+    },
+    {
+      "id": "K064.R2",
+      "strength": "MUST",
+      "statement": "Do not bundle third-party code, art, or motion simply because public documentation exists."
+    },
+    {
+      "id": "K064.R3",
+      "strength": "SHOULD",
+      "statement": "Prefer references with clear permissive asset terms for generated perspective packs; MakeHuman core assets are a strong candidate because they are CC0.",
+      "sourceRefs": [
+        "SRC.EXT.MAKEHUMAN_LICENSE"
+      ]
+    },
+    {
+      "id": "K064.R4",
+      "strength": "MUST",
+      "statement": "Spine is used here as a design reference only; its runtime/editor licensing remains separate.",
+      "sourceRefs": [
+        "SRC.EXT.SPINE_LICENSE"
+      ]
+    },
+    {
+      "id": "K064.R5",
+      "strength": "MUST",
+      "statement": "CMU motion data must not be resold directly or in converted form; future use must preserve its terms.",
+      "sourceRefs": [
+        "SRC.EXT.CMU_MOCAP"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.EXT.MAKEHUMAN_LICENSE",
+    "SRC.EXT.SPINE_LICENSE",
+    "SRC.EXT.CMU_MOCAP",
+    "SRC.EXT.GOOGLE_SAMPLE_LICENSE"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Corpus Pane already preserves source fingerprints for project media.",
+    "futureWork": "Apply equivalent source records to all external knowledge/reference packs."
+  }
+}

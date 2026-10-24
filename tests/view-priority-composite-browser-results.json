@@ -1,0 +1,9 @@
+{
+  "suite": "Corpus Pane 02.2.2 browser view priority/composite authority",
+  "pass": true,
+  "gradedViewVisible": true,
+  "hiddenCountsAsKnownCoverage": true,
+  "hiddenVisibleMismatchVisible": true,
+  "compositeSupportVisible": true,
+  "pageErrors": []
+}

@@ -1,0 +1,28 @@
+{
+  "suite": "Corpus Pane 02.2.5 acceptance reliability and landmark semantics",
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "results": [
+    {
+      "name": "application advances to 02.2.5 without changing universal skeleton version",
+      "pass": true
+    },
+    {
+      "name": "arm landmark semantics define shoulder elbow wrist and palm-center hand",
+      "pass": true
+    },
+    {
+      "name": "MC10 p02 frame37 overhead left arm uses corrected wrist and palm-center hand",
+      "pass": true
+    },
+    {
+      "name": "MC10 p03 frame16 does not invent a wrist or hand inside the cropped frame",
+      "pass": true
+    },
+    {
+      "name": "repaired references remain assistant-reviewed and owner-pending",
+      "pass": true
+    }
+  ]
+}

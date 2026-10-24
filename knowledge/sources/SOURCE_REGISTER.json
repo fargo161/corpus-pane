@@ -1,0 +1,168 @@
+{
+  "format": "sprite-foundry/corpus-pane-source-register",
+  "version": 1,
+  "createdAt": "2026-10-22T22:41:00Z",
+  "sources": [
+    {
+      "id": "SRC.CP.DATA_CONTRACT",
+      "kind": "project_file",
+      "title": "Corpus Verifier Checkpoint 01 — DATA_CONTRACT.md",
+      "locator": "Corpus_Verifier_Checkpoint_01/docs/DATA_CONTRACT.md",
+      "authority": "current_project_contract",
+      "usage": "Defines the existing Corpus Pane evidence layers, skeleton identity, review semantics, named configurations, comparison decisions, persistence and update boundaries.",
+      "license": "project-owned material",
+      "notes": "Primary authority for what the current Corpus Pane already records versus what remains future work."
+    },
+    {
+      "id": "SRC.CP.SKELETON_1_2_0",
+      "kind": "project_file",
+      "title": "Adventure Studio universal skeleton v1.2.0",
+      "locator": "Corpus_Verifier_Checkpoint_01/docs/universal-skeleton-v1.2.0.json",
+      "authority": "current_project_schema",
+      "usage": "Canonical shared 2D anatomical IDs, region hierarchy, face slots, coordinate convention and visibility states.",
+      "license": "project-owned material"
+    },
+    {
+      "id": "SRC.CP.DOLL_RIG_0_4_13",
+      "kind": "project_file",
+      "title": "gray base mannequin anatomical rig — uploaded doll_rig_v0_4_13(1).json",
+      "locator": "/mnt/data/doll_rig_v0_4_13(1).json",
+      "authority": "canonical_still_mannequin_input",
+      "usage": "Existing articulated/structural layer roles, pivots, anchors, parent links, semantic sockets, mirroring behavior and layer-order groups.",
+      "license": "user-provided project material"
+    },
+    {
+      "id": "SRC.CP.LIBRARY_PASS_01",
+      "kind": "project_file",
+      "title": "Corpus Library Starter Pass 01",
+      "locator": "Corpus_Library_Starter_Pass_01/LIBRARY_INDEX.json",
+      "authority": "assistant_reviewed_pending_owner_acceptance",
+      "usage": "Current five-clip seed library, 18 regional configurations, six comparisons, separate head-direction observation limitation.",
+      "license": "project-owned material"
+    },
+    {
+      "id": "SRC.EXT.MAKEHUMAN_LICENSE",
+      "kind": "web",
+      "title": "MakeHuman Community — License",
+      "url": "https://static.makehumancommunity.org/about/license.html",
+      "publisher": "MakeHuman Community",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "license": "Core assets CC0; MPFB source GPL; MakeHuman source AGPL",
+      "usage": "Supports using MakeHuman core assets as optional reference material while keeping software-code licensing separate.",
+      "ingestPolicy": "May use CC0 core assets in a later explicit reference-generation pass. Do not copy GPL/AGPL source into Corpus Pane by default."
+    },
+    {
+      "id": "SRC.EXT.MPFB_POSES",
+      "kind": "web",
+      "title": "MakeHuman Community — Saving and loading MPFB poses",
+      "url": "https://static.makehumancommunity.org/mpfb/docs/rigging_posing/save_load.html",
+      "publisher": "MakeHuman Community",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Supports reusable full and partial poses, with same-rig-type restriction and shape-transfer caveats.",
+      "ingestPolicy": "Use as design/reference guidance; do not assume MPFB pose files are directly compatible with Corpus Pane."
+    },
+    {
+      "id": "SRC.EXT.MPFB_RIGGING",
+      "kind": "web",
+      "title": "MakeHuman Community — Rigging and posing developer notes",
+      "url": "https://static.makehumancommunity.org/mpfb/developer/rigging_and_posing.html",
+      "publisher": "MakeHuman Community",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Supports rig definitions in JSON and fitting bone positions to body shape through explicit strategies.",
+      "ingestPolicy": "Use concepts and optionally generated CC0 reference assets; no direct schema substitution."
+    },
+    {
+      "id": "SRC.EXT.SPINE_MIX_MATCH",
+      "kind": "web",
+      "title": "Esoteric Software — Spine Mix-and-Match example",
+      "url": "https://en.esotericsoftware.com/spine-examples-mix-and-match",
+      "publisher": "Esoteric Software",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Construction patterns for modular 2D characters: separate items, conditional bones/constraints, attachment behavior and limited perspective/depth controls.",
+      "ingestPolicy": "Study concepts only in this knowledge package. Do not bundle Spine project files, runtime code or art."
+    },
+    {
+      "id": "SRC.EXT.SPINE_JSON",
+      "kind": "web",
+      "title": "Esoteric Software — Spine JSON export format",
+      "url": "https://en.esotericsoftware.com/spine-json-format",
+      "publisher": "Esoteric Software",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Supports clear separation of bones, slots, attachments, draw order and constraints.",
+      "ingestPolicy": "Use as design vocabulary only; do not make Corpus Pane dependent on Spine format."
+    },
+    {
+      "id": "SRC.EXT.SPINE_LICENSE",
+      "kind": "web",
+      "title": "Esoteric Software — Spine Editor License Agreement",
+      "url": "https://us.esotericsoftware.com/spine-editor-license",
+      "publisher": "Esoteric Software",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Licensing boundary for Spine runtimes and derivative integration.",
+      "ingestPolicy": "No Spine runtime or example project is bundled in this package."
+    },
+    {
+      "id": "SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "kind": "web",
+      "title": "Google ML Kit — Pose classification options",
+      "url": "https://developers.google.com/ml-kit/vision/pose-detection/classifying-poses",
+      "publisher": "Google",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Supports normalization and nearest-neighbor comparison of pose landmarks, and warns that camera angle matters.",
+      "ingestPolicy": "Adapt method to Corpus Pane regions and view labels. Do not silently mirror anatomical left/right."
+    },
+    {
+      "id": "SRC.EXT.GOOGLE_POSE",
+      "kind": "web",
+      "title": "Google ML Kit — Pose detection",
+      "url": "https://developers.google.com/ml-kit/vision/pose-detection",
+      "publisher": "Google",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "33-point pose concept, per-landmark in-frame likelihood and experimental Z hint that is not true 3D.",
+      "ingestPolicy": "Depth-like values, if ever added, remain optional provenance/hints and never override checked 2D evidence."
+    },
+    {
+      "id": "SRC.EXT.MOVENET",
+      "kind": "web",
+      "title": "TensorFlow Hub — MoveNet pose detection",
+      "url": "https://www.tensorflow.org/hub/tutorials/movenet",
+      "publisher": "TensorFlow / Google",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "usage": "Documents MoveNet 17-keypoint topology used as one detector input to the current tracker.",
+      "ingestPolicy": "Detector output is evidence, not verification; derived Corpus Pane controls remain separately labeled."
+    },
+    {
+      "id": "SRC.EXT.CMU_MOCAP",
+      "kind": "web",
+      "title": "CMU Graphics Lab Motion Capture Database",
+      "url": "https://mocap.cs.cmu.edu/",
+      "publisher": "Carnegie Mellon University Graphics Lab",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "license": "Free for use; may be included in commercially sold products; may not be resold directly even in converted form; site asks not to crawl.",
+      "usage": "Potential later source of movement gaps, not a replacement anatomy standard.",
+      "ingestPolicy": "Do not bundle raw or converted CMU motion data in this knowledge package. Future import must preserve source and licensing."
+    },
+    {
+      "id": "SRC.EXT.GOOGLE_SAMPLE_LICENSE",
+      "kind": "web",
+      "title": "Google ML Kit Samples — Apache 2.0 license",
+      "url": "https://github.com/googlesamples/mlkit/blob/master/LICENSE",
+      "publisher": "Google Samples",
+      "retrieved": "2026-10-22",
+      "authority": "external_primary",
+      "license": "Apache License 2.0",
+      "usage": "Confirms sample-code licensing if a later implementation deliberately adapts sample logic.",
+      "ingestPolicy": "No external code is copied into this package."
+    }
+  ]
+}

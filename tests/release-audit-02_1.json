@@ -1,0 +1,137 @@
+{
+  "suite": "Corpus Pane 02.1 release audit",
+  "date": "2026-10-22",
+  "passed": 27,
+  "total": 27,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "release_version_0_2_1",
+      "pass": true
+    },
+    {
+      "name": "checkpoint_2_1",
+      "pass": true
+    },
+    {
+      "name": "index_title",
+      "pass": true
+    },
+    {
+      "name": "core_41_41",
+      "pass": true,
+      "detail": [
+        41,
+        41
+      ]
+    },
+    {
+      "name": "knowledge_8_8",
+      "pass": true,
+      "detail": [
+        8,
+        8
+      ]
+    },
+    {
+      "name": "repair_14_14",
+      "pass": true
+    },
+    {
+      "name": "repair_browser_pass_record",
+      "pass": true
+    },
+    {
+      "name": "seed_backup_pass_record",
+      "pass": true
+    },
+    {
+      "name": "normalize_before_merge",
+      "pass": true
+    },
+    {
+      "name": "semantic_view_helpers",
+      "pass": true
+    },
+    {
+      "name": "sparse_gate_two_points",
+      "pass": true
+    },
+    {
+      "name": "unknown_profile_not_left",
+      "pass": true
+    },
+    {
+      "name": "authority_visible",
+      "pass": true
+    },
+    {
+      "name": "canonical_new_artwork",
+      "pass": true
+    },
+    {
+      "name": "review_list_authority_visible",
+      "pass": true
+    },
+    {
+      "name": "head_migration_present",
+      "pass": true
+    },
+    {
+      "name": "canonical_knowledge_directory_unchanged",
+      "pass": true,
+      "detail": {
+        "old": 76,
+        "new": 76
+      }
+    },
+    {
+      "name": "engine_files_unchanged_from_cp02",
+      "pass": true,
+      "detail": {
+        "old": 15,
+        "new": 15
+      }
+    },
+    {
+      "name": "starter_backup_present",
+      "pass": true
+    },
+    {
+      "name": "starter_backup_bytes_unchanged",
+      "pass": true,
+      "detail": "cf6eac1b246d24684109ef2cd57caf0a4e90703e8b2671b42d843abbddae6f45"
+    },
+    {
+      "name": "prior_cp02_results_isolated",
+      "pass": true
+    },
+    {
+      "name": "required_START_HERE.md",
+      "pass": true
+    },
+    {
+      "name": "required_docs/REPAIR_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required_docs/REPAIR_MATRIX.json",
+      "pass": true
+    },
+    {
+      "name": "required_docs/TEST_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "all_json_parses",
+      "pass": true,
+      "detail": 106
+    },
+    {
+      "name": "node_syntax_all",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "qualification": "Broad historical browser/inference results are isolated under prior_cp02_results and are not counted as a 02.1 rerun."
+}

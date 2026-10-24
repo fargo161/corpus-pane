@@ -1,0 +1,36 @@
+{
+  "suite": "Corpus Pane 02.2.2 view priority and composite review authority",
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "reviewed view compatibility ranks ahead of extra visible coverage",
+      "pass": true
+    },
+    {
+      "name": "explicitly hidden forearm and hand count as known coverage, not missing anatomy",
+      "pass": true
+    },
+    {
+      "name": "missing forearm remains incomplete when it was never marked hidden",
+      "pass": true
+    },
+    {
+      "name": "separately checked upper arm forearm and hand combine into whole-arm authority",
+      "pass": true
+    },
+    {
+      "name": "owner checks of separate arm sections combine into owner-approved whole-arm authority",
+      "pass": true
+    },
+    {
+      "name": "owner acceptance of broad assistant review can be satisfied joint-by-joint by smaller owner checks",
+      "pass": true
+    },
+    {
+      "name": "older corpus backup still upgrades without duplicating entries or references",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "CP-K060",
+  "title": "Four evidence layers stay independent",
+  "version": 1,
+  "knowledgeType": "evidence",
+  "authority": "existing_contract",
+  "plainLanguage": "Original source, editable tracking, human review, and cross-source knowledge are separate layers. Each answers a different question.",
+  "purpose": "Make the knowledge base auditable and reversible.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K060.R1",
+      "strength": "MUST",
+      "statement": "Never modify or replace original media because a later correction disagrees with it."
+    },
+    {
+      "id": "K060.R2",
+      "strength": "MUST",
+      "statement": "Manual corrections and accepted tracking snapshots remain editable evidence; they are not automatically owner-verified."
+    },
+    {
+      "id": "K060.R3",
+      "strength": "MUST",
+      "statement": "Reusable references must point back to exact source, frame, scope, skeleton version, and review state."
+    },
+    {
+      "id": "K060.R4",
+      "strength": "SHOULD",
+      "statement": "External references use the same provenance discipline but remain a distinct authority class."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Four-layer model already exists.",
+    "futureWork": "Apply it consistently to external perspective packs and poser-part tests."
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "id": "CP-K012",
+  "title": "Shared boundary joints and region hierarchy",
+  "version": 1,
+  "knowledgeType": "core",
+  "authority": "existing_contract",
+  "plainLanguage": "The elbow belongs to both the upper arm and forearm, but it is still one elbow. Regions are ways to focus work, not separate skeletons.",
+  "purpose": "Allow isolated limb/torso passes without creating conflicting copies of joints.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K012.R1",
+      "strength": "MUST",
+      "statement": "Region groups reference the same joint IDs; they never duplicate boundary joints.",
+      "sourceRefs": [
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K012.R2",
+      "strength": "MUST",
+      "statement": "A correction to a shared joint must be visible to every group that uses that joint."
+    },
+    {
+      "id": "K012.R3",
+      "strength": "SHOULD",
+      "statement": "Verification should stay scoped to the selected region and frame range so unrelated anatomy can remain draft.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Region hierarchy and scoped verification already behave this way.",
+    "futureWork": "Reuse the same region IDs in poser-part and compatibility records."
+  }
+}

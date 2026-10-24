@@ -1,0 +1,50 @@
+{
+  "id": "CP-K081",
+  "title": "Acceptance tests for a knowledge-driven Corpus Pane",
+  "version": 1,
+  "knowledgeType": "roadmap",
+  "authority": "project_decision",
+  "plainLanguage": "A bigger library is not automatically a better library. We should prove that the knowledge actually helps on unseen videos and later on real doll assembly.",
+  "purpose": "Define measurable evidence that each new knowledge layer is worth keeping.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K081.R1",
+      "strength": "MUST",
+      "statement": "Test on clips not used to author the reference material."
+    },
+    {
+      "id": "K081.R2",
+      "strength": "SHOULD",
+      "statement": "Measure reference retrieval usefulness, correction count/time, repeated error rate, view-classification clarity, and unresolved-gap detection."
+    },
+    {
+      "id": "K081.R3",
+      "strength": "MUST",
+      "statement": "Verify that adding external references never overwrites manual pins, owner-approved scopes, or source media."
+    },
+    {
+      "id": "K081.R4",
+      "strength": "MUST",
+      "statement": "For poser parts, test joint alignment, seam coverage, layer order, silhouette, articulation envelope, and identity preservation."
+    },
+    {
+      "id": "K081.R5",
+      "strength": "MUST",
+      "statement": "A failed or ambiguous test remains recorded; do not promote the feature by hiding difficult cases."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.LIBRARY_PASS_01"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Existing Corpus Pane already has workflow/integrity tests and a five-clip seed library.",
+    "futureWork": "Add knowledge-benefit A/B tests and real doll assembly tests."
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "id": "VOC.VISIBILITY",
+  "values": [
+    "visible",
+    "occluded",
+    "out_of_frame",
+    "unknown"
+  ],
+  "note": "Occluded means the part exists but is hidden by another part/object. Unknown is not equivalent to occluded."
+}

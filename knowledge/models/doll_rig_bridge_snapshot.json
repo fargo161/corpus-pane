@@ -1,0 +1,755 @@
+{
+  "format": "sprite-foundry/doll-rig-bridge-snapshot",
+  "version": 1,
+  "createdAt": "2026-10-22T22:41:00Z",
+  "source": {
+    "name": "doll_rig_v0_4_13(1).json",
+    "sha256": "e38c7142f8d294a583b685e33c7d019299df161d0241ad85c90283e7d0ce6e21",
+    "declaredVersion": 4,
+    "declaredName": "gray base mannekin anatomical rig — Rig Editor v0.4.12 Pivot Colors + Visibility",
+    "schemaRevision": "4.13"
+  },
+  "purpose": "Compact structural snapshot for bridging Corpus Pane knowledge to the canonical still mannequin without bundling its embedded artwork.",
+  "semanticSockets": {
+    "ACTIVE_TORSO": {
+      "id": "ACTIVE_TORSO",
+      "label": "Active Torso",
+      "targets": {
+        "THREEQ": "THREEQ_TORSO"
+      }
+    },
+    "ACTIVE_PELVIS": {
+      "id": "ACTIVE_PELVIS",
+      "label": "Active Pelvis",
+      "targets": {
+        "THREEQ": "THREEQ_HIP_PELVIS"
+      }
+    }
+  },
+  "pelvisControl": {
+    "FRONT": {
+      "pelvisLayerId": null,
+      "torsoLayerId": null,
+      "pelvisChildren": [],
+      "independentLegRoots": [
+        "SHARED_L_THIGH",
+        "SHARED_R_THIGH"
+      ]
+    },
+    "THREEQ": {
+      "pelvisLayerId": "THREEQ_HIP_PELVIS",
+      "torsoLayerId": "THREEQ_TORSO",
+      "pelvisChildren": [
+        "THREEQ_TORSO",
+        "right cheek"
+      ],
+      "cheekRootLayerId": "right cheek",
+      "independentLegRoots": [
+        "SHARED_L_THIGH",
+        "SHARED_R_THIGH"
+      ]
+    }
+  },
+  "mirrorModel": {
+    "axis": "horizontal",
+    "property": "flipX",
+    "default": false,
+    "operation": "toggle",
+    "propagation": {
+      "mode": "inherited_by_descendants",
+      "mutateDescendantFlipState": false
+    },
+    "visualBehavior": {
+      "mirrorAround": "layer_pivot",
+      "preservePivotPosition": true,
+      "preserveRotationValue": true,
+      "preserveLocalPivot": true,
+      "preserveAnchors": true
+    }
+  },
+  "layers": [
+    {
+      "id": "SHARED_R_HAND",
+      "name": "SHARED_R_HAND",
+      "role": "articulated",
+      "parentId": "SHARED_R_FOREARM",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "wrist",
+          "name": "WRIST",
+          "x": 0.5,
+          "y": 0.15
+        },
+        {
+          "id": "grip",
+          "name": "GRIP",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "pivot": {
+        "x": 0.46376029457382106,
+        "y": 0.8780467952097282
+      },
+      "localPivot": {
+        "x": 69.18068943019944,
+        "y": 35.79968533419708
+      },
+      "rotation": 23.838665271078753,
+      "flipX": true
+    },
+    {
+      "id": "SHARED_R_FOREARM",
+      "name": "SHARED_R_FOREARM",
+      "role": "articulated",
+      "parentId": "SHARED_R_UPPER_ARM",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "elbow",
+          "name": "ELBOW",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "wrist",
+          "name": "WRIST",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.7234024683842465,
+        "y": 0.8928349502072623
+      },
+      "localPivot": {
+        "x": 56.494063682523745,
+        "y": 457.87122654637835
+      },
+      "rotation": 163.1173710840451,
+      "flipX": true
+    },
+    {
+      "id": "SHARED_R_UPPER_ARM",
+      "name": "SHARED_R_UPPER_ARM",
+      "role": "articulated",
+      "parentId": null,
+      "parentSocketId": "ACTIVE_TORSO",
+      "anchors": [
+        {
+          "id": "shoulder",
+          "name": "SHOULDER",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "elbow",
+          "name": "ELBOW",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.5275213028844298,
+        "y": 0.13055102668456106
+      },
+      "localPivot": {
+        "x": 48.02461467240062,
+        "y": 359.47037843755857
+      },
+      "rotation": 119.35962923171292,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_R_FOOT",
+      "name": "SHARED_R_FOOT",
+      "role": "articulated",
+      "parentId": "SHARED_R_LOWER_LEG",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "ankle",
+          "name": "ANKLE",
+          "x": 0.32,
+          "y": 0.16
+        },
+        {
+          "id": "toe",
+          "name": "TOE",
+          "x": 0.88,
+          "y": 0.68
+        }
+      ],
+      "pivot": {
+        "x": 0.5637606019043483,
+        "y": 0.13303437611569344
+      },
+      "localPivot": {
+        "x": 61.86242489849428,
+        "y": 826.1480382603313
+      },
+      "rotation": 13.110956562461752,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_R_LOWER_LEG",
+      "name": "SHARED_R_LOWER_LEG",
+      "role": "articulated",
+      "parentId": "SHARED_R_THIGH",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "knee",
+          "name": "KNEE",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "ankle",
+          "name": "ANKLE",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.7214659016292082,
+        "y": 0.09746790862366532
+      },
+      "localPivot": {
+        "x": 302.9702323895806,
+        "y": 702.6488826366424
+      },
+      "rotation": -19.27125392069979,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_R_THIGH",
+      "name": "SHARED_R_THIGH",
+      "role": "articulated",
+      "parentId": null,
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "hip",
+          "name": "HIP",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "knee",
+          "name": "KNEE",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.36315107833928045,
+        "y": 0.18843692416218621
+      },
+      "localPivot": {
+        "x": 1016.8415584777673,
+        "y": 1394.825214509275
+      },
+      "rotation": 25.506039075572403,
+      "flipX": false
+    },
+    {
+      "id": "THREEQ_HEAD",
+      "name": "THREEQ_HEAD",
+      "role": "articulated",
+      "parentId": "THREEQ_NECK",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "head_base",
+          "name": "HEAD_BASE",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "id": "look",
+          "name": "LOOK",
+          "x": 0.5,
+          "y": 0.3
+        }
+      ],
+      "pivot": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "localPivot": {
+        "x": 138.94555344611047,
+        "y": 134.23541766145053
+      },
+      "rotation": -6.704929384785373,
+      "flipX": false
+    },
+    {
+      "id": "THREEQ_NECK",
+      "name": "THREEQ_NECK",
+      "role": "articulated",
+      "parentId": "THREEQ_TORSO",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "neck_base",
+          "name": "NECK_BASE",
+          "x": 0.5,
+          "y": 0.8
+        },
+        {
+          "id": "neck_top",
+          "name": "NECK_TOP",
+          "x": 0.5,
+          "y": 0.14
+        }
+      ],
+      "pivot": {
+        "x": 0.5,
+        "y": 0.8
+      },
+      "localPivot": {
+        "x": 217.56322175004573,
+        "y": 307.9485581903099
+      },
+      "rotation": -5.2859316817176705,
+      "flipX": false
+    },
+    {
+      "id": "THREEQ_RIGHT_BREAST",
+      "name": "THREEQ_RIGHT_BREAST",
+      "role": "attachment",
+      "parentId": "THREEQ_TORSO",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "attach",
+          "name": "ATTACH",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "localPivot": {
+        "x": 222,
+        "y": 510.0000000000001
+      },
+      "rotation": 8.399672557957047,
+      "flipX": false
+    },
+    {
+      "id": "THREEQ_LEFT_BREAST",
+      "name": "THREEQ_LEFT_BREAST",
+      "role": "attachment",
+      "parentId": "THREEQ_TORSO",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "attach",
+          "name": "ATTACH",
+          "x": 0.5,
+          "y": 0.5
+        }
+      ],
+      "pivot": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "localPivot": {
+        "x": 398,
+        "y": 505.0000000000001
+      },
+      "rotation": 3.281533778216044,
+      "flipX": false
+    },
+    {
+      "id": "THREEQ_HIP_PELVIS",
+      "name": "THREEQ_HIP_PELVIS",
+      "role": "structural",
+      "parentId": null,
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "attach",
+          "name": "ATTACH",
+          "x": 0.5,
+          "y": 0.2
+        }
+      ],
+      "pivot": {
+        "x": 0.4983171046235271,
+        "y": 0.6033446482205331
+      },
+      "localPivot": {
+        "x": 1092.013703623861,
+        "y": 1389.2050351993594
+      },
+      "rotation": 27.580261405203032,
+      "flipX": false
+    },
+    {
+      "id": "THREEQ_TORSO",
+      "name": "THREEQ_TORSO",
+      "role": "structural",
+      "parentId": "THREEQ_HIP_PELVIS",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "neck_socket",
+          "name": "NECK_SOCKET",
+          "x": 0.5,
+          "y": 0.1
+        },
+        {
+          "id": "pelvis_socket",
+          "name": "PELVIS_SOCKET",
+          "x": 0.5,
+          "y": 0.88
+        },
+        {
+          "id": "l_shoulder",
+          "name": "L_SHOULDER",
+          "x": 0.8,
+          "y": 0.18
+        },
+        {
+          "id": "r_shoulder",
+          "name": "R_SHOULDER",
+          "x": 0.2,
+          "y": 0.18
+        }
+      ],
+      "pivot": {
+        "x": 0.6404554801928969,
+        "y": 0.9074470720968054
+      },
+      "localPivot": {
+        "x": 265.8902139605515,
+        "y": 145.36453752215368
+      },
+      "rotation": -27.28355015719785,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_L_FOREARM",
+      "name": "SHARED_L_FOREARM",
+      "role": "articulated",
+      "parentId": "SHARED_L_UPPER_ARM",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "elbow",
+          "name": "ELBOW",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "wrist",
+          "name": "WRIST",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.24677302372408053,
+        "y": 0.8171300990390276
+      },
+      "localPivot": {
+        "x": 72.59903746832555,
+        "y": 467.7900512782078
+      },
+      "rotation": -107.13176930313205,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_L_HAND",
+      "name": "SHARED_L_HAND",
+      "role": "articulated",
+      "parentId": "SHARED_L_FOREARM",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "wrist",
+          "name": "WRIST",
+          "x": 0.5,
+          "y": 0.15
+        },
+        {
+          "id": "grip",
+          "name": "GRIP",
+          "x": 0.5,
+          "y": 0.6
+        }
+      ],
+      "pivot": {
+        "x": 0.2378305459245141,
+        "y": 0.8854846029484025
+      },
+      "localPivot": {
+        "x": 210.18411019129712,
+        "y": 46.89702032473508
+      },
+      "rotation": 24.042521671780833,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_L_UPPER_ARM",
+      "name": "SHARED_L_UPPER_ARM",
+      "role": "articulated",
+      "parentId": null,
+      "parentSocketId": "ACTIVE_TORSO",
+      "anchors": [
+        {
+          "id": "shoulder",
+          "name": "SHOULDER",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "elbow",
+          "name": "ELBOW",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.5763736050871198,
+        "y": 0.13115359595016718
+      },
+      "localPivot": {
+        "x": 336.8134335450193,
+        "y": 353.15853091650445
+      },
+      "rotation": -175.24998566366924,
+      "flipX": false
+    },
+    {
+      "id": "right cheek",
+      "name": "right cheek",
+      "role": "articulated",
+      "parentId": "THREEQ_HIP_PELVIS",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "attach",
+          "name": "ATTACH",
+          "x": 0.3273731704013376,
+          "y": 0.33345319849542376
+        }
+      ],
+      "pivot": {
+        "x": 0.6108745159075952,
+        "y": 0.5840501211888244
+      },
+      "localPivot": {
+        "x": 232.04692695463643,
+        "y": 298.5746411756021
+      },
+      "rotation": 19.308754605123227,
+      "flipX": false
+    },
+    {
+      "id": "left cheek",
+      "name": "left cheek",
+      "role": "articulated",
+      "parentId": "right cheek",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "attach",
+          "name": "ATTACH",
+          "x": 0.5,
+          "y": 0.35
+        }
+      ],
+      "pivot": {
+        "x": 0.5117906191709835,
+        "y": 0.3878388399587733
+      },
+      "localPivot": {
+        "x": 145.76403703795893,
+        "y": 158.19851860619838
+      },
+      "rotation": -32.26722086839197,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_L_FOOT",
+      "name": "SHARED_L_FOOT",
+      "role": "articulated",
+      "parentId": "SHARED_L_LOWER_LEG",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "ankle",
+          "name": "ANKLE",
+          "x": 0.32,
+          "y": 0.16
+        },
+        {
+          "id": "toe",
+          "name": "TOE",
+          "x": 0.88,
+          "y": 0.68
+        }
+      ],
+      "pivot": {
+        "x": 0.32,
+        "y": 0.16
+      },
+      "localPivot": {
+        "x": 163.68000000000006,
+        "y": 811.7600000000002
+      },
+      "rotation": 13.804568936762962,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_L_THIGH",
+      "name": "SHARED_L_THIGH",
+      "role": "articulated",
+      "parentId": null,
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "hip",
+          "name": "HIP",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "knee",
+          "name": "KNEE",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.3294035368901375,
+        "y": 0.17916514344606574
+      },
+      "localPivot": {
+        "x": 1174.4331734529676,
+        "y": 1388.766580313273
+      },
+      "rotation": 10.914086418466695,
+      "flipX": false
+    },
+    {
+      "id": "SHARED_L_LOWER_LEG",
+      "name": "SHARED_L_LOWER_LEG",
+      "role": "articulated",
+      "parentId": "SHARED_L_THIGH",
+      "parentSocketId": null,
+      "anchors": [
+        {
+          "id": "knee",
+          "name": "KNEE",
+          "x": 0.5,
+          "y": 0.08
+        },
+        {
+          "id": "ankle",
+          "name": "ANKLE",
+          "x": 0.5,
+          "y": 0.92
+        }
+      ],
+      "pivot": {
+        "x": 0.4067161952315264,
+        "y": 0.08387999313811093
+      },
+      "localPivot": {
+        "x": 336.6332863560408,
+        "y": 711.5445607733533
+      },
+      "rotation": 0.2240328020468496,
+      "flipX": false
+    }
+  ],
+  "layerOrderGroups": [
+    {
+      "id": "order_group_right_arm",
+      "name": "Right Arm",
+      "memberLayerIds": [
+        "SHARED_R_HAND",
+        "SHARED_R_FOREARM",
+        "SHARED_R_UPPER_ARM"
+      ],
+      "collapsed": false,
+      "pivotDisplay": {
+        "color": "#ff5b5b"
+      }
+    },
+    {
+      "id": "order_group_right_leg",
+      "name": "Right Leg",
+      "memberLayerIds": [
+        "SHARED_R_FOOT",
+        "SHARED_R_LOWER_LEG",
+        "SHARED_R_THIGH"
+      ],
+      "collapsed": false,
+      "pivotDisplay": {
+        "color": "#ff5b5b"
+      }
+    },
+    {
+      "id": "order_group_threeq_head_neck",
+      "name": "THREEQ Head + Neck",
+      "memberLayerIds": [
+        "THREEQ_HEAD",
+        "THREEQ_NECK"
+      ],
+      "collapsed": false,
+      "pivotDisplay": {
+        "color": "#ff5b5b"
+      }
+    },
+    {
+      "id": "order_group_threeq_body_core",
+      "name": "THREEQ Breasts + Torso + Pelvis",
+      "memberLayerIds": [
+        "THREEQ_RIGHT_BREAST",
+        "THREEQ_LEFT_BREAST",
+        "THREEQ_HIP_PELVIS",
+        "THREEQ_TORSO"
+      ],
+      "collapsed": false,
+      "pivotDisplay": {
+        "color": "#ff5b5b"
+      }
+    },
+    {
+      "id": "order_group_left_leg",
+      "name": "Left Leg",
+      "memberLayerIds": [
+        "SHARED_L_FOOT",
+        "SHARED_L_THIGH",
+        "SHARED_L_LOWER_LEG"
+      ],
+      "collapsed": false,
+      "pivotDisplay": {
+        "color": "#ff5b5b"
+      }
+    },
+    {
+      "id": "order_group_left_arm",
+      "name": "Left Arm",
+      "memberLayerIds": [
+        "SHARED_L_FOREARM",
+        "SHARED_L_HAND",
+        "SHARED_L_UPPER_ARM"
+      ],
+      "collapsed": false,
+      "pivotDisplay": {
+        "color": "#ff5b5b"
+      }
+    }
+  ],
+  "boundary": "This snapshot describes current rig structure only. It does not certify that Corpus Pane configurations are already retargeted to these parts."
+}

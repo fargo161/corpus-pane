@@ -1,0 +1,64 @@
+{
+  "id": "CP-K071",
+  "title": "Spine patterns for modular 2D assembly",
+  "version": 1,
+  "knowledgeType": "external_reference",
+  "authority": "external_reference",
+  "plainLanguage": "Spine is useful here as an example of how 2D systems keep bones, artwork attachments, draw order, optional item-specific controls, and perspective-like deformation separate.",
+  "purpose": "Borrow the useful organizational ideas without making Corpus Pane depend on Spine.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K071.R1",
+      "strength": "SHOULD",
+      "statement": "Model bones/anatomy separately from artwork attachments and draw-order slots.",
+      "sourceRefs": [
+        "SRC.EXT.SPINE_JSON"
+      ]
+    },
+    {
+      "id": "K071.R2",
+      "strength": "SHOULD",
+      "statement": "Allow some items or view variants to carry extra controls without forcing every character to use them.",
+      "sourceRefs": [
+        "SRC.EXT.SPINE_MIX_MATCH"
+      ]
+    },
+    {
+      "id": "K071.R3",
+      "strength": "SHOULD",
+      "statement": "Use host-following relationships for accessories/secondary pieces, but keep them distinct from anatomical joints."
+    },
+    {
+      "id": "K071.R4",
+      "strength": "MUST",
+      "statement": "Do not bundle Spine runtime or project assets in Corpus Pane without a separate licensing decision.",
+      "sourceRefs": [
+        "SRC.EXT.SPINE_LICENSE"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "motivates",
+      "article": "CP-K030"
+    },
+    {
+      "type": "motivates",
+      "article": "CP-K032"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.SPINE_MIX_MATCH",
+    "SRC.EXT.SPINE_JSON",
+    "SRC.EXT.SPINE_LICENSE"
+  ],
+  "implementation": {
+    "status": "research_only",
+    "currentSupport": "Conceptual reference only.",
+    "futureWork": "Use these separations when designing the poser-stage data model."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "CP-K024",
+  "title": "Depth hints, overlap order, and draw order",
+  "version": 1,
+  "knowledgeType": "perspective",
+  "authority": "synthesized_rule",
+  "plainLanguage": "In a 2D poser, “what is in front” matters, but a detector’s depth-like number is not the same thing as a checked drawing order.",
+  "purpose": "Create reliable front/behind behavior without pretending the system has solved 3D anatomy.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K024.R1",
+      "strength": "MUST",
+      "statement": "Keep optional depth estimates as provenance/hints only; never treat them as authoritative 3D.",
+      "sourceRefs": [
+        "SRC.EXT.GOOGLE_POSE",
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K024.R2",
+      "strength": "MUST",
+      "statement": "Draw order for assembled artwork must come from a reviewed view/pose compatibility record or explicit authored rule."
+    },
+    {
+      "id": "K024.R3",
+      "strength": "SHOULD",
+      "statement": "Allow draw order to vary by configuration; an arm may be behind the torso in one pose and in front in another.",
+      "sourceRefs": [
+        "SRC.EXT.SPINE_JSON"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K032"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K034"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.GOOGLE_POSE",
+    "SRC.EXT.SPINE_JSON",
+    "SRC.CP.SKELETON_1_2_0"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Current Corpus Pane records visibility but not a full assembly draw-order rule per configuration.",
+    "futureWork": "Add reviewed front/behind relationships to part compatibility tests."
+  }
+}

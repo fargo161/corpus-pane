@@ -1,0 +1,50 @@
+{
+  "id": "CP-K054",
+  "title": "Motion-source ingestion and movement gaps",
+  "version": 1,
+  "knowledgeType": "matching",
+  "authority": "synthesized_rule",
+  "plainLanguage": "Outside motion libraries can help when our mannequin videos do not contain a useful movement, but their body proportions and skeletons should not become our standard.",
+  "purpose": "Use external motion to fill gaps without polluting the core anatomical authority.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K054.R1",
+      "strength": "MUST",
+      "statement": "External motion enters as a source adapter with exact provenance and licensing."
+    },
+    {
+      "id": "K054.R2",
+      "strength": "MUST",
+      "statement": "Retarget movement into the universal skeleton/body-family context only through an explicit conversion and review step."
+    },
+    {
+      "id": "K054.R3",
+      "strength": "SHOULD",
+      "statement": "Prefer small selected motion gaps over bulk ingestion."
+    },
+    {
+      "id": "K054.R4",
+      "strength": "MUST",
+      "statement": "Do not redistribute external motion data in forms prohibited by its terms."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "implements",
+      "article": "CP-K075"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.CMU_MOCAP",
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "External motion ingestion is not part of Corpus Pane Checkpoint 01.",
+    "futureWork": "Use only after perspective/attachment foundations are stronger."
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "format": "sprite-foundry/corpus-pane-knowledge-package-report",
+  "version": 1,
+  "packageVersion": "1.0.5",
+  "articleCount": 38,
+  "categoryCount": 8,
+  "schemaCount": 8,
+  "externalAndProjectSourceCount": 15,
+  "vocabularyFileCount": 12,
+  "modelSnapshotCount": 5,
+  "exampleCount": 3,
+  "validation": "tests/validation_results.json",
+  "notes": [
+    "No third-party datasets, artwork, runtime code, or model weights are bundled.",
+    "External references are source records and synthesized guidance only.",
+    "The proposed corpus-to-doll bridge is explicitly marked untested."
+  ]
+}

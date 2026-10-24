@@ -1,0 +1,14 @@
+{
+  "id": "VOC.RELATION_TYPES",
+  "values": [
+    "depends_on",
+    "refines",
+    "implements",
+    "motivates",
+    "contrasts_with",
+    "uses_source",
+    "feeds",
+    "tests",
+    "supersedes"
+  ]
+}

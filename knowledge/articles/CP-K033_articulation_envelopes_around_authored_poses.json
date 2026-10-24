@@ -1,0 +1,47 @@
+{
+  "id": "CP-K033",
+  "title": "Articulation envelopes around authored poses",
+  "version": 1,
+  "knowledgeType": "assembly",
+  "authority": "synthesized_rule",
+  "plainLanguage": "The goal is not to bend every drawing infinitely. A piece can be authored for one pose and still allow a small, tested amount of movement around that pose.",
+  "purpose": "Support the user’s desired “mostly held pose with some articulation” character system.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K033.R1",
+      "strength": "MUST",
+      "statement": "Record articulation as a tested envelope around an authored configuration, not as an assumed universal joint limit."
+    },
+    {
+      "id": "K033.R2",
+      "strength": "SHOULD",
+      "statement": "Start with held_pose or micro_adjustment grades; promote to bounded_joint or bounded_chain only after visual tests."
+    },
+    {
+      "id": "K033.R3",
+      "strength": "MUST",
+      "statement": "Articulation limits are artwork/view-specific even when the anatomical joint is universal."
+    },
+    {
+      "id": "K033.R4",
+      "strength": "MUST",
+      "statement": "If a movement causes seam failure, silhouette collapse, or implausible perspective, the envelope ends there unless new artwork exists."
+    }
+  ],
+  "recordGuidance": {
+    "schema": "schemas/poser_part.schema.json"
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.EXT.SPINE_MIX_MATCH",
+    "SRC.CP.DOLL_RIG_0_4_13"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Doll rig has rotation controls; Corpus Pane does not yet store tested part articulation envelopes.",
+    "futureWork": "Derive envelopes through real assembly tests rather than generic anatomical limits."
+  }
+}

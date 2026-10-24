@@ -1,0 +1,32 @@
+{
+  "suite": "Corpus Pane 02.2.3 graded view and visibility semantics",
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "results": [
+    {
+      "name": "view distance follows front to back ladder",
+      "pass": true
+    },
+    {
+      "name": "graded view ranking prefers same then neighbor then farther view",
+      "pass": true
+    },
+    {
+      "name": "hidden versus visible is a visibility disagreement, not a perfect match",
+      "pass": true
+    },
+    {
+      "name": "hidden versus hidden remains compatible known coverage",
+      "pass": true
+    },
+    {
+      "name": "same-view visible reference outranks same-view hidden mismatch",
+      "pass": true
+    },
+    {
+      "name": "application and knowledge versions are upgraded without schema change",
+      "pass": true
+    }
+  ]
+}

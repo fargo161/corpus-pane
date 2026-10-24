@@ -1,0 +1,1454 @@
+{
+  "format": "sprite-foundry/corpus-pane-seed-library-snapshot",
+  "version": 1,
+  "createdAt": "2026-10-22T22:41:00Z",
+  "source": {
+    "name": "LIBRARY_INDEX.json",
+    "sha256": "cbfef2004b9b44d4ca76dcd9bbb6d7a2d98814e18d8648d5b86c43b896458007"
+  },
+  "counts": {
+    "newClips": 3,
+    "totalClips": 5,
+    "newSamplesProcessed": 299,
+    "retainedStarterSamples": 98,
+    "regionalReferences": 18,
+    "scopedReviewRecords": 20,
+    "comparisonDecisions": 6
+  },
+  "important": "18 regional configurations are not 18 verified full-body poses; 20 review records cover selected groups on 14 distinct frames.",
+  "headDirectionLimitation": "Current UI stores one coarse frame view. Separate head observations are preserved in entry.extensions.libraryStarterPass.headOrientation and reference tags; no separate head/torso UI was added.",
+  "clips": [
+    {
+      "id": "clip-mvk0t17x-5b2jx56il3s",
+      "label": "MC10_arms_p01_left",
+      "unchanged": true
+    },
+    {
+      "id": "clip-mvk0t1cv-u9wp23ar5ye",
+      "label": "MC11_turn-hop-arms_p01_left",
+      "unchanged": true
+    },
+    {
+      "id": "clip-mvk0upxy-zijagj19os",
+      "label": "MC08_knee_p01_left",
+      "samples": 97,
+      "assistantReviewedFramesInProgram": [
+        1,
+        18,
+        19,
+        20,
+        27
+      ],
+      "referenceCount": 6
+    },
+    {
+      "id": "clip-mvk0y5ct-5mnoq80k1x2",
+      "label": "MC09_turn-footstand_p01_left",
+      "samples": 81,
+      "assistantReviewedFramesInProgram": [
+        16,
+        37,
+        52,
+        59
+      ],
+      "referenceCount": 7
+    },
+    {
+      "id": "clip-mvk0y2sg-v9zzb74t7n",
+      "label": "MC04_bendforward_p01_left",
+      "samples": 121,
+      "assistantReviewedFramesInProgram": [
+        1,
+        34,
+        66,
+        88,
+        121
+      ],
+      "referenceCount": 5
+    }
+  ],
+  "regionalConfigurations": [
+    {
+      "id": "configuration-mvk17drs-n4ky834mib",
+      "label": "Knee lift — rising right lower leg",
+      "clipId": "clip-mvk0upxy-zijagj19os",
+      "clip": "MC08_knee_p01_left",
+      "sourceSHA256": "a43e87cb00dfbf7b32e429c576c7819870eb93f11123556d1675018fef1cbe2e",
+      "frameZeroBased": 18,
+      "frameInProgram": 19,
+      "group": "rightShin",
+      "points": [
+        "knee.right",
+        "ankle.right"
+      ],
+      "tags": [
+        "knee_lift",
+        "rising",
+        "right_shin",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk17bc2-c26wg6c3qsr"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk17e3v-ojm9l6jkw3h",
+      "label": "Knee lift — dangling right foot, rising",
+      "clipId": "clip-mvk0upxy-zijagj19os",
+      "clip": "MC08_knee_p01_left",
+      "sourceSHA256": "a43e87cb00dfbf7b32e429c576c7819870eb93f11123556d1675018fef1cbe2e",
+      "frameZeroBased": 18,
+      "frameInProgram": 19,
+      "group": "rightFoot",
+      "points": [
+        "ankle.right",
+        "toe.right"
+      ],
+      "tags": [
+        "knee_lift",
+        "right_foot",
+        "airborne",
+        "toes_down"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk17bc2-c26wg6c3qsr"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk17egt-z8ks6y9xdo",
+      "label": "Knee lift — high right lower leg",
+      "clipId": "clip-mvk0upxy-zijagj19os",
+      "clip": "MC08_knee_p01_left",
+      "sourceSHA256": "a43e87cb00dfbf7b32e429c576c7819870eb93f11123556d1675018fef1cbe2e",
+      "frameZeroBased": 26,
+      "frameInProgram": 27,
+      "group": "rightShin",
+      "points": [
+        "knee.right",
+        "ankle.right"
+      ],
+      "tags": [
+        "knee_lift",
+        "peak",
+        "right_shin",
+        "overlap"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk17brk-ootpg2zdd6"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk17et9-zu5bfne5e9",
+      "label": "Knee lift — high dangling right foot",
+      "clipId": "clip-mvk0upxy-zijagj19os",
+      "clip": "MC08_knee_p01_left",
+      "sourceSHA256": "a43e87cb00dfbf7b32e429c576c7819870eb93f11123556d1675018fef1cbe2e",
+      "frameZeroBased": 26,
+      "frameInProgram": 27,
+      "group": "rightFoot",
+      "points": [
+        "ankle.right",
+        "toe.right"
+      ],
+      "tags": [
+        "knee_lift",
+        "right_foot",
+        "airborne",
+        "peak"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk17brk-ootpg2zdd6"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk18trv-mho964zr4k",
+      "label": "Knee source — five-slot face, head toward image left",
+      "clipId": "clip-mvk0upxy-zijagj19os",
+      "clip": "MC08_knee_p01_left",
+      "sourceSHA256": "a43e87cb00dfbf7b32e429c576c7819870eb93f11123556d1675018fef1cbe2e",
+      "frameZeroBased": 0,
+      "frameInProgram": 1,
+      "group": "face",
+      "points": [
+        "face.brow.left",
+        "face.brow.right",
+        "face.eye.left",
+        "face.eye.right",
+        "face.lower"
+      ],
+      "tags": [
+        "face_five_slots",
+        "head_three_quarter",
+        "head_image_left",
+        "bald",
+        "upright"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk17awt-9u3r0n9l4ln"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk18v1p-7tg0806kqrb",
+      "label": "Knee source — raised right upper arm",
+      "clipId": "clip-mvk0upxy-zijagj19os",
+      "clip": "MC08_knee_p01_left",
+      "sourceSHA256": "a43e87cb00dfbf7b32e429c576c7819870eb93f11123556d1675018fef1cbe2e",
+      "frameZeroBased": 0,
+      "frameInProgram": 1,
+      "group": "rightUpperArm",
+      "points": [
+        "shoulder.right",
+        "elbow.right"
+      ],
+      "tags": [
+        "right_upper_arm",
+        "raised",
+        "elbow_up",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk17awt-9u3r0n9l4ln"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1cdfm-kp6p1yrqko",
+      "label": "Balance — right arm bent upward",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 36,
+      "frameInProgram": 37,
+      "group": "rightArm",
+      "points": [
+        "shoulder.right",
+        "elbow.right",
+        "wrist.right",
+        "hand.right"
+      ],
+      "tags": [
+        "right_arm",
+        "elbow_bent",
+        "hand_open",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bq25-y9uyesn78fi"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1ce6s-hbf4uzoqhls",
+      "label": "Balance — left arm reaching overhead",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 51,
+      "frameInProgram": 52,
+      "group": "leftArm",
+      "points": [
+        "shoulder.left",
+        "elbow.left",
+        "wrist.left",
+        "hand.left"
+      ],
+      "tags": [
+        "left_arm",
+        "overhead",
+        "elbow_bent",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bqbh-42osbr7non4"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1cewc-q5uluo34te",
+      "label": "Balance — right forearm open outward",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 58,
+      "frameInProgram": 59,
+      "group": "rightArm",
+      "points": [
+        "shoulder.right",
+        "elbow.right",
+        "wrist.right",
+        "hand.right"
+      ],
+      "tags": [
+        "right_arm",
+        "open_forearm",
+        "hand_open",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bqlr-8vfxfc7nv07"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1cfpw-t6w1az6288e",
+      "label": "Balance — left arm high arc",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 58,
+      "frameInProgram": 59,
+      "group": "leftArm",
+      "points": [
+        "shoulder.left",
+        "elbow.left",
+        "wrist.left",
+        "hand.left"
+      ],
+      "tags": [
+        "left_arm",
+        "overhead",
+        "high_arc",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bqlr-8vfxfc7nv07"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1cgj2-usgbgibj6wq",
+      "label": "Balance — right lower leg lifted sideways",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 36,
+      "frameInProgram": 37,
+      "group": "rightShin",
+      "points": [
+        "knee.right",
+        "ankle.right"
+      ],
+      "tags": [
+        "right_shin",
+        "balance",
+        "airborne",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bq25-y9uyesn78fi"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1chd6-fuhcjyrxnm",
+      "label": "Balance — free right foot angled down",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 36,
+      "frameInProgram": 37,
+      "group": "rightFoot",
+      "points": [
+        "ankle.right",
+        "toe.right"
+      ],
+      "tags": [
+        "right_foot",
+        "airborne",
+        "toes_down",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bq25-y9uyesn78fi"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1ci86-yrxzgox0xj",
+      "label": "Balance source — five-slot front face",
+      "clipId": "clip-mvk0y5ct-5mnoq80k1x2",
+      "clip": "MC09_turn-footstand_p01_left",
+      "sourceSHA256": "573e91f36db05402242e731c8728467f0c6ae19b3f31156c0bc8ee75acd0c0dd",
+      "frameZeroBased": 15,
+      "frameInProgram": 16,
+      "group": "face",
+      "points": [
+        "face.brow.left",
+        "face.brow.right",
+        "face.eye.left",
+        "face.eye.right",
+        "face.lower"
+      ],
+      "tags": [
+        "face_five_slots",
+        "head_front",
+        "bald",
+        "upright"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1bppe-pvuh8nechkb"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1fky5-tkfgwun1pmc",
+      "label": "Forward bend — upright chest baseline",
+      "clipId": "clip-mvk0y2sg-v9zzb74t7n",
+      "clip": "MC04_bendforward_p01_left",
+      "sourceSHA256": "9086ae5434b8960498a390e974b5a4675bd681d6a5469683c10a3321fa6c2c18",
+      "frameZeroBased": 0,
+      "frameInProgram": 1,
+      "group": "upperTorso",
+      "points": [
+        "neck",
+        "chest",
+        "shoulder.left",
+        "shoulder.right"
+      ],
+      "tags": [
+        "upper_torso",
+        "upright",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1e4ln-a5crc5wttvs"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1flt5-ytygpk7q9jk",
+      "label": "Forward bend — early torso lean",
+      "clipId": "clip-mvk0y2sg-v9zzb74t7n",
+      "clip": "MC04_bendforward_p01_left",
+      "sourceSHA256": "9086ae5434b8960498a390e974b5a4675bd681d6a5469683c10a3321fa6c2c18",
+      "frameZeroBased": 33,
+      "frameInProgram": 34,
+      "group": "upperTorso",
+      "points": [
+        "neck",
+        "chest",
+        "shoulder.left",
+        "shoulder.right"
+      ],
+      "tags": [
+        "upper_torso",
+        "forward_lean",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1e4vg-ku1xnrm879"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1fmp2-00ra87ozrtd3a",
+      "label": "Forward bend — left elbow flexed",
+      "clipId": "clip-mvk0y2sg-v9zzb74t7n",
+      "clip": "MC04_bendforward_p01_left",
+      "sourceSHA256": "9086ae5434b8960498a390e974b5a4675bd681d6a5469683c10a3321fa6c2c18",
+      "frameZeroBased": 65,
+      "frameInProgram": 66,
+      "group": "leftArm",
+      "points": [
+        "shoulder.left",
+        "elbow.left",
+        "wrist.left",
+        "hand.left"
+      ],
+      "tags": [
+        "left_arm",
+        "folding",
+        "elbow_bent",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1e54p-senjaabb39m"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1fnk5-dtvxk13hd0j",
+      "label": "Forward bend — right arm hanging",
+      "clipId": "clip-mvk0y2sg-v9zzb74t7n",
+      "clip": "MC04_bendforward_p01_left",
+      "sourceSHA256": "9086ae5434b8960498a390e974b5a4675bd681d6a5469683c10a3321fa6c2c18",
+      "frameZeroBased": 87,
+      "frameInProgram": 88,
+      "group": "rightArm",
+      "points": [
+        "shoulder.right",
+        "elbow.right",
+        "wrist.right",
+        "hand.right"
+      ],
+      "tags": [
+        "right_arm",
+        "folded_torso",
+        "hanging",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1e5ew-cv5ulrb2svj"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    },
+    {
+      "id": "configuration-mvk1fogj-wxii9fzd55h",
+      "label": "Forward bend — left arm hanging",
+      "clipId": "clip-mvk0y2sg-v9zzb74t7n",
+      "clip": "MC04_bendforward_p01_left",
+      "sourceSHA256": "9086ae5434b8960498a390e974b5a4675bd681d6a5469683c10a3321fa6c2c18",
+      "frameZeroBased": 87,
+      "frameInProgram": 88,
+      "group": "leftArm",
+      "points": [
+        "shoulder.left",
+        "elbow.left",
+        "wrist.left",
+        "hand.left"
+      ],
+      "tags": [
+        "left_arm",
+        "folded_torso",
+        "hanging",
+        "front_body"
+      ],
+      "view": {
+        "family": "FRONT",
+        "heading": "toward",
+        "status": "reviewed",
+        "recordId": "view-mvk1e5ew-cv5ulrb2svj"
+      },
+      "reviewAuthority": "assistant_visual_review",
+      "userAcceptance": "pending",
+      "qualification": "reviewed 2D configuration; artwork availability is a separate question"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "comparison-mvk1iduy-p6lt2icsjm",
+      "a": {
+        "entryId": "clip-mvk0upxy-zijagj19os",
+        "frame": 26,
+        "snapshot": {
+          "keys": [
+            "ankle.right",
+            "knee.right"
+          ],
+          "frames": [
+            {
+              "index": 26,
+              "points": [
+                [
+                  "ankle.right",
+                  128,
+                  466,
+                  "visible"
+                ],
+                [
+                  "knee.right",
+                  145,
+                  363,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk17brk-ootpg2zdd6"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 133,
+          "floorY": 588,
+          "rootX": 119,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:05:21.717Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visual crown and foot-bottom guides on upright source frame 0. Constant display scale only; not biological stature."
+        }
+      },
+      "b": {
+        "entryId": "clip-mvk0y5ct-5mnoq80k1x2",
+        "frame": 36,
+        "snapshot": {
+          "keys": [
+            "ankle.right",
+            "knee.right"
+          ],
+          "frames": [
+            {
+              "index": 36,
+              "points": [
+                [
+                  "ankle.right",
+                  37,
+                  326,
+                  "visible"
+                ],
+                [
+                  "knee.right",
+                  50,
+                  272,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1bq25-y9uyesn78fi"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 91,
+          "floorY": 406,
+          "rootX": 74,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:10:11.601Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visually checked upright source frame 0. Uniform display normalization only; no physical limb-length measurement."
+        }
+      },
+      "region": "rightShin",
+      "keys": [
+        "knee.right",
+        "ankle.right"
+      ],
+      "classification": "new_pose",
+      "note": "Both selected right lower-leg guides were visually reviewed. The knee-lift shin is nearly vertical; the balance shin is angled outward. These are different poses within the same joint vocabulary, not a failed skeleton or a physical limb-length measurement.",
+      "tags": [],
+      "at": "2026-10-22T21:15:23.435Z",
+      "status": "user-classified",
+      "schemaVersion": "1.2.0",
+      "meaning": "A scoped review decision; does not verify coordinates or establish global compatibility.",
+      "reviewer": "assistant_visual_review",
+      "userAcceptance": "pending"
+    },
+    {
+      "id": "comparison-mvk1if8g-ymwpt9ogp5",
+      "a": {
+        "entryId": "clip-mvk0y5ct-5mnoq80k1x2",
+        "frame": 58,
+        "snapshot": {
+          "keys": [
+            "elbow.left",
+            "hand.left",
+            "shoulder.left",
+            "wrist.left"
+          ],
+          "frames": [
+            {
+              "index": 58,
+              "points": [
+                [
+                  "elbow.left",
+                  137,
+                  102,
+                  "visible"
+                ],
+                [
+                  "hand.left",
+                  122,
+                  49,
+                  "visible"
+                ],
+                [
+                  "shoulder.left",
+                  122,
+                  148,
+                  "visible"
+                ],
+                [
+                  "wrist.left",
+                  124,
+                  62,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1bqlr-8vfxfc7nv07"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 91,
+          "floorY": 406,
+          "rootX": 74,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:10:11.601Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visually checked upright source frame 0. Uniform display normalization only; no physical limb-length measurement."
+        }
+      },
+      "b": {
+        "entryId": "clip-mvk0y2sg-v9zzb74t7n",
+        "frame": 87,
+        "snapshot": {
+          "keys": [
+            "elbow.left",
+            "hand.left",
+            "shoulder.left",
+            "wrist.left"
+          ],
+          "frames": [
+            {
+              "index": 87,
+              "points": [
+                [
+                  "elbow.left",
+                  92,
+                  283,
+                  "visible"
+                ],
+                [
+                  "hand.left",
+                  87,
+                  342,
+                  "visible"
+                ],
+                [
+                  "shoulder.left",
+                  96,
+                  236,
+                  "visible"
+                ],
+                [
+                  "wrist.left",
+                  91,
+                  328,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1e5ew-cv5ulrb2svj"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 89,
+          "floorY": 392,
+          "rootX": 68,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:12:04.237Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Crown and lowest foot edge checked on upright source sample 0. Do not rescale the figure as it folds."
+        }
+      },
+      "region": "leftArm",
+      "keys": [
+        "shoulder.left",
+        "elbow.left",
+        "wrist.left",
+        "hand.left"
+      ],
+      "classification": "new_pose",
+      "note": "Reviewed left arm: overhead arc versus an arm hanging from a folded torso. Keep two configurations with the same shoulder/elbow/wrist/hand IDs. No interchangeable raster artwork has been extracted.",
+      "tags": [],
+      "at": "2026-10-22T21:15:25.217Z",
+      "status": "user-classified",
+      "schemaVersion": "1.2.0",
+      "meaning": "A scoped review decision; does not verify coordinates or establish global compatibility.",
+      "reviewer": "assistant_visual_review",
+      "userAcceptance": "pending"
+    },
+    {
+      "id": "comparison-mvk1iob9-tybsxe4q11",
+      "a": {
+        "entryId": "clip-mvk0upxy-zijagj19os",
+        "frame": 0,
+        "snapshot": {
+          "keys": [
+            "face.brow.left",
+            "face.brow.right",
+            "face.eye.left",
+            "face.eye.right",
+            "face.lower"
+          ],
+          "frames": [
+            {
+              "index": 0,
+              "points": [
+                [
+                  "face.brow.left",
+                  110,
+                  151,
+                  "visible"
+                ],
+                [
+                  "face.brow.right",
+                  94,
+                  151,
+                  "visible"
+                ],
+                [
+                  "face.eye.left",
+                  109,
+                  158,
+                  "visible"
+                ],
+                [
+                  "face.eye.right",
+                  94,
+                  158,
+                  "visible"
+                ],
+                [
+                  "face.lower",
+                  98,
+                  178,
+                  "visible"
+                ]
+              ],
+              "oval": {
+                "cx": 109.00000077999141,
+                "cy": 161.99999870773848,
+                "w": 43.99999964880688,
+                "h": 59.999996971187926,
+                "angle": 0
+              }
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk17awt-9u3r0n9l4ln"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 133,
+          "floorY": 588,
+          "rootX": 119,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:05:21.717Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visual crown and foot-bottom guides on upright source frame 0. Constant display scale only; not biological stature."
+        }
+      },
+      "b": {
+        "entryId": "clip-mvk0y5ct-5mnoq80k1x2",
+        "frame": 15,
+        "snapshot": {
+          "keys": [
+            "face.brow.left",
+            "face.brow.right",
+            "face.eye.left",
+            "face.eye.right",
+            "face.lower"
+          ],
+          "frames": [
+            {
+              "index": 15,
+              "points": [
+                [
+                  "face.brow.left",
+                  82,
+                  103,
+                  "visible"
+                ],
+                [
+                  "face.brow.right",
+                  68,
+                  102,
+                  "visible"
+                ],
+                [
+                  "face.eye.left",
+                  82,
+                  107,
+                  "visible"
+                ],
+                [
+                  "face.eye.right",
+                  69,
+                  106,
+                  "visible"
+                ],
+                [
+                  "face.lower",
+                  75,
+                  118,
+                  "visible"
+                ]
+              ],
+              "oval": {
+                "cx": 76,
+                "cy": 111,
+                "w": 32,
+                "h": 44,
+                "angle": 0
+              }
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1bppe-pvuh8nechkb"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 91,
+          "floorY": 406,
+          "rootX": 74,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:10:11.601Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visually checked upright source frame 0. Uniform display normalization only; no physical limb-length measurement."
+        }
+      },
+      "region": "face",
+      "keys": [
+        "face.brow.left",
+        "face.brow.right",
+        "face.eye.left",
+        "face.eye.right",
+        "face.lower"
+      ],
+      "classification": "different_view",
+      "note": "The bodies are front-like, but the knee source head turns toward image-left and the balance source head is near-front. Five-slot face references remain distinct. Current app has one per-clip view label, so head direction is additionally recorded in reference tags/metadata; a face match score alone must not collapse these into one pose.",
+      "tags": [],
+      "at": "2026-10-22T21:15:36.982Z",
+      "status": "user-classified",
+      "schemaVersion": "1.2.0",
+      "meaning": "A scoped review decision; does not verify coordinates or establish global compatibility.",
+      "reviewer": "assistant_visual_review",
+      "userAcceptance": "pending"
+    },
+    {
+      "id": "comparison-mvk1ipqp-jrmr25s48t8",
+      "a": {
+        "entryId": "clip-mvk0y2sg-v9zzb74t7n",
+        "frame": 87,
+        "snapshot": {
+          "keys": [
+            "face.brow.left",
+            "face.brow.right",
+            "face.eye.left",
+            "face.eye.right",
+            "face.lower"
+          ],
+          "frames": [
+            {
+              "index": 87,
+              "points": [
+                [
+                  "face.brow.left",
+                  null,
+                  null,
+                  "occluded"
+                ],
+                [
+                  "face.brow.right",
+                  null,
+                  null,
+                  "occluded"
+                ],
+                [
+                  "face.eye.left",
+                  null,
+                  null,
+                  "occluded"
+                ],
+                [
+                  "face.eye.right",
+                  null,
+                  null,
+                  "occluded"
+                ],
+                [
+                  "face.lower",
+                  null,
+                  null,
+                  "occluded"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1e5ew-cv5ulrb2svj"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 89,
+          "floorY": 392,
+          "rootX": 68,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:12:04.237Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Crown and lowest foot edge checked on upright source sample 0. Do not rescale the figure as it folds."
+        }
+      },
+      "b": {
+        "entryId": "clip-mvk0upxy-zijagj19os",
+        "frame": 0,
+        "snapshot": {
+          "keys": [
+            "face.brow.left",
+            "face.brow.right",
+            "face.eye.left",
+            "face.eye.right",
+            "face.lower"
+          ],
+          "frames": [
+            {
+              "index": 0,
+              "points": [
+                [
+                  "face.brow.left",
+                  110,
+                  151,
+                  "visible"
+                ],
+                [
+                  "face.brow.right",
+                  94,
+                  151,
+                  "visible"
+                ],
+                [
+                  "face.eye.left",
+                  109,
+                  158,
+                  "visible"
+                ],
+                [
+                  "face.eye.right",
+                  94,
+                  158,
+                  "visible"
+                ],
+                [
+                  "face.lower",
+                  98,
+                  178,
+                  "visible"
+                ]
+              ],
+              "oval": {
+                "cx": 109.00000077999141,
+                "cy": 161.99999870773848,
+                "w": 43.99999964880688,
+                "h": 59.999996971187926,
+                "angle": 0
+              }
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk17awt-9u3r0n9l4ln"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 133,
+          "floorY": 588,
+          "rootX": 119,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:05:21.717Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visual crown and foot-bottom guides on upright source frame 0. Constant display scale only; not biological stature."
+        }
+      },
+      "region": "face",
+      "keys": [
+        "face.brow.left",
+        "face.brow.right",
+        "face.eye.left",
+        "face.eye.right",
+        "face.lower"
+      ],
+      "classification": "hidden_part",
+      "note": "On bend source sample 87 the head is down and facial features are not visible. The five controls are explicitly hidden. The knee source shows the face. Missing facial features here are an occlusion/view issue, not permission to reuse visible face coordinates.",
+      "tags": [],
+      "at": "2026-10-22T21:15:38.834Z",
+      "status": "user-classified",
+      "schemaVersion": "1.2.0",
+      "meaning": "A scoped review decision; does not verify coordinates or establish global compatibility.",
+      "reviewer": "assistant_visual_review",
+      "userAcceptance": "pending"
+    },
+    {
+      "id": "comparison-mvk1iqn2-7qhgubz7ts2",
+      "a": {
+        "entryId": "clip-mvk0y2sg-v9zzb74t7n",
+        "frame": 0,
+        "snapshot": {
+          "keys": [
+            "chest",
+            "neck",
+            "shoulder.left",
+            "shoulder.right"
+          ],
+          "frames": [
+            {
+              "index": 0,
+              "points": [
+                [
+                  "chest",
+                  65,
+                  168,
+                  "visible"
+                ],
+                [
+                  "neck",
+                  63,
+                  140,
+                  "visible"
+                ],
+                [
+                  "shoulder.left",
+                  84,
+                  145,
+                  "visible"
+                ],
+                [
+                  "shoulder.right",
+                  41,
+                  145,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1e4ln-a5crc5wttvs"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 89,
+          "floorY": 392,
+          "rootX": 68,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:12:04.237Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Crown and lowest foot edge checked on upright source sample 0. Do not rescale the figure as it folds."
+        }
+      },
+      "b": {
+        "entryId": "clip-mvk0y2sg-v9zzb74t7n",
+        "frame": 33,
+        "snapshot": {
+          "keys": [
+            "chest",
+            "neck",
+            "shoulder.left",
+            "shoulder.right"
+          ],
+          "frames": [
+            {
+              "index": 33,
+              "points": [
+                [
+                  "chest",
+                  72,
+                  180,
+                  "visible"
+                ],
+                [
+                  "neck",
+                  72,
+                  151,
+                  "visible"
+                ],
+                [
+                  "shoulder.left",
+                  99,
+                  155,
+                  "visible"
+                ],
+                [
+                  "shoulder.right",
+                  43,
+                  158,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk1e4vg-ku1xnrm879"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 89,
+          "floorY": 392,
+          "rootX": 68,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:12:04.237Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Crown and lowest foot edge checked on upright source sample 0. Do not rescale the figure as it folds."
+        }
+      },
+      "region": "upperTorso",
+      "keys": [
+        "neck",
+        "chest",
+        "shoulder.left",
+        "shoulder.right"
+      ],
+      "classification": "new_pose",
+      "note": "Checked upper-torso controls at upright and early-forward-lean frames. Same source, same fixed display scale; neck/chest/shoulders change as a pose. No per-frame stretch or biological proportion correction.",
+      "tags": [],
+      "at": "2026-10-22T21:15:39.999Z",
+      "status": "user-classified",
+      "schemaVersion": "1.2.0",
+      "meaning": "A scoped review decision; does not verify coordinates or establish global compatibility.",
+      "reviewer": "assistant_visual_review",
+      "userAcceptance": "pending"
+    },
+    {
+      "id": "comparison-mvk1n95u-9o19fn2z4vm",
+      "a": {
+        "entryId": "clip-mvk0upxy-zijagj19os",
+        "frame": 0,
+        "snapshot": {
+          "keys": [
+            "elbow.right",
+            "shoulder.right"
+          ],
+          "frames": [
+            {
+              "index": 0,
+              "points": [
+                [
+                  "elbow.right",
+                  54,
+                  146,
+                  "visible"
+                ],
+                [
+                  "shoulder.right",
+                  78,
+                  222,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "toward",
+          "status": "reviewed",
+          "recordId": "view-mvk17awt-9u3r0n9l4ln"
+        },
+        "calibration": {
+          "frame": 0,
+          "crownY": 133,
+          "floorY": 588,
+          "rootX": 119,
+          "status": "reviewed",
+          "method": "Visually checked crown and foot-bottom guides; one constant uniform display scale",
+          "confirmedAt": "2026-10-22T21:05:21.717Z",
+          "reviewedBy": "assistant_visual_review",
+          "qualification": "Visual crown and foot-bottom guides on upright source frame 0. Constant display scale only; not biological stature."
+        }
+      },
+      "b": {
+        "entryId": "clip-mvk0t17x-5b2jx56il3s",
+        "frame": 34,
+        "snapshot": {
+          "keys": [
+            "elbow.right",
+            "shoulder.right"
+          ],
+          "frames": [
+            {
+              "index": 34,
+              "points": [
+                [
+                  "elbow.right",
+                  83.5765,
+                  121.8824,
+                  "visible"
+                ],
+                [
+                  "shoulder.right",
+                  108.9315,
+                  167.4392,
+                  "visible"
+                ]
+              ],
+              "oval": null
+            }
+          ]
+        },
+        "view": {
+          "family": "FRONT",
+          "heading": "unspecified",
+          "status": "provisional",
+          "recordId": null
+        },
+        "calibration": {
+          "frame": 0,
+          "rootX": 134,
+          "crownY": 108,
+          "floorY": 485,
+          "status": "estimated",
+          "method": "Initial source silhouette and optional Stage-1 floor estimate; verify in an upright frame."
+        }
+      },
+      "region": "rightUpperArm",
+      "keys": [
+        "shoulder.right",
+        "elbow.right"
+      ],
+      "classification": "uncertain",
+      "note": "The search retrieved starter MC10 frame 35 as a similar raised-right-upper-arm candidate (3.4% projected shape difference). Visual shape is broadly similar, but the starter shoulder location and size guides are unreviewed. This is a retrieval demonstration, not approval of the starter or proof that the pieces are interchangeable.",
+      "tags": [],
+      "at": "2026-10-22T21:19:10.628Z",
+      "status": "user-classified",
+      "schemaVersion": "1.2.0",
+      "meaning": "A scoped review decision; does not verify coordinates or establish global compatibility.",
+      "reviewer": "assistant_visual_review",
+      "userAcceptance": "pending"
+    }
+  ],
+  "authority": {
+    "reviewAuthority": "assistant_visual_review",
+    "userAcceptance": "pending"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "suite": "Corpus Pane 02.1 browser repair checks",
+  "pass": true,
+  "referenceStayedCurrent": true,
+  "authorityVisible": true,
+  "specificKnowledge": true,
+  "canonicalClassification": true,
+  "headMigrationVisible": true,
+  "pageErrors": []
+}

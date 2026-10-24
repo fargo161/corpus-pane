@@ -1,0 +1,43 @@
+{
+  "id": "CP-K040",
+  "title": "Five-slot face plus shared nose",
+  "version": 1,
+  "knowledgeType": "face",
+  "authority": "existing_contract",
+  "plainLanguage": "The face uses five editable pieces—two brows, two eyes, and the lower face—with the nose shared with the main skeleton. More detailed face landmarks can remain behind the scenes as evidence.",
+  "purpose": "Keep face editing simple while preserving enough structure for tracking and later face replacement.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K040.R1",
+      "strength": "MUST",
+      "statement": "The five editable slots remain the face authority; raw detector eye/landmark outputs do not become competing editable controls.",
+      "sourceRefs": [
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K040.R2",
+      "strength": "MUST",
+      "statement": "Nose remains shared with the body skeleton."
+    },
+    {
+      "id": "K040.R3",
+      "strength": "SHOULD",
+      "statement": "Retain detailed landmarks as evidence for fitting, quality checks, and future adapters without exposing them as a second face system."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Implemented in Corpus Pane schema and tracking.",
+    "futureWork": "Use split head orientation and perspective reference packs to make face placement more view-aware."
+  }
+}

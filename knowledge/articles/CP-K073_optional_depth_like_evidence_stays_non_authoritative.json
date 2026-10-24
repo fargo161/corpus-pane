@@ -1,0 +1,45 @@
+{
+  "id": "CP-K073",
+  "title": "Optional depth-like evidence stays non-authoritative",
+  "version": 1,
+  "knowledgeType": "external_reference",
+  "authority": "external_reference",
+  "plainLanguage": "Some pose systems provide a Z-like number that can hint whether a landmark is closer to or farther from the camera. Google explicitly describes its pose Z as experimental and not true 3D. That is the right level of trust for us.",
+  "purpose": "Allow future depth hints without turning Corpus Pane into an accidental 3D solver.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K073.R1",
+      "strength": "MUST",
+      "statement": "If imported, depth-like values must be stored as optional provenance with source/model identity."
+    },
+    {
+      "id": "K073.R2",
+      "strength": "MUST",
+      "statement": "Depth-like values cannot verify hidden anatomy or determine draw order alone."
+    },
+    {
+      "id": "K073.R3",
+      "strength": "SHOULD",
+      "statement": "They may help rank perspective hypotheses when consistent with reviewed 2D evidence."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K024"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.GOOGLE_POSE",
+    "SRC.CP.SKELETON_1_2_0"
+  ],
+  "implementation": {
+    "status": "research_only",
+    "currentSupport": "Current universal skeleton explicitly says depth is not inferred.",
+    "futureWork": "Only add if it demonstrably reduces ambiguity in a controlled test."
+  }
+}

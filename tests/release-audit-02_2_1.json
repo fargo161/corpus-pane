@@ -1,0 +1,573 @@
+{
+  "suite": "Corpus Pane 02.2.2 release audit",
+  "total": 38,
+  "passed": 38,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "release_version",
+      "pass": true,
+      "detail": "0.2.2.2"
+    },
+    {
+      "name": "release_checkpoint",
+      "pass": true,
+      "detail": "02.2.2"
+    },
+    {
+      "name": "knowledge_version",
+      "pass": true,
+      "detail": "1.0.3"
+    },
+    {
+      "name": "skeleton_version",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "engine_unchanged_from_02_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "starter_unchanged_from_02_2",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "universal_skeleton_unchanged",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:index.html",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:app/corpus.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:app/workspace.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:app/knowledge.js",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:START_HERE.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:docs/SEARCH_SEMANTICS_APPROVAL_CLEANUP_REPORT.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:docs/TEST_REPORT.md",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:tests/search_semantics_cleanup.test.cjs",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "required:tests/search_semantics_browser.py",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "syntax:app/corpus.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/workspace.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/knowledge.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/storage.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_json_parse",
+      "pass": true,
+      "detail": {
+        "count": 113,
+        "bad": []
+      }
+    },
+    {
+      "name": "results:tests/core-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "pure data contracts",
+        "synthetic": true,
+        "total": 41,
+        "passed": 41,
+        "failed": 0,
+        "results": [
+          {
+            "name": "One shared skeleton; group boundary IDs are reused",
+            "pass": true
+          },
+          {
+            "name": "Fresh clip is unverified and original metadata retained",
+            "pass": true
+          },
+          {
+            "name": "Invalid group is not silently expanded to whole body",
+            "pass": true
+          },
+          {
+            "name": "Automatic uncertainty is not interpreted as hidden",
+            "pass": true
+          },
+          {
+            "name": "Explicit hidden state can exist without a fabricated location",
+            "pass": true
+          },
+          {
+            "name": "Manual pin survives an attempted tracking replacement",
+            "pass": true
+          },
+          {
+            "name": "Scoped pass leaves unrelated automatic points unchanged",
+            "pass": true
+          },
+          {
+            "name": "Hidden manual interval is protected from detector proposals",
+            "pass": true
+          },
+          {
+            "name": "One pin does not blindly shift neighboring detections",
+            "pass": true
+          },
+          {
+            "name": "Two pins interpolate between endpoints, not error offsets",
+            "pass": true
+          },
+          {
+            "name": "An occluded interval blocks two-pin interpolation",
+            "pass": true
+          },
+          {
+            "name": "Repeated image phases do not produce artificial intermediate motion",
+            "pass": true
+          },
+          {
+            "name": "Verification requires explicit visible or hidden evidence",
+            "pass": true
+          },
+          {
+            "name": "Verification is limited to the selected group and frames",
+            "pass": true
+          },
+          {
+            "name": "Verified coordinates resist refinement",
+            "pass": true
+          },
+          {
+            "name": "Manual change invalidates the affected verification",
+            "pass": true
+          },
+          {
+            "name": "Editing another group does not invalidate independent arm verification",
+            "pass": true
+          },
+          {
+            "name": "Reopening verification preserves existing manual corrections",
+            "pass": true
+          },
+          {
+            "name": "A reusable reference requires checked view and size guides",
+            "pass": true
+          },
+          {
+            "name": "Changing reviewed view invalidates a saved configuration",
+            "pass": true
+          },
+          {
+            "name": "Changing fixed calibration invalidates a saved configuration",
+            "pass": true
+          },
+          {
+            "name": "Body-family change invalidates cross-character reference eligibility",
+            "pass": true
+          },
+          {
+            "name": "Classification does not verify either source",
+            "pass": true
+          },
+          {
+            "name": "Hidden coordinates are excluded from numeric comparisons",
+            "pass": true
+          },
+          {
+            "name": "Uniformly scaled translated source compares identically",
+            "pass": true
+          },
+          {
+            "name": "Confirmed view mismatch is surfaced, not automatically rejected anatomy",
+            "pass": true
+          },
+          {
+            "name": "Saved verified reference retrieval excludes stale configurations",
+            "pass": true
+          },
+          {
+            "name": "Original source metadata and unknown extension fields survive JSON",
+            "pass": true
+          },
+          {
+            "name": "Exact duplicate corpus import is deduplicated",
+            "pass": true
+          },
+          {
+            "name": "Reordered JSON object keys do not create false imported revisions",
+            "pass": true
+          },
+          {
+            "name": "Verified single-point configuration remains a valid portable record",
+            "pass": true
+          },
+          {
+            "name": "Conflicting imported revision is forked, never overwrites corrections",
+            "pass": true
+          },
+          {
+            "name": "Conflict import remaps configuration references to the imported revision",
+            "pass": true
+          },
+          {
+            "name": "Malformed and unsupported corpus versions are rejected",
+            "pass": true
+          },
+          {
+            "name": "Changed skeleton topology cannot masquerade as same version",
+            "pass": true
+          },
+          {
+            "name": "Unsafe imported object keys are rejected",
+            "pass": true
+          },
+          {
+            "name": "Out-of-range and reversed scope is rejected",
+            "pass": true
+          },
+          {
+            "name": "Face oval has independent width height and rotation",
+            "pass": true
+          },
+          {
+            "name": "Starting facial layout is not claimed as a visible detection",
+            "pass": true
+          },
+          {
+            "name": "Changing oval invalidates face verification but not a verified arm",
+            "pass": true
+          },
+          {
+            "name": "Review flags are suggestions and do not approve coordinates",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "results:tests/repair-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.1 reviewer regressions",
+        "total": 14,
+        "passed": 14,
+        "failed": 0,
+        "results": [
+          {
+            "name": "Old CP01 backup upgrades and reimports without clip/reference/comparison forks",
+            "pass": true
+          },
+          {
+            "name": "Starter Pass head observations migrate into split head perspective",
+            "pass": true
+          },
+          {
+            "name": "Changing only head perspective does not retire an unchanged arm reference",
+            "pass": true
+          },
+          {
+            "name": "Changing relevant body perspective still retires an arm reference",
+            "pass": true
+          },
+          {
+            "name": "Knowledge-aware face reference depends on head perspective, not body record IDs",
+            "pass": true
+          },
+          {
+            "name": "Unknown profile heading never invents image-left",
+            "pass": true
+          },
+          {
+            "name": "Sparse pose signature refuses a one-anchor perfect match",
+            "pass": true
+          },
+          {
+            "name": "Adequately supported pose remains searchable",
+            "pass": true
+          },
+          {
+            "name": "All visible anatomical subgroups receive specific knowledge suggestions",
+            "pass": true
+          },
+          {
+            "name": "Legacy new_piece classification is normalized to needs_new_artwork",
+            "pass": true
+          },
+          {
+            "name": "Starter references visibly retain assistant review authority and pending owner acceptance",
+            "pass": true
+          },
+          {
+            "name": "New owner verification creates owner-approved reference authority",
+            "pass": true
+          },
+          {
+            "name": "Comparison freshness ignores replacement record IDs when semantics are unchanged",
+            "pass": true
+          },
+          {
+            "name": "View mismatch search surfaces the candidate instead of silently rejecting it",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "results:tests/library-search-approval-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2 library search and approval",
+        "total": 7,
+        "passed": 7,
+        "failed": 0,
+        "results": [
+          {
+            "name": "A complete two-joint upper-arm bone is enough for a meaningful pose signature",
+            "pass": true
+          },
+          {
+            "name": "A complete two-joint lower-leg bone is searchable against a checked reference",
+            "pass": true
+          },
+          {
+            "name": "Uncertain detector points may be used only as a labeled rough query against strict checked references",
+            "pass": true
+          },
+          {
+            "name": "A one-point rough query still cannot produce a fake perfect match",
+            "pass": true
+          },
+          {
+            "name": "Owner acceptance preserves assistant provenance on a current reusable configuration",
+            "pass": true
+          },
+          {
+            "name": "Reimporting an older pending copy does not duplicate or downgrade an owner-accepted reference",
+            "pass": true
+          },
+          {
+            "name": "Current implementation-status knowledge no longer calls split view and pose signatures merely proposed",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "results:tests/search-semantics-cleanup-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.2 search semantics and approval cleanup",
+        "total": 8,
+        "passed": 8,
+        "failed": 0,
+        "results": [
+          {
+            "name": "whole-arm strict upper-arm evidence is labeled partial rather than complete-region",
+            "pass": true
+          },
+          {
+            "name": "rough whole-arm evidence with more regional coverage is preferred over a strict partial subregion",
+            "pass": true
+          },
+          {
+            "name": "whole-leg search reports partial coverage when only thigh and shin are available",
+            "pass": true
+          },
+          {
+            "name": "incomplete face search reports control coverage rather than pretending the face is complete",
+            "pass": true
+          },
+          {
+            "name": "owner re-check of an assistant-reviewed reference promotes the existing record instead of making a duplicate",
+            "pass": true
+          },
+          {
+            "name": "accepting a saved reference records exact-scope support while broader assistant review remains separately attributed",
+            "pass": true
+          },
+          {
+            "name": "single control remains insufficient evidence even when that point lines up perfectly",
+            "pass": true
+          },
+          {
+            "name": "foreshortening article reflects implemented projection recording and retrieval",
+            "pass": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "results:knowledge",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane knowledge core",
+        "passed": 8,
+        "total": 8
+      }
+    },
+    {
+      "name": "browser:tests/search-semantics-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2.2 browser search semantics/approval cleanup",
+        "pass": true,
+        "regionCoverageVisible": true,
+        "roughSearchTextConsistent": true,
+        "singlePointAdvice": true,
+        "exactSupportAcceptance": true,
+        "dedupeAfterRecheck": true,
+        "knowledgeCurrent": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/search-approval-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.2 browser search/approval checks",
+        "pass": true,
+        "ownerAcceptanceVisible": true,
+        "comparisonProvenanceVisible": true,
+        "roughQueryVisible": true,
+        "knowledgeStatusCurrent": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/repair-browser-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Corpus Pane 02.1 browser repair checks",
+        "pass": true,
+        "referenceStayedCurrent": true,
+        "authorityVisible": true,
+        "specificKnowledge": true,
+        "canonicalClassification": true,
+        "headMigrationVisible": true,
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "browser:tests/seed-backup-compat-results.json",
+      "pass": true,
+      "detail": {
+        "suite": "Starter Pass 01 compatibility and migration",
+        "pass": true,
+        "backup": "starter/Corpus_Library_Starter_Pass_01.corpus.zip",
+        "firstImport": {
+          "clips": 5,
+          "refs": 18,
+          "comparisons": 6,
+          "reviews": 20,
+          "allKnowledge": true,
+          "ext": {
+            "id": "sprite-foundry/corpus-pane-knowledge",
+            "version": "1.0.3",
+            "role": "built-in reference; never verification"
+          },
+          "kneeHead": {
+            "family": "FRONT_THREE_QUARTER",
+            "heading": "image_left",
+            "status": "reviewed",
+            "notes": "Migrated from Starter Pass head-direction observation: front_three_quarter \u00b7 left \u00b7 assistant visually reviewed, approximate"
+          },
+          "balanceHead": {
+            "family": "FRONT",
+            "heading": "toward",
+            "status": "reviewed",
+            "notes": "Migrated from Starter Pass head-direction observation: front \u00b7 near_center \u00b7 assistant visually reviewed, approximate"
+          },
+          "assistantRefs": 18,
+          "importedRevisionLabels": 0
+        },
+        "duplicateReimport": "covered by tests/repair.test.cjs using the exact unpacked backup records",
+        "pageErrors": []
+      }
+    },
+    {
+      "name": "knowledge_validation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "knowledge_schema_validation",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "code_regionEvidence",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "code_exact_support",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ui_partial_match",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ui_rough_query",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ui_exact_acceptance",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "index_current",
+      "pass": true,
+      "detail": null
+    }
+  ]
+}

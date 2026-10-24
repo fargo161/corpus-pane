@@ -1,0 +1,57 @@
+{
+  "id": "CP-K080",
+  "title": "Bridge from Corpus Pane knowledge to the eventual 2D poser",
+  "version": 1,
+  "knowledgeType": "roadmap",
+  "authority": "project_decision",
+  "plainLanguage": "The Corpus Pane’s long-term payoff is a poser where a torso, arm, leg, head, and face can be chosen from compatible view families, attached to the same skeleton, and given small tested adjustments.",
+  "purpose": "Define the path from evidence collection to reusable character construction.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K080.R1",
+      "strength": "MUST",
+      "statement": "Do not turn every reviewed configuration into artwork automatically. A reviewed skeletal configuration and a reusable painted part are different deliverables."
+    },
+    {
+      "id": "K080.R2",
+      "strength": "SHOULD",
+      "statement": "For each high-value configuration, identify whether existing doll artwork can represent it, can represent it with bounded articulation, or requires a new part variant."
+    },
+    {
+      "id": "K080.R3",
+      "strength": "MUST",
+      "statement": "A poser part must pass compatibility tests against its host body/view before entering the approved mix-and-match pool."
+    },
+    {
+      "id": "K080.R4",
+      "strength": "SHOULD",
+      "statement": "Use semantic sockets to keep anatomy stable while swapping view-specific artwork."
+    },
+    {
+      "id": "K080.R5",
+      "strength": "MUST",
+      "statement": "Keep pose, artwork, attachment, layer order, and articulation records linked but independently reviewable."
+    }
+  ],
+  "recordGuidance": {
+    "schemas": [
+      "schemas/poser_part.schema.json",
+      "schemas/part_compatibility_test.schema.json"
+    ],
+    "bridge": "models/proposed_corpus_to_doll_bridge.json"
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DOLL_RIG_0_4_13",
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.EXT.SPINE_MIX_MATCH"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "The still mannequin rig already has modular layers, anchors and pivots; Corpus Pane already has reviewed regional configurations.",
+    "futureWork": "Create a bounded arm–torso pilot before broad part harvesting."
+  }
+}

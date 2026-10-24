@@ -1,0 +1,64 @@
+{
+  "suite": "Corpus Pane 02.1 reviewer regressions",
+  "total": 14,
+  "passed": 14,
+  "failed": 0,
+  "results": [
+    {
+      "name": "Old CP01 backup upgrades and reimports without clip/reference/comparison forks",
+      "pass": true
+    },
+    {
+      "name": "Starter Pass head observations migrate into split head perspective",
+      "pass": true
+    },
+    {
+      "name": "Changing only head perspective does not retire an unchanged arm reference",
+      "pass": true
+    },
+    {
+      "name": "Changing relevant body perspective still retires an arm reference",
+      "pass": true
+    },
+    {
+      "name": "Knowledge-aware face reference depends on head perspective, not body record IDs",
+      "pass": true
+    },
+    {
+      "name": "Unknown profile heading never invents image-left",
+      "pass": true
+    },
+    {
+      "name": "Sparse pose signature refuses a one-anchor perfect match",
+      "pass": true
+    },
+    {
+      "name": "Adequately supported pose remains searchable",
+      "pass": true
+    },
+    {
+      "name": "All visible anatomical subgroups receive specific knowledge suggestions",
+      "pass": true
+    },
+    {
+      "name": "Legacy new_piece classification is normalized to needs_new_artwork",
+      "pass": true
+    },
+    {
+      "name": "Starter references visibly retain assistant review authority and pending owner acceptance",
+      "pass": true
+    },
+    {
+      "name": "New owner verification creates owner-approved reference authority",
+      "pass": true
+    },
+    {
+      "name": "Comparison freshness ignores replacement record IDs when semantics are unchanged",
+      "pass": true
+    },
+    {
+      "name": "View mismatch search surfaces the candidate instead of silently rejecting it",
+      "pass": true
+    }
+  ]
+}

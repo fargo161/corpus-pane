@@ -1,0 +1,57 @@
+{
+  "id": "CP-K025",
+  "title": "Controlled perspective-reference packs",
+  "version": 1,
+  "knowledgeType": "perspective",
+  "authority": "synthesized_rule",
+  "plainLanguage": "A controlled reference pack shows the same body and same pose from several viewing directions. That is more useful for learning perspective than thousands of unrelated photos.",
+  "purpose": "Accelerate perspective learning while keeping the mannequin videos as the project’s real-world evidence.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K025.R1",
+      "strength": "SHOULD",
+      "statement": "Generate small controlled packs where body shape and pose are held constant while view changes, or view is held constant while one region changes."
+    },
+    {
+      "id": "K025.R2",
+      "strength": "MUST",
+      "statement": "Mark generated references as external_reference until checked against project artwork."
+    },
+    {
+      "id": "K025.R3",
+      "strength": "SHOULD",
+      "statement": "Prefer region-focused reference packs (for example arm/shoulder/torso) before whole-body libraries."
+    },
+    {
+      "id": "K025.R4",
+      "strength": "MUST",
+      "statement": "Do not let reference-body proportions silently become the mannequin’s canonical proportions."
+    }
+  ],
+  "recordGuidance": {
+    "schema": "schemas/perspective_reference.schema.json"
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "implements",
+      "article": "CP-K070"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K051"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.MAKEHUMAN_LICENSE",
+    "SRC.EXT.MPFB_POSES",
+    "SRC.EXT.MPFB_RIGGING"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "No controlled external reference pack is currently imported.",
+    "futureWork": "Pilot a small arm–shoulder–torso pack before broader adoption."
+  }
+}

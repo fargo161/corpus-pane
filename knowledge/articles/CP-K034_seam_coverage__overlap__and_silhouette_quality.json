@@ -1,0 +1,40 @@
+{
+  "id": "CP-K034",
+  "title": "Seam coverage, overlap, and silhouette quality",
+  "version": 1,
+  "knowledgeType": "assembly",
+  "authority": "synthesized_rule",
+  "plainLanguage": "A technically connected arm can still look broken if a gap opens at the shoulder or if the wrong layer shows through.",
+  "purpose": "Make visual assembly quality a first-class part of compatibility.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K034.R1",
+      "strength": "MUST",
+      "statement": "Compatibility tests must inspect seam coverage and full silhouette, not only joint coordinates."
+    },
+    {
+      "id": "K034.R2",
+      "strength": "SHOULD",
+      "statement": "Allow intentional artwork overlap around joints so pieces can tuck under hosts."
+    },
+    {
+      "id": "K034.R3",
+      "strength": "MUST",
+      "statement": "Do not change the anatomical joint to fix a seam; change artwork overlap, pivot mechanics, layer order, or artwork variant."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.EXT.SPINE_MIX_MATCH",
+    "SRC.CP.DOLL_RIG_0_4_13"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Not yet a Corpus Pane function.",
+    "futureWork": "Add seam/silhouette checks to poser compatibility records."
+  }
+}

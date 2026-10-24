@@ -1,0 +1,17 @@
+{
+  "id": "VOC.WORKFLOW_STAGE",
+  "values": [
+    "ingest",
+    "cleanup",
+    "track",
+    "correct",
+    "compare",
+    "classify",
+    "verify",
+    "reference",
+    "assemble",
+    "articulate",
+    "export",
+    "audit"
+  ]
+}

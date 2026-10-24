@@ -1,0 +1,73 @@
+{
+  "suite": "additional browser controls / portable media exports",
+  "environment": "same isolated-document Chromium harness as browser-results.json; no browser-policy changes",
+  "total": 13,
+  "passed": 13,
+  "results": [
+    {
+      "name": "Both playback advances and pauses",
+      "pass": true
+    },
+    {
+      "name": "Linked progress maps to corresponding relative sample index",
+      "pass": true
+    },
+    {
+      "name": "Tracking cancel is acknowledged",
+      "pass": true,
+      "detail": "Tracking canceled. Existing observations and corrections were not replaced."
+    },
+    {
+      "name": "Canceled refinement does not alter existing tracking, pins or pending state",
+      "pass": true
+    },
+    {
+      "name": "Playback pauses at a flagged frame in the selected group",
+      "pass": true
+    },
+    {
+      "name": "Optional large-difference review pauses without declaring incompatibility",
+      "pass": true
+    },
+    {
+      "name": "Actual PNG download retains transparent pixels and source dimensions",
+      "pass": true
+    },
+    {
+      "name": "Cleaned sequence export has original sample identities and editable track",
+      "pass": true
+    },
+    {
+      "name": "Reimporting unchanged portable backup does not fork clips because of JSON key order",
+      "pass": true
+    },
+    {
+      "name": "Records-only import explicitly identifies missing source rather than discarding track",
+      "pass": true
+    },
+    {
+      "name": "Matching original video reconnects a records-only track",
+      "pass": true
+    },
+    {
+      "name": "Machine-readable corpus schema validates real workflow records",
+      "pass": true
+    },
+    {
+      "name": "Extra UI tests produce no uncaught exceptions",
+      "pass": true,
+      "detail": []
+    }
+  ],
+  "pageErrors": [],
+  "consoleWarnings": [
+    {
+      "type": "warning",
+      "text": "Initialization of backend webgl failed"
+    },
+    {
+      "type": "warning",
+      "text": "Error: WebGL is not supported on this device\n    at new QA (<anonymous>:1244:661)\n    at Object.factory (<anonymous>:1244:17625)\n    at Mx.initializeBackend (<anonymous>:14:8798)\n    at Mx.setBackend (<anonymous>:14:8267)\n    at Object.dO (<anonymous"
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-knowledge-article-v1.json",
+  "title": "Corpus Pane Knowledge Article",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "version",
+    "knowledgeType",
+    "authority",
+    "plainLanguage",
+    "rules",
+    "relationships",
+    "sourceRefs",
+    "implementation"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^CP-K[0-9]{3}$"
+    },
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "knowledgeType": {
+      "type": "string",
+      "enum": [
+        "core",
+        "perspective",
+        "assembly",
+        "face",
+        "matching",
+        "evidence",
+        "external_reference",
+        "roadmap"
+      ]
+    },
+    "authority": {
+      "type": "string",
+      "enum": [
+        "existing_contract",
+        "project_decision",
+        "synthesized_rule",
+        "external_reference",
+        "hypothesis"
+      ]
+    },
+    "plainLanguage": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "appliesTo": {
+      "type": "object"
+    },
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "strength",
+          "statement"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "strength": {
+            "enum": [
+              "MUST",
+              "SHOULD",
+              "MAY"
+            ]
+          },
+          "statement": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          },
+          "sourceRefs": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "recordGuidance": {
+      "type": [
+        "object",
+        "array"
+      ]
+    },
+    "examples": {
+      "type": "array"
+    },
+    "failureModes": {
+      "type": "array"
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "type",
+          "article"
+        ],
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "article": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sourceRefs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "implementation": {
+      "type": "object",
+      "required": [
+        "status"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "existing",
+            "proposed",
+            "mixed",
+            "research_only"
+          ]
+        },
+        "currentSupport": {
+          "type": "string"
+        },
+        "futureWork": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

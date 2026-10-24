@@ -1,0 +1,10 @@
+{
+  "id": "VOC.DEPTH_DIRECTION_HINT",
+  "values": [
+    "toward_camera",
+    "away_from_camera",
+    "same_plane_or_unknown",
+    "unknown"
+  ],
+  "note": "Only record when supported by reviewed source context or a controlled external reference. Never derive authoritative layer order from it alone."
+}

@@ -1,0 +1,56 @@
+{
+  "id": "CP-K052",
+  "title": "Comparison classifications are knowledge about differences",
+  "version": 1,
+  "knowledgeType": "matching",
+  "authority": "existing_contract",
+  "plainLanguage": "When two examples do not line up, the important question is why: bad tracking, different view, a genuinely new pose, hidden anatomy, missing artwork, or a possible limitation in our schema.",
+  "purpose": "Convert difficult comparisons into reusable knowledge instead of treating every mismatch as an error.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K052.R1",
+      "strength": "MUST",
+      "statement": "Use the existing comparison vocabulary and preserve uncertain decisions.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K052.R2",
+      "strength": "MUST",
+      "statement": "A comparison decision does not verify either source automatically."
+    },
+    {
+      "id": "K052.R3",
+      "strength": "SHOULD",
+      "statement": "Repeated “different view/foreshortening” decisions should motivate new perspective references; repeated “needs new artwork” decisions should motivate new part variants."
+    },
+    {
+      "id": "K052.R4",
+      "strength": "MUST",
+      "statement": "A possible schema limitation starts an investigation; it does not immediately change the universal skeleton."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K053"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K063"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Comparison decisions are already stored.",
+    "futureWork": "Aggregate repeated classifications into gap reports."
+  }
+}

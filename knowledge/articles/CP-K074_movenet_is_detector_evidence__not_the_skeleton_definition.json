@@ -1,0 +1,40 @@
+{
+  "id": "CP-K074",
+  "title": "MoveNet is detector evidence, not the skeleton definition",
+  "version": 1,
+  "knowledgeType": "external_reference",
+  "authority": "external_reference",
+  "plainLanguage": "MoveNet gives 17 detected body points. Corpus Pane’s universal skeleton is richer because it also has derived/manual head, neck, chest, pelvis, hands, toes, and the five-slot face.",
+  "purpose": "Keep the detector replaceable and prevent model topology from becoming the product schema.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K074.R1",
+      "strength": "MUST",
+      "statement": "Map MoveNet keypoints into universal skeleton IDs; do not rename the universal skeleton to match a detector."
+    },
+    {
+      "id": "K074.R2",
+      "strength": "MUST",
+      "statement": "Label derived controls as derived/manual rather than pretending they were detected."
+    },
+    {
+      "id": "K074.R3",
+      "strength": "MUST",
+      "statement": "A future detector may add more evidence without requiring a new anatomical language."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.EXT.MOVENET",
+    "SRC.CP.SKELETON_1_2_0"
+  ],
+  "implementation": {
+    "status": "mixed",
+    "currentSupport": "This detector-to-universal pattern is already present in the current system.",
+    "futureWork": "Keep any future detector adapters behind the same universal schema."
+  }
+}

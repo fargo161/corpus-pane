@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-poser-part-v1.json",
+  "title": "Proposed Poser Part Record",
+  "type": "object",
+  "required": [
+    "id",
+    "region",
+    "bodyFamily",
+    "viewFamily",
+    "artwork",
+    "anatomicalBinding",
+    "attachment",
+    "articulation",
+    "verification"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "bodyFamily": {
+      "type": "string"
+    },
+    "viewFamily": {
+      "type": "string"
+    },
+    "artwork": {
+      "type": "object",
+      "required": [
+        "sourceId",
+        "bounds"
+      ],
+      "properties": {
+        "sourceId": {
+          "type": "string"
+        },
+        "bounds": {
+          "type": "object"
+        },
+        "alphaAsset": {
+          "type": "string"
+        }
+      }
+    },
+    "anatomicalBinding": {
+      "type": "object",
+      "required": [
+        "rootJoint",
+        "endJoint"
+      ],
+      "properties": {
+        "rootJoint": {
+          "type": "string"
+        },
+        "endJoint": {
+          "type": "string"
+        },
+        "intermediateJoints": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "hostRegion": {
+          "type": "string"
+        },
+        "semanticSocket": {
+          "type": "string"
+        },
+        "pivot": {
+          "type": "object"
+        },
+        "artworkOverlapInset": {
+          "type": "object"
+        },
+        "testedHosts": {
+          "type": "array"
+        }
+      }
+    },
+    "layering": {
+      "type": "object"
+    },
+    "articulation": {
+      "type": "object",
+      "properties": {
+        "grade": {
+          "type": "string"
+        },
+        "envelope": {
+          "type": "array"
+        },
+        "testedSamples": {
+          "type": "array"
+        }
+      }
+    },
+    "mirrorability": {
+      "enum": [
+        "approved",
+        "requires_variant",
+        "untested"
+      ]
+    },
+    "verification": {
+      "type": "object"
+    }
+  }
+}

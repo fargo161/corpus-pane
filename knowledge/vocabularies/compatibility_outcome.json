@@ -1,0 +1,33 @@
+{
+  "id": "VOC.COMPATIBILITY_OUTCOME",
+  "values": [
+    {
+      "id": "compatible_exact",
+      "meaning": "Works with the tested host/view without geometry change."
+    },
+    {
+      "id": "compatible_small_adjustment",
+      "meaning": "Works after bounded pivot/rotation/translation adjustment within an approved envelope."
+    },
+    {
+      "id": "compatible_layer_change",
+      "meaning": "Geometry works but front/behind order must change."
+    },
+    {
+      "id": "requires_view_variant",
+      "meaning": "Same anatomical role needs another drawing/view family."
+    },
+    {
+      "id": "requires_new_artwork",
+      "meaning": "Current artwork cannot represent the configuration cleanly."
+    },
+    {
+      "id": "possible_schema_limit",
+      "meaning": "Shared skeleton or attachment model may be insufficient; investigate before changing schema."
+    },
+    {
+      "id": "unknown",
+      "meaning": "Not tested or insufficient evidence."
+    }
+  ]
+}

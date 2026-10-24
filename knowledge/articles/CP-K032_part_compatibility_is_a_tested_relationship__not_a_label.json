@@ -1,0 +1,52 @@
+{
+  "id": "CP-K032",
+  "title": "Part compatibility is a tested relationship, not a label",
+  "version": 1,
+  "knowledgeType": "assembly",
+  "authority": "project_decision",
+  "plainLanguage": "Two pieces are compatible only after we actually test how they connect, overlap, layer, and move together in the relevant view.",
+  "purpose": "Make future mix-and-match assembly dependable instead of assuming every arm works with every torso.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K032.R1",
+      "strength": "MUST",
+      "statement": "Compatibility is always between a specific part, host/body family, view, and tested pose or articulation range."
+    },
+    {
+      "id": "K032.R2",
+      "strength": "MUST",
+      "statement": "Record separate outcomes for geometry, seam, layer order, silhouette, articulation, and identity preservation."
+    },
+    {
+      "id": "K032.R3",
+      "strength": "MUST",
+      "statement": "A “needs new artwork” result is valid knowledge; do not distort an incompatible piece until it appears to fit."
+    },
+    {
+      "id": "K032.R4",
+      "strength": "SHOULD",
+      "statement": "Use compatibility outcomes to guide future reference searches and part selection."
+    }
+  ],
+  "recordGuidance": {
+    "schema": "schemas/part_compatibility_test.schema.json"
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K080"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.EXT.SPINE_MIX_MATCH"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Corpus Pane can classify “needs new artwork” but does not yet run assembly tests.",
+    "futureWork": "Add a small compatibility-test workflow in the doll/poser stage."
+  }
+}

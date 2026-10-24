@@ -1,0 +1,1007 @@
+{
+  "id": "adventure-studio/universal-skeleton",
+  "version": "1.2.0",
+  "profile": "humanoid-2d",
+  "coordinateSystem": {
+    "origin": "source top-left",
+    "x": "right",
+    "y": "down",
+    "units": "source pixels",
+    "normalized": "u=x/source.width; v=y/source.height",
+    "sideConvention": "subject anatomical left/right; NEVER screen-left/right",
+    "depth": "not inferred; 2D projection only"
+  },
+  "root": "pelvis",
+  "faceParent": "head",
+  "joints": [
+    {
+      "id": "nose",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "eye.left",
+      "measurement": "detected-or-manual",
+      "optional": true
+    },
+    {
+      "id": "eye.right",
+      "measurement": "detected-or-manual",
+      "optional": true
+    },
+    {
+      "id": "ear.left",
+      "measurement": "detected-or-manual",
+      "optional": true
+    },
+    {
+      "id": "ear.right",
+      "measurement": "detected-or-manual",
+      "optional": true
+    },
+    {
+      "id": "shoulder.left",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "shoulder.right",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "elbow.left",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "elbow.right",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "wrist.left",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "wrist.right",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "hip.left",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "hip.right",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "knee.left",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "knee.right",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "ankle.left",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "ankle.right",
+      "measurement": "detected-or-manual",
+      "optional": false
+    },
+    {
+      "id": "head",
+      "measurement": "derived-or-manual",
+      "optional": false
+    },
+    {
+      "id": "neck",
+      "measurement": "derived-or-manual",
+      "optional": false
+    },
+    {
+      "id": "chest",
+      "measurement": "derived-or-manual",
+      "optional": false
+    },
+    {
+      "id": "pelvis",
+      "measurement": "derived-or-manual",
+      "optional": false
+    },
+    {
+      "id": "hand.left",
+      "measurement": "derived-or-manual",
+      "optional": true
+    },
+    {
+      "id": "hand.right",
+      "measurement": "derived-or-manual",
+      "optional": true
+    },
+    {
+      "id": "toe.left",
+      "measurement": "derived-or-manual",
+      "optional": true
+    },
+    {
+      "id": "toe.right",
+      "measurement": "derived-or-manual",
+      "optional": true
+    }
+  ],
+  "bones": [
+    [
+      "head",
+      "neck"
+    ],
+    [
+      "nose",
+      "head"
+    ],
+    [
+      "neck",
+      "chest"
+    ],
+    [
+      "chest",
+      "pelvis"
+    ],
+    [
+      "shoulder.left",
+      "shoulder.right"
+    ],
+    [
+      "hip.left",
+      "hip.right"
+    ],
+    [
+      "neck",
+      "shoulder.left"
+    ],
+    [
+      "shoulder.left",
+      "elbow.left"
+    ],
+    [
+      "elbow.left",
+      "wrist.left"
+    ],
+    [
+      "wrist.left",
+      "hand.left"
+    ],
+    [
+      "pelvis",
+      "hip.left"
+    ],
+    [
+      "hip.left",
+      "knee.left"
+    ],
+    [
+      "knee.left",
+      "ankle.left"
+    ],
+    [
+      "ankle.left",
+      "toe.left"
+    ],
+    [
+      "neck",
+      "shoulder.right"
+    ],
+    [
+      "shoulder.right",
+      "elbow.right"
+    ],
+    [
+      "elbow.right",
+      "wrist.right"
+    ],
+    [
+      "wrist.right",
+      "hand.right"
+    ],
+    [
+      "pelvis",
+      "hip.right"
+    ],
+    [
+      "hip.right",
+      "knee.right"
+    ],
+    [
+      "knee.right",
+      "ankle.right"
+    ],
+    [
+      "ankle.right",
+      "toe.right"
+    ]
+  ],
+  "regions": {
+    "whole": [
+      "nose",
+      "eye.left",
+      "eye.right",
+      "ear.left",
+      "ear.right",
+      "shoulder.left",
+      "shoulder.right",
+      "elbow.left",
+      "elbow.right",
+      "wrist.left",
+      "wrist.right",
+      "hip.left",
+      "hip.right",
+      "knee.left",
+      "knee.right",
+      "ankle.left",
+      "ankle.right",
+      "head",
+      "neck",
+      "chest",
+      "pelvis",
+      "hand.left",
+      "hand.right",
+      "toe.left",
+      "toe.right",
+      "face.brow.left",
+      "face.brow.right",
+      "face.eye.left",
+      "face.eye.right",
+      "face.lower",
+      "face.landmark.00",
+      "face.landmark.01",
+      "face.landmark.02",
+      "face.landmark.03",
+      "face.landmark.04",
+      "face.landmark.05",
+      "face.landmark.06",
+      "face.landmark.07",
+      "face.landmark.08",
+      "face.landmark.09",
+      "face.landmark.10",
+      "face.landmark.11",
+      "face.landmark.12",
+      "face.landmark.13",
+      "face.landmark.14",
+      "face.landmark.15",
+      "face.landmark.16",
+      "face.landmark.17",
+      "face.landmark.18",
+      "face.landmark.19",
+      "face.landmark.20",
+      "face.landmark.21",
+      "face.landmark.22",
+      "face.landmark.23",
+      "face.landmark.24",
+      "face.landmark.25",
+      "face.landmark.26",
+      "face.landmark.27",
+      "face.landmark.28",
+      "face.landmark.29",
+      "face.landmark.30",
+      "face.landmark.31",
+      "face.landmark.32",
+      "face.landmark.33",
+      "face.landmark.34",
+      "face.landmark.35",
+      "face.landmark.36",
+      "face.landmark.37",
+      "face.landmark.38",
+      "face.landmark.39",
+      "face.landmark.40",
+      "face.landmark.41",
+      "face.landmark.42",
+      "face.landmark.43",
+      "face.landmark.44",
+      "face.landmark.45",
+      "face.landmark.46",
+      "face.landmark.47",
+      "face.landmark.48",
+      "face.landmark.49",
+      "face.landmark.50",
+      "face.landmark.51",
+      "face.landmark.52",
+      "face.landmark.53",
+      "face.landmark.54",
+      "face.landmark.55",
+      "face.landmark.56",
+      "face.landmark.57",
+      "face.landmark.58",
+      "face.landmark.59",
+      "face.landmark.60",
+      "face.landmark.61",
+      "face.landmark.62",
+      "face.landmark.63",
+      "face.landmark.64",
+      "face.landmark.65",
+      "face.landmark.66",
+      "face.landmark.67"
+    ],
+    "body": [
+      "nose",
+      "eye.left",
+      "eye.right",
+      "ear.left",
+      "ear.right",
+      "shoulder.left",
+      "shoulder.right",
+      "elbow.left",
+      "elbow.right",
+      "wrist.left",
+      "wrist.right",
+      "hip.left",
+      "hip.right",
+      "knee.left",
+      "knee.right",
+      "ankle.left",
+      "ankle.right",
+      "head",
+      "neck",
+      "chest",
+      "pelvis",
+      "hand.left",
+      "hand.right",
+      "toe.left",
+      "toe.right"
+    ],
+    "face": [
+      "face.brow.left",
+      "face.brow.right",
+      "face.eye.left",
+      "face.eye.right",
+      "face.lower",
+      "face.landmark.00",
+      "face.landmark.01",
+      "face.landmark.02",
+      "face.landmark.03",
+      "face.landmark.04",
+      "face.landmark.05",
+      "face.landmark.06",
+      "face.landmark.07",
+      "face.landmark.08",
+      "face.landmark.09",
+      "face.landmark.10",
+      "face.landmark.11",
+      "face.landmark.12",
+      "face.landmark.13",
+      "face.landmark.14",
+      "face.landmark.15",
+      "face.landmark.16",
+      "face.landmark.17",
+      "face.landmark.18",
+      "face.landmark.19",
+      "face.landmark.20",
+      "face.landmark.21",
+      "face.landmark.22",
+      "face.landmark.23",
+      "face.landmark.24",
+      "face.landmark.25",
+      "face.landmark.26",
+      "face.landmark.27",
+      "face.landmark.28",
+      "face.landmark.29",
+      "face.landmark.30",
+      "face.landmark.31",
+      "face.landmark.32",
+      "face.landmark.33",
+      "face.landmark.34",
+      "face.landmark.35",
+      "face.landmark.36",
+      "face.landmark.37",
+      "face.landmark.38",
+      "face.landmark.39",
+      "face.landmark.40",
+      "face.landmark.41",
+      "face.landmark.42",
+      "face.landmark.43",
+      "face.landmark.44",
+      "face.landmark.45",
+      "face.landmark.46",
+      "face.landmark.47",
+      "face.landmark.48",
+      "face.landmark.49",
+      "face.landmark.50",
+      "face.landmark.51",
+      "face.landmark.52",
+      "face.landmark.53",
+      "face.landmark.54",
+      "face.landmark.55",
+      "face.landmark.56",
+      "face.landmark.57",
+      "face.landmark.58",
+      "face.landmark.59",
+      "face.landmark.60",
+      "face.landmark.61",
+      "face.landmark.62",
+      "face.landmark.63",
+      "face.landmark.64",
+      "face.landmark.65",
+      "face.landmark.66",
+      "face.landmark.67"
+    ],
+    "head": [
+      "nose",
+      "eye.left",
+      "eye.right",
+      "ear.left",
+      "ear.right",
+      "head",
+      "neck",
+      "face.brow.left",
+      "face.brow.right",
+      "face.eye.left",
+      "face.eye.right",
+      "face.lower",
+      "face.landmark.00",
+      "face.landmark.01",
+      "face.landmark.02",
+      "face.landmark.03",
+      "face.landmark.04",
+      "face.landmark.05",
+      "face.landmark.06",
+      "face.landmark.07",
+      "face.landmark.08",
+      "face.landmark.09",
+      "face.landmark.10",
+      "face.landmark.11",
+      "face.landmark.12",
+      "face.landmark.13",
+      "face.landmark.14",
+      "face.landmark.15",
+      "face.landmark.16",
+      "face.landmark.17",
+      "face.landmark.18",
+      "face.landmark.19",
+      "face.landmark.20",
+      "face.landmark.21",
+      "face.landmark.22",
+      "face.landmark.23",
+      "face.landmark.24",
+      "face.landmark.25",
+      "face.landmark.26",
+      "face.landmark.27",
+      "face.landmark.28",
+      "face.landmark.29",
+      "face.landmark.30",
+      "face.landmark.31",
+      "face.landmark.32",
+      "face.landmark.33",
+      "face.landmark.34",
+      "face.landmark.35",
+      "face.landmark.36",
+      "face.landmark.37",
+      "face.landmark.38",
+      "face.landmark.39",
+      "face.landmark.40",
+      "face.landmark.41",
+      "face.landmark.42",
+      "face.landmark.43",
+      "face.landmark.44",
+      "face.landmark.45",
+      "face.landmark.46",
+      "face.landmark.47",
+      "face.landmark.48",
+      "face.landmark.49",
+      "face.landmark.50",
+      "face.landmark.51",
+      "face.landmark.52",
+      "face.landmark.53",
+      "face.landmark.54",
+      "face.landmark.55",
+      "face.landmark.56",
+      "face.landmark.57",
+      "face.landmark.58",
+      "face.landmark.59",
+      "face.landmark.60",
+      "face.landmark.61",
+      "face.landmark.62",
+      "face.landmark.63",
+      "face.landmark.64",
+      "face.landmark.65",
+      "face.landmark.66",
+      "face.landmark.67"
+    ],
+    "torso": [
+      "shoulder.left",
+      "shoulder.right",
+      "hip.left",
+      "hip.right",
+      "neck",
+      "chest",
+      "pelvis"
+    ],
+    "leftArm": [
+      "shoulder.left",
+      "elbow.left",
+      "wrist.left",
+      "hand.left"
+    ],
+    "rightArm": [
+      "shoulder.right",
+      "elbow.right",
+      "wrist.right",
+      "hand.right"
+    ],
+    "leftLeg": [
+      "hip.left",
+      "knee.left",
+      "ankle.left",
+      "toe.left"
+    ],
+    "rightLeg": [
+      "hip.right",
+      "knee.right",
+      "ankle.right",
+      "toe.right"
+    ],
+    "eyes": [
+      "face.eye.left",
+      "face.eye.right",
+      "face.landmark.36",
+      "face.landmark.37",
+      "face.landmark.38",
+      "face.landmark.39",
+      "face.landmark.40",
+      "face.landmark.41",
+      "face.landmark.42",
+      "face.landmark.43",
+      "face.landmark.44",
+      "face.landmark.45",
+      "face.landmark.46",
+      "face.landmark.47"
+    ],
+    "brows": [
+      "face.brow.left",
+      "face.brow.right",
+      "face.landmark.17",
+      "face.landmark.18",
+      "face.landmark.19",
+      "face.landmark.20",
+      "face.landmark.21",
+      "face.landmark.22",
+      "face.landmark.23",
+      "face.landmark.24",
+      "face.landmark.25",
+      "face.landmark.26"
+    ],
+    "mouth": [
+      "face.lower",
+      "face.landmark.48",
+      "face.landmark.49",
+      "face.landmark.50",
+      "face.landmark.51",
+      "face.landmark.52",
+      "face.landmark.53",
+      "face.landmark.54",
+      "face.landmark.55",
+      "face.landmark.56",
+      "face.landmark.57",
+      "face.landmark.58",
+      "face.landmark.59",
+      "face.landmark.60",
+      "face.landmark.61",
+      "face.landmark.62",
+      "face.landmark.63",
+      "face.landmark.64",
+      "face.landmark.65",
+      "face.landmark.66",
+      "face.landmark.67"
+    ],
+    "upperTorso": [
+      "neck",
+      "chest",
+      "shoulder.left",
+      "shoulder.right"
+    ],
+    "lowerTorso": [
+      "chest",
+      "pelvis",
+      "hip.left",
+      "hip.right"
+    ],
+    "pelvic": [
+      "pelvis",
+      "hip.left",
+      "hip.right"
+    ],
+    "neckRegion": [
+      "neck",
+      "head"
+    ],
+    "headOnly": [
+      "head",
+      "nose",
+      "eye.left",
+      "eye.right",
+      "ear.left",
+      "ear.right"
+    ],
+    "leftUpperArm": [
+      "shoulder.left",
+      "elbow.left"
+    ],
+    "leftForearm": [
+      "elbow.left",
+      "wrist.left"
+    ],
+    "leftHand": [
+      "wrist.left",
+      "hand.left"
+    ],
+    "rightUpperArm": [
+      "shoulder.right",
+      "elbow.right"
+    ],
+    "rightForearm": [
+      "elbow.right",
+      "wrist.right"
+    ],
+    "rightHand": [
+      "wrist.right",
+      "hand.right"
+    ],
+    "leftThigh": [
+      "hip.left",
+      "knee.left"
+    ],
+    "leftShin": [
+      "knee.left",
+      "ankle.left"
+    ],
+    "leftFoot": [
+      "ankle.left",
+      "toe.left"
+    ],
+    "rightThigh": [
+      "hip.right",
+      "knee.right"
+    ],
+    "rightShin": [
+      "knee.right",
+      "ankle.right"
+    ],
+    "rightFoot": [
+      "ankle.right",
+      "toe.right"
+    ],
+    "leftBrow": [
+      "face.brow.left",
+      "face.landmark.22",
+      "face.landmark.23",
+      "face.landmark.24",
+      "face.landmark.25",
+      "face.landmark.26"
+    ],
+    "rightBrow": [
+      "face.brow.right",
+      "face.landmark.17",
+      "face.landmark.18",
+      "face.landmark.19",
+      "face.landmark.20",
+      "face.landmark.21"
+    ],
+    "leftEye": [
+      "face.eye.left",
+      "face.landmark.42",
+      "face.landmark.43",
+      "face.landmark.44",
+      "face.landmark.45",
+      "face.landmark.46",
+      "face.landmark.47"
+    ],
+    "rightEye": [
+      "face.eye.right",
+      "face.landmark.36",
+      "face.landmark.37",
+      "face.landmark.38",
+      "face.landmark.39",
+      "face.landmark.40",
+      "face.landmark.41"
+    ],
+    "lowerFace": [
+      "face.lower",
+      "face.landmark.00",
+      "face.landmark.01",
+      "face.landmark.02",
+      "face.landmark.03",
+      "face.landmark.04",
+      "face.landmark.05",
+      "face.landmark.06",
+      "face.landmark.07",
+      "face.landmark.08",
+      "face.landmark.09",
+      "face.landmark.10",
+      "face.landmark.11",
+      "face.landmark.12",
+      "face.landmark.13",
+      "face.landmark.14",
+      "face.landmark.15",
+      "face.landmark.16",
+      "face.landmark.27",
+      "face.landmark.28",
+      "face.landmark.29",
+      "face.landmark.30",
+      "face.landmark.31",
+      "face.landmark.32",
+      "face.landmark.33",
+      "face.landmark.34",
+      "face.landmark.35",
+      "face.landmark.48",
+      "face.landmark.49",
+      "face.landmark.50",
+      "face.landmark.51",
+      "face.landmark.52",
+      "face.landmark.53",
+      "face.landmark.54",
+      "face.landmark.55",
+      "face.landmark.56",
+      "face.landmark.57",
+      "face.landmark.58",
+      "face.landmark.59",
+      "face.landmark.60",
+      "face.landmark.61",
+      "face.landmark.62",
+      "face.landmark.63",
+      "face.landmark.64",
+      "face.landmark.65",
+      "face.landmark.66",
+      "face.landmark.67"
+    ],
+    "faceOutline": [
+      "face.landmark.00",
+      "face.landmark.01",
+      "face.landmark.02",
+      "face.landmark.03",
+      "face.landmark.04",
+      "face.landmark.05",
+      "face.landmark.06",
+      "face.landmark.07",
+      "face.landmark.08",
+      "face.landmark.09",
+      "face.landmark.10",
+      "face.landmark.11",
+      "face.landmark.12",
+      "face.landmark.13",
+      "face.landmark.14",
+      "face.landmark.15",
+      "face.landmark.16"
+    ],
+    "noseRegion": [
+      "face.landmark.27",
+      "face.landmark.28",
+      "face.landmark.29",
+      "face.landmark.30",
+      "face.landmark.31",
+      "face.landmark.32",
+      "face.landmark.33",
+      "face.landmark.34",
+      "face.landmark.35"
+    ]
+  },
+  "regionHierarchy": [
+    {
+      "id": "whole"
+    },
+    {
+      "id": "body",
+      "children": [
+        {
+          "id": "torso",
+          "children": [
+            {
+              "id": "upperTorso"
+            },
+            {
+              "id": "lowerTorso"
+            },
+            {
+              "id": "pelvic"
+            }
+          ]
+        },
+        {
+          "id": "leftArm",
+          "children": [
+            {
+              "id": "leftUpperArm"
+            },
+            {
+              "id": "leftForearm"
+            },
+            {
+              "id": "leftHand"
+            }
+          ]
+        },
+        {
+          "id": "rightArm",
+          "children": [
+            {
+              "id": "rightUpperArm"
+            },
+            {
+              "id": "rightForearm"
+            },
+            {
+              "id": "rightHand"
+            }
+          ]
+        },
+        {
+          "id": "leftLeg",
+          "children": [
+            {
+              "id": "leftThigh"
+            },
+            {
+              "id": "leftShin"
+            },
+            {
+              "id": "leftFoot"
+            }
+          ]
+        },
+        {
+          "id": "rightLeg",
+          "children": [
+            {
+              "id": "rightThigh"
+            },
+            {
+              "id": "rightShin"
+            },
+            {
+              "id": "rightFoot"
+            }
+          ]
+        },
+        {
+          "id": "head",
+          "children": [
+            {
+              "id": "neckRegion"
+            },
+            {
+              "id": "headOnly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "face",
+      "children": [
+        {
+          "id": "leftBrow"
+        },
+        {
+          "id": "rightBrow"
+        },
+        {
+          "id": "leftEye"
+        },
+        {
+          "id": "rightEye"
+        },
+        {
+          "id": "lowerFace"
+        }
+      ]
+    }
+  ],
+  "regionPolicy": "Groups share boundary nodes; region passes never duplicate joints. Dense facial sides honor the source mirror convention.",
+  "face": {
+    "slots": [
+      "face.brow.left",
+      "face.brow.right",
+      "face.eye.left",
+      "face.eye.right",
+      "face.lower"
+    ],
+    "sharedNose": "nose",
+    "resolvedAliases": {
+      "eye.left": "face.eye.left",
+      "eye.right": "face.eye.right"
+    },
+    "authority": "Five editable facial slots; body-detector eye coordinates remain raw evidence, not competing controls.",
+    "landmarkExtension": {
+      "id": "ibug-68",
+      "points": [
+        "face.landmark.00",
+        "face.landmark.01",
+        "face.landmark.02",
+        "face.landmark.03",
+        "face.landmark.04",
+        "face.landmark.05",
+        "face.landmark.06",
+        "face.landmark.07",
+        "face.landmark.08",
+        "face.landmark.09",
+        "face.landmark.10",
+        "face.landmark.11",
+        "face.landmark.12",
+        "face.landmark.13",
+        "face.landmark.14",
+        "face.landmark.15",
+        "face.landmark.16",
+        "face.landmark.17",
+        "face.landmark.18",
+        "face.landmark.19",
+        "face.landmark.20",
+        "face.landmark.21",
+        "face.landmark.22",
+        "face.landmark.23",
+        "face.landmark.24",
+        "face.landmark.25",
+        "face.landmark.26",
+        "face.landmark.27",
+        "face.landmark.28",
+        "face.landmark.29",
+        "face.landmark.30",
+        "face.landmark.31",
+        "face.landmark.32",
+        "face.landmark.33",
+        "face.landmark.34",
+        "face.landmark.35",
+        "face.landmark.36",
+        "face.landmark.37",
+        "face.landmark.38",
+        "face.landmark.39",
+        "face.landmark.40",
+        "face.landmark.41",
+        "face.landmark.42",
+        "face.landmark.43",
+        "face.landmark.44",
+        "face.landmark.45",
+        "face.landmark.46",
+        "face.landmark.47",
+        "face.landmark.48",
+        "face.landmark.49",
+        "face.landmark.50",
+        "face.landmark.51",
+        "face.landmark.52",
+        "face.landmark.53",
+        "face.landmark.54",
+        "face.landmark.55",
+        "face.landmark.56",
+        "face.landmark.57",
+        "face.landmark.58",
+        "face.landmark.59",
+        "face.landmark.60",
+        "face.landmark.61",
+        "face.landmark.62",
+        "face.landmark.63",
+        "face.landmark.64",
+        "face.landmark.65",
+        "face.landmark.66",
+        "face.landmark.67"
+      ],
+      "convention": "68-point detector ordering; anatomical anchors map explicitly, not by image x"
+    }
+  },
+  "proportions": "character-specific; no mannequin dimensions are canonical",
+  "visibility": [
+    "visible",
+    "occluded",
+    "out_of_frame",
+    "unknown"
+  ],
+  "extensions": {
+    "policy": "add namespaced profiles/points; retain unknown JSON fields; no silent dropping"
+  },
+  "ground": "separate user guide or silhouette estimate, not skeletal root and not proven foot contact"
+}

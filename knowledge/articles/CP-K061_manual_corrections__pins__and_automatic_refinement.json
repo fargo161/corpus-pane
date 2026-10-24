@@ -1,0 +1,48 @@
+{
+  "id": "CP-K061",
+  "title": "Manual corrections, pins, and automatic refinement",
+  "version": 1,
+  "knowledgeType": "evidence",
+  "authority": "existing_contract",
+  "plainLanguage": "Automatic tracking can suggest. A hand correction must win until the user explicitly reopens it.",
+  "purpose": "Preserve human work and make iterative refinement safe.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K061.R1",
+      "strength": "MUST",
+      "statement": "Automatic passes must not overwrite protected manual pins or accepted snapshots.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K061.R2",
+      "strength": "MUST",
+      "statement": "Refinement results remain proposals until applied; applying them is not the same as verification."
+    },
+    {
+      "id": "K061.R3",
+      "strength": "SHOULD",
+      "statement": "Use two checked nearby pins to guide interpolation when appropriate, but explicit hidden intervals block invented in-between positions."
+    },
+    {
+      "id": "K061.R4",
+      "strength": "MUST",
+      "statement": "Reopening a scope is deliberate and must not silently delete the history of prior review."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.LIBRARY_PASS_01"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Implemented and tested in Corpus Pane.",
+    "futureWork": "Use the same protection rules when external references influence suggestions."
+  }
+}

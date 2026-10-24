@@ -1,0 +1,36 @@
+{
+  "suite": "Corpus Pane 02.2 library search and approval",
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "results": [
+    {
+      "name": "A complete two-joint upper-arm bone is enough for a meaningful pose signature",
+      "pass": true
+    },
+    {
+      "name": "A complete two-joint lower-leg bone is searchable against a checked reference",
+      "pass": true
+    },
+    {
+      "name": "Uncertain detector points may be used only as a labeled rough query against strict checked references",
+      "pass": true
+    },
+    {
+      "name": "A one-point rough query still cannot produce a fake perfect match",
+      "pass": true
+    },
+    {
+      "name": "Owner acceptance preserves assistant provenance on a current reusable configuration",
+      "pass": true
+    },
+    {
+      "name": "Reimporting an older pending copy does not duplicate or downgrade an owner-accepted reference",
+      "pass": true
+    },
+    {
+      "name": "Current implementation-status knowledge no longer calls split view and pose signatures merely proposed",
+      "pass": true
+    }
+  ]
+}

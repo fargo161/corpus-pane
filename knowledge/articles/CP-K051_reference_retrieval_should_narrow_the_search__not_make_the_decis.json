@@ -1,0 +1,53 @@
+{
+  "id": "CP-K051",
+  "title": "Reference retrieval should narrow the search, not make the decision",
+  "version": 1,
+  "knowledgeType": "matching",
+  "authority": "project_decision",
+  "plainLanguage": "When a new arm looks difficult, the program should show the closest checked arms and explain why they are similar. The human still decides whether the match is actually useful.",
+  "purpose": "Turn accumulated knowledge into faster review without creating false automatic certainty.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K051.R1",
+      "strength": "MUST",
+      "statement": "Separate draft candidate search from verified-reference search.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K051.R2",
+      "strength": "SHOULD",
+      "statement": "Rank compatible-view references before view-conflicting references when enough candidates exist."
+    },
+    {
+      "id": "K051.R3",
+      "strength": "SHOULD",
+      "statement": "Explain the match using region, view, visible joints, projection state, and a simple distance summary."
+    },
+    {
+      "id": "K051.R4",
+      "strength": "MUST",
+      "statement": "Selecting a reference never automatically verifies or overwrites the active track."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K053"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Corpus Pane 0.2.2.4 keeps rough query evidence separate from strict checked references and combines pose-shape quality with graded reviewed-view distance. A substantially better neighboring-view shape may outrank a mediocre same-view shape; clearly opposing views receive a strong penalty. Visibility disagreements such as visible forearm versus hidden forearm are penalized. Retrieval remains advisory and never copies anatomy automatically.",
+    "futureWork": "Measure retrieval quality during the arm–shoulder–torso pilot and refine explanatory ranking only from observed failures."
+  }
+}

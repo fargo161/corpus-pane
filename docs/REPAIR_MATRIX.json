@@ -1,0 +1,148 @@
+{
+  "format": "sprite-foundry/corpus-pane-repair-matrix",
+  "version": 1,
+  "release": "0.2.1",
+  "checkpoint": 2.1,
+  "reviewBasis": "Claude static-code review supplied by owner after Checkpoint 02",
+  "items": [
+    {
+      "id": "CP021-R01",
+      "finding": "New perspective record IDs can stale unchanged references/comparisons",
+      "before": "Freshness coupled to complete view objects/record identity",
+      "fix": [
+        "app/corpus.js:setViewState",
+        "app/corpus.js:semanticView/sameView",
+        "app/corpus.js:semanticOrientation/sameOrientation",
+        "app/corpus.js:referenceCurrent",
+        "app/corpus.js:comparisonCurrent"
+      ],
+      "rule": "Historical IDs are provenance. Freshness compares semantic values relevant to the region.",
+      "tests": [
+        "Changing only head perspective does not retire an unchanged arm reference",
+        "Changing relevant body perspective still retires an arm reference",
+        "Comparison freshness ignores replacement record IDs when semantics are unchanged"
+      ]
+    },
+    {
+      "id": "CP021-R02",
+      "finding": "Older backup can fork solely because current schema adds empty Knowledge fields",
+      "before": "Raw whole-entry equality before migration",
+      "fix": [
+        "app/corpus.js:upgradeKnowledge",
+        "app/corpus.js:merge"
+      ],
+      "rule": "Normalize current and incoming records into the current non-destructive shape before duplicate/revision comparison.",
+      "tests": [
+        "Old CP01 backup upgrades and reimports without clip/reference/comparison forks",
+        "tests/seed_backup_compat.py"
+      ]
+    },
+    {
+      "id": "CP021-R03",
+      "finding": "Sparse one-anchor pose can rank as perfect",
+      "before": "No minimum informative shared-point gate",
+      "fix": [
+        "app/corpus.js:signatureDistance",
+        "app/corpus.js:search"
+      ],
+      "rule": "Require >=2 shared visible informative points beyond the normalization anchor for a numeric knowledge score.",
+      "tests": [
+        "Sparse pose signature refuses a one-anchor perfect match",
+        "Adequately supported pose remains searchable"
+      ]
+    },
+    {
+      "id": "CP021-R04",
+      "finding": "Prior head-direction notes not carried forward",
+      "fix": [
+        "app/corpus.js:migrateLegacyHeadNotes",
+        "app/corpus.js:priorHeadOrientation"
+      ],
+      "rule": "Migrate deterministic reviewed head observations only when no later reviewed head record exists; unknown remains unknown.",
+      "tests": [
+        "Starter Pass head observations migrate into split head perspective",
+        "repair browser headMigrationVisible"
+      ]
+    },
+    {
+      "id": "CP021-R05",
+      "finding": "Assistant-reviewed starter data can look owner-verified",
+      "fix": [
+        "app/corpus.js:inferReferenceAuthority",
+        "app/corpus.js:authorityForScope",
+        "app/workspace.js:reviewAuthorityText"
+      ],
+      "rule": "Review authority and owner acceptance are separate visible metadata.",
+      "tests": [
+        "Starter references visibly retain assistant review authority and pending owner acceptance",
+        "New owner verification creates owner-approved reference authority",
+        "repair browser authorityVisible"
+      ]
+    },
+    {
+      "id": "CP021-R06",
+      "finding": "Unknown profile direction can become image-left",
+      "fix": [
+        "app/corpus.js:orientationToLegacy"
+      ],
+      "rule": "PROFILE with unknown heading maps to legacy unknown, not left/right.",
+      "tests": [
+        "Unknown profile heading never invents image-left"
+      ]
+    },
+    {
+      "id": "CP021-R07",
+      "finding": "Knowledge context mappings incomplete for subgroups",
+      "fix": [
+        "app/knowledge.js:GROUP_MAP"
+      ],
+      "tests": [
+        "All visible anatomical subgroups receive specific knowledge suggestions",
+        "repair browser specificKnowledge"
+      ]
+    },
+    {
+      "id": "CP021-R08",
+      "finding": "new_piece / needs_new_artwork vocabulary mismatch",
+      "fix": [
+        "app/corpus.js:CLASSIFICATIONS/CLASSIFICATION_ALIASES",
+        "app/workspace.js classification dropdown"
+      ],
+      "rule": "Save canonical needs_new_artwork; accept legacy new_piece on import/action.",
+      "tests": [
+        "Legacy new_piece classification is normalized to needs_new_artwork",
+        "repair browser canonicalClassification"
+      ]
+    },
+    {
+      "id": "CP021-R09",
+      "finding": "View-conflict test contradicted its name due result slicing",
+      "fix": [
+        "tests/core.test.cjs"
+      ],
+      "tests": [
+        "Confirmed view mismatch is surfaced, not automatically rejected anatomy"
+      ]
+    },
+    {
+      "id": "CP021-R10",
+      "finding": "Backup compatibility fixture not reviewer-portable / PASS timing weak",
+      "fix": [
+        "tests/fixtures/starter_pass_01_records",
+        "tests/seed_backup_compat.py"
+      ],
+      "rule": "Use package-local fixture and write PASS after assertions.",
+      "tests": [
+        "seed-backup-compat-results.json"
+      ]
+    }
+  ],
+  "currentResults": {
+    "core": "41/41 PASS",
+    "knowledge": "8/8 PASS",
+    "repair": "14/14 PASS",
+    "repairBrowser": "PASS from completed focused run",
+    "seedBackupCompatibility": "PASS from completed focused run"
+  },
+  "qualification": "A later attempt to rerun the broader browser workflow stalled in the unchanged real CPU detector phase. Historical CP02 broad results are preserved separately and are not represented as a CP02.1 rerun."
+}

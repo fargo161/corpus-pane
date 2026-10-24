@@ -1,0 +1,89 @@
+{
+  "suite": "Corpus Pane 02.2.5 acceptance reliability browser",
+  "total": 6,
+  "passed": 6,
+  "failed": 0,
+  "pass": true,
+  "checks": [
+    {
+      "name": "corrected_overhead_reference_live",
+      "pass": true,
+      "detail": {
+        "w": {
+          "x": 188,
+          "y": 68,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "h": {
+          "x": 194,
+          "y": 56,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "bitmapIndex": 36,
+        "index": 36,
+        "rawIndex": 36
+      }
+    },
+    {
+      "name": "wrist_semantics_visible_in_ui",
+      "pass": true,
+      "detail": "center of the wrist joint at the narrow transition between forearm and hand; do not place it at the palm center, knuckles, fist tip, or fingertips."
+    },
+    {
+      "name": "stale_frame_is_cleared_while_new_frame_decodes",
+      "pass": true,
+      "detail": {
+        "mid": {
+          "index": 22,
+          "bitmapIndex": null,
+          "rawIndex": null,
+          "bitmapNull": true,
+          "rawNull": true
+        },
+        "after": {
+          "index": 22,
+          "bitmapIndex": 22,
+          "rawIndex": 22,
+          "bitmapNull": false,
+          "rawNull": false
+        }
+      }
+    },
+    {
+      "name": "bitmap_raw_and_overlay_frame_are_synchronized_after_seek",
+      "pass": true,
+      "detail": {
+        "index": 22,
+        "bitmapIndex": 22,
+        "rawIndex": 22,
+        "bitmapNull": false,
+        "rawNull": false
+      }
+    },
+    {
+      "name": "rear3q_cropped_distal_arm_is_out_of_frame",
+      "pass": true,
+      "detail": {
+        "w": null,
+        "h": null,
+        "wv": "out_of_frame",
+        "hv": "out_of_frame"
+      }
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

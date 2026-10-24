@@ -1,0 +1,410 @@
+{
+  "format": "sprite-foundry/corpus-pane-knowledge-manifest",
+  "version": 1,
+  "package": {
+    "id": "sprite-foundry/corpus-pane-knowledge",
+    "name": "Corpus Pane Knowledge Schema",
+    "version": "1.0.5",
+    "createdAt": "2026-10-22T22:41:00Z",
+    "purpose": "A curated, machine-readable knowledge foundation for building perspective-aware, evidence-driven, eventually poseable 2D humanoid characters from the Corpus Pane.",
+    "guidingPrinciple": "One universal anatomical skeleton; many characters, views, drawings, and reviewed configurations. Outside knowledge accelerates the process but never silently replaces project evidence.",
+    "nonGoals": [
+      "Not a new tracker model.",
+      "Not a 3D runtime.",
+      "Not a replacement for the gray mannequin.",
+      "Not a bulk third-party dataset.",
+      "Not automatic proof that two painted pieces are interchangeable."
+    ],
+    "compatibility": {
+      "currentCorpusPane": "Checkpoint 02.2.4 / app 0.2.2.4",
+      "sharedSkeleton": "adventure-studio/universal-skeleton 1.2.0",
+      "canonicalStillRigSource": "doll_rig_v0_4_13(1).json"
+    },
+    "authorityOrder": [
+      "owner_verified_project_decision",
+      "existing_project_contract",
+      "assistant_review_pending_owner_acceptance",
+      "synthesized_rule",
+      "external_reference",
+      "hypothesis"
+    ]
+  },
+  "fileCount": 75,
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2131,
+      "sha256": "76063cfd18cc9c5138ee04255ece6b9b9ba482b2c580756dfbe94fb8f2db8232"
+    },
+    {
+      "path": "MASTER_INDEX.json",
+      "bytes": 17572,
+      "sha256": "cb5fe7955742e0df39ec537840e0959c53be380fca72fffdfcab965bdfcaa2ec"
+    },
+    {
+      "path": "PACKAGE_REPORT.json",
+      "bytes": 595,
+      "sha256": "b3a4697bc1c0329d559777e68272597b9cc650d00a88119a0058ad90162d0ea0"
+    },
+    {
+      "path": "README.md",
+      "bytes": 1949,
+      "sha256": "6b7a70955451c645268a6199e9d142e2c1ee7dd281e73991c5cd33e37c6e984e"
+    },
+    {
+      "path": "articles/CP-K000_mission__authority__and_knowledge_boundaries.json",
+      "bytes": 2480,
+      "sha256": "0e32002fa8c592490d1c2c7aeddeb07c8e87bfb86aabadb022049ffcdad647f3"
+    },
+    {
+      "path": "articles/CP-K010_one_universal_skeleton__many_projected_appearances.json",
+      "bytes": 2216,
+      "sha256": "dd93db2fbb3c1bcb9cfb17cbe17305da3f627a610297b5a88a6839031f5755ce"
+    },
+    {
+      "path": "articles/CP-K011_coordinate_space__scale__and_normalization.json",
+      "bytes": 2259,
+      "sha256": "b5d06cc59b7d333094ccd7646a0d494576eb56c05e8d5fa85317163a31bd2dce"
+    },
+    {
+      "path": "articles/CP-K012_shared_boundary_joints_and_region_hierarchy.json",
+      "bytes": 1498,
+      "sha256": "18aed401d6e285f7838bab1d0ae64f675dc7a7e3d309379fa0cc08b2d83ac206"
+    },
+    {
+      "path": "articles/CP-K013_body_families__proportions__and_identity_preservation.json",
+      "bytes": 1691,
+      "sha256": "42b3430dcb6d715f744f8bfee9caa36da5396f9ae623cbd16722eb4b46eb60eb"
+    },
+    {
+      "path": "articles/CP-K020_split_body__torso__head__and_regional_viewing_direction.json",
+      "bytes": 1957,
+      "sha256": "f24a95ad4dca74d3a7f5173070abda3367f1691d9b8bd3fbf1496215f40fad51"
+    },
+    {
+      "path": "articles/CP-K021_view_families_are_categories__not_exact_camera_solutions.json",
+      "bytes": 1781,
+      "sha256": "9f7a1e80d034804bcdc35b8eacc4a1356d7c4c55e8fa586f555cb50b8172c6db"
+    },
+    {
+      "path": "articles/CP-K022_foreshortening_and_projected_limb_length.json",
+      "bytes": 2171,
+      "sha256": "5c2beb13fcf7f9cbe4392e742392f5cf7fe060259faf5cafda6c9a3f8348f3c2"
+    },
+    {
+      "path": "articles/CP-K023_occlusion__outside_frame__and_unknown_are_different.json",
+      "bytes": 1996,
+      "sha256": "15047890a6eb5da888e6110373ebfc6142fb9774c73d6d6e587e7291fe8c3495"
+    },
+    {
+      "path": "articles/CP-K024_depth_hints__overlap_order__and_draw_order.json",
+      "bytes": 1774,
+      "sha256": "54f120ccea42845bc721c8830f15fd82713e8abd6a3d3dfc69e77683be024f47"
+    },
+    {
+      "path": "articles/CP-K025_controlled_perspective_reference_packs.json",
+      "bytes": 1898,
+      "sha256": "a073d8c6140b3cc8f40d8e243af808e1b6a016cdf6c908089c26e1c7c79e0aa2"
+    },
+    {
+      "path": "articles/CP-K030_anatomical_joint__artwork_pivot__and_attachment_socket_are_not_t.json",
+      "bytes": 1814,
+      "sha256": "fda677cd045a7c8ea6e3bce5b38880901c3036244767f1fab4762f458ba6eedb"
+    },
+    {
+      "path": "articles/CP-K031_pivots__anchors__sockets__and_hosts.json",
+      "bytes": 1830,
+      "sha256": "48eb34be68e0a79cf4d6e76848f5d44f1c4df28ad42028e7b2d8bd7d68ba6ed9"
+    },
+    {
+      "path": "articles/CP-K032_part_compatibility_is_a_tested_relationship__not_a_label.json",
+      "bytes": 1776,
+      "sha256": "1283ba5b05bfa861a227bd1fc2edc7da9aa62d44ed07fe1a535623b37b868870"
+    },
+    {
+      "path": "articles/CP-K033_articulation_envelopes_around_authored_poses.json",
+      "bytes": 1779,
+      "sha256": "e1adf01667ef6479efb8501b5e5454b41533fc94ef6c2949470723c1d0c5ba98"
+    },
+    {
+      "path": "articles/CP-K034_seam_coverage__overlap__and_silhouette_quality.json",
+      "bytes": 1333,
+      "sha256": "616b4201cfa5ec811a955a37d39d244e9af502e656b5f634297ca236baa3946a"
+    },
+    {
+      "path": "articles/CP-K035_mirroring_and_handedness_must_stay_explicit.json",
+      "bytes": 1736,
+      "sha256": "b36ce092a87a08033937dead5c84a330fc8ed520a598af6d37eba9b51b4c4f7a"
+    },
+    {
+      "path": "articles/CP-K040_five_slot_face_plus_shared_nose.json",
+      "bytes": 1547,
+      "sha256": "4e1697d0485cb517060b35c80d158d0939f6ea52db7202d8ac6b675bf85deb1e"
+    },
+    {
+      "path": "articles/CP-K041_face_oval_and_face_perspective.json",
+      "bytes": 1714,
+      "sha256": "44ba062d2e75ff10cc6d925eba7cbd32b98378d53ac061ee523be26efcc6a33e"
+    },
+    {
+      "path": "articles/CP-K050_pose_signatures_for_comparison__not_replacement.json",
+      "bytes": 2035,
+      "sha256": "39059082e4907d05ce361e6fcf01316aae82a6df69d6a6a5a4a6c62e695377eb"
+    },
+    {
+      "path": "articles/CP-K051_reference_retrieval_should_narrow_the_search__not_make_the_decis.json",
+      "bytes": 2176,
+      "sha256": "32b8664d26602cee18aa674b93e0d472937d9637d0655cdb67d3a1946ea5ef2a"
+    },
+    {
+      "path": "articles/CP-K052_comparison_classifications_are_knowledge_about_differences.json",
+      "bytes": 1823,
+      "sha256": "2232d90cdb2b7a6e5af1029225f56e2f3daf5cc0171c1e7e191371384b7e9489"
+    },
+    {
+      "path": "articles/CP-K053_the_corpus_pane_learning_loop.json",
+      "bytes": 1921,
+      "sha256": "da6836c865c2607ff76767fcea9fef6449bf3d760e1a4610174048ac94b8128c"
+    },
+    {
+      "path": "articles/CP-K054_motion_source_ingestion_and_movement_gaps.json",
+      "bytes": 1608,
+      "sha256": "339d09c9154f13b2c6982d9bd008719121303f1095e014817546ef9fb7b39bbd"
+    },
+    {
+      "path": "articles/CP-K060_four_evidence_layers_stay_independent.json",
+      "bytes": 1492,
+      "sha256": "03f52c7a8386a9853d278b10cb7b0b34f94fdae5a1c8249acd1d59fd76f1989d"
+    },
+    {
+      "path": "articles/CP-K061_manual_corrections__pins__and_automatic_refinement.json",
+      "bytes": 1580,
+      "sha256": "bfa1d561cc571e71070a5667bcbb7e88d8b1ee8882016460e3876892566addba"
+    },
+    {
+      "path": "articles/CP-K062_verification__staleness__and_owner_acceptance.json",
+      "bytes": 1780,
+      "sha256": "33d88b76f03810a9129947cd7a3dfb6991f665e3daaa404ac2544697f4f26997"
+    },
+    {
+      "path": "articles/CP-K063_schema_evolution_without_breaking_the_corpus.json",
+      "bytes": 1633,
+      "sha256": "2c2c05f3ba8bd921e9979ccea56f998e984176a5828539583146f033e0edc836"
+    },
+    {
+      "path": "articles/CP-K064_provenance__licensing__and_safe_external_knowledge.json",
+      "bytes": 2187,
+      "sha256": "a74a04cda7e2ea55027ad7e4186a4292eba0d047629a3bda397c6594e137ffb0"
+    },
+    {
+      "path": "articles/CP-K070_makehuman___mpfb_as_a_controlled_perspective_reference_generator.json",
+      "bytes": 1901,
+      "sha256": "515520fbe6e2eb6e2b62c2706d781024e44d8ef3862a8adc210640ff07a07a86"
+    },
+    {
+      "path": "articles/CP-K071_spine_patterns_for_modular_2d_assembly.json",
+      "bytes": 1947,
+      "sha256": "14fdcec0a8dbd1a19bf365288401fc1801fe2bf5e442567db91607a98676450c"
+    },
+    {
+      "path": "articles/CP-K072_nearest_reference_matching_adapted_for_corpus_pane.json",
+      "bytes": 2390,
+      "sha256": "8379cdbe4efd5cf993194a8a60cdb217f6787bd5fe92a4de0814da25b0fb3fc5"
+    },
+    {
+      "path": "articles/CP-K073_optional_depth_like_evidence_stays_non_authoritative.json",
+      "bytes": 1547,
+      "sha256": "39d39afb87d2970ad739bec40c08666dc8f484e6de07df48123a61daa8fb11ec"
+    },
+    {
+      "path": "articles/CP-K074_movenet_is_detector_evidence__not_the_skeleton_definition.json",
+      "bytes": 1464,
+      "sha256": "63aa4f41fca9efd2703c8e197376c06dab30246219b6e9af745a09170701a25d"
+    },
+    {
+      "path": "articles/CP-K075_cmu_motion_capture_as_a_later_movement_gap_source.json",
+      "bytes": 1585,
+      "sha256": "9a546b8aff00dbf415b7deda06d54ef969f01f82e300e92abd2442dd40c57d65"
+    },
+    {
+      "path": "articles/CP-K080_bridge_from_corpus_pane_knowledge_to_the_eventual_2d_poser.json",
+      "bytes": 2250,
+      "sha256": "ba359dd90c012294fdf1d31f44e19062f6062b5f783e9103a0d8c95a2cd0ddb3"
+    },
+    {
+      "path": "articles/CP-K081_acceptance_tests_for_a_knowledge_driven_corpus_pane.json",
+      "bytes": 1843,
+      "sha256": "71bb97237c82e95f383724e2e403752312210127614c6cb140014f90cf35c359"
+    },
+    {
+      "path": "articles/CP-K082_recommended_first_knowledge_pilot__arm_shoulder_torso.json",
+      "bytes": 2099,
+      "sha256": "22cc92c74c19e03239e9924c08856d2bd2931368a6ae387e31349d7f921346cd"
+    },
+    {
+      "path": "examples/example_foreshortened_arm_reference.json",
+      "bytes": 1552,
+      "sha256": "e366f2dbeb8d8ca9e087e29633ee7b6487aa6fb2b29b8cee1ab11f39d9ae6133"
+    },
+    {
+      "path": "examples/example_head_torso_split_view.json",
+      "bytes": 568,
+      "sha256": "c8a5c97d30271c2e1da76376d709755ac37650a3d5cf46f0a5da9e56dd8f0a2c"
+    },
+    {
+      "path": "examples/example_part_compatibility_test.json",
+      "bytes": 824,
+      "sha256": "397540e9a8c8468e340c02d12977e434e890b11b50ab72acdda927d22ebe0021"
+    },
+    {
+      "path": "models/corpus_pane_existing_data_contract.json",
+      "bytes": 21642,
+      "sha256": "5b7e78e7e7de150314338ca3516cd5680c42daf2ca6ee59a434a0cdff19da127"
+    },
+    {
+      "path": "models/current_seed_library_snapshot.json",
+      "bytes": 43557,
+      "sha256": "98c1241db17a527c6fae299958be5ec50787359df685abd215a42e3c59cb62f5"
+    },
+    {
+      "path": "models/doll_rig_bridge_snapshot.json",
+      "bytes": 16719,
+      "sha256": "59c44cd2356687d18a12aa2f65053a0cce492f6e2a3956844cf65b33babb51ef"
+    },
+    {
+      "path": "models/proposed_corpus_to_doll_bridge.json",
+      "bytes": 4233,
+      "sha256": "cb4f63d33bcc29bac4c79e3dbd03a11ec54e2eff9dfb4392378011b2e5f73374"
+    },
+    {
+      "path": "models/universal_skeleton_v1_2_0.json",
+      "bytes": 21792,
+      "sha256": "fe2007fb223dd16c9e0a3010dc29baa40e4a7de2f779af323929800b67bc7964"
+    },
+    {
+      "path": "schemas/knowledge_article.schema.json",
+      "bytes": 2978,
+      "sha256": "275a1085d02b4e30760eb9eb1ffe2f5544fa0a07035b6eb8ec20598e2b783834"
+    },
+    {
+      "path": "schemas/master_index.schema.json",
+      "bytes": 834,
+      "sha256": "ca94ed2979ea1f9597aaed9759c2872871444ff52a3e74443132b28009c5c7be"
+    },
+    {
+      "path": "schemas/part_compatibility_test.schema.json",
+      "bytes": 1420,
+      "sha256": "b7f67e4bbe7299df01018d8f22c77686ddf34e49fc78ec5d2f999a9d8f1bea1e"
+    },
+    {
+      "path": "schemas/perspective_reference.schema.json",
+      "bytes": 2175,
+      "sha256": "87acfbf190db790237c5dd6977898fd879fea2d9d38df30766dd9c6c947aea23"
+    },
+    {
+      "path": "schemas/pose_signature.schema.json",
+      "bytes": 1756,
+      "sha256": "88910fd47fe07a4ea7ac15afe1506c98d40c5323d2a924bb73f8811ae7df5666"
+    },
+    {
+      "path": "schemas/poser_part.schema.json",
+      "bytes": 2206,
+      "sha256": "6b156bd4267d88f512ea4ce2e73d551415f35db684e8f061859f62802ce4c657"
+    },
+    {
+      "path": "schemas/source_record.schema.json",
+      "bytes": 822,
+      "sha256": "8245d814889ef50dc8cedec5c0b3498fab4d648afed1056b012ff4690ec4a716"
+    },
+    {
+      "path": "schemas/view_state.schema.json",
+      "bytes": 1396,
+      "sha256": "49d2f4cac7ad053fe3106eb808689947a04493fdd8bee36626db4309a60e9e60"
+    },
+    {
+      "path": "sources/SOURCE_REGISTER.json",
+      "bytes": 8550,
+      "sha256": "8fe6e87dc9ceda0e030fc75ec9498801b374a17a3cd117dfde8ee71ef0489e9a"
+    },
+    {
+      "path": "tests/schema_validation_results.json",
+      "bytes": 7004,
+      "sha256": "97f0184fca9e3311bc41f1f55f4bcfa434b6199d6401d17a7308b5e51879c6cc"
+    },
+    {
+      "path": "tests/validate_package.py",
+      "bytes": 2533,
+      "sha256": "e64765d0807b94bfc1003c76d8b3b840afcdb5899a00d3e8ad424fed81f62a9f"
+    },
+    {
+      "path": "tests/validation_results.json",
+      "bytes": 38970,
+      "sha256": "33b9d69c56ae8ebbce8dbd42505262859f5560cb45675dd7269306a9dfdfebf0"
+    },
+    {
+      "path": "vocabularies/VOCABULARY_INDEX.json",
+      "bytes": 586,
+      "sha256": "5bc6bc5172ea68d2a0f5ee12b8fa8a751089ca44d595e6cd4d20a259835af18f"
+    },
+    {
+      "path": "vocabularies/articulation_grade.json",
+      "bytes": 661,
+      "sha256": "a1d9377b305b9fc9af91f05c764de1ece7753aca398b6c417060a6de779d63e9"
+    },
+    {
+      "path": "vocabularies/authority.json",
+      "bytes": 679,
+      "sha256": "770eac56d083da4bac7583b838b9040131b8b00b3a8c9ec5ec051272fb8f1b46"
+    },
+    {
+      "path": "vocabularies/comparison_classification.json",
+      "bytes": 301,
+      "sha256": "3fc2c0c44194c466853932b202b3fc085002b752e347ef66c34c054166f37d76"
+    },
+    {
+      "path": "vocabularies/compatibility_outcome.json",
+      "bytes": 970,
+      "sha256": "a282ccc875604cfd4c250f409a7b32651d40efe42d4d6c2af16d35baa95a2fed"
+    },
+    {
+      "path": "vocabularies/depth_direction_hint.json",
+      "bytes": 303,
+      "sha256": "fd0b2e0b4b96e52a4ea2c8f3aa683f08d441b63c6fcec975457fc9af29efc378"
+    },
+    {
+      "path": "vocabularies/evidence_state.json",
+      "bytes": 306,
+      "sha256": "d397bce355c3ca58074c6f5aac165e2b09cfd78beb9ee6d609318b417ea2de34"
+    },
+    {
+      "path": "vocabularies/projection_state.json",
+      "bytes": 298,
+      "sha256": "9c11af493332307393bc7f6bdd0dcc9506315efaa2b5b15edc21c0ef838ffa30"
+    },
+    {
+      "path": "vocabularies/relation_types.json",
+      "bytes": 204,
+      "sha256": "a4880c74e57fc8c612fccaad643b8662f75249f4751610fba0283ec5df678ec9"
+    },
+    {
+      "path": "vocabularies/screen_heading.json",
+      "bytes": 142,
+      "sha256": "5cf7a3c6458da8c627dae2bbfd42b6ae93929e2aea6ae115c76722a49f7f6a11"
+    },
+    {
+      "path": "vocabularies/view_family.json",
+      "bytes": 306,
+      "sha256": "db6326427d428fb060b11b74085b5eb5ec0b69c6f7d77a29a2277b97157f1e91"
+    },
+    {
+      "path": "vocabularies/visibility.json",
+      "bytes": 234,
+      "sha256": "d30fc51de7139871dd0ce89d7ee4fbcb7cf999b4ad7b758db39bec2b36420734"
+    },
+    {
+      "path": "vocabularies/workflow_stage.json",
+      "bytes": 231,
+      "sha256": "a19d70c63adeecd919545d3742fb1229254146ac2b768c810be6b5cc89ed7c3d"
+    }
+  ]
+}

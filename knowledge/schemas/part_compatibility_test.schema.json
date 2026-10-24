@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-part-compatibility-test-v1.json",
+  "title": "Part Compatibility Test",
+  "type": "object",
+  "required": [
+    "id",
+    "partId",
+    "hostId",
+    "view",
+    "testPose",
+    "outcome",
+    "checks",
+    "review"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "partId": {
+      "type": "string"
+    },
+    "hostId": {
+      "type": "string"
+    },
+    "view": {
+      "type": "object"
+    },
+    "testPose": {
+      "type": "object"
+    },
+    "outcome": {
+      "enum": [
+        "compatible_exact",
+        "compatible_small_adjustment",
+        "compatible_layer_change",
+        "requires_view_variant",
+        "requires_new_artwork",
+        "possible_schema_limit",
+        "unknown"
+      ]
+    },
+    "checks": {
+      "type": "object",
+      "properties": {
+        "jointAlignment": {
+          "type": "string"
+        },
+        "seamCoverage": {
+          "type": "string"
+        },
+        "layerOrder": {
+          "type": "string"
+        },
+        "silhouette": {
+          "type": "string"
+        },
+        "articulationRange": {
+          "type": "string"
+        },
+        "identityPreservation": {
+          "type": "string"
+        }
+      }
+    },
+    "review": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "string"
+    }
+  }
+}

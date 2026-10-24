@@ -1,0 +1,53 @@
+{
+  "id": "CP-K031",
+  "title": "Pivots, anchors, sockets, and hosts",
+  "version": 1,
+  "knowledgeType": "assembly",
+  "authority": "synthesized_rule",
+  "plainLanguage": "A reusable part needs to know what it connects to, where it rotates, and which host view it was designed for.",
+  "purpose": "Turn a library of pose examples into parts that can eventually be attached and adjusted reliably.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K031.R1",
+      "strength": "MUST",
+      "statement": "Each poser part must name its anatomical root joint and its artwork pivot/anchor separately."
+    },
+    {
+      "id": "K031.R2",
+      "strength": "SHOULD",
+      "statement": "Use semantic host sockets such as ACTIVE_TORSO/ACTIVE_PELVIS so view-specific artwork can change without rewriting the anatomical role.",
+      "sourceRefs": [
+        "SRC.CP.DOLL_RIG_0_4_13"
+      ]
+    },
+    {
+      "id": "K031.R3",
+      "strength": "MUST",
+      "statement": "Socket mappings must be tested for each supported view family before being treated as production-compatible."
+    },
+    {
+      "id": "K031.R4",
+      "strength": "SHOULD",
+      "statement": "Preserve local pivot and anchor coordinates when mirroring only if the specific part has an approved mirror rule."
+    }
+  ],
+  "recordGuidance": {
+    "schemas": [
+      "schemas/poser_part.schema.json",
+      "models/proposed_corpus_to_doll_bridge.json"
+    ]
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DOLL_RIG_0_4_13",
+    "SRC.EXT.SPINE_JSON"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "The canonical doll rig already has pivots, anchors and semantic sockets.",
+    "futureWork": "Formalize Corpus Pane-to-doll mappings and test them with real extracted/approved parts."
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "id": "VOC.EVIDENCE_STATE",
+  "values": [
+    "automatic_estimate",
+    "manual_correction",
+    "accepted_snapshot",
+    "assistant_reviewed",
+    "owner_verified",
+    "external_reference",
+    "unknown"
+  ],
+  "orderingNote": "These are provenance states, not a single numeric confidence ladder."
+}

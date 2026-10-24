@@ -1,0 +1,57 @@
+{
+  "id": "CP-K070",
+  "title": "MakeHuman / MPFB as a controlled perspective-reference generator",
+  "version": 1,
+  "knowledgeType": "external_reference",
+  "authority": "external_reference",
+  "plainLanguage": "MakeHuman/MPFB is useful because we can hold one body and one pose steady while changing the camera or a selected set of bones. That lets us make clean perspective teaching examples instead of relying only on random images.",
+  "purpose": "Define the narrow, safe role of MakeHuman/MPFB in the Corpus Pane ecosystem.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K070.R1",
+      "strength": "SHOULD",
+      "statement": "Use a reference body approximating the gray mannequin only for controlled reference generation; do not make it the canonical mannequin."
+    },
+    {
+      "id": "K070.R2",
+      "strength": "SHOULD",
+      "statement": "Use partial poses to isolate arm, leg, head, or torso changes where useful.",
+      "sourceRefs": [
+        "SRC.EXT.MPFB_POSES"
+      ]
+    },
+    {
+      "id": "K070.R3",
+      "strength": "MUST",
+      "statement": "Store generated images/landmarks as external_reference until mannequin-specific review."
+    },
+    {
+      "id": "K070.R4",
+      "strength": "MUST",
+      "statement": "Keep MPFB/MakeHuman software code licensing separate; this knowledge package does not copy their code.",
+      "sourceRefs": [
+        "SRC.EXT.MAKEHUMAN_LICENSE"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "implements",
+      "article": "CP-K025"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.MAKEHUMAN_LICENSE",
+    "SRC.EXT.MPFB_POSES",
+    "SRC.EXT.MPFB_RIGGING"
+  ],
+  "implementation": {
+    "status": "research_only",
+    "currentSupport": "No MakeHuman assets are included.",
+    "futureWork": "Create a bounded reference pack only after explicit approval."
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "suite": "Starter Pass 01 compatibility and migration",
+  "pass": true,
+  "backup": "starter/Corpus_Library_Starter_Pass_01.corpus.zip",
+  "firstImport": {
+    "clips": 5,
+    "refs": 18,
+    "comparisons": 6,
+    "reviews": 20,
+    "allKnowledge": true,
+    "ext": {
+      "id": "sprite-foundry/corpus-pane-knowledge",
+      "version": "1.0.5",
+      "role": "built-in reference; never verification"
+    },
+    "kneeHead": {
+      "family": "FRONT_THREE_QUARTER",
+      "heading": "image_left",
+      "status": "reviewed",
+      "notes": "Migrated from Starter Pass head-direction observation: front_three_quarter \u00b7 left \u00b7 assistant visually reviewed, approximate"
+    },
+    "balanceHead": {
+      "family": "FRONT",
+      "heading": "toward",
+      "status": "reviewed",
+      "notes": "Migrated from Starter Pass head-direction observation: front \u00b7 near_center \u00b7 assistant visually reviewed, approximate"
+    },
+    "assistantRefs": 18,
+    "importedRevisionLabels": 0
+  },
+  "duplicateReimport": "covered by tests/repair.test.cjs using the exact unpacked backup records",
+  "pageErrors": []
+}

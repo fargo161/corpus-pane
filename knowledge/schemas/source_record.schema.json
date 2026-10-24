@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-knowledge-source-v1.json",
+  "title": "Knowledge Source Record",
+  "type": "object",
+  "required": [
+    "id",
+    "kind",
+    "title",
+    "authority",
+    "usage"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "kind": {
+      "enum": [
+        "project_file",
+        "web",
+        "generated_reference",
+        "user_review"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "locator": {
+      "type": "string"
+    },
+    "authority": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "usage": {
+      "type": "string"
+    },
+    "ingestPolicy": {
+      "type": "string"
+    }
+  }
+}

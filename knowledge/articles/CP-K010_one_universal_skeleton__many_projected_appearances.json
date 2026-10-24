@@ -1,0 +1,73 @@
+{
+  "id": "CP-K010",
+  "title": "One universal skeleton, many projected appearances",
+  "version": 1,
+  "knowledgeType": "core",
+  "authority": "existing_contract",
+  "plainLanguage": "A shoulder is always the same anatomical shoulder even when it looks very different from another angle. The skeleton names the body consistently; the library records how that same structure appears in each picture.",
+  "purpose": "Preserve one anatomical language across mannequin videos, future characters, and the still doll rig.",
+  "appliesTo": {
+    "regions": [
+      "whole"
+    ],
+    "workflows": [
+      "track",
+      "compare",
+      "verify",
+      "assemble"
+    ]
+  },
+  "rules": [
+    {
+      "id": "K010.R1",
+      "strength": "MUST",
+      "statement": "Use the existing universal-skeleton v1.2.0 IDs as the default anatomical names.",
+      "sourceRefs": [
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K010.R2",
+      "strength": "MUST",
+      "statement": "Anatomical left/right follows the subject, never screen-left/right.",
+      "sourceRefs": [
+        "SRC.CP.SKELETON_1_2_0"
+      ]
+    },
+    {
+      "id": "K010.R3",
+      "strength": "MUST",
+      "statement": "Do not create a new skeleton merely because a view or character looks different; first test whether the difference is projection, artwork, or a genuine schema gap.",
+      "sourceRefs": [
+        "SRC.CP.DATA_CONTRACT"
+      ]
+    },
+    {
+      "id": "K010.R4",
+      "strength": "SHOULD",
+      "statement": "When a schema gap is suspected, preserve the old records and add a versioned extension or migration path rather than rewriting history."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K080"
+    },
+    {
+      "type": "depends_on",
+      "article": "CP-K062"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Universal skeleton v1.2.0 already exists and is used by Corpus Pane.",
+    "futureWork": "Use it as the stable semantic bridge into the still mannequin and future character families."
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "id": "CP-K062",
+  "title": "Verification, staleness, and owner acceptance",
+  "version": 1,
+  "knowledgeType": "evidence",
+  "authority": "existing_contract",
+  "plainLanguage": "A checked arm can become out of date if one of its points or view labels later changes. Good records keep the old review but stop pretending it is current.",
+  "purpose": "Keep verified knowledge trustworthy while allowing the schema and artwork to evolve.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K062.R1",
+      "strength": "MUST",
+      "statement": "Verification is scoped to exact joints, frames, visibility, view/scale dependencies, and reviewer identity."
+    },
+    {
+      "id": "K062.R2",
+      "strength": "MUST",
+      "statement": "Changing a dependency makes affected knowledge stale rather than deleting it."
+    },
+    {
+      "id": "K062.R3",
+      "strength": "MUST",
+      "statement": "Assistant review and owner acceptance are separate fields."
+    },
+    {
+      "id": "K062.R4",
+      "strength": "SHOULD",
+      "statement": "Poser-part compatibility and articulation tests should use the same stale-on-dependency-change pattern."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.DATA_CONTRACT",
+    "SRC.CP.LIBRARY_PASS_01"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Current review and reusable-configuration eligibility use snapshot invalidation. Corpus Pane 0.2.2.2 can combine several current smaller reviews joint-by-joint to establish the review authority supporting a larger saved region, while preserving owner acceptance separately.",
+    "futureWork": "Extend dependency invalidation to parts, sockets and reference-pack mappings."
+  }
+}

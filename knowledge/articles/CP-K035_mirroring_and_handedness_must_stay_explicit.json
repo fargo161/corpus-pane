@@ -1,0 +1,52 @@
+{
+  "id": "CP-K035",
+  "title": "Mirroring and handedness must stay explicit",
+  "version": 1,
+  "knowledgeType": "assembly",
+  "authority": "synthesized_rule",
+  "plainLanguage": "Flipping a picture can be useful, but the character’s left arm is still the left arm. A mirrored drawing is not automatically a valid opposite-side piece.",
+  "purpose": "Prevent side confusion and invalid shortcuts as the part library grows.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K035.R1",
+      "strength": "MUST",
+      "statement": "Never silently swap anatomical left/right when mirroring."
+    },
+    {
+      "id": "K035.R2",
+      "strength": "MUST",
+      "statement": "Record whether a part is approved for mirror reuse, requires an opposite-side variant, or is untested."
+    },
+    {
+      "id": "K035.R3",
+      "strength": "SHOULD",
+      "statement": "Similarity search may show explicit mirrored candidates, but must label them as mirrored candidates.",
+      "sourceRefs": [
+        "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+      ]
+    },
+    {
+      "id": "K035.R4",
+      "strength": "MUST",
+      "statement": "Preserve the doll rig’s explicit mirror transform behavior separately from anatomical identity.",
+      "sourceRefs": [
+        "SRC.CP.DOLL_RIG_0_4_13"
+      ]
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [],
+  "sourceRefs": [
+    "SRC.CP.SKELETON_1_2_0",
+    "SRC.CP.DOLL_RIG_0_4_13",
+    "SRC.EXT.GOOGLE_POSE_CLASSIFY"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Anatomical side convention and doll flipX behavior already exist separately.",
+    "futureWork": "Add explicit mirrorability to poser-part records and search UI."
+  }
+}

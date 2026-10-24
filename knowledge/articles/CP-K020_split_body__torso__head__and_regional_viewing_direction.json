@@ -1,0 +1,56 @@
+{
+  "id": "CP-K020",
+  "title": "Split body, torso, head, and regional viewing direction",
+  "version": 1,
+  "knowledgeType": "perspective",
+  "authority": "synthesized_rule",
+  "plainLanguage": "A body can face mostly forward while the head turns to the side. One single “view” label is not enough for perspective-heavy character building.",
+  "purpose": "Make viewpoint information precise enough to compare and later assemble compatible 2D pieces.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K020.R1",
+      "strength": "MUST",
+      "statement": "Record body/torso orientation and head orientation independently."
+    },
+    {
+      "id": "K020.R2",
+      "strength": "SHOULD",
+      "statement": "Allow region-specific orientation overrides when an arm or leg is strongly out of the torso plane."
+    },
+    {
+      "id": "K020.R3",
+      "strength": "MUST",
+      "statement": "Preserve MIXED and UNKNOWN rather than forcing one of the five main view families."
+    },
+    {
+      "id": "K020.R4",
+      "strength": "MUST",
+      "statement": "Keep screen heading separate from anatomical left/right."
+    }
+  ],
+  "recordGuidance": {
+    "schema": "schemas/view_state.schema.json"
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "refines",
+      "article": "CP-K010"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K032"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.CP.LIBRARY_PASS_01",
+    "SRC.CP.SKELETON_1_2_0"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Corpus Pane 0.2.2.4 stores body and head viewing direction separately, preserves prior head-direction observations, and uses the reviewed body view within the ordered FRONT → FRONT_THREE_QUARTER → PROFILE → BACK_THREE_QUARTER → BACK retrieval ladder.",
+    "futureWork": "Regional overrides remain a later extension; continue testing split view labels across turns and occlusion-heavy clips."
+  }
+}

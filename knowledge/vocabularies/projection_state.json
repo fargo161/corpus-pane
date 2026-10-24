@@ -1,0 +1,14 @@
+{
+  "id": "VOC.PROJECTION_STATE",
+  "values": [
+    "planar_like",
+    "foreshortened",
+    "edge_on",
+    "cross_body",
+    "folded_overlap",
+    "silhouette_ambiguous",
+    "hidden",
+    "unknown"
+  ],
+  "note": "Projection state describes the 2D appearance. It does not assert true 3D depth."
+}

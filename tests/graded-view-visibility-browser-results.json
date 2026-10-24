@@ -1,0 +1,174 @@
+{
+  "suite": "Corpus Pane 02.2.4 graded view / visibility browser",
+  "total": 8,
+  "passed": 8,
+  "failed": 0,
+  "pass": true,
+  "checks": [
+    {
+      "name": "live_hidden_visible_disagreement_text",
+      "pass": true,
+      "detail": "not enough clearly visible tracked points to compare this group. similar-pose search cannot rank this frame yet: need either two shared visible points beyond the normalization anchor or one complete shared bone. reviewed perspective is one neighboring view step away; search ranking treats farther views as progressively less relevant. reviewed heading differs. visibility differs for elbow \u00b7 left, wrist \u00b7 left, hand \u00b7 left; hidden and visible are not treated as the same pose evidence. regional pro"
+    },
+    {
+      "name": "search_results_have_graded_view_distance",
+      "pass": true,
+      "detail": [
+        {
+          "viewDistance": 1,
+          "visibilityMismatchCount": 0,
+          "label": "Balance \u2014 right forearm open outward",
+          "queryEvidence": "strict"
+        },
+        {
+          "viewDistance": 0,
+          "visibilityMismatchCount": 0,
+          "label": "Turning low sway \u2014 right arm",
+          "queryEvidence": "strict"
+        },
+        {
+          "viewDistance": 1,
+          "visibilityMismatchCount": 0,
+          "label": "Front near-horizontal reach \u2014 right arm",
+          "queryEvidence": "strict"
+        },
+        {
+          "viewDistance": 1,
+          "visibilityMismatchCount": 0,
+          "label": "Balance \u2014 right arm bent upward",
+          "queryEvidence": "strict"
+        },
+        {
+          "viewDistance": 0,
+          "visibilityMismatchCount": 0,
+          "label": "3Q bent arm beside head \u2014 corrected right arm",
+          "queryEvidence": "strict"
+        }
+      ]
+    },
+    {
+      "name": "search_ui_explains_reviewed_view_distance",
+      "pass": true,
+      "detail": "balance \u2014 right forearm open outward\n\nmc09_turn-footstand_p01_left \u00b7 frame 59\nfull region match\n14.8% pose signature \u00b7 assistant-reviewed \u00b7 owner acceptance pending\nneighboring reviewed view \u00b7 unknown\n\nshow in other pane\nturning low sway \u2014 right arm\n\nmc11_turn-hop-arms_p03_right \u00b7 frame 30\nfull region match\n11.7% pose signature \u00b7 assistant-reviewed \u00b7 owner acceptance pending\nsame reviewed view \u00b7 different projection \u00b7 planar / ordinary\n\nshow in other pane\nfront near-horizontal reach \u2014 right arm\n\nmc12_turn-armstretch_p02_right \u00b7 frame 49\nfull region match\n9.3% pose signature \u00b7 assistant-reviewed \u00b7 owner acceptance pending\nneighboring reviewed view \u00b7 different projection \u00b7 planar / ordinary\n\nshow in other pane\nbalance \u2014 right arm bent upward\n\nmc09_turn-footstand_p01_left \u00b7 frame 37\nfull regi"
+    },
+    {
+      "name": "new_depth_reference_available",
+      "pass": true
+    },
+    {
+      "name": "mc03_corrected_joint_order_live",
+      "pass": true,
+      "detail": {
+        "elbow": {
+          "x": 124,
+          "y": 171,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "wrist": {
+          "x": 110,
+          "y": 179,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "hand": {
+          "x": 103,
+          "y": 183,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "ref": "3Q fist-forward foreshortened reach \u2014 corrected right arm"
+      }
+    },
+    {
+      "name": "mc01_hidden_elbow_visible_distal_live",
+      "pass": true,
+      "detail": {
+        "elbow": {
+          "x": 156,
+          "y": 149,
+          "confidence": 0.55,
+          "visibility": "occluded",
+          "source": "reference-follow",
+          "passId": "pass-mvlr9tp3-047va6gcda1o",
+          "support": {
+            "onSilhouette": true
+          },
+          "visibilitySource": "manual",
+          "positionEvidence": "retained / not visibly observed",
+          "locked": true,
+          "accepted": true
+        },
+        "wrist": {
+          "x": 178,
+          "y": 129,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "hand": {
+          "x": 193,
+          "y": 131,
+          "confidence": null,
+          "visibility": "visible",
+          "source": "manual",
+          "passId": null,
+          "locked": true,
+          "visibilitySource": "manual"
+        },
+        "ref": "Rear-3Q far arm behind torso \u2014 distal forearm/hand visible"
+      }
+    },
+    {
+      "name": "combined_shape_view_ranking_live",
+      "pass": true,
+      "detail": [
+        {
+          "label": "Front T-pose extension \u2014 left arm",
+          "viewDistance": 1,
+          "rankingScore": 0.06893923258234785
+        },
+        {
+          "label": "3Q forward bent reach \u2014 left arm",
+          "viewDistance": 0,
+          "rankingScore": 0.14970190214450996
+        },
+        {
+          "label": "Turning low sway \u2014 left arm",
+          "viewDistance": 0,
+          "rankingScore": 0.16690192649089988
+        },
+        {
+          "label": "3Q bent horizontal preparation \u2014 left arm",
+          "viewDistance": 0,
+          "rankingScore": 0.17670338841260363
+        },
+        {
+          "label": "3Q overhead reach \u2014 left arm \u00b7 landmark corrected",
+          "viewDistance": 0,
+          "rankingScore": 0.23224463950958288
+        }
+      ]
+    },
+    {
+      "name": "no_page_errors",
+      "pass": true,
+      "detail": []
+    }
+  ]
+}

@@ -1,0 +1,328 @@
+{
+  "suite": "Corpus Pane 02.2.5 acceptance reliability release audit",
+  "total": 65,
+  "passed": 65,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "release_version",
+      "pass": true,
+      "detail": "0.2.2.5"
+    },
+    {
+      "name": "checkpoint",
+      "pass": true,
+      "detail": "02.2.5"
+    },
+    {
+      "name": "knowledge_version",
+      "pass": true,
+      "detail": "1.0.5"
+    },
+    {
+      "name": "skeleton_version",
+      "pass": true
+    },
+    {
+      "name": "continuation_backup",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/bodykit.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/facekit.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/face-api.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/fa-models.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/movenet-model.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/keyer.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/media.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/pixels.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/reliability.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/sfcore.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/sha256.js",
+      "pass": true
+    },
+    {
+      "name": "unchanged_vs_02_2_4:engine/tracking.js",
+      "pass": true
+    },
+    {
+      "name": "skeleton_file_unchanged",
+      "pass": true
+    },
+    {
+      "name": "required:index.html",
+      "pass": true
+    },
+    {
+      "name": "required:app/corpus.js",
+      "pass": true
+    },
+    {
+      "name": "required:app/workspace.js",
+      "pass": true
+    },
+    {
+      "name": "required:app/knowledge.js",
+      "pass": true
+    },
+    {
+      "name": "required:engine/universal.js",
+      "pass": true
+    },
+    {
+      "name": "required:docs/ACCEPTANCE_RELIABILITY_02_2_5_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required:docs/LANDMARK_SEMANTICS.json",
+      "pass": true
+    },
+    {
+      "name": "required:docs/TEST_REPORT.md",
+      "pass": true
+    },
+    {
+      "name": "required:tests/acceptance_reliability_0225.test.cjs",
+      "pass": true
+    },
+    {
+      "name": "required:tests/acceptance_reliability_0225_browser.py",
+      "pass": true
+    },
+    {
+      "name": "required:tests/fixtures/acceptance_reliability_13_clip.records.json",
+      "pass": true
+    },
+    {
+      "name": "required:starter/Arm_Shoulder_Torso_Acceptance_Reliability_02_2_5.corpus.zip",
+      "pass": true
+    },
+    {
+      "name": "syntax:app/corpus.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/workspace.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/knowledge.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:app/storage.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "syntax:engine/universal.js",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "all_json_parse",
+      "pass": true,
+      "detail": {
+        "count": 128,
+        "bad": []
+      }
+    },
+    {
+      "name": "results:tests/core-results.json",
+      "pass": true,
+      "detail": {
+        "total": 41,
+        "passed": 41
+      }
+    },
+    {
+      "name": "results:tests/knowledge-core-results.json",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 8
+      }
+    },
+    {
+      "name": "results:tests/repair-results.json",
+      "pass": true,
+      "detail": {
+        "total": 14,
+        "passed": 14
+      }
+    },
+    {
+      "name": "results:tests/library-search-approval-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7
+      }
+    },
+    {
+      "name": "results:tests/search-semantics-cleanup-results.json",
+      "pass": true,
+      "detail": {
+        "total": 8,
+        "passed": 8
+      }
+    },
+    {
+      "name": "results:tests/view-priority-composite-review-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7
+      }
+    },
+    {
+      "name": "results:tests/graded-view-visibility-results.json",
+      "pass": true,
+      "detail": {
+        "total": 6,
+        "passed": 6
+      }
+    },
+    {
+      "name": "results:tests/surgical-repair-0224-results.json",
+      "pass": true,
+      "detail": {
+        "total": 7,
+        "passed": 7
+      }
+    },
+    {
+      "name": "results:tests/acceptance-reliability-0225-results.json",
+      "pass": true,
+      "detail": {
+        "total": 5,
+        "passed": 5
+      }
+    },
+    {
+      "name": "direct_total_103",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/repair-browser-results.json",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/search-approval-browser-results.json",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/search-semantics-browser-results.json",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/seed-backup-compat-results.json",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/view-priority-composite-browser-results.json",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/graded-view-visibility-browser-results.json",
+      "pass": true
+    },
+    {
+      "name": "browser:tests/acceptance-reliability-0225-browser-results.json",
+      "pass": true
+    },
+    {
+      "name": "knowledge_validation",
+      "pass": true
+    },
+    {
+      "name": "schema_validation",
+      "pass": true
+    },
+    {
+      "name": "display_sync_indices",
+      "pass": true
+    },
+    {
+      "name": "stale_decode_guard",
+      "pass": true
+    },
+    {
+      "name": "landmark_semantics_runtime",
+      "pass": true
+    },
+    {
+      "name": "landmark_semantics_ui",
+      "pass": true
+    },
+    {
+      "name": "corpus_integrity",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "corpus_counts",
+      "pass": true,
+      "detail": {
+        "clips": 13,
+        "refs": 39,
+        "comparisons": 13,
+        "reviews": 43
+      }
+    },
+    {
+      "name": "corrected_reference_records",
+      "pass": true,
+      "detail": {
+        "overhead": 1,
+        "cropped": 1
+      }
+    },
+    {
+      "name": "corrected_refs_pending",
+      "pass": true
+    },
+    {
+      "name": "no_python_cache",
+      "pass": true,
+      "detail": []
+    },
+    {
+      "name": "new_browser_fixture_relative",
+      "pass": true
+    }
+  ]
+}

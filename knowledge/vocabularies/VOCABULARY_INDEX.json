@@ -1,0 +1,19 @@
+{
+  "format": "sprite-foundry/corpus-pane-vocabulary-index",
+  "version": 1,
+  "files": [
+    "articulation_grade.json",
+    "authority.json",
+    "comparison_classification.json",
+    "compatibility_outcome.json",
+    "depth_direction_hint.json",
+    "evidence_state.json",
+    "projection_state.json",
+    "relation_types.json",
+    "screen_heading.json",
+    "view_family.json",
+    "visibility.json",
+    "workflow_stage.json"
+  ],
+  "principle": "Prefer explicit unknowns over invented certainty; keep view, visibility, anatomy, artwork and verification as separate dimensions."
+}

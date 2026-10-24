@@ -1,0 +1,25 @@
+{
+  "id": "VOC.AUTHORITY",
+  "values": [
+    {
+      "id": "existing_contract",
+      "meaning": "Already part of current Corpus Pane or shared project schema."
+    },
+    {
+      "id": "project_decision",
+      "meaning": "A design rule selected for this project."
+    },
+    {
+      "id": "synthesized_rule",
+      "meaning": "A rule inferred by combining current project needs with external references."
+    },
+    {
+      "id": "external_reference",
+      "meaning": "Useful outside knowledge; not automatically authoritative for the mannequin."
+    },
+    {
+      "id": "hypothesis",
+      "meaning": "Promising idea that still needs a mannequin-specific test."
+    }
+  ]
+}

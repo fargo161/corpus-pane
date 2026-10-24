@@ -1,0 +1,473 @@
+{
+  "type": "object",
+  "required": [
+    "format",
+    "formatVersion",
+    "id",
+    "schema",
+    "entries",
+    "media",
+    "inheritedCorpora",
+    "references",
+    "comparisons",
+    "events"
+  ],
+  "properties": {
+    "format": {
+      "const": "sprite-foundry/corpus-verifier"
+    },
+    "formatVersion": {
+      "const": 1
+    },
+    "id": {
+      "type": "string"
+    },
+    "schema": {
+      "type": "object",
+      "required": [
+        "id",
+        "version"
+      ],
+      "properties": {
+        "id": {
+          "const": "adventure-studio/universal-skeleton"
+        },
+        "version": {
+          "const": "1.2.0"
+        }
+      },
+      "additionalProperties": true
+    },
+    "entries": {
+      "type": "object",
+      "maxProperties": 500,
+      "additionalProperties": {
+        "$ref": "#/$defs/entry"
+      }
+    },
+    "media": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/media"
+      }
+    },
+    "inheritedCorpora": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "references": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/comparison"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "at",
+          "kind"
+        ],
+        "properties": {},
+        "additionalProperties": true
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true,
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "media": {
+      "type": "object",
+      "required": [
+        "sha256",
+        "name",
+        "mime",
+        "bytes"
+      ],
+      "properties": {
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "name": {
+          "type": "string"
+        },
+        "mime": {
+          "type": "string"
+        },
+        "bytes": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": true
+    },
+    "calibration": {
+      "type": "object",
+      "required": [
+        "frame",
+        "rootX",
+        "crownY",
+        "floorY",
+        "status"
+      ],
+      "properties": {
+        "frame": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "rootX": {
+          "type": "number"
+        },
+        "crownY": {
+          "type": "number"
+        },
+        "floorY": {
+          "type": "number"
+        },
+        "status": {
+          "enum": [
+            "estimated",
+            "reviewed"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "view": {
+      "type": "object",
+      "required": [
+        "id",
+        "start",
+        "end",
+        "family",
+        "heading",
+        "status",
+        "at"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "family": {
+          "enum": [
+            "unknown",
+            "FRONT",
+            "THREEQ",
+            "PROFILE_LEFT",
+            "PROFILE_RIGHT",
+            "BACK_THREEQ",
+            "BACK",
+            "MIXED"
+          ]
+        },
+        "status": {
+          "enum": [
+            "uncertain",
+            "reviewed"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "snapshot": {
+      "type": "object",
+      "required": [
+        "keys",
+        "frames"
+      ],
+      "properties": {
+        "keys": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "frames": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "index",
+              "points",
+              "oval"
+            ],
+            "properties": {
+              "index": {
+                "type": "integer",
+                "minimum": 0
+              },
+              "points": {
+                "type": "array"
+              },
+              "oval": {
+                "type": [
+                  "object",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "review": {
+      "type": "object",
+      "required": [
+        "id",
+        "start",
+        "end",
+        "keys",
+        "region",
+        "decision",
+        "reviewer",
+        "at",
+        "snapshot"
+      ],
+      "properties": {
+        "decision": {
+          "enum": [
+            "verified",
+            "reopened"
+          ]
+        },
+        "snapshot": {
+          "$ref": "#/$defs/snapshot"
+        }
+      },
+      "additionalProperties": true
+    },
+    "reference": {
+      "type": "object",
+      "required": [
+        "id",
+        "entryId",
+        "frame",
+        "region",
+        "keys",
+        "label",
+        "bodyType",
+        "tags",
+        "view",
+        "calibration",
+        "snapshot",
+        "schemaVersion",
+        "sourceSHA256"
+      ],
+      "properties": {
+        "snapshot": {
+          "$ref": "#/$defs/snapshot"
+        },
+        "calibration": {
+          "$ref": "#/$defs/calibration"
+        }
+      },
+      "additionalProperties": true
+    },
+    "comparison": {
+      "type": "object",
+      "required": [
+        "id",
+        "a",
+        "b",
+        "region",
+        "keys",
+        "classification",
+        "note",
+        "at",
+        "schemaVersion"
+      ],
+      "properties": {
+        "classification": {
+          "enum": [
+            "same_configuration",
+            "tracking_error",
+            "different_view",
+            "new_pose",
+            "new_piece",
+            "hidden_part",
+            "source_artifact",
+            "schema_review",
+            "uncertain"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "track": {
+      "type": "object",
+      "required": [
+        "format",
+        "formatVersion",
+        "id",
+        "schema",
+        "subject",
+        "source",
+        "timeline",
+        "frames",
+        "edits",
+        "visibilityEdits",
+        "locks",
+        "passes",
+        "processing",
+        "propagation"
+      ],
+      "properties": {
+        "format": {
+          "const": "adventure-studio/unified-prep"
+        },
+        "formatVersion": {
+          "const": 4
+        },
+        "frames": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "index",
+              "time",
+              "duration",
+              "points"
+            ],
+            "properties": {
+              "duration": {
+                "type": "number",
+                "exclusiveMinimum": 0
+              },
+              "points": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": [
+                    "object",
+                    "null"
+                  ],
+                  "properties": {
+                    "x": {
+                      "type": "number"
+                    },
+                    "y": {
+                      "type": "number"
+                    },
+                    "visibility": {
+                      "enum": [
+                        "visible",
+                        "occluded",
+                        "out_of_frame",
+                        "unknown"
+                      ]
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "minItems": 1,
+          "maxItems": 3000
+        }
+      },
+      "additionalProperties": true
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "bodyType",
+        "originalMetadata",
+        "project",
+        "mediaRefs",
+        "calibration",
+        "viewLabels",
+        "reviews",
+        "findings"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[\\w.-]{1,160}$"
+        },
+        "label": {
+          "type": "string"
+        },
+        "bodyType": {
+          "type": "string"
+        },
+        "originalMetadata": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "project": {
+          "$ref": "#/$defs/track"
+        },
+        "mediaRefs": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "sha256",
+              "name"
+            ],
+            "properties": {
+              "sha256": {
+                "$ref": "#/$defs/sha256"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "calibration": {
+          "$ref": "#/$defs/calibration"
+        },
+        "viewLabels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/view"
+          }
+        },
+        "reviews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/review"
+          }
+        },
+        "findings": {
+          "type": "array"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "title": "Corpus Lab workspace structure v1",
+  "description": "Structural envelope only. Runtime validators perform additional cross-record checks. Neither certifies anatomical truth."
+}

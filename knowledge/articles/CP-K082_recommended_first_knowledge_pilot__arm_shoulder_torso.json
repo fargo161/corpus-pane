@@ -1,0 +1,64 @@
+{
+  "id": "CP-K082",
+  "title": "Recommended first knowledge pilot: arm–shoulder–torso",
+  "version": 1,
+  "knowledgeType": "roadmap",
+  "authority": "project_decision",
+  "plainLanguage": "The first external knowledge test should be small and directly tied to the eventual poser: several arm poses shown across several viewing directions, connected to the shoulder and torso.",
+  "purpose": "Validate the complete knowledge path before expanding to the whole body.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K082.R1",
+      "strength": "SHOULD",
+      "statement": "Prepare roughly ten arm configurations across the five main view families, using a controlled reference body; exact count may change after redundancy review."
+    },
+    {
+      "id": "K082.R2",
+      "strength": "MUST",
+      "statement": "Keep the generated pack external_reference until checked against mannequin clips."
+    },
+    {
+      "id": "K082.R3",
+      "strength": "SHOULD",
+      "statement": "Run a new mannequin video through the Corpus Pane with and without the pack and compare review effort and reference quality."
+    },
+    {
+      "id": "K082.R4",
+      "strength": "SHOULD",
+      "statement": "Take one or two successful configurations into the canonical doll rig and run real attachment/articulation tests."
+    },
+    {
+      "id": "K082.R5",
+      "strength": "MUST",
+      "statement": "Only after the pilot passes should the same method expand to legs, head/neck, torso/pelvis, and broader motion sources."
+    }
+  ],
+  "recordGuidance": {},
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "tests",
+      "article": "CP-K025"
+    },
+    {
+      "type": "tests",
+      "article": "CP-K050"
+    },
+    {
+      "type": "tests",
+      "article": "CP-K080"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.MAKEHUMAN_LICENSE",
+    "SRC.EXT.MPFB_POSES",
+    "SRC.CP.DOLL_RIG_0_4_13"
+  ],
+  "implementation": {
+    "status": "proposed",
+    "currentSupport": "Not yet executed.",
+    "futureWork": "This is the recommended next implementation/research checkpoint."
+  }
+}

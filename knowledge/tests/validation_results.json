@@ -1,0 +1,1660 @@
+{
+  "format": "sprite-foundry/corpus-pane-knowledge-validation",
+  "version": 1,
+  "checks": 330,
+  "passed": 330,
+  "failed": 0,
+  "errors": [],
+  "details": [
+    {
+      "name": "json:MASTER_INDEX.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:MANIFEST.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:PACKAGE_REPORT.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/view_state.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/master_index.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/poser_part.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/knowledge_article.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/part_compatibility_test.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/source_record.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/perspective_reference.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:schemas/pose_signature.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:sources/SOURCE_REGISTER.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:tests/schema_validation_results.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:tests/validation_results.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:models/doll_rig_bridge_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:models/universal_skeleton_v1_2_0.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:models/current_seed_library_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:models/proposed_corpus_to_doll_bridge.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:models/corpus_pane_existing_data_contract.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/view_family.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/articulation_grade.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/projection_state.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/screen_heading.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/depth_direction_hint.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/authority.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/compatibility_outcome.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/evidence_state.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/workflow_stage.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/relation_types.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/comparison_classification.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/VOCABULARY_INDEX.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:vocabularies/visibility.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:examples/example_head_torso_split_view.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:examples/example_foreshortened_arm_reference.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:examples/example_part_compatibility_test.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K041_face_oval_and_face_perspective.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K064_provenance__licensing__and_safe_external_knowledge.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K050_pose_signatures_for_comparison__not_replacement.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K033_articulation_envelopes_around_authored_poses.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K020_split_body__torso__head__and_regional_viewing_direction.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K053_the_corpus_pane_learning_loop.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K031_pivots__anchors__sockets__and_hosts.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K024_depth_hints__overlap_order__and_draw_order.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K040_five_slot_face_plus_shared_nose.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K052_comparison_classifications_are_knowledge_about_differences.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K032_part_compatibility_is_a_tested_relationship__not_a_label.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K071_spine_patterns_for_modular_2d_assembly.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K060_four_evidence_layers_stay_independent.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K025_controlled_perspective_reference_packs.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K021_view_families_are_categories__not_exact_camera_solutions.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K073_optional_depth_like_evidence_stays_non_authoritative.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K081_acceptance_tests_for_a_knowledge_driven_corpus_pane.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K082_recommended_first_knowledge_pilot__arm_shoulder_torso.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K054_motion_source_ingestion_and_movement_gaps.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K070_makehuman___mpfb_as_a_controlled_perspective_reference_generator.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K011_coordinate_space__scale__and_normalization.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K063_schema_evolution_without_breaking_the_corpus.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K080_bridge_from_corpus_pane_knowledge_to_the_eventual_2d_poser.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K012_shared_boundary_joints_and_region_hierarchy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K072_nearest_reference_matching_adapted_for_corpus_pane.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K030_anatomical_joint__artwork_pivot__and_attachment_socket_are_not_t.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K034_seam_coverage__overlap__and_silhouette_quality.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K023_occlusion__outside_frame__and_unknown_are_different.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K035_mirroring_and_handedness_must_stay_explicit.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K022_foreshortening_and_projected_limb_length.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K013_body_families__proportions__and_identity_preservation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K000_mission__authority__and_knowledge_boundaries.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K074_movenet_is_detector_evidence__not_the_skeleton_definition.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K062_verification__staleness__and_owner_acceptance.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K075_cmu_motion_capture_as_a_later_movement_gap_source.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K061_manual_corrections__pins__and_automatic_refinement.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K010_one_universal_skeleton__many_projected_appearances.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "json:articles/CP-K051_reference_retrieval_should_narrow_the_search__not_make_the_decis.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "article_ids_unique",
+      "pass": true,
+      "detail": "['CP-K000', 'CP-K010', 'CP-K011', 'CP-K012', 'CP-K013', 'CP-K020', 'CP-K021', 'CP-K022', 'CP-K023', 'CP-K024', 'CP-K025', 'CP-K030', 'CP-K031', 'CP-K032', 'CP-K033', 'CP-K034', 'CP-K035', 'CP-K040', 'CP-K041', 'CP-K050', 'CP-K051', 'CP-K052', 'CP-K053', 'CP-K054', 'CP-K060', 'CP-K061', 'CP-K062', 'CP-K063', 'CP-K064', 'CP-K070', 'CP-K071', 'CP-K072', 'CP-K073', 'CP-K074', 'CP-K075', 'CP-K080', 'CP-K081', 'CP-K082']"
+    },
+    {
+      "name": "master_article_path:articles/CP-K000_mission__authority__and_knowledge_boundaries.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K000",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K010_one_universal_skeleton__many_projected_appearances.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K010",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K011_coordinate_space__scale__and_normalization.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K011",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K012_shared_boundary_joints_and_region_hierarchy.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K012",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K013_body_families__proportions__and_identity_preservation.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K013",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K020_split_body__torso__head__and_regional_viewing_direction.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K020",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K021_view_families_are_categories__not_exact_camera_solutions.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K021",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K022_foreshortening_and_projected_limb_length.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K022",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K023_occlusion__outside_frame__and_unknown_are_different.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K023",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K024_depth_hints__overlap_order__and_draw_order.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K025_controlled_perspective_reference_packs.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K030_anatomical_joint__artwork_pivot__and_attachment_socket_are_not_t.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K030",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K031_pivots__anchors__sockets__and_hosts.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K031",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K032_part_compatibility_is_a_tested_relationship__not_a_label.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K033_articulation_envelopes_around_authored_poses.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K033",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K034_seam_coverage__overlap__and_silhouette_quality.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K034",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K035_mirroring_and_handedness_must_stay_explicit.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K035",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K040_five_slot_face_plus_shared_nose.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K040",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K041_face_oval_and_face_perspective.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K041",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K050_pose_signatures_for_comparison__not_replacement.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K050",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K051_reference_retrieval_should_narrow_the_search__not_make_the_decis.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K051",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K052_comparison_classifications_are_knowledge_about_differences.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K052",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K053_the_corpus_pane_learning_loop.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K053",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K054_motion_source_ingestion_and_movement_gaps.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K054",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K060_four_evidence_layers_stay_independent.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K060",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K061_manual_corrections__pins__and_automatic_refinement.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K061",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K062_verification__staleness__and_owner_acceptance.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K062",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K063_schema_evolution_without_breaking_the_corpus.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K063",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K064_provenance__licensing__and_safe_external_knowledge.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K064",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K070_makehuman___mpfb_as_a_controlled_perspective_reference_generator.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K070",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K071_spine_patterns_for_modular_2d_assembly.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K071",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K072_nearest_reference_matching_adapted_for_corpus_pane.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K072",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K073_optional_depth_like_evidence_stays_non_authoritative.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K073",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K074_movenet_is_detector_evidence__not_the_skeleton_definition.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K074",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K075_cmu_motion_capture_as_a_later_movement_gap_source.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K075",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K080_bridge_from_corpus_pane_knowledge_to_the_eventual_2d_poser.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K080",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K081_acceptance_tests_for_a_knowledge_driven_corpus_pane.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K081",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_path:articles/CP-K082_recommended_first_knowledge_pilot__arm_shoulder_torso.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_article_id:CP-K082",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:K000.R1:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:K000.R1:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:K000.R2:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:K000.R2:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K000:K000.R3:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:K010.R1:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:K010.R2:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:K010.R3:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:article_link:CP-K080",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K010:article_link:CP-K062",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:K011.R1:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:K011.R2:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:K011.R3:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:K011.R3:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:article_link:CP-K050",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K011:article_link:CP-K022",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K012:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K012:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K012:K012.R1:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K012:K012.R3:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K013:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K013:source:SRC.EXT.MPFB_POSES",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K013:K013.R2:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K013:article_link:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K013:article_link:CP-K080",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K020:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K020:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K020:article_link:CP-K010",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K020:article_link:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K021:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K021:article_link:CP-K025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K022:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K022:source:SRC.EXT.GOOGLE_POSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K022:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K022:article_link:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K022:article_link:CP-K052",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K023:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K023:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K023:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K023:K023.R1:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K023:K023.R2:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K023:K023.R3:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:source:SRC.EXT.GOOGLE_POSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:source:SRC.EXT.SPINE_JSON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:K024.R1:source:SRC.EXT.GOOGLE_POSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:K024.R1:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:K024.R3:source:SRC.EXT.SPINE_JSON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:article_link:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K024:article_link:CP-K034",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K025:source:SRC.EXT.MAKEHUMAN_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K025:source:SRC.EXT.MPFB_POSES",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K025:source:SRC.EXT.MPFB_RIGGING",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K025:article_link:CP-K070",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K025:article_link:CP-K051",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K030:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K030:source:SRC.EXT.SPINE_JSON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K030:article_link:CP-K031",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K030:article_link:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K031:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K031:source:SRC.EXT.SPINE_JSON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K031:K031.R2:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K032:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K032:source:SRC.EXT.SPINE_MIX_MATCH",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K032:article_link:CP-K080",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K033:source:SRC.EXT.SPINE_MIX_MATCH",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K033:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K034:source:SRC.EXT.SPINE_MIX_MATCH",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K034:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K035:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K035:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K035:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K035:K035.R3:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K035:K035.R4:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K040:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K040:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K040:K040.R1:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K041:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K041:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K041:article_link:CP-K020",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K041:article_link:CP-K051",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K050:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K050:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K051:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K051:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K051:K051.R1:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K051:article_link:CP-K053",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K052:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K052:K052.R1:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K052:article_link:CP-K053",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K052:article_link:CP-K063",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K053:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K053:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K053:article_link:CP-K081",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K054:source:SRC.EXT.CMU_MOCAP",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K054:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K054:article_link:CP-K075",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K060:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K061:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K061:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K061:K061.R1:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K062:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K062:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K063:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K063:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K063:K063.R3:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:source:SRC.EXT.MAKEHUMAN_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:source:SRC.EXT.SPINE_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:source:SRC.EXT.CMU_MOCAP",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:source:SRC.EXT.GOOGLE_SAMPLE_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:K064.R3:source:SRC.EXT.MAKEHUMAN_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:K064.R4:source:SRC.EXT.SPINE_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K064:K064.R5:source:SRC.EXT.CMU_MOCAP",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K070:source:SRC.EXT.MAKEHUMAN_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K070:source:SRC.EXT.MPFB_POSES",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K070:source:SRC.EXT.MPFB_RIGGING",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K070:K070.R2:source:SRC.EXT.MPFB_POSES",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K070:K070.R4:source:SRC.EXT.MAKEHUMAN_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K070:article_link:CP-K025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:source:SRC.EXT.SPINE_MIX_MATCH",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:source:SRC.EXT.SPINE_JSON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:source:SRC.EXT.SPINE_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:K071.R1:source:SRC.EXT.SPINE_JSON",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:K071.R2:source:SRC.EXT.SPINE_MIX_MATCH",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:K071.R4:source:SRC.EXT.SPINE_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:article_link:CP-K030",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K071:article_link:CP-K032",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K072:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K072:source:SRC.EXT.GOOGLE_SAMPLE_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K072:K072.R1:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K072:K072.R4:source:SRC.EXT.GOOGLE_POSE_CLASSIFY",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K072:article_link:CP-K050",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K072:article_link:CP-K051",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K073:source:SRC.EXT.GOOGLE_POSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K073:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K073:article_link:CP-K024",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K074:source:SRC.EXT.MOVENET",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K074:source:SRC.CP.SKELETON_1_2_0",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K075:source:SRC.EXT.CMU_MOCAP",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K075:K075.R3:source:SRC.EXT.CMU_MOCAP",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K075:article_link:CP-K054",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K080:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K080:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K080:source:SRC.EXT.SPINE_MIX_MATCH",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K081:source:SRC.CP.DATA_CONTRACT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K081:source:SRC.CP.LIBRARY_PASS_01",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K082:source:SRC.EXT.MAKEHUMAN_LICENSE",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K082:source:SRC.EXT.MPFB_POSES",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K082:source:SRC.CP.DOLL_RIG_0_4_13",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K082:article_link:CP-K025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K082:article_link:CP-K050",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "CP-K082:article_link:CP-K080",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/knowledge_article.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/master_index.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/view_state.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/perspective_reference.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/pose_signature.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/poser_part.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/part_compatibility_test.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:schemas/source_record.schema.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:models/universal_skeleton_v1_2_0.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:models/corpus_pane_existing_data_contract.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:models/doll_rig_bridge_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:models/proposed_corpus_to_doll_bridge.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:models/current_seed_library_snapshot.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:examples/example_head_torso_split_view.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:examples/example_foreshortened_arm_reference.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "master_path:examples/example_part_compatibility_test.json",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "skeleton_version",
+      "pass": true,
+      "detail": "1.2.0"
+    },
+    {
+      "name": "skeleton_side_convention",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "five_face_slots",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "name": "bridge_is_proposed",
+      "pass": true,
+      "detail": ""
+    }
+  ]
+}

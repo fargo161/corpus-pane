@@ -1,0 +1,458 @@
+[
+  {
+    "query": {
+      "label": "MC12_turn-armstretch_p01_left",
+      "frame": 59,
+      "region": "leftArm",
+      "note": "3Q straight horizontal reach"
+    },
+    "hits": [
+      {
+        "rank": 1,
+        "label": "Front T-pose extension — left arm",
+        "entry": "MC12_turn-armstretch_p02_right",
+        "frame": 59,
+        "rankingScore": 0.06893923258234785,
+        "knowledgeScore": 0.043939232582347845,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 2,
+        "label": "3Q forward bent reach — left arm",
+        "entry": "MC10_arms_p02_center",
+        "frame": 23,
+        "rankingScore": 0.14970190214450996,
+        "knowledgeScore": 0.08970190214450996,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "foreshortened"
+      },
+      {
+        "rank": 3,
+        "label": "Turning low sway — left arm",
+        "entry": "MC11_turn-hop-arms_p03_right",
+        "frame": 30,
+        "rankingScore": 0.16690192649089988,
+        "knowledgeScore": 0.16690192649089988,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 4,
+        "label": "3Q bent horizontal preparation — left arm",
+        "entry": "MC12_turn-armstretch_p01_left",
+        "frame": 39,
+        "rankingScore": 0.17670338841260363,
+        "knowledgeScore": 0.17670338841260363,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 5,
+        "label": "Forward bend — left elbow flexed",
+        "entry": "MC04_bendforward_p01_left",
+        "frame": 66,
+        "rankingScore": 0.23787496805232083,
+        "knowledgeScore": 0.21287496805232084,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      },
+      {
+        "rank": 6,
+        "label": "3Q overhead reach — left arm",
+        "entry": "MC10_arms_p02_center",
+        "frame": 37,
+        "rankingScore": 0.24510472168207384,
+        "knowledgeScore": 0.24510472168207384,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 7,
+        "label": "Rear-3Q far arm behind torso — distal forearm/hand visible",
+        "entry": "MC01_output37_p03_right",
+        "frame": 30,
+        "rankingScore": 0.2934276035267017,
+        "knowledgeScore": 0.06842760352670169,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "folded_overlap"
+      },
+      {
+        "rank": 8,
+        "label": "Balance — left arm high arc",
+        "entry": "MC09_turn-footstand_p01_left",
+        "frame": 59,
+        "rankingScore": 0.3266583432582718,
+        "knowledgeScore": 0.3016583432582718,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      }
+    ]
+  },
+  {
+    "query": {
+      "label": "MC10_arms_p02_center",
+      "frame": 23,
+      "region": "leftArm",
+      "note": "3Q forward bent reach"
+    },
+    "hits": [
+      {
+        "rank": 1,
+        "label": "3Q straight horizontal reach — left arm",
+        "entry": "MC12_turn-armstretch_p01_left",
+        "frame": 59,
+        "rankingScore": 0.14970190214450996,
+        "knowledgeScore": 0.08970190214450996,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 2,
+        "label": "Forward bend — left elbow flexed",
+        "entry": "MC04_bendforward_p01_left",
+        "frame": 66,
+        "rankingScore": 0.1581496842754316,
+        "knowledgeScore": 0.1331496842754316,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      },
+      {
+        "rank": 3,
+        "label": "Turning low sway — left arm",
+        "entry": "MC11_turn-hop-arms_p03_right",
+        "frame": 30,
+        "rankingScore": 0.16036916150672265,
+        "knowledgeScore": 0.10036916150672265,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 4,
+        "label": "3Q bent horizontal preparation — left arm",
+        "entry": "MC12_turn-armstretch_p01_left",
+        "frame": 39,
+        "rankingScore": 0.18544551613633517,
+        "knowledgeScore": 0.12544551613633517,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 5,
+        "label": "Front T-pose extension — left arm",
+        "entry": "MC12_turn-armstretch_p02_right",
+        "frame": 59,
+        "rankingScore": 0.1911791393471374,
+        "knowledgeScore": 0.1061791393471374,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 6,
+        "label": "Rear-3Q far arm behind torso — distal forearm/hand visible",
+        "entry": "MC01_output37_p03_right",
+        "frame": 30,
+        "rankingScore": 0.29395061480578366,
+        "knowledgeScore": 0.06895061480578363,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "folded_overlap"
+      },
+      {
+        "rank": 7,
+        "label": "3Q overhead reach — left arm",
+        "entry": "MC10_arms_p02_center",
+        "frame": 37,
+        "rankingScore": 0.31132511691615883,
+        "knowledgeScore": 0.25132511691615883,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 8,
+        "label": "Forward bend — left arm hanging",
+        "entry": "MC04_bendforward_p01_left",
+        "frame": 88,
+        "rankingScore": 0.3116526933540215,
+        "knowledgeScore": 0.2866526933540215,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      }
+    ]
+  },
+  {
+    "query": {
+      "label": "MC03_output35_p02_center",
+      "frame": 24,
+      "region": "rightArm",
+      "note": "corrected fist-forward foreshortening"
+    },
+    "hits": [
+      {
+        "rank": 1,
+        "label": "Balance — right forearm open outward",
+        "entry": "MC09_turn-footstand_p01_left",
+        "frame": 59,
+        "rankingScore": 0.17325463819438966,
+        "knowledgeScore": 0.14825463819438967,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      },
+      {
+        "rank": 2,
+        "label": "Turning low sway — right arm",
+        "entry": "MC11_turn-hop-arms_p03_right",
+        "frame": 30,
+        "rankingScore": 0.17694607833956816,
+        "knowledgeScore": 0.11694607833956815,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 3,
+        "label": "Front near-horizontal reach — right arm",
+        "entry": "MC12_turn-armstretch_p02_right",
+        "frame": 49,
+        "rankingScore": 0.17774983489029508,
+        "knowledgeScore": 0.09274983489029508,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 4,
+        "label": "Balance — right arm bent upward",
+        "entry": "MC09_turn-footstand_p01_left",
+        "frame": 37,
+        "rankingScore": 0.2153312498490461,
+        "knowledgeScore": 0.19033124984904612,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      },
+      {
+        "rank": 5,
+        "label": "3Q bent arm beside head — corrected right arm",
+        "entry": "MC05_bendbackwards_p02_center",
+        "frame": 73,
+        "rankingScore": 0.2375219208086743,
+        "knowledgeScore": 0.1775219208086743,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "folded_overlap"
+      },
+      {
+        "rank": 6,
+        "label": "Forward bend — right arm hanging",
+        "entry": "MC04_bendforward_p01_left",
+        "frame": 88,
+        "rankingScore": 0.2824804826134232,
+        "knowledgeScore": 0.25748048261342316,
+        "viewDistance": 1,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "unknown"
+      },
+      {
+        "rank": 7,
+        "label": "3Q overhead reach — right arm",
+        "entry": "MC10_arms_p02_center",
+        "frame": 37,
+        "rankingScore": 0.3888468254892738,
+        "knowledgeScore": 0.3288468254892738,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 8,
+        "label": "Rear-3Q raised bent arm — right arm",
+        "entry": "MC10_arms_p03_right",
+        "frame": 23,
+        "rankingScore": 0.43215593757183035,
+        "knowledgeScore": 0.24215593757183035,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 0,
+        "projection": "planar_like"
+      }
+    ]
+  },
+  {
+    "query": {
+      "label": "MC01_output37_p03_right",
+      "frame": 30,
+      "region": "leftArm",
+      "note": "rear-3Q hidden upper arm / visible distal forearm"
+    },
+    "hits": [
+      {
+        "rank": 1,
+        "label": "3Q straight horizontal reach — left arm",
+        "entry": "MC12_turn-armstretch_p01_left",
+        "frame": 59,
+        "rankingScore": 0.2934276035267017,
+        "knowledgeScore": 0.06842760352670169,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 2,
+        "label": "3Q forward bent reach — left arm",
+        "entry": "MC10_arms_p02_center",
+        "frame": 23,
+        "rankingScore": 0.29395061480578366,
+        "knowledgeScore": 0.06895061480578363,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "foreshortened"
+      },
+      {
+        "rank": 3,
+        "label": "Turning low sway — left arm",
+        "entry": "MC11_turn-hop-arms_p03_right",
+        "frame": 30,
+        "rankingScore": 0.38117271398994623,
+        "knowledgeScore": 0.15617271398994623,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 4,
+        "label": "Front T-pose extension — left arm",
+        "entry": "MC12_turn-armstretch_p02_right",
+        "frame": 59,
+        "rankingScore": 0.4217032632049842,
+        "knowledgeScore": 0.06670326320498422,
+        "viewDistance": 3,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 5,
+        "label": "3Q bent horizontal preparation — left arm",
+        "entry": "MC12_turn-armstretch_p01_left",
+        "frame": 39,
+        "rankingScore": 0.42295151999421077,
+        "knowledgeScore": 0.19795151999421082,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 6,
+        "label": "3Q overhead reach — left arm",
+        "entry": "MC10_arms_p02_center",
+        "frame": 37,
+        "rankingScore": 0.47077923584616,
+        "knowledgeScore": 0.24577923584616007,
+        "viewDistance": 2,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 7,
+        "label": "Rear-3Q open side extension — left arm",
+        "entry": "MC10_arms_p03_right",
+        "frame": 16,
+        "rankingScore": 0.49122582474823523,
+        "knowledgeScore": 0.3962258247482352,
+        "viewDistance": 0,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "planar_like"
+      },
+      {
+        "rank": 8,
+        "label": "Forward bend — left elbow flexed",
+        "entry": "MC04_bendforward_p01_left",
+        "frame": 66,
+        "rankingScore": 0.4946952713640454,
+        "knowledgeScore": 0.19969527136404544,
+        "viewDistance": 3,
+        "coverage": 1,
+        "queryEvidence": "strict",
+        "visibilityMismatchCount": 1,
+        "projection": "unknown"
+      }
+    ]
+  }
+]

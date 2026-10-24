@@ -1,0 +1,62 @@
+{
+  "format": "sprite-foundry/corpus-pane-example",
+  "version": 1,
+  "exampleType": "perspective_reference",
+  "description": "Illustrative arm reference with explicit uncertainty about depth direction.",
+  "record": {
+    "id": "example.arm.foreshortened.001",
+    "source": {
+      "kind": "generated_reference",
+      "sourceId": "example-only"
+    },
+    "bodyFamily": "reference-body-not-canonical",
+    "region": "leftArm",
+    "view": {
+      "body": {
+        "family": "FRONT_THREE_QUARTER",
+        "heading": "toward",
+        "status": "reviewed"
+      },
+      "head": {
+        "family": "UNKNOWN",
+        "heading": "unknown",
+        "status": "unknown"
+      }
+    },
+    "points": {
+      "shoulder.left": {
+        "x": 0.42,
+        "y": 0.28,
+        "measurement": "generated_reference"
+      },
+      "elbow.left": {
+        "x": 0.47,
+        "y": 0.31,
+        "measurement": "generated_reference"
+      },
+      "wrist.left": {
+        "x": 0.52,
+        "y": 0.34,
+        "measurement": "generated_reference"
+      }
+    },
+    "visibility": {
+      "shoulder.left": "visible",
+      "elbow.left": "visible",
+      "wrist.left": "visible"
+    },
+    "projection": {
+      "state": "foreshortened",
+      "depthDirectionHint": "unknown",
+      "sourceOfDepthHint": "none"
+    },
+    "evidence": {
+      "state": "external_reference",
+      "ownerAcceptance": "not_applicable"
+    },
+    "provenance": {
+      "illustrative": true
+    }
+  },
+  "note": "Coordinates are synthetic and only demonstrate field relationships."
+}

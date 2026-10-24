@@ -1,0 +1,62 @@
+{
+  "id": "CP-K022",
+  "title": "Foreshortening and projected limb length",
+  "version": 1,
+  "knowledgeType": "perspective",
+  "authority": "synthesized_rule",
+  "plainLanguage": "A limb pointing toward or away from the camera looks shorter even though the real limb has not shrunk. This is one of the main reasons a correct skeleton can look “wrong” in 2D.",
+  "purpose": "Prevent the Corpus Pane from mistaking perspective changes for anatomy changes.",
+  "appliesTo": {},
+  "rules": [
+    {
+      "id": "K022.R1",
+      "strength": "MUST",
+      "statement": "Projected length differences alone must not trigger an anatomy or schema change."
+    },
+    {
+      "id": "K022.R2",
+      "strength": "SHOULD",
+      "statement": "Tag strongly shortened regions as foreshortened and compare them preferentially with foreshortened references of compatible torso/head views."
+    },
+    {
+      "id": "K022.R3",
+      "strength": "MUST",
+      "statement": "If depth direction is unclear, record foreshortened with unknown depth direction rather than guessing toward/away."
+    },
+    {
+      "id": "K022.R4",
+      "strength": "SHOULD",
+      "statement": "A new artwork variant may be required even when the skeleton remains valid."
+    }
+  ],
+  "recordGuidance": {
+    "recommendedFields": [
+      "projection.state",
+      "projection.depthDirectionHint",
+      "view.body",
+      "view.head"
+    ]
+  },
+  "examples": [],
+  "failureModes": [],
+  "relationships": [
+    {
+      "type": "feeds",
+      "article": "CP-K032"
+    },
+    {
+      "type": "feeds",
+      "article": "CP-K052"
+    }
+  ],
+  "sourceRefs": [
+    "SRC.EXT.GOOGLE_POSE_CLASSIFY",
+    "SRC.EXT.GOOGLE_POSE",
+    "SRC.CP.DATA_CONTRACT"
+  ],
+  "implementation": {
+    "status": "existing",
+    "currentSupport": "Corpus Pane records per-region projection state and optional depth-direction hints, and uses projection context during reference retrieval. Foreshortening remains a reviewed 2D observation, not a solved 3D pose.",
+    "futureWork": "Expand the reviewed perspective-reference library and test whether projection-aware retrieval reduces correction work across more mannequin views."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "suite": "Corpus Pane 02.2.2 browser search semantics/approval cleanup",
+  "pass": true,
+  "regionCoverageVisible": true,
+  "roughSearchTextConsistent": true,
+  "singlePointAdvice": true,
+  "exactSupportAcceptance": true,
+  "dedupeAfterRecheck": true,
+  "knowledgeCurrent": true,
+  "pageErrors": []
+}

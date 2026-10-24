@@ -1,0 +1,123 @@
+{
+  "format": "sprite-foundry/corpus-lab-source-provenance",
+  "version": 1,
+  "inputs": [
+    {
+      "file": "Mannequin_Motion_Angle_Corpus_v0_1(1).zip",
+      "sha256": "d7d5e9daf8f4d6c5247501518db60bde90e6807d0aafc19c751f81346de4eba8",
+      "bytes": 46201525,
+      "modified": false,
+      "role": "Supplied source archive inspected/extracted; not repackaged wholesale."
+    },
+    {
+      "file": "Unified_Prep_Checkpoint_04.zip",
+      "sha256": "062c7d94fffeb7a5064e0b2528a7800ec94c58310c5c8610029fc7f11447dc2a",
+      "bytes": 53405027,
+      "modified": false,
+      "role": "Supplied source archive inspected/extracted; not repackaged wholesale."
+    },
+    {
+      "file": "adventure_studio_checkpoint31.zip",
+      "sha256": "42b29814d7a3910a483a536568ee56c75410e21143a1d0871de48b000599b402",
+      "bytes": 53653613,
+      "modified": false,
+      "role": "Supplied source archive inspected/extracted; not repackaged wholesale."
+    },
+    {
+      "file": "doll_rig_v0_4_13(1).json",
+      "sha256": "e38c7142f8d294a583b685e33c7d019299df161d0241ad85c90283e7d0ce6e21",
+      "bytes": 729921,
+      "modified": false,
+      "role": "Unchanged original; still rig is deferred reference only."
+    }
+  ],
+  "inheritedEngineModules": [
+    {
+      "path": "engine/bodykit.js",
+      "sha256": "db0da4c4024a391f0b92f4a134ff9b0dd653162d666990401a30f8c1952289f9",
+      "bytes": 49119,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/fa-models.js",
+      "sha256": "afd545bf1fe622a668aa35c430d93fe0ce1f191459f27dd9c8ba760bdfaccabd",
+      "bytes": 1191871,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/face-api.js",
+      "sha256": "0160f7af3a8c78cece45c7ecc765383bad74becfd438bb787cdd627b2d6f2cf6",
+      "bytes": 1333943,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/facekit.js",
+      "sha256": "2fbaa395e8f6414fb260715b7e9429e5f2998a85445491facddb2b94f9aa1efc",
+      "bytes": 39138,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/keyer.js",
+      "sha256": "a0bda1d0a8a5765704a88939a603152eb880270e6185a5cc474f8a9fdba1da00",
+      "bytes": 9301,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/media.js",
+      "sha256": "444d420462a46313cd8196002ed5df847cdd76be266ef52fbefc58d760b0cb91",
+      "bytes": 9142,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/movenet-model.js",
+      "sha256": "95812a982842d9c85e227e7e1054991c548a61b786c6e3fdc7fc6d35db0427c0",
+      "bytes": 6357986,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/pixels.js",
+      "sha256": "2fa82d84269552d529d41ff704e6e573d1e6ebf0d549c1ac488f5b05d6b4e769",
+      "bytes": 8359,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/reliability.js",
+      "sha256": "dd5655bf6ba7592b3891ede712b95dd83d00474770a869bd77e81f9b460d0598",
+      "bytes": 14565,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/sfcore.js",
+      "sha256": "6d43d55921d4a41e7a9fd0df017f7b619e44cf60afae4af155745e6e364692ec",
+      "bytes": 15571,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/sha256.js",
+      "sha256": "60b78b05fd33072c4dc0cee128a038c4b1de2e31d35f57544265de7d9fcacb62",
+      "bytes": 2119,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/tracking.js",
+      "sha256": "22e423f98f81f6995ebd641b26574148632994b4ca9cd1263540bb901d29e14e",
+      "bytes": 20452,
+      "reusedUnchanged": true
+    },
+    {
+      "path": "engine/universal.js",
+      "sha256": "233d0d194fdfcf06c883cb5224fd7b2925de3d291206aabc6f54e226c8b1c706",
+      "bytes": 38409,
+      "reusedUnchanged": true
+    }
+  ],
+  "newModules": [
+    "app/corpus.js",
+    "app/storage.js",
+    "app/workspace.js",
+    "app/style.css",
+    "index.html"
+  ],
+  "artworkPolicy": "No new raster artwork generated. Original encoded starter payloads are retained byte-for-byte. Cleanup is derived at runtime.",
+  "zeroShippedHumanApprovals": true
+}

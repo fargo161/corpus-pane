@@ -1,0 +1,13 @@
+{
+  "id": "VOC.VIEW_FAMILY",
+  "values": [
+    "FRONT",
+    "FRONT_THREE_QUARTER",
+    "PROFILE",
+    "BACK_THREE_QUARTER",
+    "BACK",
+    "MIXED",
+    "UNKNOWN"
+  ],
+  "note": "View family is separate for torso/body and head. It is not inferred solely from which side of the screen a feature appears."
+}

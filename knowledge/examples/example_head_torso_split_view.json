@@ -1,0 +1,20 @@
+{
+  "format": "sprite-foundry/corpus-pane-example",
+  "version": 1,
+  "exampleType": "view_state",
+  "description": "Illustrative record for a body that remains front-like while the head turns toward image-left.",
+  "record": {
+    "body": {
+      "family": "FRONT",
+      "heading": "toward",
+      "status": "reviewed"
+    },
+    "head": {
+      "family": "FRONT_THREE_QUARTER",
+      "heading": "image_left",
+      "status": "reviewed"
+    },
+    "regionOverrides": {}
+  },
+  "note": "Illustrative schema example only; not a claim about a specific source frame."
+}

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-knowledge-master-index-v1.json",
+  "title": "Corpus Pane Knowledge Master Index",
+  "type": "object",
+  "required": [
+    "format",
+    "version",
+    "package",
+    "categories",
+    "articles",
+    "sourceRegister",
+    "vocabularyIndex",
+    "schemas"
+  ],
+  "properties": {
+    "format": {
+      "const": "sprite-foundry/corpus-pane-knowledge-index"
+    },
+    "version": {
+      "type": "integer"
+    },
+    "package": {
+      "type": "object"
+    },
+    "categories": {
+      "type": "array"
+    },
+    "articles": {
+      "type": "array"
+    },
+    "sourceRegister": {
+      "type": "string"
+    },
+    "vocabularyIndex": {
+      "type": "string"
+    },
+    "schemas": {
+      "type": "array"
+    }
+  }
+}

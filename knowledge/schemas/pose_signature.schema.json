@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://sprite-foundry.local/schemas/corpus-pane-pose-signature-v1.json",
+  "title": "Pose Signature",
+  "type": "object",
+  "required": [
+    "region",
+    "jointIds",
+    "normalization",
+    "features",
+    "visibilityMask",
+    "view"
+  ],
+  "properties": {
+    "region": {
+      "type": "string"
+    },
+    "jointIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "normalization": {
+      "type": "object",
+      "required": [
+        "scaleBasis",
+        "translationBasis"
+      ],
+      "properties": {
+        "scaleBasis": {
+          "enum": [
+            "standing_display_height",
+            "torso_size",
+            "region_span",
+            "explicit_reference"
+          ]
+        },
+        "translationBasis": {
+          "enum": [
+            "pelvis",
+            "region_root",
+            "centroid",
+            "explicit_reference"
+          ]
+        },
+        "rotationNormalization": {
+          "enum": [
+            "none",
+            "torso_vertical",
+            "region_axis",
+            "explicit_reference"
+          ]
+        }
+      }
+    },
+    "features": {
+      "type": "object",
+      "properties": {
+        "normalizedVectors": {
+          "type": "array"
+        },
+        "pairwiseDistances": {
+          "type": "array"
+        },
+        "angles": {
+          "type": "array"
+        },
+        "projectedLengthRatios": {
+          "type": "array"
+        }
+      }
+    },
+    "visibilityMask": {
+      "type": "object"
+    },
+    "view": {
+      "type": "object"
+    },
+    "mirrorPolicy": {
+      "enum": [
+        "never_silent",
+        "explicit_candidate_only"
+      ]
+    }
+  }
+}

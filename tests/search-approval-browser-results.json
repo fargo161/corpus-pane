@@ -1,0 +1,9 @@
+{
+  "suite": "Corpus Pane 02.2 browser search/approval checks",
+  "pass": true,
+  "ownerAcceptanceVisible": true,
+  "comparisonProvenanceVisible": true,
+  "roughQueryVisible": true,
+  "knowledgeStatusCurrent": true,
+  "pageErrors": []
+}
