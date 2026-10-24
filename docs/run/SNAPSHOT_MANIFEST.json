@@ -1,0 +1,42 @@
+{
+  "snapshot_utc": "2026-10-24T07:20:18.713573+00:00",
+  "source": "owner-authorized implementation run live Director docs, immutable snapshot at this commit",
+  "files": [
+    {
+      "path": "docs/run/CHECKPOINT.md",
+      "sha256": "326e59a9f9a601f63678fd384e47a1e520f1def3e2848312c6580319156ebc2f"
+    },
+    {
+      "path": "docs/run/CONTRACT_GATES.md",
+      "sha256": "61e17e7071b4644741ab3487e7376b4775863bc7dc2d4365d7166fdb2f786175"
+    },
+    {
+      "path": "docs/run/DECISION_LEDGER.md",
+      "sha256": "f87d3a14a761433c2b06cc9bdd7fa3ecfd13b296ff9a627a6bc8abbd47b568fb"
+    },
+    {
+      "path": "docs/run/INTERIM_MERGE_POLICY.md",
+      "sha256": "246b9d80aa211d38fe52b9e8dcf464f725350f0f2a8d2b0fe71625c010416113"
+    },
+    {
+      "path": "docs/run/KNOWN_LIMITATIONS.md",
+      "sha256": "2eff443f60df047ee96965815ad0313cc2f8cf78ddbfae765d3502aa48350121"
+    },
+    {
+      "path": "docs/run/MILESTONE_STATUS.md",
+      "sha256": "c78ffaf926af58b5dd265edeca8a94b2da44063720abec306d7df8cff679c557"
+    },
+    {
+      "path": "docs/run/RESOURCE_LOG.json",
+      "sha256": "14eef8da52553ff6ea35e336a1e907a299826c34f5f4a31d18c17f89420beee1"
+    },
+    {
+      "path": "docs/run/RUN_CHARTER.md",
+      "sha256": "573acceea6e659aba8c0d41dc65653e285da38f4ead2109dbfe4daf98fd31472"
+    },
+    {
+      "path": "docs/run/TEAM_REGISTRY.json",
+      "sha256": "b30078cb4a05bedf472ab795295cd37cf0940306fd2f5f29416a7ef16df6f581"
+    }
+  ]
+}

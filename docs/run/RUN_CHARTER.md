@@ -1,0 +1,11 @@
+# Corpus Pane authorized implementation run
+
+The owner explicitly approved Implementation Preflight v0.2 and launched the actual staged multi-agent implementation. This supersedes the previous HOLD. No additional preflight is the deliverable. Begin M00, then all unblocked milestones through integrated implementation; final release/asset acceptance remains owner-controlled.
+
+Authority: latest direct launch authorization; preflight v0.2; Gate2C v0.3 research; exact historical02.2.5 application; approved recovered16 PNG reference/migration artwork. 100%2D, universal skeleton1.2.0 canonical evidence/motion, female-first proposed FEMALE_STANDARD_V1, independent head/five-slot face/hair/layered garments/accessories, provider-neutral identity/evidence/review authority. Male families deferred. No silent downloads, unresolved mandatory artifacts, owner-pending promotion, lowered targets, public private-art release or final release without authorization.
+
+Director /root owns scope/contracts/run records and does not merge or self-certify acceptance. Stable child roles: integration_builder, github_steward, licensing_steward; independent architecture_auditor and independent_tester are dispatched in review waves as slots free. Four active-agent maximum including Director; one GPU-heavy job. Role evidence is recorded by actual independent agents, not relabelled Builder output.
+
+Initial working locations: Steward work/corpus-pane (fresh repository, exact root baseline commit/tag first), Builder work/builder-staging until approved feature worktree, Licensing work/license-staging. Original packages/baseline untouched. Reports here are mirrored into docs/run after Steward-controlled bootstrap. Main merges only by Steward after independent gates against exact commit. Ordinary qualifying commits/pushes are authorized without repeated approval.
+
+Budget: approved1,000,000 aggregate agent-token planning cap,120agent-hours,1600 substantive calls; at least40% protected integration/remediation/audit/test/docs/closure. Exact runtime token accounting may be unavailable; track available observations and honest estimates. Do not treat this planning cap as a measured account quota. Context checkpoints preserve commits/worktrees/decisions/tests/findings/blockers/next actions.

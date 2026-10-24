@@ -1,0 +1,25 @@
+{
+  "startedAt": "2026-10-24T07:09:41.851687+00:00",
+  "director": "/root",
+  "active_roles": [
+    "/root/integration_builder",
+    "/root/github_steward",
+    "/root/independent_tester"
+  ],
+  "independent_review_roles_pending": [],
+  "active_agent_cap_including_director": 4,
+  "gpu_job_cap": 1,
+  "scope": "implementation authorized; final release not authorized",
+  "stable_roles": {
+    "director": "/root",
+    "builder": "/root/integration_builder",
+    "github_steward": "/root/github_steward",
+    "licensing_steward": "/root/licensing_steward",
+    "architecture_auditor": "/root/architecture_auditor",
+    "independent_tester": "/root/independent_tester"
+  },
+  "completed_bounded_roles_ready_for_followup": [
+    "/root/licensing_steward",
+    "/root/architecture_auditor"
+  ]
+}
