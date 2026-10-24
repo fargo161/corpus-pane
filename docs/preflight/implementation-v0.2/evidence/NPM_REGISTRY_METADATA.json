@@ -1,0 +1,229 @@
+{
+  "scope": "Metadata-only exact artifact proposal; no packages installed or downloaded",
+  "target": "Windows AMD64 CPython3.12 / JS",
+  "packages": [
+    {
+      "name": "ajv",
+      "version": "8.17.1",
+      "registry_url": "https://registry.npmjs.org/ajv/8.17.1",
+      "license": "MIT",
+      "dependencies": {
+        "fast-uri": "^3.0.1",
+        "fast-deep-equal": "^3.1.3",
+        "require-from-string": "^2.0.2",
+        "json-schema-traverse": "^1.0.0"
+      },
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "37d9a5c776af6bc92d7f4f9510eba4c0a60d11a6",
+        "tarball": "https://registry.npmjs.org/ajv/-/ajv-8.17.1.tgz",
+        "fileCount": 466,
+        "integrity": "sha512-B/gBuNg5SiMTrPkC+A2+cW0RszwxYmn6VYxB/inlBStS5nx6xHIt/ehKRhIMhqusl7a8LjQoZnjCs5vhwxOQ1g==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDw1zJHeG73mZVjAPba7aayPKlrtoT3zSlbaJR486CJQAIgP7tUXsjHnEo/ERKurYXQq98nNaXtM7Ivj5h8AMhmqnU=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 1030888
+      }
+    },
+    {
+      "name": "delaunator",
+      "version": "5.1.0",
+      "registry_url": "https://registry.npmjs.org/delaunator/5.1.0",
+      "license": "ISC",
+      "dependencies": {
+        "robust-predicates": "^3.0.2"
+      },
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "d13271fbf3aff6753f9ea6e235557f20901046ea",
+        "tarball": "https://registry.npmjs.org/delaunator/-/delaunator-5.1.0.tgz",
+        "fileCount": 7,
+        "integrity": "sha512-AGrQ4QSgssa1NGmWmLPqN5NY2KajF5MqxetNEO+o0n3ZwZZeTmt7bBnvzHWrmkZFxGgr4HdyFgelzgi06otLuQ==",
+        "signatures": [
+          {
+            "sig": "MEQCIDYrWwMkrmuU/xyKhC0hO80s/CeH737kXH02MBHRx/G+AiBdIlHAnYhDejrqlIfcCCOTjGfHISpME17dayOPewQ+YQ==",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 66939
+      }
+    },
+    {
+      "name": "fast-deep-equal",
+      "version": "3.1.3",
+      "registry_url": "https://registry.npmjs.org/fast-deep-equal/3.1.3",
+      "license": "MIT",
+      "dependencies": {},
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "3a7d56b559d6cbc3eb512325244e619a65c6c525",
+        "tarball": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-3.1.3.tgz",
+        "fileCount": 11,
+        "integrity": "sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==",
+        "signatures": [
+          {
+            "sig": "MEUCIDaDosp9IxEQRt2XkZPq/dpNlm0nhS0lCPdWBSWBZHcDAiEApfm2QlsgGUYm5sFGQYPVb97kIorp3Voeb7/UQRiSmKc=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 12966,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJe3ehgCRA9TVsSAnZWagAAXoEP/AmAr6hbgGqa2L7/95pm\nB+wX1GaxB/Ynk4kSU4xeP3TGu9L72sqNhCf8Vj/WLl1XYPyJ0xA9betwXSIa\n+eE+Bd07xJAmaCM4Se583zgv4lifprYoKSCaSgGcXZ0Ay4yDxAeHLmrvELah\nNBnVM0eAJ/YxeVpwEemrh28mT5XDdq1HrXcbRq5ZnjTfth1oPvmEvfEoEtCc\nx/6NrH0tfyhPlbCt7XqpmJPJIYi4KPaDuaLbAhE+yKVzXtCfKsjf/eJVwfi/\n79sIhtQn8lINhbwbk0gs5PmFsxVIFllV6RPROa+iLLSV+MupLCoTWrmzzpx3\nJimUwaSKt4iPxsM3a/jvn73mODmqL2w4NNmyOJYmNj4Jx/ps+QjDnWJ8Vtqz\n0HEC/RnvP0M7HpObaOMeb12+xJY1PGnJqSDygMxVg9xT6WMEIoE4D55V8HSL\nyEQB9gNWpKjX2NAjolidqAYBc3XFplQrVPsXm5eg+Uvd+sbwolho8mMv3J4B\n0BVwcCcrxLgFOBxt+ZALNkcAb8MxkgU7Ptbcg+BZtqJV7FxSIXgRZW94kLXn\nMg+OorbUoGHPyGpRc8L3RGkfdXztpGdyjXHC5VDbkZHlw+1lyAQzQq7g090S\nkbQNT9BvcHpKIPaNvZsY1VjenDW5hupOCdyTfjP0HidwJkMN7OPPTWRNBfaW\nWqbw\r\n=uuzF\r\n-----END PGP SIGNATURE-----\r\n"
+      }
+    },
+    {
+      "name": "fast-uri",
+      "version": "3.1.2",
+      "registry_url": "https://registry.npmjs.org/fast-uri/3.1.2",
+      "license": "BSD-3-Clause",
+      "dependencies": {},
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "8af3d4fc9d3e71b11572cc2673b514a7d1a8c8ec",
+        "tarball": "https://registry.npmjs.org/fast-uri/-/fast-uri-3.1.2.tgz",
+        "fileCount": 34,
+        "integrity": "sha512-rVjf7ArG3LTk+FS6Yw81V1DLuZl1bRbNrev6Tmd/9RaroeeRRJhAt7jg/6YFxbvAQXUCavSoZhPPj6oOx+5KjQ==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDxxcdSZUkcPYpgrGl0L4ho43ZrJjtvnAieXKVAy+2ktQIhAKCnH91J81/lqkD9qMks2ebjNw4UZyzQ2XQF/wrbLjp7",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 156873
+      }
+    },
+    {
+      "name": "json-schema-traverse",
+      "version": "1.0.0",
+      "registry_url": "https://registry.npmjs.org/json-schema-traverse/1.0.0",
+      "license": "MIT",
+      "dependencies": {},
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "ae7bcb3656ab77a73ba5c49bf654f38e6b6860e2",
+        "tarball": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-1.0.0.tgz",
+        "fileCount": 12,
+        "integrity": "sha512-NM8/P9n3XjXhIZn1lLhkFaACTOURQXjWhV4BA/RnOv8xvgqtqpAX9IO4mRQxSx1Rlo4tqzeqb0sOlruaOy3dug==",
+        "signatures": [
+          {
+            "sig": "MEUCIQCNOIFNJRe2jcKCXH4ICrcSvZnowa7w+vu8ftVn1ma0LAIgVov161AURGFLhlj5B6eSkke5RxOlmvY3avjHP8IvUTo=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 22220,
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.13\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJf1fN3CRA9TVsSAnZWagAAOvgP/RW4IyNaG+9p/oIa6WhS\nu0try6lP7Hym+dFd2utH5S19/K2IPoFXP7CFvq1blPVc1adUBBRdfdz7SJ9J\nVJr0Hdzpvrzhkzfod9SyGcjmwOIZDGmI7mhwxTuqYCN1kOWpAY0gnzfV+n5p\nZxDGKLieCqCzmKc1TsSb/aUtWndUmcs8UsUZI5mjqSTajcqRSX11Fillmor8\nZVFzyKWhwEmDFRQlFRR3cTEbytvs55sqTdpWxaZDh7g8UrxdhUQIoI0SnQFO\n3pWaMCf+fM9SGY2JUlMLhr6n3ui5OBqkgjfw5AUtld405fyNbPQlJu7QxATo\nMU7npmYHcoinMOpciVD/tLNxD+OQKyOZ/NlL+XXBdCWQhLIuF+Rnb+raUiSC\nw8q8W5Vba/JN9/pHs8x+3P1eZFIM+cxMQk9RYFuEqtHkGhDiVthpyMsK5h0K\n2Nu7nLBVsnEEid9UggwPep2ua1JO5YETsAtwwo0RFuhRhs3I37eKloiI+NmJ\nCBASUczFiT2vE5ySGPHWMteTjL/5uUU+a+IZhqA/o2Wsmnw4Kxln5npF0kjg\njAQnn/t7QQcWhNGqsFnKEg2rv6cUgj9MoZdxHsyyyCnZ4qEBLByv83zOpigR\nfyxhFwV8uGKg1IZmeNQn+Kj/pBpifoUSbR4LGr54MVSuUrkjIdBv/sCLVC3c\n3vaz\r\n=T5IW\r\n-----END PGP SIGNATURE-----\r\n"
+      }
+    },
+    {
+      "name": "playwright",
+      "version": "1.62.1",
+      "registry_url": "https://registry.npmjs.org/playwright/1.62.1",
+      "license": "Apache-2.0",
+      "dependencies": {
+        "playwright-core": "1.62.1"
+      },
+      "optionalDependencies": {
+        "fsevents": "2.3.2"
+      },
+      "dist": {
+        "shasum": "8447b6755e8aec85a3cb7207c823e3ed2fc66700",
+        "tarball": "https://registry.npmjs.org/playwright/-/playwright-1.62.1.tgz",
+        "fileCount": 62,
+        "integrity": "sha512-0M+L3LAD8/nm554LOla9Ayx0j0tmFZ0FBcoQ7F1VuVHpM/XpiC8RcDzBQB8W5+hA8L22THxELzeF+2WcUzvcLg==",
+        "signatures": [
+          {
+            "sig": "MEYCIQDjQrZM01RoUi3vztw+ts5rO5Muv88t2Nz4SAj8ACDuNQIhAIapeLcBwQNX7EVNrmPJDEGdKpHgD2W9a79jhAhwAtRd",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQDzjUqlGfnTHp9FoySWRA2/NQr7BRJobhDRrqvZ7rH9xAIgc7Rkp5HDZgLcBiDcCYqYNf86UO5AXECQA4rjp+f8zwo=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/playwright@1.62.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 5074152
+      }
+    },
+    {
+      "name": "playwright-core",
+      "version": "1.62.1",
+      "registry_url": "https://registry.npmjs.org/playwright-core/1.62.1",
+      "license": "Apache-2.0",
+      "dependencies": {},
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "120f67a19181bfd183c60fa903c0d99330b56785",
+        "tarball": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.62.1.tgz",
+        "fileCount": 111,
+        "integrity": "sha512-wPYSwEBJY9GHraISXqyqtx0na0LpO3XEX7jNDhntbex7tzUS7kLnZsOlFruFJB4Hi/rhDMjXGqHewDZ68nYZVw==",
+        "signatures": [
+          {
+            "sig": "MEUCIBSYhMp4S92Nyx75YDk9Xw36ElkiXuQ0oR2UEzaSZhjdAiEAm7bb2MosdhFgxbqIPZgaHGukafQl5CpWHQJ6NNoivbc=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          },
+          {
+            "sig": "MEUCIQClPMPcSveTLxQaG6bk8n6bjW3jDIAUf4GXYbfytPGi4QIgYgRq1//uL8+d7USsqfy/ZKa9L3kpxJwjAA+J3zkpiBE=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "attestations": {
+          "url": "https://registry.npmjs.org/-/npm/v1/attestations/playwright-core@1.62.1",
+          "provenance": {
+            "predicateType": "https://slsa.dev/provenance/v1"
+          }
+        },
+        "unpackedSize": 13442086
+      }
+    },
+    {
+      "name": "require-from-string",
+      "version": "2.0.2",
+      "registry_url": "https://registry.npmjs.org/require-from-string/2.0.2",
+      "license": "MIT",
+      "dependencies": {},
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "89a7fdd938261267318eafe14f9c32e598c36909",
+        "tarball": "https://registry.npmjs.org/require-from-string/-/require-from-string-2.0.2.tgz",
+        "fileCount": 4,
+        "integrity": "sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==",
+        "signatures": [
+          {
+            "sig": "MEUCIE2jrMs9LEA5YwPbB+k86fiEWbTiZrILb/xQp2cSIEePAiEApTYU69t0eG1qFeeVayYDlVRtYxsT4vFi9gJB5pqvtXE=",
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA"
+          }
+        ],
+        "unpackedSize": 3422
+      }
+    },
+    {
+      "name": "robust-predicates",
+      "version": "3.0.3",
+      "registry_url": "https://registry.npmjs.org/robust-predicates/3.0.3",
+      "license": "Unlicense",
+      "dependencies": {},
+      "optionalDependencies": {},
+      "dist": {
+        "shasum": "1099061b3349e2c5abec6c2ab0acd440d24d4062",
+        "tarball": "https://registry.npmjs.org/robust-predicates/-/robust-predicates-3.0.3.tgz",
+        "fileCount": 20,
+        "integrity": "sha512-NS3levdsRIUOmiJ8FZWCP7LG3QpJyrs/TE0Zpf1yvZu8cAJJ6QMW92H1c7kWpdIHo8RvmLxN/o2JXTKHp74lUA==",
+        "signatures": [
+          {
+            "sig": "MEUCIQDvA9x8rXmq8tLZOQYCmVkcZl4/y2HkhVLYc6/2TUF3ggIgKV41mW0vaP5nlTMzhiL5UrTraLmZwhhpg7l4QVLq0vI=",
+            "keyid": "SHA256:DhQ8wR5APBvFHLF/+Tc+AYvPOdTpcIDqOhxsBHRwC7U"
+          }
+        ],
+        "unpackedSize": 293521
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,1402 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://corpus-pane.invalid/proposals/records-1.0.0",
+  "title": "Preflight record design proposal (not full production schema)",
+  "$comment": "Nested schema completion and cross-record invariants are M01 work. No application implementation is included.",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "type": {
+      "enum": [
+        "SourceAsset",
+        "FrameObservation",
+        "PersonIdentity",
+        "ComponentIdentity",
+        "RawProviderObservation",
+        "EvidenceMapping",
+        "ComponentTrack",
+        "SpatialEvidence",
+        "CanonicalSurface",
+        "Registration",
+        "AnatomicalBinding",
+        "ArtworkPivot",
+        "AttachmentSocket",
+        "Mesh",
+        "LayeredAssetPackage",
+        "HeadIdentity",
+        "FaceKit",
+        "FamilyProfile",
+        "CharacterPackage",
+        "AnchorBinding",
+        "RolePerformance",
+        "PairedActionTemplate",
+        "RelationshipChannel",
+        "ReviewEvent",
+        "CompatibilityTestRun",
+        "JobRecord",
+        "MigrationRecord",
+        "CalibrationRecord",
+        "BodyPackage",
+        "DerivationProcess",
+        "RightsRecord",
+        "ContributorTable",
+        "PoserProfile",
+        "ArtworkRigMapping"
+      ]
+    },
+    "entityId": {
+      "$ref": "#/$defs/uuid"
+    },
+    "revisionId": {
+      "$ref": "#/$defs/uuid"
+    },
+    "parentRevisionIds": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/uuid"
+      }
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\\.[0-9]+)?Z$"
+    },
+    "actorId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "payload": {
+      "type": "object"
+    },
+    "derivedFrom": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/uuid"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "type",
+    "entityId",
+    "revisionId",
+    "parentRevisionIds",
+    "createdAt",
+    "actorId",
+    "payload",
+    "derivedFrom",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "SourceAsset"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "containerSha256",
+              "byteLength",
+              "MIME",
+              "sourceRightsRef",
+              "streams",
+              "decoderIdentity",
+              "originalName"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "FrameObservation"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "frameRef",
+              "blobRefs",
+              "transforms",
+              "sourceViewMetadata"
+            ],
+            "properties": {
+              "frameRef": {
+                "$ref": "#/$defs/FrameRef"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "PersonIdentity"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "sourceContextId",
+              "label",
+              "associationRevisionRefs",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ComponentIdentity"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "personEntityId",
+              "semanticClass",
+              "regionCodes",
+              "associationRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "RawProviderObservation"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "providerRunRef",
+              "frameRefs",
+              "rawTopologyOrLabels",
+              "rawBlobRefs",
+              "confidenceDefinition",
+              "warnings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "EvidenceMapping"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "rawObservationRefs",
+              "mappingVersion",
+              "skeletonId",
+              "skeletonVersion",
+              "landmarkMap",
+              "sideViewAssumptions",
+              "residuals"
+            ],
+            "properties": {
+              "skeletonVersion": {
+                "const": "1.2.0"
+              },
+              "skeletonId": {
+                "const": "adventure-studio/universal-skeleton"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ComponentTrack"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "componentEntityId",
+              "personEntityId",
+              "observationRefs",
+              "visibilityIntervals",
+              "providerAssociationRefs",
+              "corrections",
+              "ownershipHypotheses"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "SpatialEvidence"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "$ref": "#/$defs/SpatialEvidence"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "CanonicalSurface"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "componentId",
+              "viewProfileRef",
+              "calibrationRef",
+              "coordinateDomain",
+              "rgbaBlob",
+              "spatialEvidenceRef",
+              "registrationRefs",
+              "conflictMaskRef"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Registration"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "fromSpace",
+              "toSpace",
+              "transformType",
+              "anchors",
+              "weights",
+              "residuals",
+              "excludedRegions"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "AnatomicalBinding"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "skeletonRef",
+              "jointBoneIds",
+              "localBindTransforms",
+              "regionCodes"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ArtworkPivot"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "surfaceOrPartRef",
+              "localXY",
+              "coordinateDomain",
+              "rationale",
+              "sourceRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "AttachmentSocket"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "hostPartRef",
+              "name",
+              "local3x3",
+              "semanticRole",
+              "compatibleAttachmentTypes"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "Mesh"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "restXYBlob",
+              "uvBlob",
+              "triangleIndexBlob",
+              "constrainedRings",
+              "islandIds",
+              "seamEdges",
+              "topologyRevision",
+              "skinWeights"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "LayeredAssetPackage"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "hostFamilyProfileRef",
+              "kind",
+              "subparts",
+              "viewVariants",
+              "orderGraphs",
+              "overlapZones",
+              "seamConstraints",
+              "envelopes",
+              "sourceRefs",
+              "testRefs",
+              "poserProfileRef"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "HeadIdentity"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "headSurfaceRef",
+              "structuralLayers",
+              "structuralAnchors",
+              "neckSocketRef",
+              "headSpace",
+              "viewVariants"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "FaceKit"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "registrationProfileRef",
+              "compatibleHeadProfiles",
+              "slots",
+              "maskSemantics",
+              "sourceInventoryRef"
+            ],
+            "properties": {
+              "slots": {
+                "$ref": "#/$defs/FaceSlots"
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "FamilyProfile"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "proposedFamilyId",
+              "skeletonRef",
+              "calibrationProcedure",
+              "tolerances",
+              "bindPose",
+              "requiredViews",
+              "moduleRequirements"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "CharacterPackage"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "familyProfileRef",
+              "bodyRef",
+              "headRef",
+              "faceKitRef",
+              "hairRefs",
+              "garmentRefs",
+              "accessoryRefs",
+              "compositionOrder",
+              "envelopes",
+              "rightsRefs",
+              "testRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "AnchorBinding"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "characterPackageRef",
+              "sourcePersonRef",
+              "sourceFrameRefs",
+              "projectionRefs",
+              "applicableViews",
+              "acceptanceRefs",
+              "exclusions"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "RolePerformance"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "role",
+              "timeDomain",
+              "poseTrackRef",
+              "rootTrack",
+              "facingTrack",
+              "facePerformanceRef",
+              "componentStateTracks"
+            ],
+            "properties": {
+              "role": {
+                "enum": [
+                  "A",
+                  "B"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "PairedActionTemplate"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "roleARef",
+              "roleBRef",
+              "relationshipChannels",
+              "familyRequirements",
+              "propRefs",
+              "envelopeRefs",
+              "testRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "RelationshipChannel"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "kind",
+              "intervals",
+              "localAnchors",
+              "values",
+              "uncertainty",
+              "tolerances",
+              "evidenceRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ReviewEvent"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "targetRevisionRefs",
+              "scope",
+              "decision",
+              "actor",
+              "evidenceRefs",
+              "testRefs",
+              "previousEventRef"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "CompatibilityTestRun"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "testSpecRevision",
+              "appCommit",
+              "inputRevisionRefs",
+              "dependencyLockHash",
+              "metrics",
+              "visualEvidenceRefs",
+              "reviewer",
+              "status"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "JobRecord"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "requestHash",
+              "jobId",
+              "state",
+              "eventSequence",
+              "resultManifestRef",
+              "baseRevisionRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "MigrationRecord"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "sourceManifestHash",
+              "adapterVersion",
+              "mapping",
+              "outputManifestHash",
+              "warnings",
+              "rollbackRef"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "CalibrationRecord"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "personOrBodyRef",
+              "familyProfileRef",
+              "scaleMeasurements",
+              "proportionMeasurements",
+              "bindPoseRef",
+              "viewProfiles",
+              "sourceRefs",
+              "uncertainty",
+              "reviewerRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "BodyPackage"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "skeletonRef",
+              "calibrationRef",
+              "bodySurfaceRefs",
+              "anatomyBindingRefs",
+              "bindPoseRef",
+              "viewProfiles",
+              "jointConstraints",
+              "rightsRefs",
+              "testRefs",
+              "poserProfileRef",
+              "artworkRigMappingRefs"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "DerivationProcess"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "kind",
+              "implementationIdentity",
+              "configuration",
+              "inputRefs",
+              "outputRefs",
+              "actorId",
+              "modelIdentity",
+              "warnings"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "RightsRecord"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "artifactHash",
+              "holder",
+              "grantEvidenceRefs",
+              "allowedUses",
+              "redistributionTerms",
+              "attribution",
+              "restrictions",
+              "disposition",
+              "reviewer"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ContributorTable"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "referenceObservationRef",
+              "coordinateDomain",
+              "sets"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "PoserProfile"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "strategy",
+              "canonicalSkeletonRef",
+              "internalControlSchema",
+              "partHierarchy",
+              "bindingRules",
+              "deformationPolicy",
+              "drawOrderPolicy",
+              "moduleInterfaces",
+              "resourceProfile",
+              "comparisonTestRefs",
+              "selectionDecisionRef"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "ArtworkRigMapping"
+          }
+        },
+        "required": [
+          "type"
+        ]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": [
+              "sourceRigHash",
+              "sourceArtworkHashes",
+              "sourceRegionMappings",
+              "derivedPartRefs",
+              "transformRefs",
+              "anatomicalBindingRefs",
+              "artworkPivotRefs",
+              "attachmentSocketRefs",
+              "unsupportedFields",
+              "coverageLossReportRef"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "FrameRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sourceSha256",
+        "streamIndex",
+        "decodeIndex",
+        "ptsTicks",
+        "timeBaseNum",
+        "timeBaseDen",
+        "pixelSha256",
+        "width",
+        "height",
+        "decoderIdentity"
+      ],
+      "properties": {
+        "sourceSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "streamIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "decodeIndex": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ptsTicks": {
+          "type": "string",
+          "pattern": "^-?[0-9]+$"
+        },
+        "timeBaseNum": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "timeBaseDen": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pixelSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "decoderIdentity": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "BlobRef": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "sha256",
+        "byteLength",
+        "mime"
+      ],
+      "properties": {
+        "sha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "byteLength": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "mime": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "SpatialEvidence": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "referenceObservationRef",
+        "coverageBlob",
+        "originBlob",
+        "contributorIndexBlob",
+        "contributorTableRef",
+        "uncertaintyBlob"
+      ],
+      "properties": {
+        "width": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "referenceObservationRef": {
+          "$ref": "#/$defs/uuid"
+        },
+        "coverageBlob": {
+          "$ref": "#/$defs/BlobRef"
+        },
+        "originBlob": {
+          "$ref": "#/$defs/BlobRef"
+        },
+        "contributorIndexBlob": {
+          "$ref": "#/$defs/BlobRef"
+        },
+        "uncertaintyBlob": {
+          "$ref": "#/$defs/BlobRef"
+        },
+        "contributorTableRef": {
+          "$ref": "#/$defs/uuid"
+        }
+      },
+      "additionalProperties": false
+    },
+    "FaceSlots": {
+      "type": "object",
+      "required": [
+        "LEFT_BROW",
+        "RIGHT_BROW",
+        "LEFT_EYE",
+        "RIGHT_EYE",
+        "LOWER_FACE"
+      ],
+      "properties": {
+        "LEFT_BROW": {
+          "type": "object",
+          "required": [
+            "variants"
+          ],
+          "properties": {
+            "variants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "layerRef",
+                  "availability"
+                ],
+                "properties": {
+                  "layerRef": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/uuid"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "availability": {
+                    "enum": [
+                      "AVAILABLE",
+                      "INTENTIONAL_GAP",
+                      "UNVERIFIED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "RIGHT_BROW": {
+          "type": "object",
+          "required": [
+            "variants"
+          ],
+          "properties": {
+            "variants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "layerRef",
+                  "availability"
+                ],
+                "properties": {
+                  "layerRef": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/uuid"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "availability": {
+                    "enum": [
+                      "AVAILABLE",
+                      "INTENTIONAL_GAP",
+                      "UNVERIFIED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "LEFT_EYE": {
+          "type": "object",
+          "required": [
+            "variants"
+          ],
+          "properties": {
+            "variants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "layerRef",
+                  "availability"
+                ],
+                "properties": {
+                  "layerRef": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/uuid"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "availability": {
+                    "enum": [
+                      "AVAILABLE",
+                      "INTENTIONAL_GAP",
+                      "UNVERIFIED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "RIGHT_EYE": {
+          "type": "object",
+          "required": [
+            "variants"
+          ],
+          "properties": {
+            "variants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "layerRef",
+                  "availability"
+                ],
+                "properties": {
+                  "layerRef": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/uuid"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "availability": {
+                    "enum": [
+                      "AVAILABLE",
+                      "INTENTIONAL_GAP",
+                      "UNVERIFIED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "LOWER_FACE": {
+          "type": "object",
+          "required": [
+            "variants"
+          ],
+          "properties": {
+            "variants": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "layerRef",
+                  "availability"
+                ],
+                "properties": {
+                  "layerRef": {
+                    "anyOf": [
+                      {
+                        "$ref": "#/$defs/uuid"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "availability": {
+                    "enum": [
+                      "AVAILABLE",
+                      "INTENTIONAL_GAP",
+                      "UNVERIFIED",
+                      "UNSUPPORTED"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "scope": "Preflight package consistency/artifact identity only; not implementation, independent acceptance, native rendering or real compatibility tests",
+  "required_documents": 14,
+  "root_markdown_files": 20,
+  "frozen_inputs": {
+    "BASELINE": {
+      "file_count": 214,
+      "unchanged": true
+    },
+    "GATE2C": {
+      "file_count": 367,
+      "unchanged": true,
+      "included_reference_copy_identical": true
+    },
+    "CONTROLLED_SOURCE": {
+      "file_count": 20,
+      "unchanged": true
+    }
+  },
+  "approved_artwork_pngs": 16,
+  "original_rig_unchanged": true,
+  "U01": "CLOSED_FOR_PLANNING",
+  "real_compatibility": "NOT_RUN",
+  "later_rig_imported": false,
+  "root_markdown_local_links": "PASS",
+  "schema_designs": 32,
+  "schema_checks": [
+    {
+      "case": "valid_person_envelope",
+      "expected_valid": true,
+      "passed": true
+    },
+    {
+      "case": "invalid_uuid",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "unsupported_schema",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "unknown_type",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "bad_date",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "missing_payload_required_field",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "unknown_envelope_field",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "native_negative_pts",
+      "expected_valid": true,
+      "passed": true
+    },
+    {
+      "case": "zero_timebase",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "float_pts",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "invalid_hash",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "zero_width",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "five_slots",
+      "expected_valid": true,
+      "passed": true
+    },
+    {
+      "case": "missing_independent_slot",
+      "expected_valid": false,
+      "passed": true
+    },
+    {
+      "case": "no_sixth_slot",
+      "expected_valid": false,
+      "passed": true
+    }
+  ],
+  "dependency_metadata": {
+    "npm_packages": 9,
+    "optional_python_artifacts": 29,
+    "mandatory_unresolved_or_rejected": [],
+    "optional_worker_qualification_still_required": true
+  },
+  "milestone_and_unresolved_id_coverage": "PASS",
+  "final_recommendation": "GO_TO_IMPLEMENTATION_WITH_BLOCKED_LATER_MILESTONES",
+  "no_provider_trials_or_production_tests_run_in_this_preflight": true
+}

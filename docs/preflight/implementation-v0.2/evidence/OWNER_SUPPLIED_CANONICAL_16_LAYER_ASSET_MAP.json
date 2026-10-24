@@ -1,0 +1,130 @@
+{
+  "SHARED_R_HAND": {
+    "asset": "assets/b57f96804c19.png",
+    "sha256": "c68ae56d35e7fee42d1a55ab89bdca9361983bffaeedea890c149b3da6744d0e",
+    "dimensions": [
+      140,
+      322
+    ]
+  },
+  "SHARED_R_FOREARM": {
+    "asset": "assets/a71e885245d7.png",
+    "sha256": "e8ae2835894730bd5321326fe096c4811341f62a501e82815300ab8f333eaf63",
+    "dimensions": [
+      227,
+      406
+    ]
+  },
+  "SHARED_R_FOOT": {
+    "asset": "assets/d9959683414c.png",
+    "sha256": "e9068a31f0831ee0ed4776546e50fe9fb4790bed566129797fcde19bbd54460c",
+    "dimensions": [
+      200,
+      306
+    ]
+  },
+  "SHARED_R_LOWER_LEG": {
+    "asset": "assets/3e5881d9444c.png",
+    "sha256": "2dea6536f7eb978fa0857a8b6054d0a23c01ff7a7a687bc0d83153b2999f68f6",
+    "dimensions": [
+      320,
+      856
+    ]
+  },
+  "SHARED_R_THIGH": {
+    "asset": "assets/7a3cb7c04138.png",
+    "sha256": "f815964e3ba02c8b5370df179336fd4c2ab84c15814bd84544c548aab2d77c03",
+    "dimensions": [
+      404,
+      796
+    ]
+  },
+  "THREEQ_HEAD": {
+    "asset": "assets/7e87b9784624.png",
+    "sha256": "943ea81dbf8cc9d4a7e1ca0d16e78d61431d333fa2f8e1bfdbe58c61d2f80949",
+    "dimensions": [
+      282,
+      374
+    ]
+  },
+  "THREEQ_NECK": {
+    "asset": "assets/3f4e9fbf4902.png",
+    "sha256": "e1560e301702487641a17f2628ca99272c3f0180935c417aa17691f13b126af2",
+    "dimensions": [
+      280,
+      352
+    ]
+  },
+  "THREEQ_RIGHT_BREAST": {
+    "asset": "assets/d04a87374670.png",
+    "sha256": "77a55e90bee8f9f92f41be5f16dc23eb33cac3a3412815cac48aba9b706d8331",
+    "dimensions": [
+      276,
+      298
+    ]
+  },
+  "THREEQ_LEFT_BREAST": {
+    "asset": "assets/4b64a4634fa2.png",
+    "sha256": "22a3997fb6bffd287e180e2ac7cf3e9b9f805512c9dc4d5e9baf61791cef8d25",
+    "dimensions": [
+      260,
+      282
+    ]
+  },
+  "THREEQ_HIP_PELVIS": {
+    "asset": "assets/8f73b6d14b8f.png",
+    "sha256": "5dca742f6d31a16cb924f8d02117f5a536adfcc81f023919f3196aa480296f48",
+    "dimensions": [
+      432,
+      418
+    ]
+  },
+  "THREEQ_TORSO": {
+    "asset": "assets/33e4a3284cd3.png",
+    "sha256": "d1dda428d08bffa6fc66f0564a484906ad9822a7e778dddd58aee67b135c9dc0",
+    "dimensions": [
+      462,
+      1020
+    ]
+  },
+  "SHARED_L_FOREARM": {
+    "asset": "assets/13c89b8b4a21.png",
+    "sha256": "c562ab74dd7aedf7412b3062d704a7f7d65217081c8818b3bcfd6c30236972d0",
+    "dimensions": [
+      260,
+      410
+    ]
+  },
+  "SHARED_L_HAND": {
+    "asset": "assets/874ab97f4fd2.png",
+    "sha256": "acb79d1c1493a0b7dd12c5751f19dcd5eefb5f57ebe14ac49ee32476dbaae3c9",
+    "dimensions": [
+      145,
+      303
+    ]
+  },
+  "SHARED_L_FOOT": {
+    "asset": "assets/0054bb0043a3.png",
+    "sha256": "989d7af23940e3497356cb925c9a76d036a3316bedb1f2be22d021c680be2a30",
+    "dimensions": [
+      374,
+      286
+    ]
+  },
+  "SHARED_L_THIGH": {
+    "asset": "assets/4459a33d4120.png",
+    "sha256": "445c117ea076e805d8acde4a5450dd586da7db1392efb18df4119f7caf2a6bc0",
+    "dimensions": [
+      424,
+      784
+    ]
+  },
+  "SHARED_L_LOWER_LEG": {
+    "asset": "assets/50969e98439d.png",
+    "sha256": "d37540e5b018798fcb7754f64ab4b136e4f087a86ad1ed98ea0f0af7b3032f9a",
+    "dimensions": [
+      374,
+      1052
+    ]
+  }
+}

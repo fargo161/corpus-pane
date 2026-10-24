@@ -1,0 +1,505 @@
+{
+  "purpose": "Recover only the 16 external PNGs identified as missing for the accepted Corpus Pane v0.4.13 mannequin artwork path.",
+  "source_archive": "2d_doll_rig_editor_v0_5_5 (1).zip",
+  "source_archive_sha256": "c2bd586c1db8116ab91e6ffc991d60be779d4a8bd6855a3400ac146364d7ae86",
+  "source_internal_rig_v0_4_13_sha256": "fe86712e082115a8a03e016dba338c626898bf1b2a60dec3f8b70a58273911d5",
+  "source_internal_rig_v0_4_12_sha256": "c5030a0cc714528630745fe3bed93d1db0e116b22bc9a808f7c7537d4c6a566c",
+  "requested_asset_count": 16,
+  "recovered_asset_count": 16,
+  "all_requested_found": true,
+  "all_png_rgba": true,
+  "all_have_transparency_channel": true,
+  "all_match_internal_v0_4_13_dimensions": true,
+  "all_match_internal_v0_4_12_dimensions": true,
+  "later_package_same_named_v0_4_13_external_asset_count": 22,
+  "excluded_extra_external_assets_from_later_snapshot": [
+    "assets/0009a82344ec.png",
+    "assets/0377bc9d409e.png",
+    "assets/0c319c9349d4.png",
+    "assets/48da9c5a4116.png",
+    "assets/57a8ac3b4577.png",
+    "assets/6fffabd740da.png"
+  ],
+  "records": [
+    {
+      "layer_id": "SHARED_R_HAND",
+      "relative_path": "assets/b57f96804c19.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/b57f96804c19.png",
+      "bytes": 57694,
+      "sha256": "c68ae56d35e7fee42d1a55ab89bdca9361983bffaeedea890c149b3da6744d0e",
+      "png_dimensions": [
+        140,
+        322
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_R_HAND",
+      "internal_v0_4_13_expected_dimensions": [
+        140,
+        322
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_R_HAND",
+      "internal_v0_4_12_expected_dimensions": [
+        140,
+        322
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_R_FOREARM",
+      "relative_path": "assets/a71e885245d7.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/a71e885245d7.png",
+      "bytes": 85336,
+      "sha256": "e8ae2835894730bd5321326fe096c4811341f62a501e82815300ab8f333eaf63",
+      "png_dimensions": [
+        227,
+        406
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_R_FOREARM",
+      "internal_v0_4_13_expected_dimensions": [
+        227,
+        406
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_R_FOREARM",
+      "internal_v0_4_12_expected_dimensions": [
+        227,
+        406
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_R_FOOT",
+      "relative_path": "assets/d9959683414c.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/d9959683414c.png",
+      "bytes": 64980,
+      "sha256": "e9068a31f0831ee0ed4776546e50fe9fb4790bed566129797fcde19bbd54460c",
+      "png_dimensions": [
+        200,
+        306
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_R_FOOT",
+      "internal_v0_4_13_expected_dimensions": [
+        200,
+        306
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_R_FOOT",
+      "internal_v0_4_12_expected_dimensions": [
+        200,
+        306
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_R_LOWER_LEG",
+      "relative_path": "assets/3e5881d9444c.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/3e5881d9444c.png",
+      "bytes": 171071,
+      "sha256": "2dea6536f7eb978fa0857a8b6054d0a23c01ff7a7a687bc0d83153b2999f68f6",
+      "png_dimensions": [
+        320,
+        856
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_R_LOWER_LEG",
+      "internal_v0_4_13_expected_dimensions": [
+        320,
+        856
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_R_LOWER_LEG",
+      "internal_v0_4_12_expected_dimensions": [
+        320,
+        856
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_R_THIGH",
+      "relative_path": "assets/7a3cb7c04138.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/7a3cb7c04138.png",
+      "bytes": 224810,
+      "sha256": "f815964e3ba02c8b5370df179336fd4c2ab84c15814bd84544c548aab2d77c03",
+      "png_dimensions": [
+        404,
+        796
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_R_THIGH",
+      "internal_v0_4_13_expected_dimensions": [
+        404,
+        796
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_R_THIGH",
+      "internal_v0_4_12_expected_dimensions": [
+        404,
+        796
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "THREEQ_HEAD",
+      "relative_path": "assets/7e87b9784624.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/7e87b9784624.png",
+      "bytes": 86976,
+      "sha256": "943ea81dbf8cc9d4a7e1ca0d16e78d61431d333fa2f8e1bfdbe58c61d2f80949",
+      "png_dimensions": [
+        282,
+        374
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "THREEQ_HEAD",
+      "internal_v0_4_13_expected_dimensions": [
+        282,
+        374
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "THREEQ_HEAD",
+      "internal_v0_4_12_expected_dimensions": [
+        282,
+        374
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "THREEQ_NECK",
+      "relative_path": "assets/3f4e9fbf4902.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/3f4e9fbf4902.png",
+      "bytes": 66724,
+      "sha256": "e1560e301702487641a17f2628ca99272c3f0180935c417aa17691f13b126af2",
+      "png_dimensions": [
+        280,
+        352
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "THREEQ_NECK",
+      "internal_v0_4_13_expected_dimensions": [
+        280,
+        352
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "THREEQ_NECK",
+      "internal_v0_4_12_expected_dimensions": [
+        280,
+        352
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "THREEQ_RIGHT_BREAST",
+      "relative_path": "assets/d04a87374670.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/d04a87374670.png",
+      "bytes": 93284,
+      "sha256": "77a55e90bee8f9f92f41be5f16dc23eb33cac3a3412815cac48aba9b706d8331",
+      "png_dimensions": [
+        276,
+        298
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "THREEQ_RIGHT_BREAST",
+      "internal_v0_4_13_expected_dimensions": [
+        276,
+        298
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "THREEQ_RIGHT_BREAST",
+      "internal_v0_4_12_expected_dimensions": [
+        276,
+        298
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "THREEQ_LEFT_BREAST",
+      "relative_path": "assets/4b64a4634fa2.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/4b64a4634fa2.png",
+      "bytes": 81922,
+      "sha256": "22a3997fb6bffd287e180e2ac7cf3e9b9f805512c9dc4d5e9baf61791cef8d25",
+      "png_dimensions": [
+        260,
+        282
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "THREEQ_LEFT_BREAST",
+      "internal_v0_4_13_expected_dimensions": [
+        260,
+        282
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "THREEQ_LEFT_BREAST",
+      "internal_v0_4_12_expected_dimensions": [
+        260,
+        282
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "THREEQ_HIP_PELVIS",
+      "relative_path": "assets/8f73b6d14b8f.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/8f73b6d14b8f.png",
+      "bytes": 171645,
+      "sha256": "5dca742f6d31a16cb924f8d02117f5a536adfcc81f023919f3196aa480296f48",
+      "png_dimensions": [
+        432,
+        418
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "THREEQ_HIP_PELVIS",
+      "internal_v0_4_13_expected_dimensions": [
+        432,
+        418
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "THREEQ_HIP_PELVIS",
+      "internal_v0_4_12_expected_dimensions": [
+        432,
+        418
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "THREEQ_TORSO",
+      "relative_path": "assets/33e4a3284cd3.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/33e4a3284cd3.png",
+      "bytes": 313421,
+      "sha256": "d1dda428d08bffa6fc66f0564a484906ad9822a7e778dddd58aee67b135c9dc0",
+      "png_dimensions": [
+        462,
+        1020
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "THREEQ_TORSO",
+      "internal_v0_4_13_expected_dimensions": [
+        462,
+        1020
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "THREEQ_TORSO",
+      "internal_v0_4_12_expected_dimensions": [
+        462,
+        1020
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_L_FOREARM",
+      "relative_path": "assets/13c89b8b4a21.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/13c89b8b4a21.png",
+      "bytes": 80059,
+      "sha256": "c562ab74dd7aedf7412b3062d704a7f7d65217081c8818b3bcfd6c30236972d0",
+      "png_dimensions": [
+        260,
+        410
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_L_FOREARM",
+      "internal_v0_4_13_expected_dimensions": [
+        260,
+        410
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_L_FOREARM",
+      "internal_v0_4_12_expected_dimensions": [
+        260,
+        410
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_L_HAND",
+      "relative_path": "assets/874ab97f4fd2.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/874ab97f4fd2.png",
+      "bytes": 52578,
+      "sha256": "acb79d1c1493a0b7dd12c5751f19dcd5eefb5f57ebe14ac49ee32476dbaae3c9",
+      "png_dimensions": [
+        145,
+        303
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_L_HAND",
+      "internal_v0_4_13_expected_dimensions": [
+        145,
+        303
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_L_HAND",
+      "internal_v0_4_12_expected_dimensions": [
+        145,
+        303
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_L_FOOT",
+      "relative_path": "assets/0054bb0043a3.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/0054bb0043a3.png",
+      "bytes": 91250,
+      "sha256": "989d7af23940e3497356cb925c9a76d036a3316bedb1f2be22d021c680be2a30",
+      "png_dimensions": [
+        374,
+        286
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_L_FOOT",
+      "internal_v0_4_13_expected_dimensions": [
+        374,
+        286
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_L_FOOT",
+      "internal_v0_4_12_expected_dimensions": [
+        374,
+        286
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_L_THIGH",
+      "relative_path": "assets/4459a33d4120.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/4459a33d4120.png",
+      "bytes": 218723,
+      "sha256": "445c117ea076e805d8acde4a5450dd586da7db1392efb18df4119f7caf2a6bc0",
+      "png_dimensions": [
+        424,
+        784
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_L_THIGH",
+      "internal_v0_4_13_expected_dimensions": [
+        424,
+        784
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_L_THIGH",
+      "internal_v0_4_12_expected_dimensions": [
+        424,
+        784
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    },
+    {
+      "layer_id": "SHARED_L_LOWER_LEG",
+      "relative_path": "assets/50969e98439d.png",
+      "source_member": "2d_doll_rig_editor_v0_5_4/assets/50969e98439d.png",
+      "bytes": 178913,
+      "sha256": "d37540e5b018798fcb7754f64ab4b136e4f087a86ad1ed98ea0f0af7b3032f9a",
+      "png_dimensions": [
+        374,
+        1052
+      ],
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "referenced_by_internal_v0_4_13": true,
+      "internal_v0_4_13_layer_id": "SHARED_L_LOWER_LEG",
+      "internal_v0_4_13_expected_dimensions": [
+        374,
+        1052
+      ],
+      "matches_internal_v0_4_13_dimensions": true,
+      "referenced_by_internal_v0_4_12": true,
+      "internal_v0_4_12_layer_id": "SHARED_L_LOWER_LEG",
+      "internal_v0_4_12_expected_dimensions": [
+        374,
+        1052
+      ],
+      "matches_internal_v0_4_12_dimensions": true
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "status": "future independent conformance requirements",
+  "cases": [
+    {
+      "id": "P01",
+      "expectation": "Valid source/frame/model/prompt hashes produce immutable proposal only"
+    },
+    {
+      "id": "P02",
+      "expectation": "Same jobId same bytes idempotent; changed payload409"
+    },
+    {
+      "id": "P03",
+      "expectation": "VFR/duplicatePTS preserved, negative PTS rational mapping"
+    },
+    {
+      "id": "P04",
+      "expectation": "Cancel queued/running; completion race exactly one final state"
+    },
+    {
+      "id": "P05",
+      "expectation": "Provider crash/restart marks interrupted; no auto retry"
+    },
+    {
+      "id": "P06",
+      "expectation": "SSE disconnect/replay/reset with monotonic sequence"
+    },
+    {
+      "id": "P07",
+      "expectation": "OOM/deadline/cache quota resource error and manual fallback"
+    },
+    {
+      "id": "P08",
+      "expectation": "Changed component/prompt/ownership/source head makes result stale"
+    },
+    {
+      "id": "P09",
+      "expectation": "Mismatched checkpoint/source/pixel hash rejected"
+    },
+    {
+      "id": "P10",
+      "expectation": "Offline/disabled unlicensed model cannot download or launch"
+    },
+    {
+      "id": "P11",
+      "expectation": "Origin/Host/CSRF/traversal/ZIP-bomb rejection"
+    },
+    {
+      "id": "P12",
+      "expectation": "Delayed result cannot alter current heads or owner acceptance"
+    },
+    {
+      "id": "P13",
+      "expectation": "Provider raw topology retained; mapped1.2.0 and extras separate"
+    },
+    {
+      "id": "P14",
+      "expectation": "Partial output not sealed or certified; checkpoint incomplete"
+    },
+    {
+      "id": "P15",
+      "expectation": "Process-tree cancellation termination and quarantine failure reported"
+    }
+  ]
+}

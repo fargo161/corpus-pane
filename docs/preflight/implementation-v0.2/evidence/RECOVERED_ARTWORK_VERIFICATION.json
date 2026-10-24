@@ -1,0 +1,272 @@
+{
+  "owner_authorization": "Direct current user message approves these16 recovered PNGs as canonical external artwork for preflight; no later rig structure approved",
+  "archive": "C:\\Users\\mcdon\\Downloads\\Corpus_Pane_v0_4_13_Recovered_16_Artwork_Assets.zip",
+  "archive_sha256": "dc23c59b3ba76e53046a0a4729edd87cd93e17b2355eabdd88519bb69fa7da06",
+  "archive_bytes": 2047524,
+  "canonical_rig_sha256": "488f9ce9f415ee57c43fc120030533b3e9f32be31f4f3a0b6aae36c62463a7cd",
+  "canonical_rig_layers": 20,
+  "embedded_layers": 4,
+  "approved_external_pngs": 16,
+  "U01_status": "CLOSED_FOR_PLANNING",
+  "compatibility_pilot_status": "NOT_RUN; no artwork availability block remains",
+  "later_rig_imported": false,
+  "historical_byte_identity": "No original unavailable artwork manifest; new recovered hashes are the owner-approved identities from this point",
+  "assets": [
+    {
+      "layer_id": "SHARED_R_HAND",
+      "asset": "assets/b57f96804c19.png",
+      "sha256": "c68ae56d35e7fee42d1a55ab89bdca9361983bffaeedea890c149b3da6744d0e",
+      "bytes": 57694,
+      "width": 140,
+      "height": 322,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/b57f96804c19.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_R_FOREARM",
+      "asset": "assets/a71e885245d7.png",
+      "sha256": "e8ae2835894730bd5321326fe096c4811341f62a501e82815300ab8f333eaf63",
+      "bytes": 85336,
+      "width": 227,
+      "height": 406,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/a71e885245d7.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_R_FOOT",
+      "asset": "assets/d9959683414c.png",
+      "sha256": "e9068a31f0831ee0ed4776546e50fe9fb4790bed566129797fcde19bbd54460c",
+      "bytes": 64980,
+      "width": 200,
+      "height": 306,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/d9959683414c.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_R_LOWER_LEG",
+      "asset": "assets/3e5881d9444c.png",
+      "sha256": "2dea6536f7eb978fa0857a8b6054d0a23c01ff7a7a687bc0d83153b2999f68f6",
+      "bytes": 171071,
+      "width": 320,
+      "height": 856,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/3e5881d9444c.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_R_THIGH",
+      "asset": "assets/7a3cb7c04138.png",
+      "sha256": "f815964e3ba02c8b5370df179336fd4c2ab84c15814bd84544c548aab2d77c03",
+      "bytes": 224810,
+      "width": 404,
+      "height": 796,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/7a3cb7c04138.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "THREEQ_HEAD",
+      "asset": "assets/7e87b9784624.png",
+      "sha256": "943ea81dbf8cc9d4a7e1ca0d16e78d61431d333fa2f8e1bfdbe58c61d2f80949",
+      "bytes": 86976,
+      "width": 282,
+      "height": 374,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/7e87b9784624.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "THREEQ_NECK",
+      "asset": "assets/3f4e9fbf4902.png",
+      "sha256": "e1560e301702487641a17f2628ca99272c3f0180935c417aa17691f13b126af2",
+      "bytes": 66724,
+      "width": 280,
+      "height": 352,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/3f4e9fbf4902.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "THREEQ_RIGHT_BREAST",
+      "asset": "assets/d04a87374670.png",
+      "sha256": "77a55e90bee8f9f92f41be5f16dc23eb33cac3a3412815cac48aba9b706d8331",
+      "bytes": 93284,
+      "width": 276,
+      "height": 298,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/d04a87374670.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "THREEQ_LEFT_BREAST",
+      "asset": "assets/4b64a4634fa2.png",
+      "sha256": "22a3997fb6bffd287e180e2ac7cf3e9b9f805512c9dc4d5e9baf61791cef8d25",
+      "bytes": 81922,
+      "width": 260,
+      "height": 282,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/4b64a4634fa2.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "THREEQ_HIP_PELVIS",
+      "asset": "assets/8f73b6d14b8f.png",
+      "sha256": "5dca742f6d31a16cb924f8d02117f5a536adfcc81f023919f3196aa480296f48",
+      "bytes": 171645,
+      "width": 432,
+      "height": 418,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/8f73b6d14b8f.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "THREEQ_TORSO",
+      "asset": "assets/33e4a3284cd3.png",
+      "sha256": "d1dda428d08bffa6fc66f0564a484906ad9822a7e778dddd58aee67b135c9dc0",
+      "bytes": 313421,
+      "width": 462,
+      "height": 1020,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/33e4a3284cd3.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_L_FOREARM",
+      "asset": "assets/13c89b8b4a21.png",
+      "sha256": "c562ab74dd7aedf7412b3062d704a7f7d65217081c8818b3bcfd6c30236972d0",
+      "bytes": 80059,
+      "width": 260,
+      "height": 410,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/13c89b8b4a21.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_L_HAND",
+      "asset": "assets/874ab97f4fd2.png",
+      "sha256": "acb79d1c1493a0b7dd12c5751f19dcd5eefb5f57ebe14ac49ee32476dbaae3c9",
+      "bytes": 52578,
+      "width": 145,
+      "height": 303,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/874ab97f4fd2.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_L_FOOT",
+      "asset": "assets/0054bb0043a3.png",
+      "sha256": "989d7af23940e3497356cb925c9a76d036a3316bedb1f2be22d021c680be2a30",
+      "bytes": 91250,
+      "width": 374,
+      "height": 286,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/0054bb0043a3.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_L_THIGH",
+      "asset": "assets/4459a33d4120.png",
+      "sha256": "445c117ea076e805d8acde4a5450dd586da7db1392efb18df4119f7caf2a6bc0",
+      "bytes": 218723,
+      "width": 424,
+      "height": 784,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/4459a33d4120.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    },
+    {
+      "layer_id": "SHARED_L_LOWER_LEG",
+      "asset": "assets/50969e98439d.png",
+      "sha256": "d37540e5b018798fcb7754f64ab4b136e4f087a86ad1ed98ea0f0af7b3032f9a",
+      "bytes": 178913,
+      "width": 374,
+      "height": 1052,
+      "mode": "RGBA",
+      "alpha_extrema": [
+        0,
+        255
+      ],
+      "source_member": "Corpus_Pane_v0_4_13_Artwork_Recovery/assets/50969e98439d.png",
+      "matches_canonical_rig_dimensions": true,
+      "matches_supplied_manifest": true
+    }
+  ]
+}
