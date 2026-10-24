@@ -4,7 +4,7 @@ BUILD_COMPLETE is not owner acceptance. No PASS exists until independent evidenc
 
 | Milestone | State | Evidence / remaining |
 |---|---|---|
-| M00 | IN_PROGRESS | Local exact baseline5d968b9ed29db0b0a99d8cbdbd0f8f2d27536828/tag ready; owner gh auth complete; separate audit/test and Steward remote creation pending |
+| M00 | IN_PROGRESS | Exact baseline/tag independently verified and pushed to PRIVATE fargo161/corpus-pane; direct103/103 + ordinary browser6/6 independent PASS within bounded scope; setup candidate/protection interim policy executing |
 | M01 | IN_PROGRESS_STAGING | Builder actual code staging; production branch follows M00 |
 | M02 | NOT_STARTED | Provider/job/ordinary launch/manual fallback |
 | M02P | NOT_RUN | Three real prototypes/common measured criteria; no selected architecture |

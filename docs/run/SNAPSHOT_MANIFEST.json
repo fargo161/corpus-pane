@@ -1,10 +1,10 @@
 {
-  "snapshot_utc": "2026-10-24T07:20:18.713573+00:00",
-  "source": "owner-authorized implementation run live Director docs, immutable snapshot at this commit",
+  "snapshot_utc": "2026-10-24T07:21:38.711466+00:00",
+  "source": "owner-authorized implementation run live Director docs; frozen at this candidate",
   "files": [
     {
       "path": "docs/run/CHECKPOINT.md",
-      "sha256": "326e59a9f9a601f63678fd384e47a1e520f1def3e2848312c6580319156ebc2f"
+      "sha256": "c3024a46922c9eaa500c5660e351ceaf760a4de0cd0b6ad7da9e5a375f2eb740"
     },
     {
       "path": "docs/run/CONTRACT_GATES.md",
@@ -12,7 +12,7 @@
     },
     {
       "path": "docs/run/DECISION_LEDGER.md",
-      "sha256": "f87d3a14a761433c2b06cc9bdd7fa3ecfd13b296ff9a627a6bc8abbd47b568fb"
+      "sha256": "7a5a28b64f361c4eb27bcb34e9415ec484c3a088a4cd24f461c51b8311ae7afd"
     },
     {
       "path": "docs/run/INTERIM_MERGE_POLICY.md",
@@ -20,11 +20,11 @@
     },
     {
       "path": "docs/run/KNOWN_LIMITATIONS.md",
-      "sha256": "2eff443f60df047ee96965815ad0313cc2f8cf78ddbfae765d3502aa48350121"
+      "sha256": "12d033e8855fc1f1a84d2fa45302ec1f7d724c61822ec0208ac9586011dadc4c"
     },
     {
       "path": "docs/run/MILESTONE_STATUS.md",
-      "sha256": "c78ffaf926af58b5dd265edeca8a94b2da44063720abec306d7df8cff679c557"
+      "sha256": "d5eddfae4248e13c2402298563888200497d3affdcd0d6b4fa888eb1f411d88f"
     },
     {
       "path": "docs/run/RESOURCE_LOG.json",
