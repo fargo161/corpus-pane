@@ -1,0 +1,837 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://corpus-pane.invalid/schemas/authoring/1.0.0/ComponentTrack.schema.json",
+  "title": "Corpus Pane ComponentTrack revision",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "type": {
+      "const": "ComponentTrack"
+    },
+    "entityId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "revisionId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "parentRevisionIds": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/uuid"
+      },
+      "minItems": 0,
+      "maxItems": 100000,
+      "uniqueItems": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{1,3})?Z$"
+    },
+    "actorId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "componentEntityId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "personEntityId": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "observationRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uuid"
+          },
+          "minItems": 0,
+          "maxItems": 100000,
+          "uniqueItems": true
+        },
+        "visibilityIntervals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "interval": {
+                "type": "object",
+                "properties": {
+                  "start": {
+                    "$ref": "#/$defs/time"
+                  },
+                  "end": {
+                    "$ref": "#/$defs/time"
+                  },
+                  "includeStart": {
+                    "type": "boolean"
+                  },
+                  "includeEnd": {
+                    "type": "boolean"
+                  }
+                },
+                "required": [
+                  "start",
+                  "end",
+                  "includeStart",
+                  "includeEnd"
+                ],
+                "additionalProperties": false
+              },
+              "state": {
+                "enum": [
+                  "VISIBLE",
+                  "OCCLUDED",
+                  "OUT_OF_FRAME",
+                  "ABSENT",
+                  "UNKNOWN"
+                ]
+              },
+              "evidenceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/uuid"
+                },
+                "minItems": 0,
+                "maxItems": 100000,
+                "uniqueItems": true
+              }
+            },
+            "required": [
+              "interval",
+              "state",
+              "evidenceRefs"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "providerAssociationRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uuid"
+          },
+          "minItems": 0,
+          "maxItems": 100000,
+          "uniqueItems": true
+        },
+        "corrections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "observationRef": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "previousRevisionRef": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "correctedRevisionRef": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "actorId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 4096
+              },
+              "elapsedMs": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              }
+            },
+            "required": [
+              "observationRef",
+              "previousRevisionRef",
+              "correctedRevisionRef",
+              "actorId",
+              "reason",
+              "elapsedMs"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "ownershipHypotheses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "personEntityId": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+              },
+              "evidenceRefs": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/uuid"
+                },
+                "minItems": 0,
+                "maxItems": 100000,
+                "uniqueItems": true
+              },
+              "confidence": {
+                "anyOf": [
+                  {
+                    "type": "number",
+                    "minimum": 0,
+                    "maximum": 1
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "decision": {
+                "enum": [
+                  "PROPOSED",
+                  "REVIEWED",
+                  "REJECTED",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            "required": [
+              "personEntityId",
+              "evidenceRefs",
+              "confidence",
+              "decision"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        }
+      },
+      "required": [
+        "componentEntityId",
+        "personEntityId",
+        "observationRefs",
+        "visibilityIntervals",
+        "providerAssociationRefs",
+        "corrections",
+        "ownershipHypotheses"
+      ],
+      "additionalProperties": false
+    },
+    "derivedFrom": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/uuid"
+      },
+      "minItems": 0,
+      "maxItems": 100000,
+      "uniqueItems": true
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/jsonValue"
+      },
+      "maxProperties": 10000
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "type",
+    "entityId",
+    "revisionId",
+    "parentRevisionIds",
+    "createdAt",
+    "actorId",
+    "payload",
+    "derivedFrom",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "time": {
+      "type": "object",
+      "properties": {
+        "ptsTicks": {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)$",
+          "maxLength": 40
+        },
+        "timeBaseNum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "timeBaseDen": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "ptsTicks",
+        "timeBaseNum",
+        "timeBaseDen"
+      ],
+      "additionalProperties": false
+    },
+    "frame": {
+      "type": "object",
+      "properties": {
+        "sourceSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "streamIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "decodeIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "ptsTicks": {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)$",
+          "maxLength": 40
+        },
+        "timeBaseNum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "timeBaseDen": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "pixelSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "decoderIdentity": {
+          "$ref": "#/$defs/implementationIdentity"
+        }
+      },
+      "required": [
+        "sourceSha256",
+        "streamIndex",
+        "decodeIndex",
+        "ptsTicks",
+        "timeBaseNum",
+        "timeBaseDen",
+        "pixelSha256",
+        "width",
+        "height",
+        "decoderIdentity"
+      ],
+      "additionalProperties": false
+    },
+    "plane": {
+      "type": "object",
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "byteLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "channels": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "dtype": {
+          "enum": [
+            "u8",
+            "u32",
+            "f32"
+          ]
+        },
+        "endian": {
+          "enum": [
+            "LITTLE",
+            "NA"
+          ]
+        },
+        "encoding": {
+          "enum": [
+            "RAW",
+            "PNG"
+          ]
+        }
+      },
+      "required": [
+        "sha256",
+        "byteLength",
+        "width",
+        "height",
+        "channels",
+        "dtype",
+        "endian",
+        "encoding"
+      ],
+      "additionalProperties": false
+    },
+    "coordinateDomain": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "origin": {
+          "const": "TOP_LEFT"
+        },
+        "xAxis": {
+          "const": "RIGHT"
+        },
+        "yAxis": {
+          "const": "DOWN"
+        },
+        "units": {
+          "enum": [
+            "PIXEL",
+            "NORMALIZED_HEIGHT"
+          ]
+        },
+        "viewId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        }
+      },
+      "required": [
+        "id",
+        "width",
+        "height",
+        "origin",
+        "xAxis",
+        "yAxis",
+        "units",
+        "viewId"
+      ],
+      "additionalProperties": false
+    },
+    "implementationIdentity": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "codeSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "configSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "codeSha256",
+        "configSha256"
+      ],
+      "additionalProperties": false
+    },
+    "modelIdentity": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "checkpointSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifactDisposition": {
+          "enum": [
+            "APPROVED_FOR_INTEGRATION",
+            "APPROVED_WITH_CONDITIONS",
+            "RESEARCH_ONLY",
+            "REJECT",
+            "UNRESOLVED"
+          ]
+        },
+        "licenseRef": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "checkpointSha256",
+        "artifactDisposition",
+        "licenseRef"
+      ],
+      "additionalProperties": false
+    },
+    "skeleton": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "adventure-studio/universal-skeleton"
+        },
+        "version": {
+          "const": "1.2.0"
+        }
+      },
+      "required": [
+        "id",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "interval": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "$ref": "#/$defs/time"
+        },
+        "end": {
+          "$ref": "#/$defs/time"
+        },
+        "includeStart": {
+          "type": "boolean"
+        },
+        "includeEnd": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "includeStart",
+        "includeEnd"
+      ],
+      "additionalProperties": false
+    },
+    "transform": {
+      "type": "object",
+      "properties": {
+        "fromSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "toSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "matrix": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "units": {
+          "enum": [
+            "PIXEL",
+            "NORMALIZED_HEIGHT"
+          ]
+        },
+        "mirrored": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "fromSpace",
+        "toSpace",
+        "matrix",
+        "units",
+        "mirrored"
+      ],
+      "additionalProperties": false
+    },
+    "measurement": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "value": {
+          "type": "number"
+        },
+        "units": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidenceRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uuid"
+          },
+          "minItems": 0,
+          "maxItems": 100000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "units",
+        "uncertainty",
+        "evidenceRefs"
+      ],
+      "additionalProperties": false
+    },
+    "residual": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "units": {
+          "enum": [
+            "PIXEL",
+            "NORMALIZED_HEIGHT",
+            "INTEROCULAR_FRACTION"
+          ]
+        },
+        "sampleCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "value",
+        "units",
+        "sampleCount",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "envelope": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "viewIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "minItems": 1,
+          "maxItems": 100000,
+          "uniqueItems": true
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "controlId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              },
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              },
+              "units": {
+                "enum": [
+                  "DEGREES",
+                  "PIXEL",
+                  "NORMALIZED_HEIGHT"
+                ]
+              }
+            },
+            "required": [
+              "controlId",
+              "minimum",
+              "maximum",
+              "units"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "testRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uuid"
+          },
+          "minItems": 0,
+          "maxItems": 100000,
+          "uniqueItems": true
+        },
+        "status": {
+          "enum": [
+            "PROPOSED",
+            "TESTED",
+            "UNSUPPORTED"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "viewIds",
+        "constraints",
+        "testRefs",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "jsonValue": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "string",
+          "maxLength": 1048576
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          },
+          "maxProperties": 10000
+        }
+      ]
+    }
+  }
+}

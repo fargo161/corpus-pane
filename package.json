@@ -20,5 +20,10 @@
     "json-schema-traverse": "1.0.0",
     "require-from-string": "2.0.2",
     "robust-predicates": "3.0.3"
+  },
+  "scripts": {
+    "schemas": "node scripts/generate-schemas.mjs",
+    "test": "node --test tests/unit/*.test.mjs",
+    "schemas:check": "node scripts/generate-schemas.mjs --check"
   }
 }

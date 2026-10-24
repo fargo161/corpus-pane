@@ -1,0 +1,938 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://corpus-pane.invalid/schemas/authoring/1.0.0/Registration.schema.json",
+  "title": "Corpus Pane Registration revision",
+  "type": "object",
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "type": {
+      "const": "Registration"
+    },
+    "entityId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "revisionId": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "parentRevisionIds": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/uuid"
+      },
+      "minItems": 0,
+      "maxItems": 100000,
+      "uniqueItems": true
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date-time",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d{1,3})?Z$"
+    },
+    "actorId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 256
+    },
+    "payload": {
+      "type": "object",
+      "properties": {
+        "fromSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "toSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "transformType": {
+          "enum": [
+            "AFFINE_2D",
+            "PROJECTIVE_2D",
+            "WARP_2D"
+          ]
+        },
+        "matrix": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "warpBlob": {
+          "type": "object",
+          "properties": {
+            "sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "byteLength": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "width": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "height": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            "channels": {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 4
+            },
+            "dtype": {
+              "enum": [
+                "u8",
+                "u32",
+                "f32"
+              ]
+            },
+            "endian": {
+              "enum": [
+                "LITTLE",
+                "NA"
+              ]
+            },
+            "encoding": {
+              "enum": [
+                "RAW",
+                "PNG"
+              ]
+            }
+          },
+          "required": [
+            "sha256",
+            "byteLength",
+            "width",
+            "height",
+            "channels",
+            "dtype",
+            "endian",
+            "encoding"
+          ],
+          "additionalProperties": false
+        },
+        "anchors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "from": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "to": {
+                "type": "array",
+                "items": {
+                  "type": "number"
+                },
+                "minItems": 2,
+                "maxItems": 2
+              },
+              "anatomicalSide": {
+                "enum": [
+                  "LEFT",
+                  "RIGHT",
+                  "MIDLINE",
+                  "UNKNOWN"
+                ]
+              }
+            },
+            "required": [
+              "from",
+              "to",
+              "anatomicalSide"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "weights": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "residuals": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "value": {
+                "type": "number",
+                "minimum": 0
+              },
+              "units": {
+                "enum": [
+                  "PIXEL",
+                  "NORMALIZED_HEIGHT",
+                  "INTEROCULAR_FRACTION"
+                ]
+              },
+              "sampleCount": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "method": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              }
+            },
+            "required": [
+              "value",
+              "units",
+              "sampleCount",
+              "method"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "excludedRegions": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "minItems": 2,
+              "maxItems": 2
+            },
+            "minItems": 3,
+            "maxItems": 100000
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "faceProfile": {
+          "type": "object",
+          "properties": {
+            "reviewedInterocularDistance": {
+              "type": "number",
+              "exclusiveMinimum": 0
+            },
+            "anchors": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 128
+                  },
+                  "xy": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "minItems": 2,
+                    "maxItems": 2
+                  },
+                  "anatomicalSide": {
+                    "enum": [
+                      "LEFT",
+                      "RIGHT",
+                      "MIDLINE",
+                      "UNKNOWN"
+                    ]
+                  },
+                  "evidenceRefs": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/$defs/uuid"
+                    },
+                    "minItems": 0,
+                    "maxItems": 100000,
+                    "uniqueItems": true
+                  }
+                },
+                "required": [
+                  "name",
+                  "xy",
+                  "anatomicalSide",
+                  "evidenceRefs"
+                ],
+                "additionalProperties": false
+              },
+              "minItems": 0,
+              "maxItems": 100000
+            },
+            "maskConvention": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 4096
+            },
+            "slotConstraints": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "object",
+                "properties": {
+                  "bounds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    },
+                    "minItems": 4,
+                    "maxItems": 4
+                  },
+                  "anatomicalSide": {
+                    "enum": [
+                      "LEFT",
+                      "RIGHT",
+                      "MIDLINE",
+                      "UNKNOWN"
+                    ]
+                  }
+                },
+                "required": [
+                  "bounds",
+                  "anatomicalSide"
+                ],
+                "additionalProperties": false
+              },
+              "maxProperties": 10000
+            }
+          },
+          "required": [
+            "reviewedInterocularDistance",
+            "anchors",
+            "maskConvention",
+            "slotConstraints"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "fromSpace",
+        "toSpace",
+        "transformType",
+        "anchors",
+        "weights",
+        "residuals",
+        "excludedRegions"
+      ],
+      "additionalProperties": false
+    },
+    "derivedFrom": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/uuid"
+      },
+      "minItems": 0,
+      "maxItems": 100000,
+      "uniqueItems": true
+    },
+    "extensions": {
+      "type": "object",
+      "additionalProperties": {
+        "$ref": "#/$defs/jsonValue"
+      },
+      "maxProperties": 10000
+    }
+  },
+  "required": [
+    "schemaVersion",
+    "type",
+    "entityId",
+    "revisionId",
+    "parentRevisionIds",
+    "createdAt",
+    "actorId",
+    "payload",
+    "derivedFrom",
+    "extensions"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+    },
+    "hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "time": {
+      "type": "object",
+      "properties": {
+        "ptsTicks": {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)$",
+          "maxLength": 40
+        },
+        "timeBaseNum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "timeBaseDen": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "ptsTicks",
+        "timeBaseNum",
+        "timeBaseDen"
+      ],
+      "additionalProperties": false
+    },
+    "frame": {
+      "type": "object",
+      "properties": {
+        "sourceSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "streamIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "decodeIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "ptsTicks": {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)$",
+          "maxLength": 40
+        },
+        "timeBaseNum": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "timeBaseDen": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "pixelSha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "decoderIdentity": {
+          "$ref": "#/$defs/implementationIdentity"
+        }
+      },
+      "required": [
+        "sourceSha256",
+        "streamIndex",
+        "decodeIndex",
+        "ptsTicks",
+        "timeBaseNum",
+        "timeBaseDen",
+        "pixelSha256",
+        "width",
+        "height",
+        "decoderIdentity"
+      ],
+      "additionalProperties": false
+    },
+    "plane": {
+      "type": "object",
+      "properties": {
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "byteLength": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "channels": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 4
+        },
+        "dtype": {
+          "enum": [
+            "u8",
+            "u32",
+            "f32"
+          ]
+        },
+        "endian": {
+          "enum": [
+            "LITTLE",
+            "NA"
+          ]
+        },
+        "encoding": {
+          "enum": [
+            "RAW",
+            "PNG"
+          ]
+        }
+      },
+      "required": [
+        "sha256",
+        "byteLength",
+        "width",
+        "height",
+        "channels",
+        "dtype",
+        "endian",
+        "encoding"
+      ],
+      "additionalProperties": false
+    },
+    "coordinateDomain": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "width": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "height": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 9007199254740991
+        },
+        "origin": {
+          "const": "TOP_LEFT"
+        },
+        "xAxis": {
+          "const": "RIGHT"
+        },
+        "yAxis": {
+          "const": "DOWN"
+        },
+        "units": {
+          "enum": [
+            "PIXEL",
+            "NORMALIZED_HEIGHT"
+          ]
+        },
+        "viewId": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        }
+      },
+      "required": [
+        "id",
+        "width",
+        "height",
+        "origin",
+        "xAxis",
+        "yAxis",
+        "units",
+        "viewId"
+      ],
+      "additionalProperties": false
+    },
+    "implementationIdentity": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "codeSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "configSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "version",
+        "codeSha256",
+        "configSha256"
+      ],
+      "additionalProperties": false
+    },
+    "modelIdentity": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "checkpointSha256": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "artifactDisposition": {
+          "enum": [
+            "APPROVED_FOR_INTEGRATION",
+            "APPROVED_WITH_CONDITIONS",
+            "RESEARCH_ONLY",
+            "REJECT",
+            "UNRESOLVED"
+          ]
+        },
+        "licenseRef": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "name",
+        "checkpointSha256",
+        "artifactDisposition",
+        "licenseRef"
+      ],
+      "additionalProperties": false
+    },
+    "skeleton": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "const": "adventure-studio/universal-skeleton"
+        },
+        "version": {
+          "const": "1.2.0"
+        }
+      },
+      "required": [
+        "id",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "interval": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "$ref": "#/$defs/time"
+        },
+        "end": {
+          "$ref": "#/$defs/time"
+        },
+        "includeStart": {
+          "type": "boolean"
+        },
+        "includeEnd": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "start",
+        "end",
+        "includeStart",
+        "includeEnd"
+      ],
+      "additionalProperties": false
+    },
+    "transform": {
+      "type": "object",
+      "properties": {
+        "fromSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "toSpace": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        },
+        "matrix": {
+          "type": "array",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 9,
+          "maxItems": 9
+        },
+        "units": {
+          "enum": [
+            "PIXEL",
+            "NORMALIZED_HEIGHT"
+          ]
+        },
+        "mirrored": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "fromSpace",
+        "toSpace",
+        "matrix",
+        "units",
+        "mirrored"
+      ],
+      "additionalProperties": false
+    },
+    "measurement": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "value": {
+          "type": "number"
+        },
+        "units": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128
+        },
+        "uncertainty": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidenceRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uuid"
+          },
+          "minItems": 0,
+          "maxItems": 100000,
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "name",
+        "value",
+        "units",
+        "uncertainty",
+        "evidenceRefs"
+      ],
+      "additionalProperties": false
+    },
+    "residual": {
+      "type": "object",
+      "properties": {
+        "value": {
+          "type": "number",
+          "minimum": 0
+        },
+        "units": {
+          "enum": [
+            "PIXEL",
+            "NORMALIZED_HEIGHT",
+            "INTEROCULAR_FRACTION"
+          ]
+        },
+        "sampleCount": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "method": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 256
+        }
+      },
+      "required": [
+        "value",
+        "units",
+        "sampleCount",
+        "method"
+      ],
+      "additionalProperties": false
+    },
+    "envelope": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+        },
+        "viewIds": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 128
+          },
+          "minItems": 1,
+          "maxItems": 100000,
+          "uniqueItems": true
+        },
+        "constraints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "controlId": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 256
+              },
+              "minimum": {
+                "type": "number"
+              },
+              "maximum": {
+                "type": "number"
+              },
+              "units": {
+                "enum": [
+                  "DEGREES",
+                  "PIXEL",
+                  "NORMALIZED_HEIGHT"
+                ]
+              }
+            },
+            "required": [
+              "controlId",
+              "minimum",
+              "maximum",
+              "units"
+            ],
+            "additionalProperties": false
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        "testRefs": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/uuid"
+          },
+          "minItems": 0,
+          "maxItems": 100000,
+          "uniqueItems": true
+        },
+        "status": {
+          "enum": [
+            "PROPOSED",
+            "TESTED",
+            "UNSUPPORTED"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "viewIds",
+        "constraints",
+        "testRefs",
+        "status"
+      ],
+      "additionalProperties": false
+    },
+    "jsonValue": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "number"
+        },
+        {
+          "type": "string",
+          "maxLength": 1048576
+        },
+        {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/jsonValue"
+          },
+          "minItems": 0,
+          "maxItems": 100000
+        },
+        {
+          "type": "object",
+          "additionalProperties": {
+            "$ref": "#/$defs/jsonValue"
+          },
+          "maxProperties": 10000
+        }
+      ]
+    }
+  }
+}
